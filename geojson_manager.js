@@ -20,6 +20,7 @@ ymaps.ready(function () {
   />
   <div>
     <div style="font-size: 18px;">${deputats[obj.properties.description][0]}</div>
+    <div style="margin-top: 10px;">Округ № ${obj.properties.description}</div>
     <div style="margin-top: 10px;">Адрес приёмной и телефон:</div>
     <div>${deputats[obj.properties.description][1]}</div>
     <a style="display: block; margin-top: 10px;" href="${deputats[obj.properties.description][3]}" target="_blank">Перейти на сайт депутата</a>
