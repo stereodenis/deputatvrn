@@ -48,14 +48,14 @@ const deputats = {
   2: {
     name: 'Пинигин Алексей Юрьевич',
     office: 'ул. Переверткина, 11',
-    office: ['+79102453128', '+74732281687'],
+    phones: ['+79102453128', '+74732281687'],
     photo: 'http://www.gorduma-voronezh.ru/dep4/pinigin_ay.jpg',
     website: 'http://www.gorduma-voronezh.ru/dep4/pinigin_ay.html',
   },
   3: {
     name: 'Черкасов Олег Николаевич',
     office: 'ул. Переверткина, 11',
-    office: ['+79515415914'],
+    phones: ['+79515415914'],
     photo: 'http://www.gorduma-voronezh.ru/dep4/cherkasov_on.jpg',
     website: 'http://www.gorduma-voronezh.ru/dep4/cherkasov_on.html',
   },
