@@ -6,7 +6,7 @@ ymaps.ready(function () {
     }),
     objectManager = new ymaps.ObjectManager();
   map.controls.get('zoomControl').options.set({size: 'small'});
-  $.getJSON('Karta_munitsipalnykh_deputatov_Voronezh_03-12-2018_23-38-03_geojson.geojson')
+  $.getJSON('data.geojson')
     .done(function (geoJson) {
       geoJson.features.forEach(function (obj) {
         const areaNumber = obj.properties.description
