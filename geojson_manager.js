@@ -54,13 +54,12 @@ ymaps.ready(['polylabel.create']).then(function () {
       objectManager.events.add(['mouseenter', 'labelmouseenter', 'labelmouseleave', 'mouseleave'], function (event) {
         var objectId = event.get('objectId')
         var eventType = event.get('type')
-        var polygon = objectManager.objects.getById(objectId)
         var isSelected = eventType === 'mouseenter' || eventType === 'labelmouseenter'
-        var opacity = isSelected ? 'C0' : '75'
         var stroke = isSelected ? 5 : 1 
           objectManager.objects.setObjectOptions(objectId,
-             { fillColor: polygon.properties.fill + opacity,
-            strokeWidth: stroke })
+             { 
+            strokeWidth: stroke, 
+          })
   
     });
     });
