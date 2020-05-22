@@ -51,6 +51,14 @@ ymaps.ready(['polylabel.create']).then(function () {
       map.geoObjects.add(objectManager);
 
       var polylabel = new ymaps.polylabel.create(map, objectManager);
+      objectManager.events.add(['mouseenter', 'labelmouseenter', 'labelmouseleave', 'mouseleave'], function (event) {
+        var objectId = event.get('objectId')
+        var eventType = event.get('type')
+        var polygon = objectManager.objects.getById(objectId)
+        var opacity = eventType === 'mouseenter' || eventType === 'labelmouseenter' ? 'F0' : '75'
+          objectManager.objects.setObjectOptions(objectId, { fillColor: polygon.properties.fill + opacity })
+  
+    });
     });
 });
 
