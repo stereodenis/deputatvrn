@@ -1,4 +1,4 @@
-ymaps.ready(function () {
+ymaps.ready(['polylabel.create']).then(function () {
   var map = new ymaps.Map('map', {
       center: [39.218432, 51.649998],
       zoom: 11,
@@ -29,11 +29,28 @@ ymaps.ready(function () {
             </div>
           </div>
         `
-        obj.options = {}
+        obj.options= {
+          // Стандартный вид текста будет темный с белой обводкой.
+          labelDefaults: 'dark',
+          // Макет подписи.
+          labelLayout: '<div>{{properties.description}}</div>',
+          // Отключим показ всплывающей подсказки при наведении на полигон.
+          openHintOnHover: false,
+          // Размер текста подписей зависит от масштаба.
+          // На уровнях зума 3-6 размер текста равен 14, а на уровнях зума 7-18 равен 18.
+          labelTextSize: {'3_6': 14, '7_18': 18},
+          cursor: 'grab',
+          labelDotCursor: 'pointer',
+          // Допустимая погрешность в расчете вместимости подписи в полигон.
+          labelPermissibleInaccuracyOfVisibility: 4
+      }
         obj.options.fillColor = `${obj.properties.fill}75`;
+  
       });
       objectManager.add(geoJson);
       map.geoObjects.add(objectManager);
+
+      var polylabel = new ymaps.polylabel.create(map, objectManager);
     });
 });
 
