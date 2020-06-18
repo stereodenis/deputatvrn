@@ -1,0 +1,55 @@
+version: 2.1
+
+orbs:
+  node: circleci/node@1.1.6
+
+jobs:
+  build:
+    executor:
+      name: node/default
+    steps:
+      - checkout
+      - restore_cache:
+          name: Restore Yarn Package Cache
+          keys:
+            - yarn-packages-{{ checksum "yarn.lock" }}
+      - run:
+          name: Install Dependencies
+          command: yarn install --immutable
+      - save_cache:
+          name: Save Yarn Package Cache
+          key: yarn-packages-{{ checksum "yarn.lock" }}
+          paths:
+            - ~/.cache/yarn
+      - run:
+          name: Build CRA
+          command: yarn build
+      - persist_to_workspace:
+          root: /home/circleci
+          paths:
+            - project
+
+  deploy:
+    machine:
+      enabled: true
+    steps:
+      - attach_workspace:
+          at: /home/circleci
+      - add_ssh_keys:
+          fingerprints:
+            - "72:f4:70:22:98:85:24:ad:fd:1a:93:c6:b9:c6:24:92"
+      - run:
+          name: Deploy Over SSH
+          command: |
+            scp -r ~/project/build "$SSH_USER@$SSH_HOST:$SSH_DEPLOY_PATH"
+
+workflows:
+  build-and-test:
+    jobs:
+      - build
+      - deploy:
+          requires:
+            - build
+          filters:
+            branches:
+              only: master
