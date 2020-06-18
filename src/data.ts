@@ -1,4 +1,4 @@
-{
+export default {
   "type": "FeatureCollection",
   "metadata": {
     "name": "Карта муниципальных депутатов Воронеж",
@@ -4776,7 +4776,7 @@
         "stroke": "#ed4543",
         "stroke-width": "3",
         "stroke-opacity": 0.9
-      }
+      },
     },
     {
       "type": "Feature",
