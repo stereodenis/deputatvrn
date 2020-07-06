@@ -14,7 +14,7 @@
     "react-dom": "^16.13.1",
     "react-scripts": "3.4.1",
     "react-yandex-maps": "^4.4.0",
-    "typescript": "~3.7.2"
+    "typescript": "~3.9.6"
   },
   "scripts": {
     "start": "react-scripts start",
