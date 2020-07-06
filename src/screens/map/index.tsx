@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react'
-import './App.css'
+import './styles.css'
 
 import { deputats } from '../../deputats_data'
 import { balloonContent } from '../../helpers'
