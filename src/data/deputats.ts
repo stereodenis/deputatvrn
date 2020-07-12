@@ -1,4 +1,4 @@
-import { Deputat } from './types'
+import { Deputat } from '../types'
 
 export const deputats: { [d: string]: Deputat } = {
   1: {
