@@ -29,7 +29,7 @@ export default memo(() => {
               )
             })}
           </div>
-          <a className='d-block mt-1' href={`/area/${areaNumber}`}>
+          <a className='d-block mt-1' href={website} target='_blank' rel='noopener noreferrer'>
             Перейти на сайт депутата
           </a>
         </div>
