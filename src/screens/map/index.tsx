@@ -1,14 +1,13 @@
 import React, { useEffect } from 'react'
-import './styles.css'
-
-import { deputats } from '../../deputats_data'
-import { balloonContent } from '../../helpers'
+import { useHistory } from 'react-router-dom'
 
 import data from './data'
 
 export declare let ymaps: any
 
 export default function Map() {
+  const history = useHistory()
+
   useEffect(() => {
     ymaps.ready(['polylabel.create']).then(function () {
       const map = new ymaps.Map('map', {
@@ -19,11 +18,9 @@ export default function Map() {
         objectManager = new ymaps.ObjectManager()
       map.controls.get('zoomControl').options.set({ size: 'small' })
       data.features.forEach((obj) => {
-        const areaNumber = obj.properties.description
-        // @ts-ignore
-        const deputat = deputats[areaNumber]
-        // @ts-ignore
-        obj.properties.balloonContent = balloonContent(deputat, areaNumber)
+        // const areaNumber = obj.properties.description
+        // const deputat = deputats[areaNumber]
+        // obj.properties.balloonContent = balloonContent(deputat, areaNumber)
         // @ts-ignore
         obj.options = {
           labelDefaults: 'dark',
@@ -39,6 +36,11 @@ export default function Map() {
       objectManager.add(data)
       map.geoObjects.add(objectManager)
       new ymaps.polylabel.create(map, objectManager)
+      objectManager.events.add('click', (event: any) => {
+        const objectId = event.get('objectId')
+        const area = objectManager.objects.getById(objectId).properties
+        history.push(`/area/${area.description}`)
+      })
       objectManager.events.add(['mouseenter', 'labelmouseenter', 'labelmouseleave', 'mouseleave'], (event: any) => {
         const objectId = event.get('objectId')
         const eventType = event.get('type')
@@ -49,7 +51,7 @@ export default function Map() {
         })
       })
     })
-  }, [])
+  }, [history])
 
-  return <div className='b-map' id='map' style={{ height: '100%' }} />
+  return <div className='flex-fill' id='map' />
 }

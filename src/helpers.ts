@@ -20,7 +20,7 @@ export const balloonContent = (deputat: Deputat, areaNumber: number) => {
       <div>
         ${phonesLinks}
       </div>
-      <a style="display: block; margin-top: 10px;" href="${website}" target="_blank">Перейти на сайт депутата</a>
+      <a style="display: block; margin-top: 10px;" href="/area/${areaNumber}">Перейти на сайт депутата</a>
     </div>
   </div>
 `
