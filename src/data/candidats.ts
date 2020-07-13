@@ -29,6 +29,11 @@ const candidats: { [s: string]: Candidat[] } = {
       party: Parties.rodina,
       role: 'временно неработающий',
     },
+    {
+      name: 'Бирюков Михаил Евгеньевич',
+      photo: noPhoto,
+      party: Parties.kprf,
+    },
   ],
   2: [
     {
@@ -39,6 +44,11 @@ const candidats: { [s: string]: Candidat[] } = {
       ],
       photo: kabanov,
       project: Project.gorpr,
+    },
+    {
+      name: 'Прошунин Александр Вячеславович',
+      photo: noPhoto,
+      party: Parties.kprf,
     },
   ],
   3: [
@@ -57,6 +67,11 @@ const candidats: { [s: string]: Candidat[] } = {
       photo: noPhoto,
       party: Parties.rodina,
       role: 'коммерческий директор «Мега Авто»',
+    },
+    {
+      name: 'Вербовая Елена Петровна',
+      photo: noPhoto,
+      party: Parties.kprf,
     },
   ],
   4: [
@@ -80,6 +95,11 @@ const candidats: { [s: string]: Candidat[] } = {
       photo: noPhoto,
       party: Parties.rodina,
     },
+    {
+      name: 'Зарецких Алексей Александрович',
+      photo: noPhoto,
+      party: Parties.kprf,
+    },
   ],
   5: [
     {
@@ -98,6 +118,11 @@ const candidats: { [s: string]: Candidat[] } = {
       photo: noPhoto,
       party: Parties.rodina,
     },
+    {
+      name: 'Ковалевский Валентин Вячеславович',
+      photo: noPhoto,
+      party: Parties.kprf,
+    },
   ],
   6: [
     {
@@ -105,6 +130,11 @@ const candidats: { [s: string]: Candidat[] } = {
       role: 'предприниматель',
       photo: noPhoto,
       party: Parties.rodina,
+    },
+    {
+      name: 'Шелякин Артур Дмитриевич',
+      photo: noPhoto,
+      party: Parties.kprf,
     },
   ],
   7: [
@@ -114,6 +144,11 @@ const candidats: { [s: string]: Candidat[] } = {
       photo: noPhoto,
       party: Parties.rodina,
     },
+    {
+      name: 'Калинин Владимир Александрович',
+      photo: noPhoto,
+      party: Parties.kprf,
+    },
   ],
   8: [
     {
@@ -121,6 +156,11 @@ const candidats: { [s: string]: Candidat[] } = {
       role: 'председатель Совета кооператива Социально-экономической взаимопомощи «Развитие»',
       photo: noPhoto,
       party: Parties.rodina,
+    },
+    {
+      name: 'Зацепин Алексей Александрович',
+      photo: noPhoto,
+      party: Parties.kprf,
     },
   ],
   9: [
@@ -138,6 +178,11 @@ const candidats: { [s: string]: Candidat[] } = {
       bio:
         'дата рождения 02 сентября 1965 г. Образование – Высшее профессиональное, адрес места жительства Воронежская обл., г. Воронеж, ул. Серго, д. 26, ',
     },
+    {
+      name: 'Корчагин Павел Александрович',
+      photo: noPhoto,
+      party: Parties.kprf,
+    },
   ],
   10: [
     {
@@ -146,6 +191,11 @@ const candidats: { [s: string]: Candidat[] } = {
       party: Parties.rodina,
       project: Project.git,
       photo: ivanishev,
+    },
+    {
+      name: 'Ковалев Василий Николаевич',
+      photo: noPhoto,
+      party: Parties.kprf,
     },
   ],
   11: [
@@ -165,6 +215,11 @@ const candidats: { [s: string]: Candidat[] } = {
       photo: noPhoto,
       party: Parties.rodina,
     },
+    {
+      name: 'Сивоплясов Александр Александрович',
+      photo: noPhoto,
+      party: Parties.kprf,
+    },
   ],
   12: [
     {
@@ -178,6 +233,11 @@ const candidats: { [s: string]: Candidat[] } = {
       role: 'директор некоммерческой организации дополнительного профессионального образования «ДОН-100»',
       photo: noPhoto,
       party: Parties.rodina,
+    },
+    {
+      name: 'Крылов Андрей Игоревич',
+      photo: noPhoto,
+      party: Parties.kprf,
     },
   ],
   13: [
@@ -201,6 +261,11 @@ const candidats: { [s: string]: Candidat[] } = {
       photo: noPhoto,
       party: Parties.rodina,
     },
+    {
+      name: 'Спиваков Максим Васильевич',
+      photo: noPhoto,
+      party: Parties.kprf,
+    },
   ],
   14: [
     {
@@ -208,6 +273,11 @@ const candidats: { [s: string]: Candidat[] } = {
       role: 'предприниматель',
       photo: noPhoto,
       party: Parties.rodina,
+    },
+    {
+      name: 'Померанцев Андрей Сергеевич',
+      photo: noPhoto,
+      party: Parties.kprf,
     },
   ],
   15: [
@@ -228,6 +298,11 @@ const candidats: { [s: string]: Candidat[] } = {
       photo: noPhoto,
       party: Parties.rodina,
     },
+    {
+      name: 'Кудреватых Вячеслав Анатольевич',
+      photo: noPhoto,
+      party: Parties.kprf,
+    },
   ],
   16: [
     {
@@ -244,6 +319,11 @@ const candidats: { [s: string]: Candidat[] } = {
       bio:
         'дата рождения 22.03.1961 г., образование – Высшее профессиональное,  места жительства Воронежская обл., г. Воронеж, ул. 3 Интернационала, дом 3, кв. 23. Не является членом РОДП «ЯБЛОКО»',
     },
+    {
+      name: 'Рябов Алексей Анатольевич',
+      photo: noPhoto,
+      party: Parties.kprf,
+    },
   ],
   17: [
     {
@@ -258,6 +338,11 @@ const candidats: { [s: string]: Candidat[] } = {
         },
       ],
     },
+    {
+      name: 'Ситников Максим Михайлович',
+      photo: noPhoto,
+      party: Parties.kprf,
+    },
   ],
   18: [
     {
@@ -265,6 +350,11 @@ const candidats: { [s: string]: Candidat[] } = {
       role: 'заместитель генерального директора по коммерческим вопросам «Завода железобетонных изделий №2»',
       photo: noPhoto,
       party: Parties.rodina,
+    },
+    {
+      name: 'Глуховцев Даниил Сергеевич',
+      photo: noPhoto,
+      party: Parties.kprf,
     },
   ],
   19: [
@@ -290,6 +380,11 @@ const candidats: { [s: string]: Candidat[] } = {
       photo: noPhoto,
       party: Parties.rodina,
     },
+    {
+      name: 'Шабунин Александр Николаевич',
+      photo: noPhoto,
+      party: Parties.kprf,
+    },
   ],
   20: [
     {
@@ -305,6 +400,11 @@ const candidats: { [s: string]: Candidat[] } = {
       role: 'студент юридического факультета ВГУ',
       bio:
         'дата рождения,04 июня 2000 г. Образование - среднее, место жительства Воронежская область, город Воронеж, пр-кт Московский, д. 142У, кв.48 . Член РОДП «ЯБЛОКО». Член Регионального Совета РОДП «ЯБЛОКО», Член Федерального Совета РОДП  «ЯБЛОКО»',
+    },
+    {
+      name: 'Емельянов Евгений Владимирович',
+      photo: noPhoto,
+      party: Parties.kprf,
     },
   ],
   21: [
@@ -331,6 +431,11 @@ const candidats: { [s: string]: Candidat[] } = {
       role: 'домохозяйка',
       photo: noPhoto,
       party: Parties.rodina,
+    },
+    {
+      name: 'Каданцев Михаил Михайлович',
+      photo: noPhoto,
+      party: Parties.kprf,
     },
   ],
   22: [
@@ -359,6 +464,11 @@ const candidats: { [s: string]: Candidat[] } = {
       bio:
         'дата рождения, 19 февраля 1972 г. Образование – высшее профессиональное, адрес места жительства Воронежская область г. Воронеж, Квартал Жилой массив Олимпийский, д. 4, кв. 273. Не является членом РОДП «ЯБЛОКО»',
     },
+    {
+      name: 'Кобылкин Владислав Васильевич',
+      photo: noPhoto,
+      party: Parties.kprf,
+    },
   ],
   23: [
     {
@@ -379,6 +489,11 @@ const candidats: { [s: string]: Candidat[] } = {
       role: 'начальник цеха АО «Завод железобетонных изделий №2',
       photo: noPhoto,
       party: Parties.rodina,
+    },
+    {
+      name: 'Зверев Николай Николаевич',
+      photo: noPhoto,
+      party: Parties.kprf,
     },
   ],
   24: [
@@ -407,6 +522,11 @@ const candidats: { [s: string]: Candidat[] } = {
       party: Parties.yabloko,
       bio:
         'дата рождения 04 декабря 1965 г., образование – Высшее профессиональное,  место жительства Воронежская обл., г. Воронеж, ул. Карла Маркса, д.94, кв. 22. Не является членом Партии «ЯБЛОКО»',
+    },
+    {
+      name: 'Рослик Денис Викторович',
+      photo: noPhoto,
+      party: Parties.kprf,
     },
   ],
 }

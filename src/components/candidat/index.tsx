@@ -18,9 +18,9 @@ export default memo(({ candidat }: Props) => {
           telegram: @{candidat.telegram}
         </a>
       )}
-      {candidat.party && <div>От партии: {candidat.party}</div>}
-      {candidat.role && <div>Должность: {candidat.role}</div>}
-      {candidat.project && <div>Движение/Сообщество: {candidat.project}</div>}
+      {candidat.party && <div>{candidat.party}</div>}
+      {candidat.role && <div>{candidat.role}</div>}
+      {candidat.project && <div>{candidat.project}</div>}
       {candidat.links && candidat.links.length > 0 && (
         <div>
           <h6>Ссылки:</h6>

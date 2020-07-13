@@ -21,6 +21,7 @@ export enum Parties {
   rodina = 'Партия "Родина"',
   yabloko = 'Партия "Яблоко"',
   lpr = 'Либертарианская партия России',
+  kprf = 'КПРФ',
 }
 
 export enum Project {
