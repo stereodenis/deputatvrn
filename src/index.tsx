@@ -1,6 +1,6 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
-import { BrowserRouter, Switch, Route } from 'react-router-dom'
+import {BrowserRouter, Switch, Route, Link} from 'react-router-dom'
 import { Navbar, Nav } from 'react-bootstrap'
 
 import './index.css'
@@ -26,12 +26,13 @@ ReactDOM.render(
   <React.StrictMode>
     <BrowserRouter>
       <Navbar bg='light' expand='lg'>
-        <Navbar.Brand href='/'>Депутаты города Воронеж</Navbar.Brand>
+        <Link className="navbar-brand" to={'/map'}>Депутаты города Воронеж</Link>
         <Navbar.Toggle aria-controls='basic-navbar-nav' />
         <Navbar.Collapse id='basic-navbar-nav'>
           <Nav className='mr-auto'>
-            <Nav.Link href={'/area'}>Округи</Nav.Link>
-            <Nav.Link href={'/candidats'}>Кандидаты</Nav.Link>
+            <Link className="nav-link" to={'/map'}>Карта</Link>
+            <Link className="nav-link" to={'/area'}>Округа</Link>
+            <Link className="nav-link" to={'/candidats'}>Кандидаты</Link>
             {/*<NavDropdown title='Dropdown' id='basic-nav-dropdown'>*/}
             {/*  <NavDropdown.Item href='#action/3.1'>Action</NavDropdown.Item>*/}
             {/*  <NavDropdown.Item href='#action/3.2'>Another action</NavDropdown.Item>*/}
@@ -44,8 +45,9 @@ ReactDOM.render(
       </Navbar>
       <Switch>
         <Route exact path='/' component={Map} />
+        <Route path='/map' component={Map} />
         <Route path='/area' component={Areas} />
-        <Route path='/candidats' component={CandidatsRoute} />
+        <Route path='/candidates' component={CandidatsRoute} />
       </Switch>
     </BrowserRouter>
   </React.StrictMode>,
