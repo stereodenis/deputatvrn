@@ -35,3 +35,7 @@ export enum LinkTitle {
   instagram = 'Инстаграм',
   gorprojects = 'Страница на сайте "Городских проектов"',
 }
+
+export interface Area {
+  streets?: string[]
+}
