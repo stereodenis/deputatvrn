@@ -1,4 +1,4 @@
-import { Candidat } from '../types'
+import { Candidat, Parties, Project } from '../types'
 
 const candidats: { [s: string]: Candidat[] } = {
   1: [],
@@ -19,6 +19,7 @@ const candidats: { [s: string]: Candidat[] } = {
     {
       name: 'Игорь Лосев',
       telegram: 'LosevIgor',
+      project: Project.gorpr,
     },
   ],
   6: [],
@@ -29,18 +30,22 @@ const candidats: { [s: string]: Candidat[] } = {
     {
       name: 'Виталий Иванищев',
       telegram: 'Vitaly_scout',
+      party: Parties.rodina,
+      project: Project.git,
     },
   ],
   11: [
     {
       name: 'Сергей Подлесный',
       telegram: 'AlpacaEne',
+      project: Project.gorpr,
     },
   ],
   12: [
     {
       name: 'Евгений Карпов',
       telegram: 'KarpovJack',
+      role: 'глава штаба Навльного в Воронеже',
     },
   ],
   13: [
@@ -54,6 +59,7 @@ const candidats: { [s: string]: Candidat[] } = {
     {
       name: 'Родионов Юрий',
       telegram: 'Only_arrogance',
+      role: 'Глава Горпроектов в Воронеже',
     },
   ],
   16: [],
@@ -63,6 +69,7 @@ const candidats: { [s: string]: Candidat[] } = {
     {
       name: 'Алевтина Курпек',
       telegram: 'Alya_Kurpek',
+      project: Project.gorpr,
     },
     {
       name: 'Михаил Корниенко',
@@ -73,6 +80,7 @@ const candidats: { [s: string]: Candidat[] } = {
     {
       name: 'Александр Стрельников',
       telegram: 'aleks_strelnikov',
+      project: Project.gorpr,
     },
   ],
   21: [
@@ -90,12 +98,14 @@ const candidats: { [s: string]: Candidat[] } = {
     {
       name: 'Андрей Пыринов',
       telegram: 'andreypyrinov',
+      party: Parties.yabloko,
     },
   ],
   24: [
     {
       name: 'Сергей Баженов',
       telegram: 'md_bazhenov',
+      role: 'глава реготделения Либертарианской партии России',
     },
   ],
 }

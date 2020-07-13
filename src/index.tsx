@@ -6,7 +6,7 @@ import { Navbar, Nav } from 'react-bootstrap'
 import './index.css'
 import 'bootstrap/dist/css/bootstrap.min.css'
 
-import { Map, Areas } from './screens'
+import { Map, Areas, CandidatsRoute } from './screens'
 import * as serviceWorker from './serviceWorker'
 
 // function RouteWrapper({ component: Component, layout: Layout, ...rest }: RouteProps & { layout: any; component: any }) {
@@ -31,6 +31,7 @@ ReactDOM.render(
         <Navbar.Collapse id='basic-navbar-nav'>
           <Nav className='mr-auto'>
             <Nav.Link href={'/area'}>Округи</Nav.Link>
+            <Nav.Link href={'/candidats'}>Кандидаты</Nav.Link>
             {/*<NavDropdown title='Dropdown' id='basic-nav-dropdown'>*/}
             {/*  <NavDropdown.Item href='#action/3.1'>Action</NavDropdown.Item>*/}
             {/*  <NavDropdown.Item href='#action/3.2'>Another action</NavDropdown.Item>*/}
@@ -44,6 +45,7 @@ ReactDOM.render(
       <Switch>
         <Route exact path='/' component={Map} />
         <Route path='/area' component={Areas} />
+        <Route path='/candidats' component={CandidatsRoute} />
       </Switch>
     </BrowserRouter>
   </React.StrictMode>,
