@@ -6,22 +6,30 @@ import {
   gulin,
   ivanishev,
   kabanov,
+  karpov,
   kornienko,
   kurpek,
   losev,
   nikolaev,
+  noPhoto,
   podles,
   pyrinov,
   rodionov,
   sokolov,
   strelnikov,
   yanchich,
-  karpov,
 } from '../images'
 import { Candidat, LinkTitle, Parties, Project } from '../types'
 
 const candidats: { [s: string]: Candidat[] } = {
-  1: [],
+  1: [
+    {
+      name: 'Станислав Хатунцев',
+      photo: noPhoto,
+      party: Parties.rodina,
+      role: 'временно неработающий',
+    },
+  ],
   2: [
     {
       name: 'Леонид Кабанов',
@@ -44,6 +52,12 @@ const candidats: { [s: string]: Candidat[] } = {
       photo: yanchich,
       project: Project.gorpr,
     },
+    {
+      name: 'Александр Рябых',
+      photo: noPhoto,
+      party: Parties.rodina,
+      role: 'коммерческий директор «Мега Авто»',
+    },
   ],
   4: [
     {
@@ -60,6 +74,12 @@ const candidats: { [s: string]: Candidat[] } = {
         },
       ],
     },
+    {
+      name: 'Геннадий Семин',
+      role: 'временно не работает',
+      photo: noPhoto,
+      party: Parties.rodina,
+    },
   ],
   5: [
     {
@@ -72,11 +92,45 @@ const candidats: { [s: string]: Candidat[] } = {
       project: Project.gorpr,
       photo: losev,
     },
+    {
+      name: 'Эдуард Батищев',
+      role: 'гендиректор «Аксиос Инвест»',
+      photo: noPhoto,
+      party: Parties.rodina,
+    },
   ],
-  6: [],
-  7: [],
-  8: [],
-  9: [],
+  6: [
+    {
+      name: 'Александр Захаров',
+      role: 'предприниматель',
+      photo: noPhoto,
+      party: Parties.rodina,
+    },
+  ],
+  7: [
+    {
+      name: 'Константин Грачев',
+      role: 'временно не работает',
+      photo: noPhoto,
+      party: Parties.rodina,
+    },
+  ],
+  8: [
+    {
+      name: 'Александр Красиков',
+      role: 'председатель Совета кооператива Социально-экономической взаимопомощи «Развитие»',
+      photo: noPhoto,
+      party: Parties.rodina,
+    },
+  ],
+  9: [
+    {
+      name: 'Максим Петухов',
+      role: 'гендиректор «Евростроя»',
+      photo: noPhoto,
+      party: Parties.rodina,
+    },
+  ],
   10: [
     {
       name: 'Виталий Иванищев',
@@ -97,6 +151,12 @@ const candidats: { [s: string]: Candidat[] } = {
       project: Project.gorpr,
       photo: podles,
     },
+    {
+      name: 'Андрей Филатов',
+      role: 'менеджер',
+      photo: noPhoto,
+      party: Parties.rodina,
+    },
   ],
   12: [
     {
@@ -104,6 +164,12 @@ const candidats: { [s: string]: Candidat[] } = {
       photo: karpov,
       links: [{ title: LinkTitle.telegram, url: 'http://t.me/KarpovJack' }],
       role: 'глава штаба Навального в Воронеже',
+    },
+    {
+      name: 'Павел Кучерин',
+      role: 'директор некоммерческой организации дополнительного профессионального образования «ДОН-100»',
+      photo: noPhoto,
+      party: Parties.rodina,
     },
   ],
   13: [
@@ -121,8 +187,21 @@ const candidats: { [s: string]: Candidat[] } = {
         { title: LinkTitle.instagram, url: 'https://instagram.com/igorchraplak' },
       ],
     },
+    {
+      name: 'Владимир Швыдкий',
+      role: 'гендиректор «СВС Авто Групп»',
+      photo: noPhoto,
+      party: Parties.rodina,
+    },
   ],
-  14: [],
+  14: [
+    {
+      name: 'Ольга Офицерова',
+      role: 'предприниматель',
+      photo: noPhoto,
+      party: Parties.rodina,
+    },
+  ],
   15: [
     {
       name: 'Родионов Юрий',
@@ -135,11 +214,25 @@ const candidats: { [s: string]: Candidat[] } = {
       role: 'Глава Горпроектов в Воронеже',
       photo: rodionov,
     },
+    {
+      name: 'Антон Иванов',
+      role: 'гендиректор «ЮЦ Солидарность»',
+      photo: noPhoto,
+      party: Parties.rodina,
+    },
   ],
-  16: [],
+  16: [
+    {
+      name: 'Татьяна Кудинова',
+      role: 'пенсионер',
+      photo: noPhoto,
+      party: Parties.rodina,
+    },
+  ],
   17: [
     {
       name: 'Николай Андреев',
+      role: 'доцент ВГУ',
       photo: andreev,
       party: Parties.rodina,
       links: [
@@ -150,7 +243,14 @@ const candidats: { [s: string]: Candidat[] } = {
       ],
     },
   ],
-  18: [],
+  18: [
+    {
+      name: 'Артем Чекмарев',
+      role: 'заместитель генерального директора по коммерческим вопросам «Завода железобетонных изделий №2»',
+      photo: noPhoto,
+      party: Parties.rodina,
+    },
+  ],
   19: [
     {
       name: 'Алевтина Курпек',
@@ -167,6 +267,12 @@ const candidats: { [s: string]: Candidat[] } = {
       name: 'Михаил Корниенко',
       photo: kornienko,
       links: [{ title: LinkTitle.telegram, url: 'http://t.me/kornienkovrn' }],
+    },
+    {
+      name: 'Иван Остроушко',
+      role: 'травматолог-ортопед «Воронежской областной клинической больницы №1»',
+      photo: noPhoto,
+      party: Parties.rodina,
     },
   ],
   20: [
@@ -194,6 +300,12 @@ const candidats: { [s: string]: Candidat[] } = {
         { title: LinkTitle.vk, url: 'https://vk.com/id6263910' },
       ],
     },
+    {
+      name: 'Елена Яковец',
+      role: 'домохозяйка',
+      photo: noPhoto,
+      party: Parties.rodina,
+    },
   ],
   22: [
     {
@@ -207,6 +319,12 @@ const candidats: { [s: string]: Candidat[] } = {
         { title: LinkTitle.instagram, url: 'https://www.instagram.com/a.sokolov_vrn/' },
       ],
     },
+    {
+      name: 'Николай Шалыгин',
+      role: 'директор ООО «Парсек»',
+      photo: noPhoto,
+      party: Parties.rodina,
+    },
   ],
   23: [
     {
@@ -218,6 +336,12 @@ const candidats: { [s: string]: Candidat[] } = {
       ],
       party: Parties.yabloko,
       photo: pyrinov,
+    },
+    {
+      name: 'Сергей Сафонов',
+      role: 'начальник цеха АО «Завод железобетонных изделий №2',
+      photo: noPhoto,
+      party: Parties.rodina,
     },
   ],
   24: [
@@ -232,6 +356,12 @@ const candidats: { [s: string]: Candidat[] } = {
       ],
       role: 'глава реготделения Либертарианской партии России',
       photo: bazhenov,
+    },
+    {
+      name: 'Вячеслав Соколов',
+      role: 'гендиректор «Ника Моторс»',
+      photo: noPhoto,
+      party: Parties.rodina,
     },
   ],
 }

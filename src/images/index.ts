@@ -1,3 +1,4 @@
+export { default as noPhoto } from './no-photo.jpg'
 export { default as kabanov } from './kabanov.jpg'
 export { default as bazhenov } from './bazhenov.jpg'
 export { default as gulin } from './gulin.jpg'
