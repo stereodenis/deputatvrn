@@ -1,11 +1,12 @@
 import React, { memo } from 'react'
+import { Container } from 'react-bootstrap'
 
 import candidats from '../../data/candidats'
 import { Candidat } from '../../components'
 
 export default memo(() => {
   return (
-    <div>
+    <Container fluid>
       {Object.keys(candidats).map((areaNumber) => {
         const areaCandidats = candidats[areaNumber]
         return (
@@ -27,6 +28,6 @@ export default memo(() => {
           </div>
         )
       })}
-    </div>
+    </Container>
   )
 })
