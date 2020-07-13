@@ -1,5 +1,5 @@
 import React, { memo } from 'react'
-import { Col } from 'react-bootstrap'
+import {NavLink, Col} from 'react-bootstrap'
 
 import deputats from '../../data/deputats'
 import {Link} from "react-router-dom";
@@ -10,11 +10,10 @@ export default memo(() => {
       {Object.keys(deputats).map((areaNumber) => {
         return (
           <Col xs={12} lg={1} key={areaNumber}>
-
-            <Link to={`/area/${areaNumber}`} className='text-center nav-link'>
+            <NavLink as={Link} to={`/area/${areaNumber}`} className='text-center'>
               <div>{areaNumber}</div>
               округ
-            </Link>
+            </NavLink>
           </Col>
         )
       })}

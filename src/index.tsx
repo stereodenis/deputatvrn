@@ -26,13 +26,13 @@ ReactDOM.render(
   <React.StrictMode>
     <BrowserRouter>
       <Navbar bg='light' expand='lg'>
-        <Link className="navbar-brand" to={'/map'}>Депутаты города Воронеж</Link>
+        <Navbar.Brand as={Link} to={'/'}>Депутаты города Воронеж</Navbar.Brand>
         <Navbar.Toggle aria-controls='basic-navbar-nav' />
         <Navbar.Collapse id='basic-navbar-nav'>
           <Nav className='mr-auto'>
-            <Link className="nav-link" to={'/map'}>Карта</Link>
-            <Link className="nav-link" to={'/area'}>Округа</Link>
-            <Link className="nav-link" to={'/candidats'}>Кандидаты</Link>
+            <Nav.Link as={Link} to={'/'}>Карта</Nav.Link>
+            <Nav.Link as={Link} to={'/area'}>Округа</Nav.Link>
+            <Nav.Link as={Link} to={'/candidates'}>Кандидаты</Nav.Link>
             {/*<NavDropdown title='Dropdown' id='basic-nav-dropdown'>*/}
             {/*  <NavDropdown.Item href='#action/3.1'>Action</NavDropdown.Item>*/}
             {/*  <NavDropdown.Item href='#action/3.2'>Another action</NavDropdown.Item>*/}
