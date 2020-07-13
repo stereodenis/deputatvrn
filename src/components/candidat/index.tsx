@@ -26,7 +26,7 @@ export default memo(({ candidat }: Props) => {
           <h6>Ссылки:</h6>
           <div>
             {candidat.links.map((link) => (
-              <a key={link.url} href={link.url} rel='noopener noreferrer' target='_blank'>
+              <a key={link.url} href={link.url} className='d-block' rel='noopener noreferrer' target='_blank'>
                 {link.title}
               </a>
             ))}
