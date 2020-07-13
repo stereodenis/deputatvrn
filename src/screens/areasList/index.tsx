@@ -1,7 +1,7 @@
 import React, { memo } from 'react'
 import { NavLink } from 'react-bootstrap'
 
-import { deputats } from '../../data/deputats'
+import deputats from '../../data/deputats'
 
 export default memo(() => {
   return (

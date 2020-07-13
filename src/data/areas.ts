@@ -1,4 +1,6 @@
-export const areas = {
+import { Area } from '../types'
+
+const areas: { [s: string]: Area } = {
   1: {},
   2: {},
   3: {},
@@ -40,3 +42,5 @@ export const areas = {
   23: {},
   24: {},
 }
+
+export default areas

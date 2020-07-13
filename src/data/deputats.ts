@@ -1,6 +1,6 @@
 import { Deputat } from '../types'
 
-export const deputats: { [d: string]: Deputat } = {
+const deputats: { [d: string]: Deputat } = {
   1: {
     name: 'Ходырев Владимир Фёдорович',
     office: 'ул. Дубовая д. 12',
@@ -170,3 +170,5 @@ export const deputats: { [d: string]: Deputat } = {
     website: 'http://gorduma-voronezh.ru/sysoev-aleksandr-vladimirovich/',
   },
 }
+
+export default deputats
