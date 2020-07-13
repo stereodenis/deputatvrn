@@ -14,6 +14,7 @@ export interface Candidat {
   project?: Project
   photo: string
   links?: { title: LinkTitle; url: string }[]
+  bio?: string
 }
 
 export enum Parties {
