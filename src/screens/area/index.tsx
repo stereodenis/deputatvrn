@@ -1,6 +1,8 @@
 import React, { memo } from 'react'
 import { Container } from 'react-bootstrap'
 import { useParams } from 'react-router-dom'
+// @ts-ignore
+import MetaTags from 'react-meta-tags'
 
 import candidats from '../../data/candidats'
 import deputats from '../../data/deputats'
@@ -15,6 +17,15 @@ export default memo(() => {
 
   return (
     <Container fluid>
+      <MetaTags>
+        <title>{`Избирательный округ ${areaNumber}`}</title>
+        <meta
+          name='description'
+          content={`Вся информация о кандидатах в депутаты избирательного округа №${areaNumber}`}
+        />
+        <meta property='og:title' content={`Избирательный округ ${areaNumber}`} />
+        <meta property='og:image' content={`../../images/areas/${areaNumber}.jpg`} />
+      </MetaTags>
       <h1 className='border-bottom pb-2'>{areaNumber} округ</h1>
 
       <div className='border-bottom pb-3'>

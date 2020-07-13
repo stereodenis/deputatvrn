@@ -18,7 +18,7 @@ import {
   sokolov,
   strelnikov,
   yanchich,
-} from '../images'
+} from '../images/candidates'
 import { Candidat, LinkTitle, Parties, Project } from '../types'
 
 const candidats: { [s: string]: Candidat[] } = {
