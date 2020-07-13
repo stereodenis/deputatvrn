@@ -14,6 +14,7 @@ import {
   sokolov,
   strelnikov,
   yanchich,
+  chraplak,
 } from '../images'
 import { Candidat, Parties, Project } from '../types'
 
@@ -87,6 +88,16 @@ const candidats: { [s: string]: Candidat[] } = {
       name: 'Георгий Бородин',
       links: [{ title: 'telegram', url: 'http://t.me/George_Borodin' }],
       photo: borodin,
+    },
+    {
+      name: 'Игорь Храплак',
+      photo: chraplak,
+      links: [
+        {
+          title: 'telegram',
+          url: 'http://t.me/igorchraplak',
+        },
+      ],
     },
   ],
   14: [],

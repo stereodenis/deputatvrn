@@ -8,7 +8,7 @@ export default memo(({ candidat }: Props) => {
     <div key={candidat.name} style={{ width: 300 }}>
       {candidat.photo && (
         <div>
-          <Image width={200} src={candidat.photo} rounded />
+          <Image height={200} src={candidat.photo} rounded />
         </div>
       )}
 
