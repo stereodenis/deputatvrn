@@ -1,18 +1,19 @@
 import {
+  andreev,
   bazhenov,
   borodin,
   gulin,
   ivanishev,
   kabanov,
+  kornienko,
   kurpek,
   losev,
   podles,
+  pyrinov,
   rodionov,
+  sokolov,
   strelnikov,
   yanchich,
-  kornienko,
-  sokolov,
-  pyrinov,
 } from '../images'
 import { Candidat, Parties, Project } from '../types'
 
@@ -98,7 +99,19 @@ const candidats: { [s: string]: Candidat[] } = {
     },
   ],
   16: [],
-  17: [],
+  17: [
+    {
+      name: 'Николай Андреев',
+      photo: andreev,
+      party: Parties.rodina,
+      links: [
+        {
+          title: 'VK',
+          url: 'https://vk.com/id2953185',
+        },
+      ],
+    },
+  ],
   18: [],
   19: [
     {
