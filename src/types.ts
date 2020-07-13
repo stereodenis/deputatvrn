@@ -13,7 +13,7 @@ export interface Candidat {
   party?: Parties
   project?: Project
   photo?: string
-  links?: { title: string; url: string }[]
+  links?: { title: LinkTitle; url: string }[]
 }
 
 export enum Parties {
@@ -26,4 +26,12 @@ export enum Project {
   git = 'Город и Транспорт',
   gorpr = 'Городские проекты Ильи Варламова и Максима Каца',
   navalny = 'Штаб Навального',
+}
+
+export enum LinkTitle {
+  telegram = 'Телеграм',
+  facebook = 'Фейсбук',
+  vk = 'Вконтакте',
+  instagram = 'Инстаграм',
+  gorprojects = 'Страница на сайте "Городских проектов"',
 }
