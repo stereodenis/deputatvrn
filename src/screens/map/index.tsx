@@ -36,7 +36,7 @@ export default function Map() {
       objectManager.add(data)
       map.geoObjects.add(objectManager)
       new ymaps.polylabel.create(map, objectManager)
-      objectManager.events.add('click', (event: any) => {
+      objectManager.events.add(['click', 'labelclick'], (event: any) => {
         const objectId = event.get('objectId')
         const area = objectManager.objects.getById(objectId).properties
         history.push(`/area/${area.description}`)
