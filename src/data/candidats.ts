@@ -1,3 +1,19 @@
+import {
+  bazhenov,
+  borodin,
+  gulin,
+  ivanishev,
+  kabanov,
+  kurpek,
+  losev,
+  podles,
+  rodionov,
+  strelnikov,
+  yanchich,
+  kornienko,
+  sokolov,
+  pyrinov,
+} from '../images'
 import { Candidat, Parties, Project } from '../types'
 
 const candidats: { [s: string]: Candidat[] } = {
@@ -5,21 +21,36 @@ const candidats: { [s: string]: Candidat[] } = {
   2: [
     {
       name: 'Леонид Кабанов',
-      telegram: 'kabanovl',
+      links: [{ title: 'telegram', url: 'http://t.me/kabanovl' }],
+      photo: kabanov,
     },
   ],
   3: [
     {
       name: 'Константин Янчич',
-      telegram: 'rusnevsmile',
+      links: [{ title: 'telegram', url: 'http://t.me/rusnevsmile' }],
+      photo: yanchich,
     },
   ],
-  4: [],
+  4: [
+    {
+      name: 'Антон Гулин',
+      photo: gulin,
+      links: [
+        { title: 'telegram', url: 'http://t.me/digitalpartisan' },
+        {
+          title: 'Страница на сайте "Городских проектов"',
+          url: 'https://go.city4people.ru/fundraising/personal/503',
+        },
+      ],
+    },
+  ],
   5: [
     {
       name: 'Игорь Лосев',
-      telegram: 'LosevIgor',
+      links: [{ title: 'telegram', url: 'http://t.me/LosevIgor' }],
       project: Project.gorpr,
+      photo: losev,
     },
   ],
   6: [],
@@ -29,37 +60,41 @@ const candidats: { [s: string]: Candidat[] } = {
   10: [
     {
       name: 'Виталий Иванищев',
-      telegram: 'Vitaly_scout',
+      links: [{ title: 'telegram', url: 'http://t.me/Vitaly_scout' }],
       party: Parties.rodina,
       project: Project.git,
+      photo: ivanishev,
     },
   ],
   11: [
     {
       name: 'Сергей Подлесный',
-      telegram: 'AlpacaEne',
+      links: [{ title: 'telegram', url: 'http://t.me/AlpacaEne' }],
       project: Project.gorpr,
+      photo: podles,
     },
   ],
   12: [
     {
       name: 'Евгений Карпов',
-      telegram: 'KarpovJack',
-      role: 'глава штаба Навльного в Воронеже',
+      links: [{ title: 'telegram', url: 'http://t.me/KarpovJack' }],
+      role: 'глава штаба Навального в Воронеже',
     },
   ],
   13: [
     {
       name: 'Георгий Бородин',
-      telegram: 'George_Borodin',
+      links: [{ title: 'telegram', url: 'http://t.me/George_Borodin' }],
+      photo: borodin,
     },
   ],
   14: [],
   15: [
     {
       name: 'Родионов Юрий',
-      telegram: 'Only_arrogance',
+      links: [{ title: 'telegram', url: 'http://t.me/Only_arrogance' }],
       role: 'Глава Горпроектов в Воронеже',
+      photo: rodionov,
     },
   ],
   16: [],
@@ -68,19 +103,22 @@ const candidats: { [s: string]: Candidat[] } = {
   19: [
     {
       name: 'Алевтина Курпек',
-      telegram: 'Alya_Kurpek',
+      links: [{ title: 'telegram', url: 'http://t.me/Alya_Kurpek' }],
       project: Project.gorpr,
+      photo: kurpek,
     },
     {
       name: 'Михаил Корниенко',
-      telegram: 'kornienkovrn',
+      photo: kornienko,
+      links: [{ title: 'telegram', url: 'http://t.me/kornienkovrn' }],
     },
   ],
   20: [
     {
       name: 'Александр Стрельников',
-      telegram: 'aleks_strelnikov',
+      links: [{ title: 'telegram', url: 'http://t.me/aleks_strelnikov' }],
       project: Project.gorpr,
+      photo: strelnikov,
     },
   ],
   21: [
@@ -91,21 +129,24 @@ const candidats: { [s: string]: Candidat[] } = {
   22: [
     {
       name: 'Александр Соколов',
-      telegram: 'AllexanderSokollov',
+      photo: sokolov,
+      links: [{ title: 'telegram', url: 'http://t.me/AllexanderSokollov' }],
     },
   ],
   23: [
     {
       name: 'Андрей Пыринов',
-      telegram: 'andreypyrinov',
+      links: [{ title: 'telegram', url: 'http://t.me/andreypyrinov' }],
       party: Parties.yabloko,
+      photo: pyrinov,
     },
   ],
   24: [
     {
       name: 'Сергей Баженов',
-      telegram: 'md_bazhenov',
+      links: [{ title: 'telegram', url: 'http://t.me/md_bazhenov' }],
       role: 'глава реготделения Либертарианской партии России',
+      photo: bazhenov,
     },
   ],
 }

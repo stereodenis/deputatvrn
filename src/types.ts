@@ -12,6 +12,8 @@ export interface Candidat {
   role?: string
   party?: Parties
   project?: Project
+  photo?: string
+  links?: { title: string; url: string }[]
 }
 
 export enum Parties {
