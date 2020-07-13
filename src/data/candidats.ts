@@ -16,6 +16,7 @@ import {
   sokolov,
   strelnikov,
   yanchich,
+  karpov,
 } from '../images'
 import { Candidat, LinkTitle, Parties, Project } from '../types'
 
@@ -100,6 +101,7 @@ const candidats: { [s: string]: Candidat[] } = {
   12: [
     {
       name: 'Евгений Карпов',
+      photo: karpov,
       links: [{ title: LinkTitle.telegram, url: 'http://t.me/KarpovJack' }],
       role: 'глава штаба Навального в Воронеже',
     },
@@ -180,9 +182,9 @@ const candidats: { [s: string]: Candidat[] } = {
     },
   ],
   21: [
-    {
-      name: 'Илья Евсюков',
-    },
+    // {
+    //   name: 'Илья Евсюков',
+    // },
     {
       name: 'Николаев Максим Олегович',
       photo: nikolaev,

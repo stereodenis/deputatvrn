@@ -12,7 +12,7 @@ export interface Candidat {
   role?: string
   party?: Parties
   project?: Project
-  photo?: string
+  photo: string
   links?: { title: LinkTitle; url: string }[]
 }
 
