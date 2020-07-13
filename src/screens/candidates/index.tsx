@@ -1,5 +1,6 @@
 import React, { memo } from 'react'
 import { Container } from 'react-bootstrap'
+import { Link } from 'react-router-dom'
 
 import candidats from '../../data/candidats'
 import { Candidat } from '../../components'
@@ -10,9 +11,11 @@ export default memo(() => {
       {Object.keys(candidats).map((areaNumber) => {
         const areaCandidats = candidats[areaNumber]
         return (
-          <div key={areaNumber} className='border-bottom'>
-            <h3>{areaNumber} округ</h3>
-            <div>
+          <div key={areaNumber} className='border-bottom py-3'>
+            <h3>
+              <Link to={`/area/${areaNumber}`}>{areaNumber} округ</Link>
+            </h3>
+            <div className='d-flex flex-wrap flex-row'>
               {areaCandidats.length > 0 ? (
                 areaCandidats.map((candidat) => <Candidat key={candidat.name} {...{ candidat }} />)
               ) : (

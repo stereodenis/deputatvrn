@@ -13,13 +13,18 @@ export default memo(() => {
 
   return (
     <Container fluid>
-      <h1>{areaNumber} округ</h1>
-      <h2>Текущий депутат</h2>
+      <h1 className='border-bottom pb-2'>{areaNumber} округ</h1>
+      <div className='border-bottom pb-3'>
+        <h2>Список кандидатов в депутаты</h2>
+        <div className='d-flex flex-wrap flex-row'>
+          {areaCandidats.map((candidat) => (
+            <Candidat key={candidat.name} {...{ candidat }} />
+          ))}
+        </div>
+      </div>
+
+      <h2 className='mt-3'>Текущий депутат</h2>
       <Deputat {...{ deputat, areaNumber }} />
-      <h2>Список кандидатов в депутаты</h2>
-      {areaCandidats.map((candidat) => (
-        <Candidat key={candidat.name} {...{ candidat }} />
-      ))}
     </Container>
   )
 })
