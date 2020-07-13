@@ -2,6 +2,7 @@ import {
   andreev,
   bazhenov,
   borodin,
+  chraplak,
   gulin,
   ivanishev,
   kabanov,
@@ -14,7 +15,7 @@ import {
   sokolov,
   strelnikov,
   yanchich,
-  chraplak,
+  nikolaev,
 } from '../images'
 import { Candidat, Parties, Project } from '../types'
 
@@ -25,6 +26,7 @@ const candidats: { [s: string]: Candidat[] } = {
       name: 'Леонид Кабанов',
       links: [{ title: 'telegram', url: 'http://t.me/kabanovl' }],
       photo: kabanov,
+      project: Project.gorpr,
     },
   ],
   3: [
@@ -32,12 +34,14 @@ const candidats: { [s: string]: Candidat[] } = {
       name: 'Константин Янчич',
       links: [{ title: 'telegram', url: 'http://t.me/rusnevsmile' }],
       photo: yanchich,
+      project: Project.gorpr,
     },
   ],
   4: [
     {
       name: 'Антон Гулин',
       photo: gulin,
+      project: Project.gorpr,
       links: [
         { title: 'telegram', url: 'http://t.me/digitalpartisan' },
         {
@@ -92,6 +96,7 @@ const candidats: { [s: string]: Candidat[] } = {
     {
       name: 'Игорь Храплак',
       photo: chraplak,
+      project: Project.gorpr,
       links: [
         {
           title: 'telegram',
@@ -105,6 +110,7 @@ const candidats: { [s: string]: Candidat[] } = {
     {
       name: 'Родионов Юрий',
       links: [{ title: 'telegram', url: 'http://t.me/Only_arrogance' }],
+      project: Project.gorpr,
       role: 'Глава Горпроектов в Воронеже',
       photo: rodionov,
     },
@@ -149,17 +155,24 @@ const candidats: { [s: string]: Candidat[] } = {
     {
       name: 'Илья Евсюков',
     },
+    {
+      name: 'Николаев Максим Олегович',
+      photo: nikolaev,
+      project: Project.gorpr,
+    },
   ],
   22: [
     {
       name: 'Александр Соколов',
       photo: sokolov,
+      project: Project.gorpr,
       links: [{ title: 'telegram', url: 'http://t.me/AllexanderSokollov' }],
     },
   ],
   23: [
     {
       name: 'Андрей Пыринов',
+      project: Project.gorpr,
       links: [{ title: 'telegram', url: 'http://t.me/andreypyrinov' }],
       party: Parties.yabloko,
       photo: pyrinov,
@@ -168,6 +181,7 @@ const candidats: { [s: string]: Candidat[] } = {
   24: [
     {
       name: 'Сергей Баженов',
+      project: Project.gorpr,
       links: [{ title: 'telegram', url: 'http://t.me/md_bazhenov' }],
       role: 'глава реготделения Либертарианской партии России',
       photo: bazhenov,
