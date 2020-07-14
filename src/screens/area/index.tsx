@@ -29,7 +29,10 @@ export default memo(() => {
         <meta property='og:image' content={areasImages[areaNumber]} />
       </MetaTags>
 
-      <h1 className='border-bottom pb-2'>{areaNumber} округ</h1>
+      <div className='border-bottom pb-2 text-center'>
+        <h1>{areaNumber} округ</h1>
+        <h4>Количество избирателей: {area.people}</h4>
+      </div>
 
       <div className='py-3'>
         <h2>Список кандидатов в депутаты</h2>

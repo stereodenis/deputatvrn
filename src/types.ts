@@ -39,5 +39,6 @@ export enum LinkTitle {
 }
 
 export interface Area {
-  streets?: string[]
+  people: number
+  streets: string[]
 }
