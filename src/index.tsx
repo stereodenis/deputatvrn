@@ -1,6 +1,6 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
-import {BrowserRouter, Switch, Route, Link} from 'react-router-dom'
+import { BrowserRouter, Switch, Route, Link } from 'react-router-dom'
 import { Navbar, Nav } from 'react-bootstrap'
 
 import './index.css'
@@ -26,13 +26,18 @@ ReactDOM.render(
   <React.StrictMode>
     <BrowserRouter>
       <Navbar bg='light' expand='lg'>
-        <Navbar.Brand as={Link} to={'/'}>Депутаты города Воронеж</Navbar.Brand>
+        <Navbar.Brand as={Link} to={'/'}>
+          Депутаты города Воронеж
+        </Navbar.Brand>
         <Navbar.Toggle aria-controls='basic-navbar-nav' />
         <Navbar.Collapse id='basic-navbar-nav'>
           <Nav className='mr-auto'>
-            <Nav.Link as={Link} to={'/'}>Карта</Nav.Link>
-            <Nav.Link as={Link} to={'/area'}>Округа</Nav.Link>
-            <Nav.Link as={Link} to={'/candidates'}>Кандидаты</Nav.Link>
+            <Nav.Link as={Link} to={'/area'}>
+              Округа
+            </Nav.Link>
+            <Nav.Link as={Link} to={'/candidates'}>
+              Кандидаты
+            </Nav.Link>
             {/*<NavDropdown title='Dropdown' id='basic-nav-dropdown'>*/}
             {/*  <NavDropdown.Item href='#action/3.1'>Action</NavDropdown.Item>*/}
             {/*  <NavDropdown.Item href='#action/3.2'>Another action</NavDropdown.Item>*/}
@@ -45,7 +50,6 @@ ReactDOM.render(
       </Navbar>
       <Switch>
         <Route exact path='/' component={Map} />
-        <Route path='/map' component={Map} />
         <Route path='/area' component={Areas} />
         <Route path='/candidates' component={CandidatsRoute} />
       </Switch>

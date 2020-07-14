@@ -1,8 +1,8 @@
 import React, { memo } from 'react'
-import {NavLink, Col} from 'react-bootstrap'
+import { NavLink, Col } from 'react-bootstrap'
+import { Link } from 'react-router-dom'
 
 import deputats from '../../data/deputats'
-import {Link} from "react-router-dom";
 
 export default memo(() => {
   return (
