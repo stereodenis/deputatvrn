@@ -1,12 +1,13 @@
 import React, { memo } from 'react'
+import { Image } from 'react-bootstrap'
 
 import { Deputat } from '../../types'
 
 export default memo(({ deputat, areaNumber }: Props) => {
   return (
-    <div className='d-flex flex-row align-items-start mt-2'>
-      <img className='mr-3' src={deputat.photo} alt={`фото депутата ${deputat.name}`} />
-      <div>
+    <div className=''>
+      <Image width={'100%'} className='mr-3' src={deputat.photo} alt={`фото депутата ${deputat.name}`} />
+      <div className='mt-2'>
         <div className=''>{deputat.name}</div>
         <div className='mt-1'>Округ № {areaNumber}</div>
         <div className='mt-1'>Адрес приёмной:</div>

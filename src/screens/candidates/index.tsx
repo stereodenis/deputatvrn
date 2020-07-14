@@ -1,5 +1,5 @@
 import React, { memo } from 'react'
-import { Container } from 'react-bootstrap'
+import { Container, Row, Col } from 'react-bootstrap'
 import { Link } from 'react-router-dom'
 
 import candidats from '../../data/candidats'
@@ -8,6 +8,7 @@ import { Candidat } from '../../components'
 export default memo(() => {
   return (
     <Container fluid>
+      <h1>Кандидаты в депутаты</h1>
       {Object.keys(candidats).map((areaNumber) => {
         const areaCandidats = candidats[areaNumber]
         return (
@@ -15,9 +16,21 @@ export default memo(() => {
             <h3>
               <Link to={`/area/${areaNumber}`}>{areaNumber} округ</Link>
             </h3>
-            <div className='d-flex flex-wrap flex-row'>
+            <Row>
               {areaCandidats.length > 0 ? (
-                areaCandidats.map((candidat) => <Candidat key={candidat.name} {...{ candidat }} />)
+                areaCandidats.map((candidat) => (
+                  <Col
+                    xs={12}
+                    sm={6}
+                    md={4}
+                    lg={3}
+                    xl={2}
+                    key={candidat.name}
+                    className='border-xs-top border-sm-none py-3'
+                  >
+                    <Candidat {...{ candidat }} />
+                  </Col>
+                ))
               ) : (
                 <div>
                   Мы пока не знаем о кандидатах на этот округ. Напишите нам пожалуйста (telegram:{' '}
@@ -27,7 +40,7 @@ export default memo(() => {
                   )
                 </div>
               )}
-            </div>
+            </Row>
           </div>
         )
       })}

@@ -5,10 +5,10 @@ import { Candidat } from '../../types'
 
 export default memo(({ candidat }: Props) => {
   return (
-    <div key={candidat.name} style={{ width: 300 }}>
+    <div key={candidat.name}>
       {candidat.photo && (
         <div>
-          <Image height={200} src={candidat.photo} rounded />
+          <Image width={'100%'} src={candidat.photo} rounded />
         </div>
       )}
 
@@ -23,14 +23,11 @@ export default memo(({ candidat }: Props) => {
       {candidat.project && <div>{candidat.project}</div>}
       {candidat.links && candidat.links.length > 0 && (
         <div>
-          <h6>Ссылки:</h6>
-          <div>
-            {candidat.links.map((link) => (
-              <a key={link.url} href={link.url} className='d-block' rel='noopener noreferrer' target='_blank'>
-                {link.title}
-              </a>
-            ))}
-          </div>
+          {candidat.links.map((link) => (
+            <a key={link.url} href={link.url} className='d-block' rel='noopener noreferrer' target='_blank'>
+              {link.title}
+            </a>
+          ))}
         </div>
       )}
     </div>

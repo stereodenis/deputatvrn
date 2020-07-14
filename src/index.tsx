@@ -27,7 +27,7 @@ ReactDOM.render(
     <BrowserRouter>
       <Navbar bg='light' expand='lg'>
         <Navbar.Brand as={Link} to={'/'}>
-          Депутаты города Воронеж
+          Депутаты Воронежа
         </Navbar.Brand>
         <Navbar.Toggle aria-controls='basic-navbar-nav' />
         <Navbar.Collapse id='basic-navbar-nav'>

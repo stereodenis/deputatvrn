@@ -1,22 +1,28 @@
 import React, { memo } from 'react'
-import { NavLink, Col } from 'react-bootstrap'
+import { Container, Col, Row } from 'react-bootstrap'
 import { Link } from 'react-router-dom'
 
+import candidats from '../../data/candidats'
 import deputats from '../../data/deputats'
 
 export default memo(() => {
   return (
-    <div className='d-flex flex-wrap'>
-      {Object.keys(deputats).map((areaNumber) => {
-        return (
-          <Col xs={12} lg={1} key={areaNumber}>
-            <NavLink as={Link} to={`/area/${areaNumber}`} className='text-center'>
-              <div>{areaNumber}</div>
-              округ
-            </NavLink>
-          </Col>
-        )
-      })}
-    </div>
+    <Container fluid>
+      <Row>
+        {Object.keys(deputats).map((areaNumber) => {
+          const areaCandidates = candidats[areaNumber]
+          const deputat = deputats[areaNumber]
+          return (
+            <Col xs={6} sm={4} md={3} lg={2} xl={2} key={areaNumber} className='border py-3'>
+              <Link to={`/area/${areaNumber}`} className=''>
+                <div className='text-center'>{areaNumber} округ</div>
+                <div>Кандидатов: {areaCandidates.length}</div>
+                <div>Депутат: {deputat.name}</div>
+              </Link>
+            </Col>
+          )
+        })}
+      </Row>
+    </Container>
   )
 })
