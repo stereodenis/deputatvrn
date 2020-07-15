@@ -1,15 +1,16 @@
 import React, { memo } from 'react'
 import { Switch, Route, useRouteMatch } from 'react-router-dom'
 
-import Candidats from '../candidates'
+import Candidates from '../candidatesScreen'
+import Candidate from '../candidateScreen'
 
 export default memo(() => {
   const { path } = useRouteMatch()
 
   return (
     <Switch>
-      <Route exact path={path} component={Candidats} />
-      {/*<Route path={`${path}/:areaNumber`} component={Area} />*/}
+      <Route exact path={path} component={Candidates} />
+      <Route path={`${path}/:candidateAlias`} component={Candidate} />
     </Switch>
   )
 })

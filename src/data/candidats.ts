@@ -19,17 +19,19 @@ import {
   strelnikov,
   yanchich,
 } from '../images/candidates'
-import { Candidat, LinkTitle, Parties, Project } from '../types'
+import { Candidate, LinkTitle, Parties, Project } from '../types'
 
-const candidats: { [s: string]: Candidat[] } = {
+const candidats: { [s: string]: Candidate[] } = {
   1: [
     {
+      alias: 'hatunzev',
       name: 'Станислав Хатунцев',
       photo: noPhoto,
       party: Parties.rodina,
       role: 'временно неработающий',
     },
     {
+      alias: 'birukov',
       name: 'Бирюков Михаил Евгеньевич',
       photo: noPhoto,
       party: Parties.kprf,
@@ -37,6 +39,7 @@ const candidats: { [s: string]: Candidat[] } = {
   ],
   2: [
     {
+      alias: 'kabanov',
       name: 'Леонид Кабанов',
       links: [
         { title: LinkTitle.telegram, url: 'http://t.me/kabanovl' },
@@ -46,6 +49,7 @@ const candidats: { [s: string]: Candidat[] } = {
       project: Project.gorpr,
     },
     {
+      alias: 'proshunin',
       name: 'Прошунин Александр Вячеславович',
       photo: noPhoto,
       party: Parties.kprf,
@@ -53,6 +57,7 @@ const candidats: { [s: string]: Candidat[] } = {
   ],
   3: [
     {
+      alias: 'yanchich',
       name: 'Константин Янчич',
       links: [
         { title: LinkTitle.telegram, url: 'http://t.me/rusnevsmile' },
@@ -63,12 +68,14 @@ const candidats: { [s: string]: Candidat[] } = {
       project: Project.gorpr,
     },
     {
+      alias: 'ryabykh',
       name: 'Александр Рябых',
       photo: noPhoto,
       party: Parties.rodina,
       role: 'коммерческий директор «Мега Авто»',
     },
     {
+      alias: 'verbovaya',
       name: 'Вербовая Елена Петровна',
       photo: noPhoto,
       party: Parties.kprf,
@@ -76,6 +83,7 @@ const candidats: { [s: string]: Candidat[] } = {
   ],
   4: [
     {
+      alias: 'gulin',
       name: 'Антон Гулин',
       photo: gulin,
       project: Project.gorpr,
@@ -90,12 +98,14 @@ const candidats: { [s: string]: Candidat[] } = {
       ],
     },
     {
+      alias: 'semin',
       name: 'Геннадий Семин',
       role: 'временно не работает',
       photo: noPhoto,
       party: Parties.rodina,
     },
     {
+      alias: 'zarezkih',
       name: 'Зарецких Алексей Александрович',
       photo: noPhoto,
       party: Parties.kprf,
@@ -103,6 +113,7 @@ const candidats: { [s: string]: Candidat[] } = {
   ],
   5: [
     {
+      alias: 'losev',
       name: 'Игорь Лосев',
       links: [
         { title: LinkTitle.telegram, url: 'http://t.me/LosevIgor' },
@@ -113,12 +124,14 @@ const candidats: { [s: string]: Candidat[] } = {
       photo: losev,
     },
     {
+      alias: 'batishev',
       name: 'Эдуард Батищев',
       role: 'гендиректор «Аксиос Инвест»',
       photo: noPhoto,
       party: Parties.rodina,
     },
     {
+      alias: 'kovalevskii',
       name: 'Ковалевский Валентин Вячеславович',
       photo: noPhoto,
       party: Parties.kprf,
@@ -126,12 +139,14 @@ const candidats: { [s: string]: Candidat[] } = {
   ],
   6: [
     {
+      alias: 'zaharov',
       name: 'Александр Захаров',
       role: 'предприниматель',
       photo: noPhoto,
       party: Parties.rodina,
     },
     {
+      alias: 'shelyakin',
       name: 'Шелякин Артур Дмитриевич',
       photo: noPhoto,
       party: Parties.kprf,
@@ -139,12 +154,14 @@ const candidats: { [s: string]: Candidat[] } = {
   ],
   7: [
     {
+      alias: 'grachev',
       name: 'Константин Грачев',
       role: 'временно не работает',
       photo: noPhoto,
       party: Parties.rodina,
     },
     {
+      alias: 'kalinin',
       name: 'Калинин Владимир Александрович',
       photo: noPhoto,
       party: Parties.kprf,
@@ -152,12 +169,14 @@ const candidats: { [s: string]: Candidat[] } = {
   ],
   8: [
     {
+      alias: 'krasiv',
       name: 'Александр Красиков',
       role: 'председатель Совета кооператива Социально-экономической взаимопомощи «Развитие»',
       photo: noPhoto,
       party: Parties.rodina,
     },
     {
+      alias: 'zazepin',
       name: 'Зацепин Алексей Александрович',
       photo: noPhoto,
       party: Parties.kprf,
@@ -165,12 +184,14 @@ const candidats: { [s: string]: Candidat[] } = {
   ],
   9: [
     {
+      alias: 'petukhov',
       name: 'Максим Петухов',
       role: 'гендиректор «Евростроя»',
       photo: noPhoto,
       party: Parties.rodina,
     },
     {
+      alias: 'ashurkov',
       name: 'Ашурков Юрий Борисович',
       role: 'временно неработающий',
       photo: noPhoto,
@@ -179,6 +200,7 @@ const candidats: { [s: string]: Candidat[] } = {
         'дата рождения 02 сентября 1965 г. Образование – Высшее профессиональное, адрес места жительства Воронежская обл., г. Воронеж, ул. Серго, д. 26, ',
     },
     {
+      alias: 'korchagin',
       name: 'Корчагин Павел Александрович',
       photo: noPhoto,
       party: Parties.kprf,
@@ -186,6 +208,7 @@ const candidats: { [s: string]: Candidat[] } = {
   ],
   10: [
     {
+      alias: 'ivanishev',
       name: 'Виталий Иванищев',
       links: [{ title: LinkTitle.telegram, url: 'http://t.me/Vitaly_scout' }],
       party: Parties.rodina,
@@ -193,6 +216,7 @@ const candidats: { [s: string]: Candidat[] } = {
       photo: ivanishev,
     },
     {
+      alias: 'kovalev',
       name: 'Ковалев Василий Николаевич',
       photo: noPhoto,
       party: Parties.kprf,
@@ -200,6 +224,7 @@ const candidats: { [s: string]: Candidat[] } = {
   ],
   11: [
     {
+      alias: 'podlesnii',
       name: 'Сергей Подлесный',
       links: [
         { title: LinkTitle.telegram, url: 'http://t.me/AlpacaEne' },
@@ -210,12 +235,14 @@ const candidats: { [s: string]: Candidat[] } = {
       photo: podles,
     },
     {
+      alias: 'filatov',
       name: 'Андрей Филатов',
       role: 'менеджер',
       photo: noPhoto,
       party: Parties.rodina,
     },
     {
+      alias: 'sivoplyasov',
       name: 'Сивоплясов Александр Александрович',
       photo: noPhoto,
       party: Parties.kprf,
@@ -223,18 +250,21 @@ const candidats: { [s: string]: Candidat[] } = {
   ],
   12: [
     {
+      alias: 'karpov',
       name: 'Евгений Карпов',
       photo: karpov,
       links: [{ title: LinkTitle.telegram, url: 'http://t.me/KarpovJack' }],
       role: 'глава штаба Навального в Воронеже',
     },
     {
+      alias: 'kucherin',
       name: 'Павел Кучерин',
       role: 'директор некоммерческой организации дополнительного профессионального образования «ДОН-100»',
       photo: noPhoto,
       party: Parties.rodina,
     },
     {
+      alias: 'krylov',
       name: 'Крылов Андрей Игоревич',
       photo: noPhoto,
       party: Parties.kprf,
@@ -242,11 +272,13 @@ const candidats: { [s: string]: Candidat[] } = {
   ],
   13: [
     {
+      alias: 'borodin',
       name: 'Георгий Бородин',
       links: [{ title: LinkTitle.telegram, url: 'http://t.me/George_Borodin' }],
       photo: borodin,
     },
     {
+      alias: 'chraplak',
       name: 'Игорь Храплак',
       photo: chraplak,
       project: Project.gorpr,
@@ -256,12 +288,14 @@ const candidats: { [s: string]: Candidat[] } = {
       ],
     },
     {
+      alias: 'shvydkii',
       name: 'Владимир Швыдкий',
       role: 'гендиректор «СВС Авто Групп»',
       photo: noPhoto,
       party: Parties.rodina,
     },
     {
+      alias: 'spivakov',
       name: 'Спиваков Максим Васильевич',
       photo: noPhoto,
       party: Parties.kprf,
@@ -269,12 +303,14 @@ const candidats: { [s: string]: Candidat[] } = {
   ],
   14: [
     {
+      alias: 'ofitzerova',
       name: 'Ольга Офицерова',
       role: 'предприниматель',
       photo: noPhoto,
       party: Parties.rodina,
     },
     {
+      alias: 'pomeranzev',
       name: 'Померанцев Андрей Сергеевич',
       photo: noPhoto,
       party: Parties.kprf,
@@ -282,6 +318,7 @@ const candidats: { [s: string]: Candidat[] } = {
   ],
   15: [
     {
+      alias: 'rodionov',
       name: 'Родионов Юрий',
       links: [
         { title: LinkTitle.telegram, url: 'http://t.me/Only_arrogance' },
@@ -293,12 +330,14 @@ const candidats: { [s: string]: Candidat[] } = {
       photo: rodionov,
     },
     {
+      alias: 'ivanov',
       name: 'Антон Иванов',
       role: 'гендиректор «ЮЦ Солидарность»',
       photo: noPhoto,
       party: Parties.rodina,
     },
     {
+      alias: 'kudrevatykh',
       name: 'Кудреватых Вячеслав Анатольевич',
       photo: noPhoto,
       party: Parties.kprf,
@@ -306,12 +345,14 @@ const candidats: { [s: string]: Candidat[] } = {
   ],
   16: [
     {
+      alias: 'kudinova',
       name: 'Татьяна Кудинова',
       role: 'пенсионер',
       photo: noPhoto,
       party: Parties.rodina,
     },
     {
+      alias: 'mushtenko',
       name: 'Муштенко Сергей Владимирович',
       role: 'генеральный директор ООО Центр “Карьера”',
       photo: noPhoto,
@@ -320,6 +361,7 @@ const candidats: { [s: string]: Candidat[] } = {
         'дата рождения 22.03.1961 г., образование – Высшее профессиональное,  места жительства Воронежская обл., г. Воронеж, ул. 3 Интернационала, дом 3, кв. 23. Не является членом РОДП «ЯБЛОКО»',
     },
     {
+      alias: 'ryabov',
       name: 'Рябов Алексей Анатольевич',
       photo: noPhoto,
       party: Parties.kprf,
@@ -327,6 +369,7 @@ const candidats: { [s: string]: Candidat[] } = {
   ],
   17: [
     {
+      alias: 'andreev',
       name: 'Николай Андреев',
       role: 'доцент ВГУ',
       photo: andreev,
@@ -339,6 +382,7 @@ const candidats: { [s: string]: Candidat[] } = {
       ],
     },
     {
+      alias: 'sitnikov',
       name: 'Ситников Максим Михайлович',
       photo: noPhoto,
       party: Parties.kprf,
@@ -346,12 +390,14 @@ const candidats: { [s: string]: Candidat[] } = {
   ],
   18: [
     {
+      alias: 'chekmarev',
       name: 'Артем Чекмарев',
       role: 'заместитель генерального директора по коммерческим вопросам «Завода железобетонных изделий №2»',
       photo: noPhoto,
       party: Parties.rodina,
     },
     {
+      alias: 'gluhovzev',
       name: 'Глуховцев Даниил Сергеевич',
       photo: noPhoto,
       party: Parties.kprf,
@@ -359,6 +405,7 @@ const candidats: { [s: string]: Candidat[] } = {
   ],
   19: [
     {
+      alias: 'kurpek',
       name: 'Алевтина Курпек',
       links: [
         { title: LinkTitle.telegram, url: 'http://t.me/Alya_Kurpek' },
@@ -370,17 +417,20 @@ const candidats: { [s: string]: Candidat[] } = {
       photo: kurpek,
     },
     {
+      alias: 'kornienko',
       name: 'Михаил Корниенко',
       photo: kornienko,
       links: [{ title: LinkTitle.telegram, url: 'http://t.me/kornienkovrn' }],
     },
     {
+      alias: 'ostroushko',
       name: 'Иван Остроушко',
       role: 'травматолог-ортопед «Воронежской областной клинической больницы №1»',
       photo: noPhoto,
       party: Parties.rodina,
     },
     {
+      alias: 'shabunin',
       name: 'Шабунин Александр Николаевич',
       photo: noPhoto,
       party: Parties.kprf,
@@ -388,6 +438,7 @@ const candidats: { [s: string]: Candidat[] } = {
   ],
   20: [
     {
+      alias: 'strelnikov',
       name: 'Стрельников Александр Валерьевич',
       links: [
         { title: LinkTitle.telegram, url: 'http://t.me/aleks_strelnikov' },
@@ -402,6 +453,7 @@ const candidats: { [s: string]: Candidat[] } = {
         'дата рождения,04 июня 2000 г. Образование - среднее, место жительства Воронежская область, город Воронеж, пр-кт Московский, д. 142У, кв.48 . Член РОДП «ЯБЛОКО». Член Регионального Совета РОДП «ЯБЛОКО», Член Федерального Совета РОДП  «ЯБЛОКО»',
     },
     {
+      alias: 'emelyanov',
       name: 'Емельянов Евгений Владимирович',
       photo: noPhoto,
       party: Parties.kprf,
@@ -409,6 +461,7 @@ const candidats: { [s: string]: Candidat[] } = {
   ],
   21: [
     {
+      alias: 'evsukov',
       name: 'Евсюков Илья Анатольевич',
       role:
         'МБУК «Централизованная клубная система» городского округа город Воронеж, заведующий филиалом культурно-досуговый центр «Северный»',
@@ -418,6 +471,7 @@ const candidats: { [s: string]: Candidat[] } = {
         'дата рождения 02 декабря 1976 г., образование – Высшее профессиональное, адрес места жительства, Воронежская область г. Воронеж, ул. Фр. Энгельса, д. 16, кв. 9. Не является членом РОДП «ЯБЛОКО»',
     },
     {
+      alias: 'nikolaev',
       name: 'Николаев Максим Олегович',
       photo: nikolaev,
       project: Project.gorpr,
@@ -427,12 +481,14 @@ const candidats: { [s: string]: Candidat[] } = {
       ],
     },
     {
+      alias: 'yakovez',
       name: 'Елена Яковец',
       role: 'домохозяйка',
       photo: noPhoto,
       party: Parties.rodina,
     },
     {
+      alias: 'kadanzev',
       name: 'Каданцев Михаил Михайлович',
       photo: noPhoto,
       party: Parties.kprf,
@@ -440,6 +496,7 @@ const candidats: { [s: string]: Candidat[] } = {
   ],
   22: [
     {
+      alias: 'sokolov',
       name: 'Александр Соколов',
       photo: sokolov,
       project: Project.gorpr,
@@ -451,12 +508,14 @@ const candidats: { [s: string]: Candidat[] } = {
       ],
     },
     {
+      alias: 'shalygin',
       name: 'Николай Шалыгин',
       role: 'директор ООО «Парсек»',
       photo: noPhoto,
       party: Parties.rodina,
     },
     {
+      alias: 'beylin',
       name: 'Бейлин Илья Феликсович',
       role: 'пенсионер',
       photo: noPhoto,
@@ -465,6 +524,7 @@ const candidats: { [s: string]: Candidat[] } = {
         'дата рождения, 19 февраля 1972 г. Образование – высшее профессиональное, адрес места жительства Воронежская область г. Воронеж, Квартал Жилой массив Олимпийский, д. 4, кв. 273. Не является членом РОДП «ЯБЛОКО»',
     },
     {
+      alias: 'kobylkin',
       name: 'Кобылкин Владислав Васильевич',
       photo: noPhoto,
       party: Parties.kprf,
@@ -472,6 +532,7 @@ const candidats: { [s: string]: Candidat[] } = {
   ],
   23: [
     {
+      alias: 'pyrinov',
       name: 'Пыринов Андрей Игоревич',
       project: Project.gorpr,
       links: [
@@ -485,12 +546,14 @@ const candidats: { [s: string]: Candidat[] } = {
         'дата рождения 06 июня 1990 г. Образование -  Высшее профессиональное, адрес места жительства: Воронежская область, г. Воронеж, Московский проспект, д.48а, кв.31. Член РОДП «ЯБЛОКО»',
     },
     {
+      alias: 'safonov',
       name: 'Сергей Сафонов',
       role: 'начальник цеха АО «Завод железобетонных изделий №2',
       photo: noPhoto,
       party: Parties.rodina,
     },
     {
+      alias: 'zverev',
       name: 'Зверев Николай Николаевич',
       photo: noPhoto,
       party: Parties.kprf,
@@ -498,6 +561,7 @@ const candidats: { [s: string]: Candidat[] } = {
   ],
   24: [
     {
+      alias: 'bazhenov',
       name: 'Сергей Баженов',
       project: Project.gorpr,
       links: [
@@ -510,12 +574,14 @@ const candidats: { [s: string]: Candidat[] } = {
       photo: bazhenov,
     },
     {
+      alias: 'sokolov',
       name: 'Вячеслав Соколов',
       role: 'гендиректор «Ника Моторс»',
       photo: noPhoto,
       party: Parties.rodina,
     },
     {
+      alias: 'bobrov',
       name: 'Бобров Алексанр Валентинович',
       role: 'Президент некоммерческого партнерства «Общественное благополучие Воронежа»',
       photo: noPhoto,
@@ -524,6 +590,7 @@ const candidats: { [s: string]: Candidat[] } = {
         'дата рождения 04 декабря 1965 г., образование – Высшее профессиональное,  место жительства Воронежская обл., г. Воронеж, ул. Карла Маркса, д.94, кв. 22. Не является членом Партии «ЯБЛОКО»',
     },
     {
+      alias: 'roslik',
       name: 'Рослик Денис Викторович',
       photo: noPhoto,
       party: Parties.kprf,

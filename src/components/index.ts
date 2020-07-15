@@ -1,2 +1,2 @@
-export { default as Deputat } from './deputat'
-export { default as Candidat } from './candidat'
+export { default as DeputatCard } from './deputatCard'
+export { default as CandidateCard } from './candidateCard'

@@ -3,7 +3,7 @@ import { Container, Row, Col } from 'react-bootstrap'
 import { Link } from 'react-router-dom'
 
 import candidats from '../../data/candidats'
-import { Candidat } from '../../components'
+import { CandidateCard } from '../../components'
 
 export default memo(() => {
   return (
@@ -18,17 +18,19 @@ export default memo(() => {
             </h3>
             <Row>
               {areaCandidats.length > 0 ? (
-                areaCandidats.map((candidat) => (
+                areaCandidats.map((candidate) => (
                   <Col
                     xs={12}
                     sm={6}
                     md={4}
                     lg={3}
                     xl={2}
-                    key={candidat.name}
+                    key={candidate.name}
                     className='border-xs-top border-sm-none py-3'
                   >
-                    <Candidat {...{ candidat }} />
+                    <Link to={`/candidates/${candidate.alias}`}>
+                      <CandidateCard {...{ candidate }} />
+                    </Link>
                   </Col>
                 ))
               ) : (

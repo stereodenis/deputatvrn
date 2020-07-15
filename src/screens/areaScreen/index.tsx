@@ -1,13 +1,13 @@
 import React, { memo } from 'react'
 import { Container, Col, Row } from 'react-bootstrap'
-import { useParams } from 'react-router-dom'
+import { Link, useParams } from 'react-router-dom'
 // @ts-ignore
 import MetaTags from 'react-meta-tags'
 import { Image } from 'react-bootstrap'
 
 import candidats from '../../data/candidats'
 import deputats from '../../data/deputats'
-import { Deputat, Candidat } from '../../components'
+import { DeputatCard, CandidateCard } from '../../components'
 import areas from '../../data/areas'
 import areasImages from '../../images/areas'
 
@@ -37,17 +37,19 @@ export default memo(() => {
       <div className='py-3'>
         <h2>Список кандидатов в депутаты</h2>
         <Row className='border-bottom'>
-          {areaCandidats.map((candidat) => (
+          {areaCandidats.map((candidate) => (
             <Col
               xs={12}
               sm={6}
               md={4}
               lg={3}
               xl={2}
-              key={candidat.name}
+              key={candidate.name}
               className='border-xs-bottom border-md-none py-3'
             >
-              <Candidat {...{ candidat }} />
+              <Link to={`/candidates/${candidate.alias}`}>
+                <CandidateCard {...{ candidate }} />
+              </Link>
             </Col>
           ))}
         </Row>
@@ -57,14 +59,14 @@ export default memo(() => {
         <h2 className='mt-3'>Текущий депутат</h2>
         <Row>
           <Col xs={12} sm={6} md={4} lg={3} xl={2}>
-            <Deputat {...{ deputat, areaNumber }} />
+            <DeputatCard {...{ deputat, areaNumber }} />
           </Col>
         </Row>
       </div>
 
       <Row className='border-bottom py-3'>
-        <Col xs={12} md={6} className=''>
-          <Image src={areasImages[areaNumber]} style={{ width: '100%' }} />
+        <Col xs={12} md={6}>
+          <Image src={areasImages[areaNumber]} width='100%' />
         </Col>
       </Row>
 

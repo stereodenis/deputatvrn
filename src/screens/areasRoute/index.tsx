@@ -1,8 +1,8 @@
 import React, { memo } from 'react'
 import { Switch, Route, useRouteMatch } from 'react-router-dom'
 
-import AreasList from '../areasList'
-import Area from '../area'
+import AreasList from '../areasScreen'
+import Area from '../areaScreen'
 
 export default memo(() => {
   const { path } = useRouteMatch()

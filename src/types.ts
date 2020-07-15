@@ -6,8 +6,9 @@ export interface Deputat {
   website: string
 }
 
-export interface Candidat {
+export interface Candidate {
   name: string
+  alias: string
   telegram?: string
   role?: string
   party?: Parties
