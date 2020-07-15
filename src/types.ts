@@ -16,6 +16,7 @@ export interface Candidate {
   photo: string
   links?: { title: LinkTitle; url: string }[]
   bio?: string
+  program?: string
 }
 
 export enum Parties {

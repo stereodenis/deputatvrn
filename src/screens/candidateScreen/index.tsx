@@ -46,6 +46,11 @@ export default memo(() => {
             {candidate.party && <div>{candidate.party}</div>}
             {candidate.role && <div>{candidate.role}</div>}
             {candidate.project && <div>{candidate.project}</div>}
+            {Boolean(candidate.program) && (
+              <a href={candidate.program} className='d-block' rel='noopener noreferrer' target='_blank'>
+                Программа
+              </a>
+            )}
             {candidate.links && candidate.links.length > 0 && (
               <div>
                 {candidate.links.map((link) => (
