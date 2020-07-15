@@ -11,6 +11,12 @@ import { DeputatCard, CandidateCard } from '../../components'
 import areas from '../../data/areas'
 import areasImages from '../../images/areas'
 
+function youtube_parser(url: string) {
+  const regExp = /^.*((youtu.be\/)|(v\/)|(\/u\/\w\/)|(embed\/)|(watch\?))\??v?=?([^#&?]*).*/
+  const match = url.match(regExp)
+  return match && match[7].length === 11 ? match[7] : false
+}
+
 export default memo(() => {
   const { areaNumber } = useParams()
   const area = areas[areaNumber]
@@ -62,6 +68,35 @@ export default memo(() => {
             <DeputatCard {...{ deputat, areaNumber }} />
           </Col>
         </Row>
+      </div>
+
+      <div className='border-bottom py-3'>
+        <h2>Видео</h2>
+        <div>
+          {area.videos.map((newsItem) => (
+            <iframe
+              key={newsItem.url}
+              title={newsItem.title}
+              width='560'
+              height='315'
+              src={`https://www.youtube.com/embed/${youtube_parser(newsItem.url)}`}
+              frameBorder='0'
+              allow='accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture'
+              allowFullScreen
+            />
+          ))}
+        </div>
+      </div>
+
+      <div className='border-bottom py-3'>
+        <h2>Упоминания в СМИ</h2>
+        <div>
+          {area.news.map((newsItem) => (
+            <a href={newsItem.url} className='d-block' target='_blank' rel='noopener noreferrer' key={newsItem.url}>
+              {newsItem.title}
+            </a>
+          ))}
+        </div>
       </div>
 
       <Row className='border-bottom py-3'>

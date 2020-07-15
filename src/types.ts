@@ -41,5 +41,7 @@ export enum LinkTitle {
 
 export interface Area {
   people: number
+  news: { title: string; url: string }[]
+  videos: { title: string; url: string }[]
   streets: string[]
 }
