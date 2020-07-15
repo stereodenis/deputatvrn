@@ -18,6 +18,7 @@ import {
   sokolov,
   strelnikov,
   yanchich,
+  beylin,
 } from '../images/candidates'
 import { Candidate, LinkTitle, Parties, Project } from '../types'
 
@@ -524,9 +525,10 @@ const candidats: { [s: string]: Candidate[] } = {
     {
       alias: 'beylin',
       name: 'Бейлин Илья Феликсович',
-      role: 'пенсионер',
-      photo: noPhoto,
+      role: 'Руководитель в Центр Городских инноваций',
+      photo: beylin,
       party: Parties.yabloko,
+      program: 'https://zurga.livejournal.com/342719.html',
       bio:
         'дата рождения, 19 февраля 1972 г. Образование – высшее профессиональное, адрес места жительства Воронежская область г. Воронеж, Квартал Жилой массив Олимпийский, д. 4, кв. 273. Не является членом РОДП «ЯБЛОКО»',
     },
