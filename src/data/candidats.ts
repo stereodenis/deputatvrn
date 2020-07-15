@@ -210,7 +210,14 @@ const candidats: { [s: string]: Candidate[] } = {
     {
       alias: 'ivanishev',
       name: 'Виталий Иванищев',
-      links: [{ title: LinkTitle.telegram, url: 'http://t.me/Vitaly_scout' }],
+      links: [
+        { title: LinkTitle.telegram, url: 'http://t.me/Vitaly_scout' },
+        { title: LinkTitle.facebook, url: 'https://www.facebook.com/ivanishchev' },
+        { title: LinkTitle.vk, url: 'https://vk.com/id206447045' },
+        { title: LinkTitle.instagram, url: 'https://www.instagram.com/vitaly_scout/' },
+        { title: LinkTitle.twitter, url: 'https://twitter.com/vitaly_scout/' },
+        { title: LinkTitle.lj, url: 'https://vitaly1987.livejournal.com//' },
+      ],
       party: Parties.rodina,
       project: Project.git,
       photo: ivanishev,

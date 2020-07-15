@@ -36,6 +36,8 @@ export enum LinkTitle {
   facebook = 'Фейсбук',
   vk = 'Вконтакте',
   instagram = 'Инстаграм',
+  twitter = 'Твиттер',
+  lj = 'ЖЖ',
   gorprojects = 'Страница на сайте "Городских проектов"',
 }
 
