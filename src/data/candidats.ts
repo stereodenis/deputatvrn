@@ -572,7 +572,6 @@ const candidats: { [s: string]: Candidate[] } = {
     {
       alias: 'bazhenov',
       name: 'Сергей Баженов',
-      project: Project.gorpr,
       links: [
         { title: LinkTitle.telegram, url: 'http://t.me/md_bazhenov' },
         { title: LinkTitle.facebook, url: 'http://facebook.com/mdbazhenov' },
