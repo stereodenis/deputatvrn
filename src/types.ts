@@ -9,7 +9,6 @@ export interface Deputat {
 export interface Candidate {
   name: string
   alias: string
-  telegram?: string
   role?: string
   party?: Parties
   project?: Project

@@ -1,6 +1,7 @@
 import {
   andreev,
   bazhenov,
+  beylin,
   borodin,
   chraplak,
   gulin,
@@ -18,7 +19,6 @@ import {
   sokolov,
   strelnikov,
   yanchich,
-  beylin,
 } from '../images/candidates'
 import { Candidate, LinkTitle, Parties, Project } from '../types'
 
@@ -428,7 +428,13 @@ const candidats: { [s: string]: Candidate[] } = {
       alias: 'kornienko',
       name: 'Михаил Корниенко',
       photo: kornienko,
-      links: [{ title: LinkTitle.telegram, url: 'http://t.me/kornienkovrn' }],
+      role: 'Юрист в сфере Госзакупок',
+      links: [
+        { title: LinkTitle.telegram, url: 'http://t.me/kornienko_vrn' },
+        { title: LinkTitle.instagram, url: 'https://instagram.com/kornienko_vrn' },
+        { title: LinkTitle.vk, url: 'https://vk.com/kornienko_vrn' },
+      ],
+      // problems: 'https://docs.google.com/document/d/1o-Wi4iRgiXeWcyiDIH4P-lgpK0Q0K-33A94_fce6Ig8/edit?usp=drivesdk'
     },
     {
       alias: 'ostroushko',
