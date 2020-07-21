@@ -508,6 +508,10 @@ const candidats: { [s: string]: Candidate[] } = {
       role: 'домохозяйка',
       photo: yakovez,
       party: Parties.rodina,
+      links: [
+        { title: LinkTitle.facebook, url: 'https://www.facebook.com/elena.yakovec' },
+        { title: LinkTitle.vk, url: 'https://vk.com/elena.yakovec' },
+      ],
     },
     {
       alias: 'kadanzev',
