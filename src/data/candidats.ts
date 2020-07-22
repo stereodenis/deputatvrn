@@ -522,7 +522,7 @@ const candidats: { [s: string]: Candidate[] } = {
   ],
   22: [
     {
-      alias: 'sokolov',
+      alias: 'sokolov_a',
       name: 'Александр Соколов',
       photo: sokolov,
       project: Project.gorpr,
@@ -600,7 +600,7 @@ const candidats: { [s: string]: Candidate[] } = {
       photo: bazhenov,
     },
     {
-      alias: 'sokolov',
+      alias: 'sokolov_v',
       name: 'Вячеслав Соколов',
       role: 'гендиректор «Ника Моторс»',
       photo: noPhoto,
