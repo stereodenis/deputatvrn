@@ -624,9 +624,12 @@ const candidats: { [s: string]: Candidate[] } = {
     },
     {
       alias: 'krivonosov',
-      name: 'Кривоносов Дмитрий',
+      name: 'Кривоносов Дмитрий Сергеевич',
       photo: krivonosov,
-      links: [{ title: LinkTitle.vk, url: 'https://vk.com/id12192546' }],
+      links: [
+        { title: LinkTitle.vk, url: 'https://vk.com/id12192546' },
+        { title: LinkTitle.whatsapp, url: 'https://wa.me/79192451919' },
+      ],
     },
   ],
 }

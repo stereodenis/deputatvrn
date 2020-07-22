@@ -54,7 +54,9 @@ export default memo(() => {
         </Col>
       </Row>
 
-      <h2>Другие кандидаты {areaNumber} округа</h2>
+      <h2>
+        Другие кандидаты <Link to={`/area/${areaNumber}`}>{areaNumber} округа</Link>
+      </h2>
       <Row>
         {areaNumber &&
           candidats[areaNumber]
