@@ -9,6 +9,7 @@ import {
   kabanov,
   karpov,
   kornienko,
+  krivonosov,
   kurpek,
   losev,
   nikolaev,
@@ -16,7 +17,7 @@ import {
   podles,
   pyrinov,
   rodionov,
-  sokolov,
+  sokolovA,
   strelnikov,
   yakovez,
   yanchich,
@@ -524,7 +525,7 @@ const candidats: { [s: string]: Candidate[] } = {
     {
       alias: 'sokolov_a',
       name: 'Александр Соколов',
-      photo: sokolov,
+      photo: sokolovA,
       project: Project.gorpr,
       links: [
         { title: LinkTitle.telegram, url: 'http://t.me/AllexanderSokollov' },
@@ -620,6 +621,12 @@ const candidats: { [s: string]: Candidate[] } = {
       name: 'Рослик Денис Викторович',
       photo: noPhoto,
       party: Parties.kprf,
+    },
+    {
+      alias: 'krivonosov',
+      name: 'Кривоносов Дмитрий',
+      photo: krivonosov,
+      links: [{ title: LinkTitle.vk, url: 'https://vk.com/id12192546' }],
     },
   ],
 }
