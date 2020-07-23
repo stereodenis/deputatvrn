@@ -1,6 +1,7 @@
 import React, { memo } from 'react'
 import { Container, Row, Col } from 'react-bootstrap'
 import { Link } from 'react-router-dom'
+import { shuffle } from 'lodash'
 
 import candidats from '../../data/candidats'
 import { CandidateCard } from '../../components'
@@ -18,7 +19,7 @@ export default memo(() => {
             </h3>
             <Row>
               {areaCandidats.length > 0 ? (
-                areaCandidats.map((candidate) => (
+                shuffle(areaCandidats).map((candidate) => (
                   <Col
                     xs={12}
                     sm={6}

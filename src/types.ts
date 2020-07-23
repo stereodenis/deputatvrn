@@ -17,13 +17,15 @@ export interface Candidate {
   bio?: string
   program?: string
   problems?: string[]
+  message?: string
 }
 
 export enum Parties {
-  rodina = 'Партия "Родина"',
-  yabloko = 'Партия "Яблоко"',
+  rodina = 'Родина',
+  yabloko = 'Яблоко',
   lpr = 'Либертарианская партия России',
   kprf = 'КПРФ',
+  newPeople = 'Новые Люди',
 }
 
 export enum Project {

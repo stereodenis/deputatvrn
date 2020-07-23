@@ -32,9 +32,6 @@ export default memo(() => {
           <div>
             {candidate.photo && <Image width='100%' src={candidate.photo} rounded />}
 
-            <div>{candidate.name}</div>
-            {candidate.party && <div>{candidate.party}</div>}
-            {candidate.role && <div>{candidate.role}</div>}
             {candidate.project && <div>{candidate.project}</div>}
             {Boolean(candidate.program) && (
               <a href={candidate.program} className='d-block' rel='noopener noreferrer' target='_blank'>
@@ -51,6 +48,22 @@ export default memo(() => {
               </div>
             )}
           </div>
+        </Col>
+        <Col className='py-3'>
+          <h1>{candidate.name}</h1>
+          {candidate.party && <div>{candidate.party}</div>}
+          {candidate.role && <div>{candidate.role}</div>}
+          {Boolean(candidate.bio) && (
+            <div>
+              <h5>Биография</h5>
+              <p>{candidate.bio}</p>
+            </div>
+          )}
+          {Boolean(candidate.message) && (
+            <div>
+              <p>«{candidate.message}»</p>
+            </div>
+          )}
         </Col>
       </Row>
 
