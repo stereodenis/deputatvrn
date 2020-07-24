@@ -10,20 +10,26 @@ import { CandidateCard } from '../../components'
 
 export default memo(() => {
   const { partyAlias } = useParams<{ partyAlias: keyof typeof Parties }>()
+  // @ts-ignore
+  const isNoParty = partyAlias === 'noParty'
+  const title = isNoParty ? 'Самовыдвиженцы' : `Партия «${Parties[partyAlias]}»`
 
-  const areaCandidats = useMemo(() => candidats.filter((c) => c.party === Parties[partyAlias]), [partyAlias])
+  const areaCandidats = useMemo(
+    () => candidats.filter((c) => (isNoParty ? !c.party : c.party === Parties[partyAlias])),
+    [partyAlias, isNoParty]
+  )
 
   return (
     <Container fluid>
       <MetaTags>
-        <title>Партия «{Parties[partyAlias]}»</title>
-        <meta name='description' content={`Кандидаты в депутаты от партии ${Parties[partyAlias]}`} />
-        <meta property='og:title' content={'Партия «{Parties[partyAlias]}»'} />
+        <title>{title}</title>
+        <meta name='description' content={`Кандидаты в депутаты от ${Parties[partyAlias]}`} />
+        <meta property='og:title' content={title} />
         {/*<meta property='og:image' content={areasImages[areaNumber]} />*/}
       </MetaTags>
 
       <div className='border-bottom pb-2 text-center'>
-        <h1>Партия «{Parties[partyAlias]}»</h1>
+        <h1>{title}</h1>
       </div>
 
       <div className='py-3'>

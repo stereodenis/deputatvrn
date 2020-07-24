@@ -7,10 +7,19 @@ import candidats from '../../data/candidats'
 import { Parties } from '../../types'
 
 export default memo(() => {
+  const noPartyCandidates = candidats.filter((c) => !c.party)
+
   return (
     <Container fluid>
       <h1>Партии</h1>
       <Row>
+        <Col xs={6} sm={4} md={3} lg={2} className='border py-3'>
+          <Link to={'/parties/noParty'}>
+            <div className='text-center'>Самовыдвиженцы</div>
+            <div>Кандидатов: {noPartyCandidates.length}</div>
+          </Link>
+        </Col>
+
         {shuffle(Object.keys(Parties) as Array<keyof typeof Parties>).map((partyAlias) => {
           const partyCandidates = candidats.filter((c) => c.party === Parties[partyAlias])
 

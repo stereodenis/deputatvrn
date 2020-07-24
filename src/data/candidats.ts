@@ -4,6 +4,13 @@ import { Candidate, LinkTitle, Parties, Project } from '../types'
 const candidats: Candidate[] = [
   {
     areaNumber: 1,
+    alias: 'panov_egor',
+    name: 'Панов Егор Львович',
+    role: 'временно не работающий',
+    photo: photos.panovEgor,
+  },
+  {
+    areaNumber: 1,
     alias: 'hatunzev',
     name: 'Станислав Хатунцев',
     photo: photos.noPhoto,
@@ -21,12 +28,16 @@ const candidats: Candidate[] = [
     areaNumber: 2,
     alias: 'kabanov',
     name: 'Леонид Кабанов',
+    role: '28 лет. Акционерное общество «Концерн «Созвездие», старший инженер',
     links: [
       { title: LinkTitle.telegram, url: 'http://t.me/kabanovl' },
       { title: LinkTitle.vk, url: 'https://vk.com/kabanovl' },
+      { title: LinkTitle.gorprojects, url: 'https://go.city4people.ru/fundraising/personal/212' },
     ],
     photo: photos.kabanov,
     project: Project.gorpr,
+    message:
+      'Меня зовут Леонид и я не политик. Я инженер и программист, и вот уже много лет жду когда в городе появятся велодорожки, которые нам обещают, когда вместо газелей поедут низкопольные трамваи. Но ничего не происходит и пора это изменить. Моя задача — расшевелить инертную систему и заставить её строить удобный безопасный и современный город.',
   },
   {
     areaNumber: 2,
@@ -91,15 +102,10 @@ const candidats: Candidate[] = [
     alias: 'gulin',
     name: 'Антон Гулин',
     photo: photos.gulin,
-    project: Project.gorpr,
     links: [
       { title: LinkTitle.telegram, url: 'http://t.me/digitalpartisan' },
       { title: LinkTitle.facebook, url: 'https://www.facebook.com/viaestvita' },
       { title: LinkTitle.vk, url: 'https://vk.com/digitalpartisan' },
-      {
-        title: LinkTitle.gorprojects,
-        url: 'https://go.city4people.ru/fundraising/personal/503',
-      },
     ],
   },
   {
@@ -134,13 +140,17 @@ const candidats: Candidate[] = [
     areaNumber: 5,
     alias: 'losev',
     name: 'Игорь Лосев',
+    role: '31 год',
     links: [
       { title: LinkTitle.telegram, url: 'http://t.me/LosevIgor' },
       { title: LinkTitle.vk, url: 'https://vk.com/losevigor' },
       { title: LinkTitle.instagram, url: 'https://www.instagram.com/super_losev' },
+      { title: LinkTitle.gorprojects, url: 'https://go.city4people.ru/fundraising/personal/248' },
     ],
     project: Project.gorpr,
     photo: photos.losev,
+    message:
+      'Моя мечта — удобный город, с безбарьерной средой, без грязи и заброшенных территорий. Город, в котором видно внимание ко всем его деталям. До выдвижения в городскую Думу я писал обращения в администрацию на обустройство пандусами бордюров, асфальтирование разрушенных участков тротуаров, уборку мусора вокруг контейнеров, расширения тротуаров. Многое получалось, надеюсь получится еще больше!',
   },
   {
     areaNumber: 5,
@@ -319,13 +329,18 @@ const candidats: Candidate[] = [
     areaNumber: 11,
     alias: 'podlesnii',
     name: 'Сергей Подлесный',
+    role:
+      '22 года. руководитель направления практических исследований в Воронеже, Фонд содействия развитию городов «Городские Проекты Ильи Варламова и Максима Каца»',
     links: [
       { title: LinkTitle.telegram, url: 'http://t.me/AlpacaEne' },
       { title: LinkTitle.vk, url: 'https://vk.com/alpacaene' },
       { title: LinkTitle.instagram, url: 'https://www.instagram.com/aoipaca' },
+      { title: LinkTitle.gorprojects, url: 'https://go.city4people.ru/fundraising/personal/14' },
     ],
     project: Project.gorpr,
     photo: photos.podles,
+    message:
+      'Я активный велосипедист и пешеход. Мне не нравится, что наш город вместо хороших условий для людей предоставляет им только препятствия. Я хочу сделать Воронеж удобнее и безопаснее для пешеходов, доступнее для маломобильных граждан. Это далеко не все, что можно сделать лучше. Для этого я выдвигаюсь в Воронежскую городскую думу. Сейчас мне нужны средства на сбор подписей.',
   },
   {
     areaNumber: 11,
@@ -407,12 +422,16 @@ const candidats: Candidate[] = [
     areaNumber: 13,
     alias: 'chraplak',
     name: 'Игорь Храплак',
+    role: '26 лет. Менеджер IT-проектов, Общество с ограниченной ответственностью "Эд Вест"',
     photo: photos.chraplak,
     project: Project.gorpr,
     links: [
       { title: LinkTitle.telegram, url: 'http://t.me/igorchraplak' },
       { title: LinkTitle.instagram, url: 'https://instagram.com/igorchraplak' },
+      { title: LinkTitle.gorprojects, url: 'https://go.city4people.ru/fundraising/personal/425' },
     ],
+    message:
+      'Я Игорь и я хочу стать не просто депутатом, а голосом людей, которые живут со мной в одном районе. Моя цель — это удобное и красивое благоустройство дворов, качественные дороги и тротуары, а также современные и чистые места сбора мусора. Моя мечта — сделать так, чтобы люди чувствовали, что их дом не заканчивается за дверью квартиры или дома.',
   },
   {
     areaNumber: 13,
@@ -603,14 +622,18 @@ const candidats: Candidate[] = [
     areaNumber: 19,
     alias: 'kurpek',
     name: 'Алевтина Курпек',
+    role: '24 года. Индивидуальный предприниматель Коваленко Андрей Владимирович, Руководитель отдела маркетинга',
     links: [
       { title: LinkTitle.telegram, url: 'http://t.me/Alya_Kurpek' },
       { title: LinkTitle.facebook, url: 'https://www.facebook.com/profile.php?id=100035366483123' },
       { title: LinkTitle.vk, url: 'https://vk.com/skogoreva_alya' },
       { title: LinkTitle.instagram, url: 'https://www.instagram.com/alya_kurpek/' },
+      { title: LinkTitle.gorprojects, url: 'https://go.city4people.ru/fundraising/personal/277' },
     ],
     project: Project.gorpr,
     photo: photos.kurpek,
+    message:
+      'Всем сердцем люблю город Воронеж. Здесь я родилась, ходила в школу, закончила университет, работаю. Не воспринимаю себя отдельно от Воронежа, он часть меня. Имею большой опыт правозащитной деятельности и реализации социальных проектов. Я выдвигаюсь в депутаты потому, что хочу сделать наш город безопасным и комфортным для всех групп населения, нам просто необходимо сократить смертность на наших дорогах.',
   },
   {
     areaNumber: 19,
@@ -661,11 +684,12 @@ const candidats: Candidate[] = [
       { title: LinkTitle.telegram, url: 'http://t.me/aleks_strelnikov' },
       { title: LinkTitle.vk, url: 'https://vk.com/aleksandr_strelnikow' },
       { title: LinkTitle.instagram, url: 'https://www.instagram.com/strelnikov_aleks/' },
+      { title: LinkTitle.gorprojects, url: 'https://go.city4people.ru/fundraising/personal/142' },
     ],
     project: Project.gorpr,
     party: Parties.yabloko,
     photo: photos.strelnikov,
-    role: 'студент юридического факультета ВГУ',
+    role: '20 лет, студент юридического факультета ВГУ',
     problems: [
       '1) Ужасные дороги во дворах. Дворы на Невского и Мордасовой все в ямах, буквально нет одного целого',
       '2) Старые тратуары и бордюры, отсутствие пешеходных дорожек, как следствие-протоптанные тропинки',
@@ -675,6 +699,8 @@ const candidats: Candidate[] = [
     ],
     bio:
       'дата рождения,04 июня 2000 г. Образование - среднее, Член РОДП «ЯБЛОКО». Член Регионального Совета РОДП «ЯБЛОКО», Член Федерального Совета РОДП  «ЯБЛОКО»',
+    message:
+      'Я студент Юридического факультета ВГУ, сейчас учусь на втором курсе. Хочу стать депутатом, чтобы представлять интересы людей в парламенте, нести альтернативу проводящейся государственной политике. Хочу, чтобы Воронеж стал приятным городом, не только в центре и на Динамо, но и в спальных районах. Буду держать постоянный контакт с избирателями, делать политику открытой, без каких-то ширм и притворства.',
     // other: 'место жительства Воронежская область, город Воронеж, пр-кт Московский, д. 142У, кв.48 .',
   },
   {
@@ -717,7 +743,11 @@ const candidats: Candidate[] = [
     links: [
       { title: LinkTitle.telegram, url: 'https://t.me/Nikolaev_Maxim' },
       { title: LinkTitle.vk, url: 'https://vk.com/id6263910' },
+      { title: LinkTitle.gorprojects, url: 'https://go.city4people.ru/fundraising/personal/412' },
     ],
+    role: '27 лет. инженер, Общество с ограниченной ответственностью «Воронежское конструкторское бюро средств связи»',
+    message:
+      'Родился и вырос в Воронеже, являюсь выпускником международного института компьютерных технологий, занимаюсь разработкой игр на мобильные устройства. Всегда интересовался общественной жизнью города, служил в армии, демобилизован в звании младшего сержанта. Для меня депутатство - это попытка сделать шаг в сторону политики, работающей в интересах избирателей.',
   },
   {
     areaNumber: 21,
@@ -743,6 +773,7 @@ const candidats: Candidate[] = [
     areaNumber: 22,
     alias: 'sokolov_a',
     name: 'Александр Соколов',
+    role: '19 лет. Студент',
     photo: photos.sokolovA,
     project: Project.gorpr,
     links: [
@@ -750,7 +781,10 @@ const candidats: Candidate[] = [
       { title: LinkTitle.facebook, url: 'https://www.facebook.com/allexandersokolov' },
       { title: LinkTitle.vk, url: 'https://vk.com/allexmarkkula' },
       { title: LinkTitle.instagram, url: 'https://www.instagram.com/a.sokolov_vrn/' },
+      { title: LinkTitle.gorprojects, url: 'https://go.city4people.ru/fundraising/personal/15' },
     ],
+    message:
+      'Я студент Воронежского государственного университета. Иду в городскую думу, чтобы решить проблему с общественным транспортом. Сейчас большая часть транспорта — это пазики и маршрутки. А из-за пробок одна остановка может занимать 40 минут. Нужно сделать выделенные линии для общественного транспорта. Моя главная мечта это вернуть в город трамвай, но, конечно же, не в старом виде. Нужны современные, комфортные и тихие трамваи.',
   },
   {
     areaNumber: 22,
@@ -783,15 +817,18 @@ const candidats: Candidate[] = [
     areaNumber: 23,
     alias: 'pyrinov',
     name: 'Пыринов Андрей Игоревич',
+    role: '30 лет. генеральный директор, Общество с ограниченной ответственностью "Нигилист"',
     project: Project.gorpr,
     links: [
       { title: LinkTitle.telegram, url: 'http://t.me/andreypyrinov' },
       { title: LinkTitle.vk, url: 'https://vk.com/andreypyrinov' },
+      { title: LinkTitle.gorprojects, url: 'https://go.city4people.ru/fundraising/personal/196' },
     ],
     party: Parties.yabloko,
     photo: photos.pyrinov,
-    role: 'ООО «Нигилист», генеральный директор',
     bio: 'дата рождения 06 июня 1990 г. Образование -  Высшее профессиональное. Член РОДП «ЯБЛОКО»',
+    message:
+      'В 2012 году закончил Строительный университет, по специальности инженер. Работал арт-директором самых значимых event и общепит-площадок Воронежа. Два года назад открыл протестный бар «Нигилист» и занимаюсь его развитием. Поддерживаю локальную музыкальную сцену и стремлюсь создать в городе комфортные условия для проживания людям, чьи вкусы и интересы выходят за рамки массовой культуры. Мне нужны средства на сбор подписей, поддержите меня.',
     // other: 'адрес места жительства: Воронежская область, г. Воронеж, Московский проспект, д.48а, кв.31.'
   },
   {

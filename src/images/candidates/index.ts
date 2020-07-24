@@ -20,6 +20,7 @@ export { default as karpov } from './karpov.jpg'
 export { default as beylin } from './beylin.jpg'
 export { default as yakovez } from './yakovez.jpg'
 export { default as krivonosov } from './krivonosov.jpg'
+export { default as panovEgor } from './panov_egor.jpg'
 
 export { default as altukhova_yuliya } from './new_people/altukhova_yuliya.jpg'
 export { default as anferov } from './new_people/anferov.jpg'
