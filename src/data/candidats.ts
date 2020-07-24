@@ -30,7 +30,7 @@ const candidats: Candidate[] = [
   },
   {
     areaNumber: 1,
-    alias: 'hodyrebv',
+    alias: 'hodyrev_vladimir',
     name: 'Ходырев Владимир Фёдорович',
     photo: 'http://gorduma-voronezh.ru/wp-content/uploads/2019/05/hodyrev_vf.jpg',
     party: Parties.er,
