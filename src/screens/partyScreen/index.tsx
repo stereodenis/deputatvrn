@@ -46,8 +46,13 @@ export default memo(() => {
               className='border-xs-bottom border-md-none py-3'
             >
               <Link to={`/candidates/${candidate.alias}`}>
-                <CandidateCard {...{ candidate }} />
+                <CandidateCard {...{ candidate }} withParty={false} />
               </Link>
+              <div>
+                <i>
+                  <Link to={`/areas/${candidate.areaNumber}`}>Округ {candidate.areaNumber}</Link>
+                </i>
+              </div>
             </Col>
           ))}
         </Row>
