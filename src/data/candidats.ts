@@ -8,6 +8,11 @@ const candidats: Candidate[] = [
     name: 'Панов Егор Львович',
     role: 'временно не работающий',
     photo: photos.panovEgor,
+    links: [
+      { title: LinkTitle.facebook, url: 'https://www.facebook.com/je.l.panov/' },
+      { title: LinkTitle.vk, url: 'https://vk.com/jegor.panov' },
+      { title: LinkTitle.telegram, url: 'https://t.me/Atheist120' },
+    ],
   },
   {
     areaNumber: 1,
