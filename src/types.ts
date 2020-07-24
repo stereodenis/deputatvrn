@@ -7,6 +7,7 @@ export interface Deputat {
 }
 
 export interface Candidate {
+  areaNumber: number
   name: string
   alias: string
   role?: string
@@ -43,6 +44,7 @@ export enum LinkTitle {
   lj = 'ЖЖ',
   gorprojects = 'Страница на сайте "Городских проектов"',
   whatsapp = 'WhatsApp',
+  website = 'Вебсайт',
 }
 
 export interface Area {

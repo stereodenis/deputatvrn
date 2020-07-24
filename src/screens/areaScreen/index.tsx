@@ -1,4 +1,4 @@
-import React, { memo } from 'react'
+import React, { memo, useMemo } from 'react'
 import { Container, Col, Row } from 'react-bootstrap'
 import { Link, useParams } from 'react-router-dom'
 // @ts-ignore
@@ -21,7 +21,7 @@ export default memo(() => {
   const { areaNumber } = useParams()
   const area = areas[areaNumber]
   const deputat = deputats[areaNumber]
-  const areaCandidats = candidats[areaNumber]
+  const areaCandidats = useMemo(() => candidats.filter((c) => c.areaNumber === Number(areaNumber)), [areaNumber])
 
   return (
     <Container fluid>

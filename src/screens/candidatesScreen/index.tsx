@@ -1,7 +1,7 @@
 import React, { memo } from 'react'
 import { Container, Row, Col } from 'react-bootstrap'
 import { Link } from 'react-router-dom'
-import { shuffle } from 'lodash'
+import { shuffle, groupBy } from 'lodash'
 
 import candidats from '../../data/candidats'
 import { CandidateCard } from '../../components'
@@ -10,8 +10,8 @@ export default memo(() => {
   return (
     <Container fluid>
       <h1>Кандидаты в депутаты</h1>
-      {Object.keys(candidats).map((areaNumber) => {
-        const areaCandidats = candidats[areaNumber]
+      {Object.keys(groupBy(candidats, 'areaNumber')).map((areaNumber) => {
+        const areaCandidats = candidats.filter((c) => c.areaNumber === Number(areaNumber))
         return (
           <div key={areaNumber} className='border-bottom py-3'>
             <h3>

@@ -10,8 +10,6 @@ export default memo(({ candidate }: Props) => {
 
       <div>{candidate.name}</div>
       {candidate.party && <div>{candidate.party}</div>}
-      {candidate.role && <div>{candidate.role}</div>}
-      {candidate.project && <div>{candidate.project}</div>}
     </div>
   )
 })

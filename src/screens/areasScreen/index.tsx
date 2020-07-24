@@ -12,7 +12,7 @@ export default memo(() => {
       <Row>
         {Object.keys(deputats).map((areaNumber) => {
           const area = areas[areaNumber]
-          const areaCandidates = candidats[areaNumber]
+          const areaCandidates = candidats.filter((c) => c.areaNumber === Number(areaNumber))
           const deputat = deputats[areaNumber]
           return (
             <Col xs={6} sm={4} md={3} lg={2} xl={2} key={areaNumber} className='border py-3'>
