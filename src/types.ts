@@ -27,6 +27,7 @@ export enum Parties {
   lpr = 'Либертарианская партия России',
   kprf = 'КПРФ',
   newPeople = 'Новые Люди',
+  er = 'Единая Россия',
 }
 
 export enum Project {
