@@ -11,7 +11,6 @@ const candidats: Candidate[] = [
     links: [
       { title: LinkTitle.facebook, url: 'https://www.facebook.com/je.l.panov/' },
       { title: LinkTitle.vk, url: 'https://vk.com/jegor.panov' },
-      { title: LinkTitle.telegram, url: 'https://t.me/Atheist120' },
     ],
   },
   {
