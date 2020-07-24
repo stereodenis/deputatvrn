@@ -50,7 +50,7 @@ export default memo(() => {
               </Link>
               <div>
                 <i>
-                  <Link to={`/areas/${candidate.areaNumber}`}>Округ {candidate.areaNumber}</Link>
+                  <Link to={`/area/${candidate.areaNumber}`}>Округ {candidate.areaNumber}</Link>
                 </i>
               </div>
             </Col>
