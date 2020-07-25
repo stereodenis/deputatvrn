@@ -22,6 +22,8 @@ export { default as yakovez } from './yakovez.jpg'
 export { default as krivonosov } from './krivonosov.jpg'
 export { default as panovEgor } from './panov_egor.jpg'
 
+export { default as solomatina_elena } from './solomatina_elena.jpg'
+
 export { default as altukhova_yuliya } from './new_people/altukhova_yuliya.jpg'
 export { default as anferov } from './new_people/anferov.jpg'
 export { default as bespalova_diana } from './new_people/bespalova_diana.jpg'

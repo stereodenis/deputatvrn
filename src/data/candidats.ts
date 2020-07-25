@@ -586,7 +586,7 @@ const candidats: Candidate[] = [
     areaNumber: 14,
     alias: 'solomatina',
     name: 'Соломатина Елена Дмитриевна',
-    photo: photos.noPhoto,
+    photo: photos.solomatina_elena,
     party: Parties.er,
   },
 
@@ -862,7 +862,7 @@ const candidats: Candidate[] = [
     areaNumber: 20,
     alias: 'krutskikh',
     name: 'Крутских Дмитрий Борисович',
-    photo: photos.noPhoto,
+    photo: 'http://gorduma-voronezh.ru/wp-content/uploads/2019/05/krutskih_db.jpg',
     party: Parties.er,
   },
 
