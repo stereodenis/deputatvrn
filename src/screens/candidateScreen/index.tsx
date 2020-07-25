@@ -64,7 +64,7 @@ export default memo(() => {
       </h2>
       <Row>
         {candidats
-          .filter((c) => c.areaNumber === Number(candidate.areaNumber))
+          .filter((c) => c.areaNumber === Number(candidate.areaNumber) && c.alias !== candidateAlias)
           .map((areaCandidate) => (
             <Col
               xs={12}
@@ -76,7 +76,7 @@ export default memo(() => {
               className='border-xs-top border-sm-none py-3'
             >
               <Link to={`/candidates/${areaCandidate.alias}`}>
-                <CandidateCard {...{ candidate: areaCandidate }} />
+                <CandidateCard {...{ candidate: areaCandidate }} withParty />
               </Link>
             </Col>
           ))}

@@ -9,7 +9,7 @@ export default memo(({ candidate, withParty }: Props) => {
       {candidate.photo && <Image width='100%' src={candidate.photo} rounded />}
 
       <div>{candidate.name}</div>
-      {(withParty ?? true) && (
+      {withParty && (
         <div>
           <i>{candidate.party || 'Самовыдвиженец'}</i>
         </div>
