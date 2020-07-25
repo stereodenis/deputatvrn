@@ -48,6 +48,11 @@ export default memo(() => {
               <Link to={`/candidates/${candidate.alias}`}>
                 <CandidateCard {...{ candidate }} />
               </Link>
+              <div>
+                <i>
+                  <Link to={`/area/${candidate.areaNumber}`}>Округ {candidate.areaNumber}</Link>
+                </i>
+              </div>
             </Col>
           ))}
         </Row>
