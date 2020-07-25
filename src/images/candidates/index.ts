@@ -23,6 +23,9 @@ export { default as krivonosov } from './krivonosov.jpg'
 export { default as panovEgor } from './panov_egor.jpg'
 
 export { default as solomatina_elena } from './solomatina_elena.jpg'
+export { default as avdeev_sergey } from './avdeev_sergey.jpg'
+export { default as rusakov_vladimir } from './rusakov_vladimir.jpg'
+export { default as chufinev_aleksandr } from './chufinev_aleksandr.jpg'
 
 export { default as altukhova_yuliya } from './new_people/altukhova_yuliya.jpg'
 export { default as anferov } from './new_people/anferov.jpg'
