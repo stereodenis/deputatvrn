@@ -24,10 +24,10 @@ export interface Candidate {
 export enum Parties {
   rodina = 'Родина',
   yabloko = 'Яблоко',
-  lpr = 'Либертарианская партия России',
   kprf = 'КПРФ',
   newPeople = 'Новые Люди',
   er = 'Единая Россия',
+  sr = 'Справедливая Россия',
 }
 
 export enum Project {

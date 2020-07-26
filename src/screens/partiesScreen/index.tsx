@@ -23,6 +23,10 @@ export default memo(() => {
         {shuffle(Object.keys(Parties) as Array<keyof typeof Parties>).map((partyAlias) => {
           const partyCandidates = candidats.filter((c) => c.party === Parties[partyAlias])
 
+          if (!partyCandidates.length) {
+            return null
+          }
+
           return (
             <Col xs={6} sm={4} md={3} lg={2} key={partyAlias} className='border py-3'>
               <Link to={`/parties/${partyAlias}`}>

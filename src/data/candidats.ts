@@ -1034,7 +1034,6 @@ const candidats: Candidate[] = [
       { title: LinkTitle.vk, url: 'http://vk.com/md_bazhenov' },
       { title: LinkTitle.instagram, url: 'http://instagram.com/md_bazhenov' },
     ],
-    party: Parties.lpr,
     role: 'глава реготделения Либертарианской партии России',
     photo: photos.bazhenov,
   },
