@@ -73,7 +73,7 @@ const candidats: Candidate[] = [
     areaNumber: 2,
     alias: 'shvetsov',
     name: 'Швецов Дмитрий Сергеевич',
-    photo: photos.noPhoto,
+    photo: photos.shvezov_dmitriy,
     party: Parties.er,
   },
   {
@@ -237,7 +237,7 @@ const candidats: Candidate[] = [
     areaNumber: 6,
     alias: 'tatarintsev',
     name: 'Татаринцев Сергей Сергеевич',
-    photo: photos.noPhoto,
+    photo: photos.tatarinzev_sergey,
     party: Parties.er,
   },
 
@@ -446,7 +446,7 @@ const candidats: Candidate[] = [
     areaNumber: 11,
     alias: 'boyko',
     name: 'Бойко Андрей Николаевич',
-    photo: photos.noPhoto,
+    photo: photos.boiko_andrei,
     party: Parties.er,
   },
 
