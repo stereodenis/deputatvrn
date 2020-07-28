@@ -16,7 +16,7 @@ export default memo(() => {
           const deputat = deputats[areaNumber]
           return (
             <Col xs={6} sm={4} md={3} lg={2} xl={2} key={areaNumber} className='border py-3'>
-              <Link to={`/area/${areaNumber}`} className=''>
+              <Link to={`/areas/${areaNumber}`} className=''>
                 <div className='text-center'>{areaNumber} округ</div>
                 <div>Избирателей: {area.people}</div>
                 <div>Кандидатов: {areaCandidates.length}</div>

@@ -39,7 +39,7 @@ export default function Map() {
       objectManager.events.add(['click', 'labelclick'], (event: any) => {
         const objectId = event.get('objectId')
         const area = objectManager.objects.getById(objectId).properties
-        history.push(`/area/${area.description}`)
+        history.push(`/areas/${area.description}`)
       })
       objectManager.events.add(['mouseenter', 'labelmouseenter', 'labelmouseleave', 'mouseleave'], (event: any) => {
         const objectId = event.get('objectId')

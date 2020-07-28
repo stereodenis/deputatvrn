@@ -1,53 +1,50 @@
-export { default as noPhoto } from './no-photo.jpg'
-export { default as kabanov } from './kabanov.jpg'
-export { default as bazhenov } from './bazhenov.jpg'
-export { default as gulin } from './gulin.jpg'
-export { default as losev } from './losev.jpg'
-export { default as kurpek } from './kurpek.jpg'
-export { default as podles } from './podles.jpg'
-export { default as rodionov } from './rodionov.jpg'
-export { default as strelnikov } from './strelnikov.jpg'
-export { default as yanchich } from './yanchich.jpg'
-export { default as ivanishev } from './ivanishev.jpg'
-export { default as borodin } from './borodin.jpg'
-export { default as kornienko } from './kornienko.jpg'
-export { default as sokolovA } from './sokolov.jpg'
-export { default as pyrinov } from './pyrinov.jpg'
-export { default as andreev } from './andreev.jpg'
-export { default as chraplak } from './chraplak.jpg'
-export { default as nikolaev } from './nikolaev.jpg'
-export { default as karpov } from './karpov.jpg'
-export { default as yakovez } from './yakovez.jpg'
-export { default as krivonosov } from './krivonosov.jpg'
-export { default as panovEgor } from './panov_egor.jpg'
-
-export { default as beylin } from './beylin.jpg'
-export { default as mushtenko_sergey } from './mushtenko_sergey.jpg'
-export { default as bobrov_aleksandr } from './bobrov_aleksandr.jpg'
-
-export { default as solomatina_elena } from './solomatina_elena.jpg'
-export { default as avdeev_sergey } from './avdeev_sergey.jpg'
-export { default as rusakov_vladimir } from './rusakov_vladimir.jpg'
-export { default as chufinev_aleksandr } from './chufinev_aleksandr.jpg'
-export { default as boiko_andrei } from './boiko_andrei.jpg'
-export { default as shvezov_dmitriy } from './shvezov_dmitriy.jpg'
-export { default as tatarinzev_sergey } from './tatarinzev_sergey.jpg'
-
-export { default as altukhova_yuliya } from './new_people/altukhova_yuliya.jpg'
-export { default as anferov } from './new_people/anferov.jpg'
-export { default as bespalova_diana } from './new_people/bespalova_diana.jpg'
-export { default as ekaterina_baklanova } from './new_people/ekaterina_baklanova.jpg'
-export { default as gurchenko_sergey } from './new_people/gurchenko_sergey.jpg'
-export { default as gurskaya } from './new_people/gurskaya.jpg'
-export { default as ivanov_dmitriy } from './new_people/ivanov_dmitriy.jpg'
-export { default as karygin } from './new_people/karygin.jpg'
-export { default as kovaleva_elena } from './new_people/kovaleva_elena.jpg'
-export { default as malkova_olga } from './new_people/malkova_olga.jpg'
-export { default as penkova_kseniya } from './new_people/penkova_kseniya.jpg'
-export { default as rogozin_maksim } from './new_people/rogozin_maksim.jpg'
-export { default as stepakov_maksim } from './new_people/stepakov_maksim.jpg'
-export { default as strelnikov_andrey } from './new_people/strelnikov_andrey.jpg'
-export { default as tukhin_vladimir } from './new_people/tukhin_vladimir.jpg'
-export { default as zhavoronkova_yuliya } from './new_people/zhavoronkova_yuliya.jpg'
-export { default as zuev } from './new_people/zuev.jpg'
-export { default as zykeev } from './new_people/zykeev.jpg'
+export const noPhoto = require('./no-photo.jpg')
+export const kabanov = require('./kabanov.jpg')
+export const bazhenov = require('./bazhenov.jpg')
+export const gulin = require('./gulin.jpg')
+export const losev = require('./losev.jpg')
+export const kurpek = require('./kurpek.jpg')
+export const podles = require('./podles.jpg')
+export const rodionov = require('./rodionov.jpg')
+export const strelnikov = require('./strelnikov.jpg')
+export const yanchich = require('./yanchich.jpg')
+export const ivanishev = require('./ivanishev.jpg')
+export const borodin = require('./borodin.jpg')
+export const kornienko = require('./kornienko.jpg')
+export const sokolovA = require('./sokolov.jpg')
+export const pyrinov = require('./pyrinov.jpg')
+export const andreev = require('./andreev.jpg')
+export const chraplak = require('./chraplak.jpg')
+export const nikolaev = require('./nikolaev.jpg')
+export const karpov = require('./karpov.jpg')
+export const yakovez = require('./yakovez.jpg')
+export const krivonosov = require('./krivonosov.jpg')
+export const panovEgor = require('./panov_egor.jpg')
+export const beylin = require('./beylin.jpg')
+export const mushtenko_sergey = require('./mushtenko_sergey.jpg')
+export const bobrov_aleksandr = require('./bobrov_aleksandr.jpg')
+export const solomatina_elena = require('./solomatina_elena.jpg')
+export const avdeev_sergey = require('./avdeev_sergey.jpg')
+export const rusakov_vladimir = require('./rusakov_vladimir.jpg')
+export const chufinev_aleksandr = require('./chufinev_aleksandr.jpg')
+export const boiko_andrei = require('./boiko_andrei.jpg')
+export const shvezov_dmitriy = require('./shvezov_dmitriy.jpg')
+export const tatarinzev_sergey = require('./tatarinzev_sergey.jpg')
+export const altukhova_yuliya = require('./new_people/altukhova_yuliya.jpg')
+export const anferov = require('./new_people/anferov.jpg')
+export const bespalova_diana = require('./new_people/bespalova_diana.jpg')
+export const ekaterina_baklanova = require('./new_people/ekaterina_baklanova.jpg')
+export const gurchenko_sergey = require('./new_people/gurchenko_sergey.jpg')
+export const gurskaya = require('./new_people/gurskaya.jpg')
+export const ivanov_dmitriy = require('./new_people/ivanov_dmitriy.jpg')
+export const karygin = require('./new_people/karygin.jpg')
+export const kovaleva_elena = require('./new_people/kovaleva_elena.jpg')
+export const malkova_olga = require('./new_people/malkova_olga.jpg')
+export const penkova_kseniya = require('./new_people/penkova_kseniya.jpg')
+export const rogozin_maksim = require('./new_people/rogozin_maksim.jpg')
+export const stepakov_maksim = require('./new_people/stepakov_maksim.jpg')
+export const strelnikov_andrey = require('./new_people/strelnikov_andrey.jpg')
+export const tukhin_vladimir = require('./new_people/tukhin_vladimir.jpg')
+export const zhavoronkova_yuliya = require('./new_people/zhavoronkova_yuliya.jpg')
+export const zuev = require('./new_people/zuev.jpg')
+export const zykeev = require('./new_people/zykeev.jpg')

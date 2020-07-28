@@ -45,7 +45,7 @@ export default memo(() => {
               key={candidate.name}
               className='border-xs-bottom border-md-none py-3'
             >
-              <Link to={`/area/${candidate.areaNumber}`}>
+              <Link to={`/areas/${candidate.areaNumber}`}>
                 <h4>{candidate.areaNumber} округ</h4>
               </Link>
               <Link to={`/candidates/${candidate.alias}`}>

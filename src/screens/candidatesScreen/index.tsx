@@ -15,7 +15,7 @@ export default memo(() => {
         return (
           <div key={areaNumber} className='border-bottom py-3'>
             <h3>
-              <Link to={`/area/${areaNumber}`}>{areaNumber} округ</Link>
+              <Link to={`/areas/${areaNumber}`}>{areaNumber} округ</Link>
             </h3>
             <Row>
               {areaCandidats.length > 0 ? (
