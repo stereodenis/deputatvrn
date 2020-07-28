@@ -18,10 +18,10 @@ export default memo(() => {
 
   return (
     <Container fluid>
-      <Row>
+      <Row itemScope itemType='http://schema.org/ImageObject'>
         <Col xs={12} sm={6} md={4} lg={3} xl={2} className='py-3'>
           <div>
-            {candidate.photo && <Image width='100%' src={candidate.photo} rounded />}
+            <Image width='100%' src={candidate.photo} rounded itemProp='contentUrl' />
 
             {Boolean(candidate.program) && (
               <a href={candidate.program} className='d-block' rel='noopener noreferrer' target='_blank'>
@@ -40,11 +40,11 @@ export default memo(() => {
           </div>
         </Col>
         <Col className='py-3'>
-          <h1>{candidate.name}</h1>
+          <h1 itemProp='name'>{candidate.name}</h1>
           {candidate.project && <div>{candidate.project}</div>}
           {candidate.party && partyAlias && <Link to={`/parties/${partyAlias[0]}`}>{candidate.party}</Link>}
 
-          {candidate.role && <div>{candidate.role}</div>}
+          {candidate.role && <div itemProp='description'>{candidate.role}</div>}
           {Boolean(candidate.bio) && (
             <div>
               <h5>Биография</h5>
