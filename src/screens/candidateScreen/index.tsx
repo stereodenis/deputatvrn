@@ -60,7 +60,7 @@ export default memo(() => {
       </Row>
 
       <h2>
-        Другие кандидаты <Link to={`/area/${candidate.areaNumber}`}>{candidate.areaNumber} округа</Link>
+        Другие кандидаты <Link to={`/areas/${candidate.areaNumber}`}>{candidate.areaNumber} округа</Link>
       </h2>
       <Row>
         {candidats

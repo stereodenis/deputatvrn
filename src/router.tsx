@@ -6,8 +6,8 @@ import { Map, Areas, Area, Candidates, Candidate, Parties, Party } from './scree
 export default memo(() => (
   <Switch>
     <Route exact path='/' component={Map} />
-    <Route exact path={'/area'} component={Areas} />
-    <Route path={'/area/:areaNumber'} component={Area} />
+    <Route exact path={'/areas'} component={Areas} />
+    <Route path={'/areas/:areaNumber'} component={Area} />
     <Route exact path={'/candidates'} component={Candidates} />
     <Route path={'/candidates/:candidateAlias'} component={Candidate} />
     <Route exact path='/parties' component={Parties} />
