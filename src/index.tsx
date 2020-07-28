@@ -1,12 +1,12 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
-import { BrowserRouter, Switch, Route, Link } from 'react-router-dom'
+import { BrowserRouter, Link } from 'react-router-dom'
 import { Navbar, Nav } from 'react-bootstrap'
 
 import './index.css'
 import 'bootstrap/dist/css/bootstrap.min.css'
 
-import { Map, Areas, CandidatsRoute, PartiesRoute } from './screens'
+import Router from './router'
 import * as serviceWorker from './serviceWorker'
 
 // function RouteWrapper({ component: Component, layout: Layout, ...rest }: RouteProps & { layout: any; component: any }) {
@@ -44,12 +44,7 @@ ReactDOM.render(
           </Nav>
         </Navbar.Collapse>
       </Navbar>
-      <Switch>
-        <Route exact path='/' component={Map} />
-        <Route path='/area' component={Areas} />
-        <Route path='/candidates' component={CandidatsRoute} />
-        <Route path='/parties' component={PartiesRoute} />
-      </Switch>
+      <Router />
     </BrowserRouter>
   </React.StrictMode>,
   document.getElementById('root')
