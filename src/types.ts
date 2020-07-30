@@ -19,6 +19,7 @@ export interface Candidate {
   program?: string
   problems?: string[]
   message?: string
+  birthdate?: string
 }
 
 export enum Parties {
@@ -28,6 +29,7 @@ export enum Parties {
   newPeople = 'Новые Люди',
   er = 'Единая Россия',
   sr = 'Справедливая Россия',
+  ldpr = 'ЛДПР',
 }
 
 export enum Project {

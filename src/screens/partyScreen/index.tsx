@@ -35,24 +35,26 @@ export default memo(() => {
       <div className='py-3'>
         <h2>Список кандидатов в депутаты</h2>
         <Row className='border-bottom'>
-          {areaCandidats.map((candidate) => (
-            <Col
-              xs={12}
-              sm={6}
-              md={4}
-              lg={3}
-              xl={2}
-              key={candidate.name}
-              className='border-xs-bottom border-md-none py-3'
-            >
-              <Link to={`/areas/${candidate.areaNumber}`}>
-                <h4>{candidate.areaNumber} округ</h4>
-              </Link>
-              <Link to={`/candidates/${candidate.alias}`}>
-                <CandidateCard {...{ candidate }} />
-              </Link>
-            </Col>
-          ))}
+          {areaCandidats
+            .sort((a, b) => a.areaNumber - b.areaNumber)
+            .map((candidate) => (
+              <Col
+                xs={12}
+                sm={6}
+                md={4}
+                lg={3}
+                xl={2}
+                key={candidate.name}
+                className='border-xs-bottom border-md-none py-3'
+              >
+                <Link to={`/areas/${candidate.areaNumber}`}>
+                  <h4>{candidate.areaNumber} округ</h4>
+                </Link>
+                <Link to={`/candidates/${candidate.alias}`}>
+                  <CandidateCard {...{ candidate }} />
+                </Link>
+              </Col>
+            ))}
         </Row>
       </div>
     </Container>
