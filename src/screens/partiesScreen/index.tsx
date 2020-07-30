@@ -14,6 +14,7 @@ const mapPartyToLogo: { [s: string]: string } = {
   yabloko: require('../../images/parties/yabloko.jpg'),
   ldpr: require('../../images/parties/ldpr.png'),
   sr: require('../../images/parties/sr.jpg'),
+  zaPravdu: require('../../images/parties/za_pravdu.png'),
 }
 
 export default memo(() => {
@@ -45,10 +46,9 @@ export default memo(() => {
 
           return (
             <Col xs={6} sm={4} md={3} lg={2} key={partyAlias} className='border py-3'>
-              <Link to={`/parties/${partyAlias}`}>
+              <Link to={`/parties/${partyAlias}`} className='text-center d-block'>
                 <Image
-                  width={'100%'}
-                  className=''
+                  style={{ maxWidth: '100%', maxHeight: '100px' }}
                   src={mapPartyToLogo[partyAlias]}
                   alt={`Логотип ${Parties[partyAlias]}`}
                 />

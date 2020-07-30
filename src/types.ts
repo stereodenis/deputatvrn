@@ -30,6 +30,7 @@ export enum Parties {
   er = 'Единая Россия',
   sr = 'Справедливая Россия',
   ldpr = 'ЛДПР',
+  zaPravdu = 'За правду',
 }
 
 export enum Project {

@@ -3,6 +3,7 @@ import { Candidate, LinkTitle, Parties, Project } from '../types'
 
 import ldpr from './candidates/ldpr'
 import sr from './candidates/sr'
+import zaPravdu from './candidates/za_pravdu'
 
 const candidats: Candidate[] = [
   {
@@ -1111,5 +1112,6 @@ const candidats: Candidate[] = [
   },
   ...ldpr,
   ...sr,
+  ...zaPravdu,
 ]
 export default candidats
