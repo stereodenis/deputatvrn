@@ -17,7 +17,7 @@ const candidats: Candidate[] = [
     areaNumber: 1,
     alias: 'hatunzev',
     name: 'Станислав Хатунцев',
-    photo: photos.noPhoto,
+    photo: photos.hatunzev_stanislav,
     party: Parties.rodina,
     role: 'временно неработающий',
   },
@@ -92,7 +92,7 @@ const candidats: Candidate[] = [
     areaNumber: 3,
     alias: 'ryabykh',
     name: 'Александр Рябых',
-    photo: photos.noPhoto,
+    photo: photos.ryabykh_aleksandr,
     party: Parties.rodina,
     role: 'коммерческий директор «Мега Авто»',
   },
@@ -138,7 +138,7 @@ const candidats: Candidate[] = [
     alias: 'semin',
     name: 'Геннадий Семин',
     role: 'временно не работает',
-    photo: photos.noPhoto,
+    photo: photos.semin_gennadiy,
     party: Parties.rodina,
   },
   {
@@ -196,7 +196,7 @@ const candidats: Candidate[] = [
     alias: 'batishev',
     name: 'Эдуард Батищев',
     role: 'гендиректор «Аксиос Инвест»',
-    photo: photos.noPhoto,
+    photo: photos.batishev_eduard,
     party: Parties.rodina,
   },
   {
@@ -219,7 +219,7 @@ const candidats: Candidate[] = [
     alias: 'zaharov',
     name: 'Александр Захаров',
     role: 'предприниматель',
-    photo: photos.noPhoto,
+    photo: photos.zakharov_aleksandr,
     party: Parties.rodina,
   },
   {
@@ -254,7 +254,7 @@ const candidats: Candidate[] = [
     alias: 'grachev',
     name: 'Константин Грачев',
     role: 'временно не работает',
-    photo: photos.noPhoto,
+    photo: photos.grachev_konstantin,
     party: Parties.rodina,
   },
   {
@@ -289,7 +289,7 @@ const candidats: Candidate[] = [
     alias: 'krasiv',
     name: 'Александр Красиков',
     role: 'председатель Совета кооператива Социально-экономической взаимопомощи «Развитие»',
-    photo: photos.noPhoto,
+    photo: photos.krasikov_aleksandr,
     party: Parties.rodina,
   },
   {
@@ -324,7 +324,7 @@ const candidats: Candidate[] = [
     alias: 'petukhov',
     name: 'Максим Петухов',
     role: 'гендиректор «Евростроя»',
-    photo: photos.noPhoto,
+    photo: photos.petukhov_maksim,
     party: Parties.rodina,
   },
   {
@@ -377,7 +377,7 @@ const candidats: Candidate[] = [
     ],
     party: Parties.rodina,
     project: Project.git,
-    photo: photos.ivanishev,
+    photo: photos.ivanishev_vitaliy,
   },
   {
     areaNumber: 10,
@@ -428,7 +428,7 @@ const candidats: Candidate[] = [
     alias: 'filatov',
     name: 'Андрей Филатов',
     role: 'менеджер',
-    photo: photos.noPhoto,
+    photo: photos.filatov_andrey,
     party: Parties.rodina,
   },
   {
@@ -471,7 +471,7 @@ const candidats: Candidate[] = [
     alias: 'kucherin',
     name: 'Павел Кучерин',
     role: 'директор некоммерческой организации дополнительного профессионального образования «ДОН-100»',
-    photo: photos.noPhoto,
+    photo: photos.kucherin_pavel,
     party: Parties.rodina,
   },
   {
@@ -533,7 +533,7 @@ const candidats: Candidate[] = [
     alias: 'shvydkii',
     name: 'Владимир Швыдкий',
     role: 'гендиректор «СВС Авто Групп»',
-    photo: photos.noPhoto,
+    photo: photos.shvidkiy_vladimir,
     party: Parties.rodina,
   },
   {
@@ -568,7 +568,7 @@ const candidats: Candidate[] = [
     alias: 'ofitzerova',
     name: 'Ольга Офицерова',
     role: 'предприниматель',
-    photo: photos.noPhoto,
+    photo: photos.ofizerova_olga,
     party: Parties.rodina,
   },
   {
@@ -616,7 +616,7 @@ const candidats: Candidate[] = [
     alias: 'ivanov',
     name: 'Антон Иванов',
     role: 'гендиректор «ЮЦ Солидарность»',
-    photo: photos.noPhoto,
+    photo: photos.ivanov_anton,
     party: Parties.rodina,
   },
   {
@@ -651,7 +651,7 @@ const candidats: Candidate[] = [
     alias: 'kudinova',
     name: 'Татьяна Кудинова',
     role: 'пенсионер',
-    photo: photos.noPhoto,
+    photo: photos.kudinova_tatiana,
     party: Parties.rodina,
   },
   {
@@ -702,7 +702,7 @@ const candidats: Candidate[] = [
     alias: 'andreev',
     name: 'Николай Андреев',
     role: 'доцент ВГУ',
-    photo: photos.andreev,
+    photo: photos.andreev_nikolay,
     party: Parties.rodina,
     links: [
       {
@@ -743,7 +743,7 @@ const candidats: Candidate[] = [
     alias: 'chekmarev',
     name: 'Артем Чекмарев',
     role: 'заместитель генерального директора по коммерческим вопросам «Завода железобетонных изделий №2»',
-    photo: photos.noPhoto,
+    photo: photos.chekmarev_artem,
     party: Parties.rodina,
   },
   {
@@ -796,7 +796,7 @@ const candidats: Candidate[] = [
     alias: 'ostroushko',
     name: 'Иван Остроушко',
     role: 'травматолог-ортопед «Воронежской областной клинической больницы №1»',
-    photo: photos.noPhoto,
+    photo: photos.ostroushko_ivan,
     party: Parties.rodina,
   },
   {
@@ -924,7 +924,7 @@ const candidats: Candidate[] = [
     alias: 'yakovez',
     name: 'Елена Яковец',
     role: 'домохозяйка',
-    photo: photos.yakovez,
+    photo: photos.yakovez_elena,
     party: Parties.rodina,
     links: [
       { title: LinkTitle.facebook, url: 'https://www.facebook.com/elena.yakovec' },
@@ -968,7 +968,7 @@ const candidats: Candidate[] = [
     alias: 'shalygin',
     name: 'Николай Шалыгин',
     role: 'директор ООО «Парсек»',
-    photo: photos.noPhoto,
+    photo: photos.shalygin_nikolay,
     party: Parties.rodina,
   },
   {
@@ -1020,7 +1020,7 @@ const candidats: Candidate[] = [
     alias: 'safonov',
     name: 'Сергей Сафонов',
     role: 'начальник цеха АО «Завод железобетонных изделий №2',
-    photo: photos.noPhoto,
+    photo: photos.safonov_sergey,
     party: Parties.rodina,
   },
   {
@@ -1056,7 +1056,7 @@ const candidats: Candidate[] = [
     alias: 'sokolov_v',
     name: 'Вячеслав Соколов',
     role: 'гендиректор «Ника Моторс»',
-    photo: photos.noPhoto,
+    photo: photos.sokolov_vyacheslav,
     party: Parties.rodina,
   },
   {
