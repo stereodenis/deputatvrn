@@ -13,6 +13,7 @@ const mapPartyToLogo: { [s: string]: string } = {
   rodina: require('../../images/parties/rodina.svg'),
   yabloko: require('../../images/parties/yabloko.jpg'),
   ldpr: require('../../images/parties/ldpr.png'),
+  sr: require('../../images/parties/sr.jpg'),
 }
 
 export default memo(() => {
