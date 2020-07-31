@@ -14,7 +14,7 @@ export default memo(() => {
   const isNoParty = partyAlias === 'noParty'
   const title = isNoParty ? 'Самовыдвиженцы' : `Партия «${Parties[partyAlias]}»`
 
-  const areaCandidats = useMemo(
+  const partyCandidates = useMemo(
     () => candidats.filter((c) => (isNoParty ? !c.party : c.party === Parties[partyAlias])),
     [partyAlias, isNoParty]
   )
@@ -33,9 +33,9 @@ export default memo(() => {
       </div>
 
       <div className='py-3'>
-        <h2>Список кандидатов в депутаты</h2>
+        <h2>Список кандидатов в депутаты ({partyCandidates.length})</h2>
         <Row className='border-bottom'>
-          {areaCandidats
+          {partyCandidates
             .sort((a, b) => a.areaNumber - b.areaNumber)
             .map((candidate) => (
               <Col
