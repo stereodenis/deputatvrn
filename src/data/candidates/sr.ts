@@ -75,7 +75,7 @@ const sr: Candidate[] = [
     areaNumber: 5,
   },
   {
-    alias: 'naumov_il\'ya',
+    alias: 'naumov_ilya',
     name: 'Наумов Илья Сергеевич',
     party: Parties.sr,
     photo: photos.noPhoto,
@@ -83,7 +83,7 @@ const sr: Candidate[] = [
     areaNumber: 18,
   },
   {
-    alias: 'neznamova_natal\'ya',
+    alias: 'neznamova_natalya',
     name: 'Незнамова Наталья Анатольевна',
     party: Parties.sr,
     photo: photos.noPhoto,
@@ -123,7 +123,7 @@ const sr: Candidate[] = [
     areaNumber: 12,
   },
   {
-    alias: 'rymar\' artem',
+    alias: 'rymar artem',
     name: 'Рымарь Артем Сергеевич',
     party: Parties.sr,
     photo: photos.noPhoto,

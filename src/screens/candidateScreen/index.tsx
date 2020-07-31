@@ -41,19 +41,32 @@ export default memo(() => {
         </Col>
         <Col className='py-3'>
           <h1 itemProp='name'>{candidate.name}</h1>
-          {candidate.project && <div>{candidate.project}</div>}
-          {candidate.party && partyAlias && <Link to={`/parties/${partyAlias[0]}`}>{candidate.party}</Link>}
-
+          {candidate.party && partyAlias ? (
+            <Link to={`/parties/${partyAlias[0]}`}>{candidate.party}</Link>
+          ) : (
+            <Link to={'/parties/noParty'}>Самовыдвиженец</Link>
+          )}
           {candidate.role && <div itemProp='description'>{candidate.role}</div>}
+          {candidate.project && <div>{candidate.project}</div>}
+          {Boolean(candidate.message) && (
+            <div className='mt-3'>
+              <p>«{candidate.message}»</p>
+            </div>
+          )}
           {Boolean(candidate.bio) && (
             <div>
               <h5>Биография</h5>
               <p>{candidate.bio}</p>
             </div>
           )}
-          {Boolean(candidate.message) && (
-            <div>
-              <p>«{candidate.message}»</p>
+          {candidate.problems?.length && (
+            <div className='mt-2'>
+              <h5>
+                Проблемы <Link to={`/areas/${candidate.areaNumber}`}>{candidate.areaNumber} округа</Link>
+              </h5>
+              {candidate.problems.map((problem, index) => (
+                <p key={index}>{problem}</p>
+              ))}
             </div>
           )}
         </Col>

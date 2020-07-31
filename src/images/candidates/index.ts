@@ -22,6 +22,7 @@ export { default as strelnikov } from './yabloko/strelnikov.jpg'
 export { default as beylin } from './yabloko/beylin.jpg'
 export { default as mushtenko_sergey } from './yabloko/mushtenko_sergey.jpg'
 export { default as bobrov_aleksandr } from './yabloko/bobrov_aleksandr.jpg'
+export { default as evsukov_ilya } from './yabloko/evsukov_ilya.jpg'
 
 export { default as solomatina_elena } from './er/solomatina_elena.jpg'
 export { default as avdeev_sergey } from './er/avdeev_sergey.jpg'
