@@ -11,7 +11,7 @@ const noParty: Candidate[] = [
   },
   {
     alias: 'aleksanyan_nelli',
-    photo: photos.noPhoto,
+    photo: photos.aleksanyan_nelli,
     name: 'Алексанян Нелли Арушановна',
     birthdate: '14.07.1965',
     areaNumber: 10,
@@ -135,7 +135,7 @@ const noParty: Candidate[] = [
   },
   {
     alias: 'ivleva_svetlana',
-    photo: photos.noPhoto,
+    photo: photos.ivleva_svetlana,
     name: 'Ивлева Светлана Викторовна',
     birthdate: '22.09.1967',
     areaNumber: 10,
@@ -533,7 +533,7 @@ const noParty: Candidate[] = [
   },
   {
     alias: 'tyunyaeva_natalya',
-    photo: photos.noPhoto,
+    photo: photos.tunyaeva_natalia,
     name: 'Тюняева Наталья Михайловна',
     birthdate: '19.02.1961',
     areaNumber: 10,

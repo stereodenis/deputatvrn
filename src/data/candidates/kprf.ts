@@ -72,7 +72,7 @@ const kprf: Candidate[] = [
     areaNumber: 10,
     alias: 'kovalev',
     name: 'Ковалев Василий Николаевич',
-    photo: photos.noPhoto,
+    photo: photos.kovalev_vasiliy,
     party: Parties.kprf,
     status: CandidateStatuses.registered,
   },

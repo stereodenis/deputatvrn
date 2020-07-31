@@ -74,6 +74,12 @@ export { default as shalygin_nikolay } from './rodina/shalygin_nikolay.jpg'
 export { default as safonov_sergey } from './rodina/safonov_sergey.jpg'
 export { default as sokolov_vyacheslav } from './rodina/sokolov_vyacheslav.jpg'
 
+export { default as aleksanyan_nelli } from './no_party/aleksanyan_nelli.jpg'
+export { default as ivleva_svetlana } from './no_party/ivleva_svetlana.jpg'
+export { default as titaev_sergey } from './sr/titaev_sergey.jpg'
+export { default as tunyaeva_natalia } from './no_party/tunyaeva_natalia.jpg'
+export { default as kovalev_vasiliy } from './kprf/kovalev_vasiliy.jpg'
+
 // область
 // export { default as borisov_igor } from './rodina/borisov_igor.jpg'
 // export { default as cherednikov_vladimir } from './rodina/cherednikov_vladimir.jpg'

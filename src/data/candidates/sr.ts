@@ -155,7 +155,7 @@ const sr: Candidate[] = [
     alias: 'titaev_sergej',
     name: 'Титаев Сергей Владимирович',
     party: Parties.sr,
-    photo: photos.noPhoto,
+    photo: photos.titaev_sergey,
     birthdate: '25.04.1978',
     areaNumber: 10,
     status: CandidateStatuses.registered,
