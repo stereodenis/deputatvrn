@@ -1,4 +1,4 @@
-import { groupBy } from 'lodash'
+import { groupBy, shuffle } from 'lodash'
 import React, { memo } from 'react'
 import { Col, Container, Row } from 'react-bootstrap'
 import { Link } from 'react-router-dom'
@@ -22,7 +22,7 @@ export default memo(() => {
             </div>
 
             <Row>
-              {areaCandidats.map((candidate) => (
+              {shuffle(areaCandidats).map((candidate) => (
                 <Col
                   xs={12}
                   sm={6}
