@@ -438,8 +438,11 @@ const noParty: Candidate[] = [
     areaNumber: 15,
     links: [
       { title: LinkTitle.telegram, url: 'http://t.me/Only_arrogance' },
+      { title: LinkTitle.facebook, url: 'https://www.facebook.com/yura.rodionoff' },
       { title: LinkTitle.vk, url: 'https://vk.com/only_arrogance' },
       { title: LinkTitle.instagram, url: 'http://instagram.com/yurbvrn' },
+      { title: LinkTitle.website, url: 'https://rodionov2020.ru' },
+      { title: LinkTitle.youtube, url: 'https://www.youtube.com/channel/UCRrwyg1gwdkkbLCvRLOO_2A' },
     ],
     project: Project.gorpr,
     role: 'Глава Горпроектов в Воронеже',

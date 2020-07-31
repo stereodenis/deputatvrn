@@ -55,6 +55,7 @@ export enum LinkTitle {
   gorprojects = 'Страница на сайте "Городских проектов"',
   whatsapp = 'WhatsApp',
   website = 'Вебсайт',
+  youtube = 'Youtube',
 }
 
 export interface Area {
