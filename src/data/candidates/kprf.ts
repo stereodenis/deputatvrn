@@ -22,6 +22,7 @@ const kprf: Candidate[] = [
     name: 'Вербовая Елена Петровна',
     photo: photos.noPhoto,
     party: Parties.kprf,
+    status: CandidateStatuses.registered,
   },
   {
     areaNumber: 4,
@@ -29,6 +30,7 @@ const kprf: Candidate[] = [
     name: 'Зарецких Алексей Александрович',
     photo: photos.noPhoto,
     party: Parties.kprf,
+    status: CandidateStatuses.registered,
   },
   {
     areaNumber: 5,
@@ -36,6 +38,7 @@ const kprf: Candidate[] = [
     name: 'Ковалевский Валентин Вячеславович',
     photo: photos.noPhoto,
     party: Parties.kprf,
+    status: CandidateStatuses.registered,
   },
   {
     areaNumber: 6,
@@ -43,6 +46,7 @@ const kprf: Candidate[] = [
     name: 'Шелякин Артур Дмитриевич',
     photo: photos.noPhoto,
     party: Parties.kprf,
+    status: CandidateStatuses.registered,
   },
   {
     areaNumber: 7,
@@ -106,6 +110,7 @@ const kprf: Candidate[] = [
     name: 'Померанцев Андрей Сергеевич',
     photo: photos.noPhoto,
     party: Parties.kprf,
+    status: CandidateStatuses.registered,
   },
   {
     areaNumber: 15,
@@ -128,6 +133,7 @@ const kprf: Candidate[] = [
     name: 'Ситников Максим Михайлович',
     photo: photos.noPhoto,
     party: Parties.kprf,
+    status: CandidateStatuses.registered,
   },
   {
     areaNumber: 18,
@@ -135,6 +141,7 @@ const kprf: Candidate[] = [
     name: 'Глуховцев Даниил Сергеевич',
     photo: photos.noPhoto,
     party: Parties.kprf,
+    status: CandidateStatuses.registered,
   },
   {
     areaNumber: 19,
@@ -157,6 +164,7 @@ const kprf: Candidate[] = [
     name: 'Каданцев Михаил Михайлович',
     photo: photos.noPhoto,
     party: Parties.kprf,
+    status: CandidateStatuses.registered,
   },
   {
     areaNumber: 22,
@@ -164,6 +172,7 @@ const kprf: Candidate[] = [
     name: 'Кобылкин Владислав Васильевич',
     photo: photos.noPhoto,
     party: Parties.kprf,
+    status: CandidateStatuses.registered,
   },
   {
     areaNumber: 23,

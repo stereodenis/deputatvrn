@@ -18,6 +18,7 @@ const ldpr: Candidate[] = [
     party: Parties.ldpr,
     birthdate: '15.04.1984',
     areaNumber: 17,
+    status: CandidateStatuses.registered,
   },
   {
     alias: 'bekhov-maksim',
@@ -26,6 +27,7 @@ const ldpr: Candidate[] = [
     party: Parties.ldpr,
     birthdate: '28.04.2000',
     areaNumber: 5,
+    status: CandidateStatuses.registered,
   },
   {
     alias: 'burdakov-maksim',
@@ -42,6 +44,7 @@ const ldpr: Candidate[] = [
     party: Parties.ldpr,
     birthdate: '25.10.2000',
     areaNumber: 4,
+    status: CandidateStatuses.registered,
   },
   {
     alias: 'guzenko-konstantin',
@@ -92,6 +95,7 @@ const ldpr: Candidate[] = [
     party: Parties.ldpr,
     birthdate: '27.06.1995',
     areaNumber: 3,
+    status: CandidateStatuses.registered,
   },
   {
     alias: 'pavlenko-evgenij',
@@ -160,6 +164,7 @@ const ldpr: Candidate[] = [
     party: Parties.ldpr,
     birthdate: '13.10.1977',
     areaNumber: 22,
+    status: CandidateStatuses.registered,
   },
   {
     alias: 'filippov-maksim',
@@ -177,6 +182,7 @@ const ldpr: Candidate[] = [
     party: Parties.ldpr,
     birthdate: '04.09.1978',
     areaNumber: 6,
+    status: CandidateStatuses.registered,
   },
   {
     alias: 'yakovlev-yurij',

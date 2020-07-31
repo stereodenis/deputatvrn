@@ -33,6 +33,7 @@ const sr: Candidate[] = [
     photo: photos.noPhoto,
     birthdate: '09.03.1941',
     areaNumber: 3,
+    status: CandidateStatuses.registered,
   },
   {
     alias: 'ivannikov_nikita',
@@ -41,6 +42,7 @@ const sr: Candidate[] = [
     photo: photos.noPhoto,
     birthdate: '07.04.1997',
     areaNumber: 14,
+    status: CandidateStatuses.registered,
   },
   {
     alias: 'kazaryan_paruir',
@@ -49,6 +51,7 @@ const sr: Candidate[] = [
     photo: photos.noPhoto,
     birthdate: '08.02.1986',
     areaNumber: 21,
+    status: CandidateStatuses.registered,
   },
   {
     alias: 'kolyagin_yurij',
@@ -57,6 +60,7 @@ const sr: Candidate[] = [
     photo: photos.noPhoto,
     birthdate: '27.12.1964',
     areaNumber: 17,
+    status: CandidateStatuses.registered,
   },
   {
     alias: 'lyskov_anton',
@@ -65,6 +69,7 @@ const sr: Candidate[] = [
     photo: photos.noPhoto,
     birthdate: '05.01.1980',
     areaNumber: 22,
+    status: CandidateStatuses.registered,
   },
   {
     alias: 'maslennikova_margarita',
@@ -73,6 +78,7 @@ const sr: Candidate[] = [
     photo: photos.noPhoto,
     birthdate: '04.03.1974',
     areaNumber: 5,
+    status: CandidateStatuses.registered,
   },
   {
     alias: 'naumov_ilya',
@@ -81,6 +87,7 @@ const sr: Candidate[] = [
     photo: photos.noPhoto,
     birthdate: '30.04.1984',
     areaNumber: 18,
+    status: CandidateStatuses.registered,
   },
   {
     alias: 'neznamova_natalya',
@@ -89,6 +96,7 @@ const sr: Candidate[] = [
     photo: photos.noPhoto,
     birthdate: '14.05.1992',
     areaNumber: 6,
+    status: CandidateStatuses.registered,
   },
   {
     alias: 'petrov_denis',
@@ -175,6 +183,7 @@ const sr: Candidate[] = [
     photo: photos.noPhoto,
     birthdate: '29.08.1994',
     areaNumber: 4,
+    status: CandidateStatuses.registered,
   },
   {
     alias: 'chernyavskij_oleg',

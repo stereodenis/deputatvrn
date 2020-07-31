@@ -23,6 +23,7 @@ const er: Candidate[] = [
     name: 'Черкасов Олег Николаевич',
     photo: 'http://gorduma-voronezh.ru/wp-content/uploads/2019/05/cherkasov_on.jpg',
     party: Parties.er,
+    status: CandidateStatuses.registered,
   },
   {
     areaNumber: 4,
@@ -30,6 +31,7 @@ const er: Candidate[] = [
     name: 'Авдеев Сергей Алексеевич',
     photo: photos.avdeev_sergey,
     party: Parties.er,
+    status: CandidateStatuses.registered,
   },
   {
     areaNumber: 5,
@@ -37,6 +39,7 @@ const er: Candidate[] = [
     name: 'Пинигин Алексей Юрьевич',
     photo: 'http://gorduma-voronezh.ru/wp-content/uploads/2019/05/pinigin_ay.jpg',
     party: Parties.er,
+    status: CandidateStatuses.registered,
   },
   {
     areaNumber: 6,
@@ -44,6 +47,7 @@ const er: Candidate[] = [
     name: 'Татаринцев Сергей Сергеевич',
     photo: photos.tatarinzev_sergey,
     party: Parties.er,
+    status: CandidateStatuses.registered,
   },
 
   {
@@ -101,6 +105,7 @@ const er: Candidate[] = [
     name: 'Костырев Игорь Владимирович',
     photo: 'http://gorduma-voronezh.ru/wp-content/uploads/2019/05/kostyrev_iv.jpg',
     party: Parties.er,
+    status: CandidateStatuses.registered,
   },
 
   {
@@ -132,6 +137,7 @@ const er: Candidate[] = [
     name: 'Кандыбин Иван Владимирович',
     photo: 'http://gorduma-voronezh.ru/wp-content/uploads/2019/05/kandybin_iv.jpg',
     party: Parties.er,
+    status: CandidateStatuses.registered,
   },
 
   {
@@ -140,6 +146,7 @@ const er: Candidate[] = [
     name: 'Кудрявцев Сергей Николаевич',
     photo: 'http://gorduma-voronezh.ru/wp-content/uploads/2019/05/kudryavtsev_sn.jpg',
     party: Parties.er,
+    status: CandidateStatuses.registered,
   },
   {
     areaNumber: 19,
@@ -184,6 +191,7 @@ const er: Candidate[] = [
     name: 'Клецов Вадим Владимирович',
     photo: 'http://gorduma-voronezh.ru/wp-content/uploads/2019/05/kletsov_vv.jpg',
     party: Parties.er,
+    status: CandidateStatuses.registered,
   },
   {
     areaNumber: 23,

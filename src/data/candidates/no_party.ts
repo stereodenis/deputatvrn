@@ -1,5 +1,5 @@
 import * as photos from '../../images/candidates'
-import { Candidate, LinkTitle, Project, CandidateStatuses } from '../../types'
+import { Candidate, CandidateStatuses, LinkTitle, Project } from '../../types'
 
 const noParty: Candidate[] = [
   {
@@ -111,6 +111,7 @@ const noParty: Candidate[] = [
       { title: LinkTitle.facebook, url: 'https://www.facebook.com/viaestvita' },
       { title: LinkTitle.vk, url: 'https://vk.com/digitalpartisan' },
     ],
+    status: CandidateStatuses.registered,
   },
   {
     alias: 'zheleznyakov_maksim',
@@ -348,6 +349,7 @@ const noParty: Candidate[] = [
     name: 'Образцов Николай Николаевич',
     birthdate: '17.12.1952',
     areaNumber: 4,
+    status: CandidateStatuses.registered,
   },
   {
     alias: 'orlov_fedor',
@@ -449,6 +451,7 @@ const noParty: Candidate[] = [
     name: 'Рубцов Александр Васильевич',
     birthdate: '26.11.1983',
     areaNumber: 5,
+    status: CandidateStatuses.declined,
   },
   {
     alias: 'svyatohin_evgenij',
@@ -516,6 +519,7 @@ const noParty: Candidate[] = [
     name: 'Сурков Олег Владимирович',
     birthdate: '01.07.1985',
     areaNumber: 4,
+    status: CandidateStatuses.registered,
   },
   {
     alias: 'sychyov_pavel',
