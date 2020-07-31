@@ -1,5 +1,5 @@
 import * as photos from '../../images/candidates'
-import { Candidate, Parties } from '../../types'
+import { Candidate, Parties, CandidateStatuses } from '../../types'
 
 const er: Candidate[] = [
   {
@@ -8,6 +8,7 @@ const er: Candidate[] = [
     name: 'Ходырев Владимир Фёдорович',
     photo: 'http://gorduma-voronezh.ru/wp-content/uploads/2019/05/hodyrev_vf.jpg',
     party: Parties.er,
+    status: CandidateStatuses.registered,
   },
   {
     areaNumber: 2,
@@ -51,6 +52,7 @@ const er: Candidate[] = [
     name: 'Русаков Владимир Владимирович',
     photo: photos.rusakov_vladimir,
     party: Parties.er,
+    status: CandidateStatuses.registered,
   },
 
   {
@@ -59,6 +61,7 @@ const er: Candidate[] = [
     name: 'Чуфинев Александр Валентинович',
     photo: photos.chufinev_aleksandr,
     party: Parties.er,
+    status: CandidateStatuses.registered,
   },
   {
     areaNumber: 9,
@@ -74,6 +77,7 @@ const er: Candidate[] = [
     name: 'Золотарёв Алексей Алексеевич',
     photo: 'http://gorduma-voronezh.ru/wp-content/uploads/2019/05/zolotarev_aa.jpg',
     party: Parties.er,
+    status: CandidateStatuses.registered,
   },
   {
     areaNumber: 11,
@@ -81,6 +85,7 @@ const er: Candidate[] = [
     name: 'Бойко Андрей Николаевич',
     photo: photos.boiko_andrei,
     party: Parties.er,
+    status: CandidateStatuses.registered,
   },
   {
     areaNumber: 12,
@@ -88,6 +93,7 @@ const er: Candidate[] = [
     name: 'Соболев Андрей Иванович',
     photo: 'http://gorduma-voronezh.ru/wp-content/uploads/2019/05/sobolev_ai.jpg',
     party: Parties.er,
+    status: CandidateStatuses.registered,
   },
   {
     areaNumber: 13,
@@ -103,6 +109,7 @@ const er: Candidate[] = [
     name: 'Соломатина Елена Дмитриевна',
     photo: photos.solomatina_elena,
     party: Parties.er,
+    status: CandidateStatuses.registered,
   },
   {
     areaNumber: 15,
@@ -117,6 +124,7 @@ const er: Candidate[] = [
     name: 'Жуков Александр Алексеевич',
     photo: 'http://gorduma-voronezh.ru/wp-content/uploads/2019/05/zhukov_aa.jpg',
     party: Parties.er,
+    status: CandidateStatuses.registered,
   },
   {
     areaNumber: 17,
@@ -139,6 +147,7 @@ const er: Candidate[] = [
     name: 'Чистяков Александр Александрович',
     photo: 'http://gorduma-voronezh.ru/wp-content/uploads/2019/05/chistyakov_aa.jpg',
     party: Parties.er,
+    status: CandidateStatuses.registered,
   },
   {
     areaNumber: 20,
@@ -146,6 +155,7 @@ const er: Candidate[] = [
     name: 'Крутских Дмитрий Борисович',
     photo: 'http://gorduma-voronezh.ru/wp-content/uploads/2019/05/krutskih_db.jpg',
     party: Parties.er,
+    status: CandidateStatuses.registered,
     bio:
       'Родился 23 февраля 1980 года в городе Воронеже.' +
       'Получив степень магистра менеджмента в Воронежском Государственном Университете по специальности «Государственное и муниципальное управление», продолжил обучение в аспирантуре и в 2012 году получил ученую степень: кандидат экономических наук.' +
@@ -166,6 +176,7 @@ const er: Candidate[] = [
     name: 'Попова Юлия Владимировна',
     photo: 'http://gorduma-voronezh.ru/wp-content/uploads/2019/05/popova_yv.jpg',
     party: Parties.er,
+    status: CandidateStatuses.registered,
   },
   {
     areaNumber: 22,

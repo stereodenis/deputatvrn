@@ -1,5 +1,5 @@
 import * as photos from '../../images/candidates'
-import { Candidate, Parties } from '../../types'
+import { Candidate, Parties, CandidateStatuses } from '../../types'
 
 const ldpr: Candidate[] = [
   {
@@ -9,6 +9,7 @@ const ldpr: Candidate[] = [
     party: Parties.ldpr,
     birthdate: '09.02.1998',
     areaNumber: 10,
+    status: CandidateStatuses.registered,
   },
   {
     alias: 'belousov-sergej',
@@ -73,6 +74,7 @@ const ldpr: Candidate[] = [
     party: Parties.ldpr,
     birthdate: '02.02.1997',
     areaNumber: 7,
+    status: CandidateStatuses.registered,
   },
   {
     alias: 'kicenyuk-alla',
@@ -81,6 +83,7 @@ const ldpr: Candidate[] = [
     party: Parties.ldpr,
     birthdate: '04.06.1984',
     areaNumber: 8,
+    status: CandidateStatuses.registered,
   },
   {
     alias: 'kudyakov-aleksej',
@@ -97,6 +100,7 @@ const ldpr: Candidate[] = [
     party: Parties.ldpr,
     birthdate: '16.03.1993',
     areaNumber: 9,
+    status: CandidateStatuses.registered,
   },
   {
     alias: 'parinov-andrej',
@@ -121,6 +125,7 @@ const ldpr: Candidate[] = [
     party: Parties.ldpr,
     birthdate: '25.06.1995',
     areaNumber: 13,
+    status: CandidateStatuses.registered,
   },
   {
     alias: 'popov-maksim',
@@ -137,6 +142,7 @@ const ldpr: Candidate[] = [
     party: Parties.ldpr,
     birthdate: '10.11.1997',
     areaNumber: 14,
+    status: CandidateStatuses.registered,
   },
   {
     alias: 'seliverstov-vladimir',
@@ -145,6 +151,7 @@ const ldpr: Candidate[] = [
     party: Parties.ldpr,
     birthdate: '15.04.1990',
     areaNumber: 11,
+    status: CandidateStatuses.registered,
   },
   {
     alias: 'starodubov-oleg',
@@ -161,6 +168,7 @@ const ldpr: Candidate[] = [
     party: Parties.ldpr,
     birthdate: '14.02.1977',
     areaNumber: 20,
+    status: CandidateStatuses.registered,
   },
   {
     alias: 'shvynda-denis',
@@ -177,6 +185,7 @@ const ldpr: Candidate[] = [
     party: Parties.ldpr,
     birthdate: '08.06.1963',
     areaNumber: 16,
+    status: CandidateStatuses.registered,
   },
 ]
 

@@ -1,5 +1,5 @@
 import * as photos from '../../images/candidates'
-import { Candidate, LinkTitle, Parties, Project } from '../../types'
+import { Candidate, LinkTitle, Parties, Project, CandidateStatuses } from '../../types'
 
 const rodina: Candidate[] = [
   {
@@ -49,6 +49,7 @@ const rodina: Candidate[] = [
     role: 'временно не работает',
     photo: photos.grachev_konstantin,
     party: Parties.rodina,
+    status: CandidateStatuses.registered,
   },
   {
     areaNumber: 8,

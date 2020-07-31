@@ -2,8 +2,9 @@ import React, { memo, useMemo } from 'react'
 import { Col, Container, Image, Row } from 'react-bootstrap'
 import { Link, useParams } from 'react-router-dom'
 
-import candidats from '../../data/candidats'
 import CandidateCard from '../../components/candidateCard'
+import CandidateStatus from '../../components/CandidateStatus'
+import candidats from '../../data/candidats'
 import { Parties } from '../../types'
 
 export default memo(() => {
@@ -40,11 +41,20 @@ export default memo(() => {
           </div>
         </Col>
         <Col className='py-3'>
-          <h1 itemProp='name'>{candidate.name}</h1>
+          <>
+            <h1 itemProp='name'>{candidate.name} </h1>
+            <>
+              <CandidateStatus status={candidate.status} />
+            </>
+          </>
           {candidate.party && partyAlias ? (
-            <Link to={`/parties/${partyAlias[0]}`}>{candidate.party}</Link>
+            <Link className='d-block' to={`/parties/${partyAlias[0]}`}>
+              {candidate.party}
+            </Link>
           ) : (
-            <Link to={'/parties/noParty'}>Самовыдвиженец</Link>
+            <Link className='d-block' to={'/parties/noParty'}>
+              Самовыдвиженец
+            </Link>
           )}
           {candidate.role && <div itemProp='description'>{candidate.role}</div>}
           {candidate.project && <div>{candidate.project}</div>}

@@ -1,5 +1,5 @@
 import * as photos from '../../images/candidates'
-import { Candidate, Parties } from '../../types'
+import { Candidate, Parties, CandidateStatuses } from '../../types'
 
 const sr: Candidate[] = [
   {
@@ -97,6 +97,7 @@ const sr: Candidate[] = [
     photo: photos.noPhoto,
     birthdate: '23.10.1977',
     areaNumber: 11,
+    status: CandidateStatuses.registered,
   },
   {
     alias: 'peshkov_gennadij',
@@ -105,6 +106,7 @@ const sr: Candidate[] = [
     photo: photos.noPhoto,
     birthdate: '28.10.1989',
     areaNumber: 16,
+    status: CandidateStatuses.registered,
   },
   {
     alias: 'repp_vitalij',
@@ -113,6 +115,7 @@ const sr: Candidate[] = [
     photo: photos.noPhoto,
     birthdate: '26.08.1998',
     areaNumber: 7,
+    status: CandidateStatuses.registered,
   },
   {
     alias: 'rubcov_evgenij',
@@ -121,6 +124,7 @@ const sr: Candidate[] = [
     photo: photos.noPhoto,
     birthdate: '10.12.1980',
     areaNumber: 12,
+    status: CandidateStatuses.registered,
   },
   {
     alias: 'rymar artem',
@@ -137,6 +141,7 @@ const sr: Candidate[] = [
     photo: photos.noPhoto,
     birthdate: '24.01.1975',
     areaNumber: 9,
+    status: CandidateStatuses.registered,
   },
   {
     alias: 'suyazova_anastasiya',
@@ -153,6 +158,7 @@ const sr: Candidate[] = [
     photo: photos.noPhoto,
     birthdate: '25.04.1978',
     areaNumber: 10,
+    status: CandidateStatuses.registered,
   },
   {
     alias: 'tyuhin_aleksej',
@@ -177,6 +183,7 @@ const sr: Candidate[] = [
     photo: photos.noPhoto,
     birthdate: '15.03.1987',
     areaNumber: 13,
+    status: CandidateStatuses.registered,
   },
   {
     alias: 'shershnev_yurij',
@@ -185,6 +192,7 @@ const sr: Candidate[] = [
     photo: photos.noPhoto,
     birthdate: '11.04.1950',
     areaNumber: 8,
+    status: CandidateStatuses.registered,
   },
 ]
 

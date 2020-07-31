@@ -2,6 +2,7 @@ import React, { memo } from 'react'
 import { Image } from 'react-bootstrap'
 
 import { Candidate } from '../../types'
+import CandidateStatus from '../CandidateStatus'
 
 export default memo(({ candidate, withParty }: Props) => {
   return (
@@ -14,6 +15,9 @@ export default memo(({ candidate, withParty }: Props) => {
           <i>{candidate.party || 'Самовыдвиженец'}</i>
         </div>
       )}
+      <>
+        <CandidateStatus status={candidate.status} />
+      </>
     </div>
   )
 })

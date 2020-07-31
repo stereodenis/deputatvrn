@@ -1,5 +1,5 @@
 import * as photos from '../../images/candidates'
-import { Candidate, LinkTitle, Project } from '../../types'
+import { Candidate, LinkTitle, Project, CandidateStatuses } from '../../types'
 
 const noParty: Candidate[] = [
   {
@@ -84,6 +84,7 @@ const noParty: Candidate[] = [
     photo: photos.noPhoto,
     birthdate: '13.06.1985',
     areaNumber: 7,
+    status: CandidateStatuses.registered,
   },
   {
     alias: 'gorbunov_aleksej',
@@ -237,6 +238,7 @@ const noParty: Candidate[] = [
     name: 'Кудрявцева Галина Александровна',
     birthdate: '03.07.1945',
     areaNumber: 2,
+    status: CandidateStatuses.registered,
   },
   {
     alias: 'kulikov_igor',
@@ -260,6 +262,7 @@ const noParty: Candidate[] = [
     ],
     project: Project.gorpr,
     photo: photos.kurpek,
+    status: CandidateStatuses.registered,
     message:
       'Всем сердцем люблю город Воронеж. Здесь я родилась, ходила в школу, закончила университет, работаю. Не воспринимаю себя отдельно от Воронежа, он часть меня. Имею большой опыт правозащитной деятельности и реализации социальных проектов. Я выдвигаюсь в депутаты потому, что хочу сделать наш город безопасным и комфортным для всех групп населения, нам просто необходимо сократить смертность на наших дорогах.',
   },
@@ -378,6 +381,7 @@ const noParty: Candidate[] = [
     name: 'Панфилов Алексей Иванович',
     birthdate: '02.10.1974',
     areaNumber: 6,
+    status: CandidateStatuses.registered,
   },
   {
     alias: 'pechurina_alla',

@@ -1,5 +1,5 @@
 import * as photos from '../../images/candidates'
-import { Candidate, Parties } from '../../types'
+import { Candidate, Parties, CandidateStatuses } from '../../types'
 
 const zaPravdu: Candidate[] = [
   {
@@ -17,6 +17,7 @@ const zaPravdu: Candidate[] = [
     photo: photos.noPhoto,
     birthdate: '21.12.1973',
     areaNumber: 8,
+    status: CandidateStatuses.declined,
   },
 ]
 

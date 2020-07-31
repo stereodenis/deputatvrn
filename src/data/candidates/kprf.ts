@@ -1,5 +1,5 @@
 import * as photos from '../../images/candidates'
-import { Candidate, Parties } from '../../types'
+import { Candidate, CandidateStatuses, Parties } from '../../types'
 
 const kprf: Candidate[] = [
   {
@@ -50,6 +50,7 @@ const kprf: Candidate[] = [
     name: 'Калинин Владимир Александрович',
     photo: photos.noPhoto,
     party: Parties.kprf,
+    status: CandidateStatuses.registered,
   },
   {
     areaNumber: 8,
@@ -57,6 +58,7 @@ const kprf: Candidate[] = [
     name: 'Зацепин Алексей Александрович',
     photo: photos.noPhoto,
     party: Parties.kprf,
+    status: CandidateStatuses.registered,
   },
   {
     areaNumber: 9,
@@ -64,6 +66,7 @@ const kprf: Candidate[] = [
     name: 'Корчагин Павел Александрович',
     photo: photos.noPhoto,
     party: Parties.kprf,
+    status: CandidateStatuses.registered,
   },
   {
     areaNumber: 10,
@@ -71,6 +74,7 @@ const kprf: Candidate[] = [
     name: 'Ковалев Василий Николаевич',
     photo: photos.noPhoto,
     party: Parties.kprf,
+    status: CandidateStatuses.registered,
   },
   {
     areaNumber: 11,
@@ -78,6 +82,7 @@ const kprf: Candidate[] = [
     name: 'Сивоплясов Александр Александрович',
     photo: photos.noPhoto,
     party: Parties.kprf,
+    status: CandidateStatuses.registered,
   },
   {
     areaNumber: 12,
@@ -85,6 +90,7 @@ const kprf: Candidate[] = [
     name: 'Крылов Андрей Игоревич',
     photo: photos.noPhoto,
     party: Parties.kprf,
+    status: CandidateStatuses.registered,
   },
   {
     areaNumber: 13,
@@ -92,6 +98,7 @@ const kprf: Candidate[] = [
     name: 'Спиваков Максим Васильевич',
     photo: photos.noPhoto,
     party: Parties.kprf,
+    status: CandidateStatuses.registered,
   },
   {
     areaNumber: 14,
@@ -113,6 +120,7 @@ const kprf: Candidate[] = [
     name: 'Рябов Алексей Анатольевич',
     photo: photos.noPhoto,
     party: Parties.kprf,
+    status: CandidateStatuses.registered,
   },
   {
     areaNumber: 17,
@@ -141,6 +149,7 @@ const kprf: Candidate[] = [
     name: 'Емельянов Евгений Владимирович',
     photo: photos.noPhoto,
     party: Parties.kprf,
+    status: CandidateStatuses.registered,
   },
   {
     areaNumber: 21,

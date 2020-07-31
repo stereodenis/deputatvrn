@@ -6,6 +6,11 @@ export interface Deputat {
   website: string
 }
 
+export enum CandidateStatuses {
+  registered = 'Зарегистрирован',
+  declined = 'Отказ в регистрации',
+}
+
 export interface Candidate {
   areaNumber: number
   name: string
@@ -20,6 +25,7 @@ export interface Candidate {
   problems?: string[]
   message?: string
   birthdate?: string
+  status?: CandidateStatuses
 }
 
 export enum Parties {
