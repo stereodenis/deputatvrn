@@ -14,7 +14,7 @@ export enum CandidateStatuses {
 export interface Person {
   name: string
   alias: string
-  birthdate?: string
+  birthdate: string
   photo: string
   links?: { title: LinkTitle; url: string }[]
   bio?: string

@@ -5,6 +5,7 @@ const er: Person[] = [
   {
     name: 'Ходырев Владимир Фёдорович',
     alias: 'hodyrev_vladimir',
+    birthdate: '23.05.1957',
     photo: 'http://gorduma-voronezh.ru/wp-content/uploads/2019/05/hodyrev_vf.jpg',
     candidate: [
       {
@@ -28,6 +29,7 @@ const er: Person[] = [
   {
     alias: 'shvetsov',
     name: 'Швецов Дмитрий Сергеевич',
+    birthdate: '10.01.1988',
     photo: photos.shvezov_dmitriy,
     candidate: [
       {
@@ -41,6 +43,7 @@ const er: Person[] = [
   {
     alias: 'kochetov_ruslan',
     name: 'Кочетов Руслан Львович',
+    birthdate: '5.05.1974',
     photo: 'http://gorduma-voronezh.ru/wp-content/uploads/2019/05/kochetov_rl.jpg',
     candidate: [
       {
@@ -63,6 +66,7 @@ const er: Person[] = [
   {
     alias: 'chercasov',
     name: 'Черкасов Олег Николаевич',
+    birthdate: '27.01.1968',
     photo: 'http://gorduma-voronezh.ru/wp-content/uploads/2019/05/cherkasov_on.jpg',
     candidate: [
       {
@@ -86,6 +90,7 @@ const er: Person[] = [
   {
     alias: 'avdeev',
     name: 'Авдеев Сергей Алексеевич',
+    birthdate: '17.02.1960',
     photo: photos.avdeev_sergey,
     candidate: [
       {
@@ -99,6 +104,7 @@ const er: Person[] = [
   {
     alias: 'pinigin',
     name: 'Пинигин Алексей Юрьевич',
+    birthdate: '01.07.1973',
     photo: 'http://gorduma-voronezh.ru/wp-content/uploads/2019/05/pinigin_ay.jpg',
     candidate: [
       {
@@ -122,6 +128,7 @@ const er: Person[] = [
   {
     alias: 'tatarintsev',
     name: 'Татаринцев Сергей Сергеевич',
+    birthdate: '09.11.1972',
     photo: photos.tatarinzev_sergey,
     candidate: [
       {
@@ -136,6 +143,7 @@ const er: Person[] = [
   {
     alias: 'rusakov',
     name: 'Русаков Владимир Владимирович',
+    birthdate: '25.05.1985',
     photo: photos.rusakov_vladimir,
     candidate: [
       {
@@ -150,6 +158,7 @@ const er: Person[] = [
   {
     alias: 'chufinev',
     name: 'Чуфинев Александр Валентинович',
+    birthdate: '12.04.1981',
     photo: photos.chufinev_aleksandr,
     candidate: [
       {
@@ -163,6 +172,7 @@ const er: Person[] = [
   {
     alias: 'provotorov',
     name: 'Провоторов Александр Анатольевич',
+    birthdate: '03.06.1972',
     photo: 'http://gorduma-voronezh.ru/wp-content/uploads/2019/05/provotorov_aa.jpg',
     candidate: [
       {
@@ -185,6 +195,7 @@ const er: Person[] = [
   {
     alias: 'zolotarev',
     name: 'Золотарёв Алексей Алексеевич',
+    birthdate: '08.03.1974',
     photo: 'http://gorduma-voronezh.ru/wp-content/uploads/2019/05/zolotarev_aa.jpg',
     candidate: [
       {
@@ -208,6 +219,7 @@ const er: Person[] = [
   {
     alias: 'boyko',
     name: 'Бойко Андрей Николаевич',
+    birthdate: '10.06.1979',
     photo: photos.boiko_andrei,
     candidate: [
       {
@@ -221,6 +233,7 @@ const er: Person[] = [
   {
     alias: 'sobolev',
     name: 'Соболев Андрей Иванович',
+    birthdate: '11.08.1974',
     photo: 'http://gorduma-voronezh.ru/wp-content/uploads/2019/05/sobolev_ai.jpg',
     candidate: [
       {
@@ -244,6 +257,7 @@ const er: Person[] = [
   {
     alias: 'kostyrev',
     name: 'Костырев Игорь Владимирович',
+    birthdate: '29.03.1964',
     photo: 'http://gorduma-voronezh.ru/wp-content/uploads/2019/05/kostyrev_iv.jpg',
     candidate: [
       {
@@ -267,6 +281,7 @@ const er: Person[] = [
   {
     alias: 'solomatina',
     name: 'Соломатина Елена Дмитриевна',
+    birthdate: '27.11.1977',
     photo: photos.solomatina_elena,
     candidate: [
       {
@@ -280,6 +295,7 @@ const er: Person[] = [
   {
     alias: 'koliukh',
     name: 'Колиух Сергей Михайлович',
+    birthdate: '27.10.1960',
     photo: 'http://gorduma-voronezh.ru/wp-content/uploads/2019/05/koliuh_sm.jpg',
     candidate: [
       {
@@ -302,6 +318,7 @@ const er: Person[] = [
   {
     alias: 'zhukov',
     name: 'Жуков Александр Алексеевич',
+    birthdate: '29.12.1954',
     photo: 'http://gorduma-voronezh.ru/wp-content/uploads/2019/05/zhukov_aa.jpg',
     candidate: [
       {
@@ -325,6 +342,7 @@ const er: Person[] = [
   {
     alias: 'kandybin',
     name: 'Кандыбин Иван Владимирович',
+    birthdate: '16.02.1976',
     photo: 'http://gorduma-voronezh.ru/wp-content/uploads/2019/05/kandybin_iv.jpg',
     candidate: [
       {
@@ -348,6 +366,7 @@ const er: Person[] = [
   {
     alias: 'kudryavtsev',
     name: 'Кудрявцев Сергей Николаевич',
+    birthdate: '13.09.1971',
     photo: 'http://gorduma-voronezh.ru/wp-content/uploads/2019/05/kudryavtsev_sn.jpg',
     candidate: [
       {
@@ -371,6 +390,7 @@ const er: Person[] = [
   {
     alias: 'chistyakov',
     name: 'Чистяков Александр Александрович',
+    birthdate: '21.01.1970',
     photo: 'http://gorduma-voronezh.ru/wp-content/uploads/2019/05/chistyakov_aa.jpg',
     candidate: [
       {
@@ -394,6 +414,7 @@ const er: Person[] = [
   {
     alias: 'krutskikh',
     name: 'Крутских Дмитрий Борисович',
+    birthdate: '23.02.1980',
     photo: 'http://gorduma-voronezh.ru/wp-content/uploads/2019/05/krutskih_db.jpg',
     candidate: [
       {
@@ -420,6 +441,7 @@ const er: Person[] = [
   {
     alias: 'popova',
     name: 'Попова Юлия Владимировна',
+    birthdate: '17.09.1976',
     photo: 'http://gorduma-voronezh.ru/wp-content/uploads/2019/05/popova_yv.jpg',
     candidate: [
       {
@@ -441,8 +463,9 @@ const er: Person[] = [
     ],
   },
   {
-    alias: 'klevtsov',
+    alias: 'kletsov_vadim',
     name: 'Клецов Вадим Владимирович',
+    birthdate: '07.06.1969',
     photo: 'http://gorduma-voronezh.ru/wp-content/uploads/2019/05/kletsov_vv.jpg',
     candidate: [
       {
@@ -466,6 +489,7 @@ const er: Person[] = [
   {
     alias: 'trubetskoy',
     name: 'Трубецкой Александр Николаевич',
+    birthdate: '29.11.1953',
     photo: 'http://gorduma-voronezh.ru/wp-content/uploads/2019/05/trubetskoy_an.jpg',
     candidate: [
       {
@@ -489,6 +513,7 @@ const er: Person[] = [
   {
     alias: 'sysoev',
     name: 'Сысоев Александр Владимирович',
+    birthdate: '04.10.1965',
     photo: 'http://gorduma-voronezh.ru/wp-content/uploads/2019/05/sysoev_av.jpg',
     candidate: [
       {
@@ -513,6 +538,7 @@ const er: Person[] = [
   {
     alias: 'kovalev_viktor',
     name: 'Ковалев Виктор Викторович',
+    birthdate: '01.01.1979', // TODO
     photo: 'http://gorduma-voronezh.ru/wp-content/uploads/2019/05/kovalev_vv.jpg',
     candidate: [
       {
@@ -535,6 +561,7 @@ const er: Person[] = [
   {
     alias: 'turin_aleksandr',
     name: 'Тюрин Александр Борисович',
+    birthdate: '08.01.1980',
     photo: 'http://gorduma-voronezh.ru/wp-content/uploads/2019/05/tyurin_ab.jpg',
     candidate: [
       {
@@ -557,6 +584,7 @@ const er: Person[] = [
   {
     alias: 'oganezov_sergey',
     name: 'Оганезов Сергей Иванович',
+    birthdate: '07.12.1959',
     photo: 'http://gorduma-voronezh.ru/wp-content/uploads/2019/05/oganezov_si.jpg',
     candidate: [
       {
@@ -579,6 +607,7 @@ const er: Person[] = [
   {
     alias: 'golovin_aleksandr',
     name: 'Головин Александр Иванович',
+    birthdate: '28.10.1964',
     photo: 'http://gorduma-voronezh.ru/wp-content/uploads/2019/05/golovin_ai.jpg',
     candidate: [
       {
@@ -601,6 +630,7 @@ const er: Person[] = [
   {
     alias: 'grebenkin_nikolay',
     name: 'Гребенкин Николай Тимофеевич',
+    birthdate: '14.05.1960',
     photo: 'http://gorduma-voronezh.ru/wp-content/uploads/2019/05/grebenkin_nt.jpg',
     candidate: [
       {

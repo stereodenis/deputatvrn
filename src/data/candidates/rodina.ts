@@ -4,7 +4,8 @@ import { Person, LinkTitle, Parties, Project, CandidateStatuses } from '../../ty
 const rodina: Person[] = [
   {
     alias: 'hatunzev',
-    name: 'Станислав Хатунцев',
+    name: 'Хатунцев Станислав Витальевич',
+    birthdate: '16.10.1967',
     candidate: [
       {
         areaNumber: 1,
@@ -17,7 +18,8 @@ const rodina: Person[] = [
   },
   {
     alias: 'ryabykh',
-    name: 'Александр Рябых',
+    name: 'Рябых Александр Александрович',
+    birthdate: '01.09.1969',
     candidate: [
       {
         areaNumber: 3,
@@ -30,7 +32,8 @@ const rodina: Person[] = [
   },
   {
     alias: 'semin',
-    name: 'Геннадий Семин',
+    name: 'Семин Геннадий Владимирович',
+    birthdate: '04.12.1967',
     candidate: [
       {
         areaNumber: 4,
@@ -43,7 +46,8 @@ const rodina: Person[] = [
   },
   {
     alias: 'batishev',
-    name: 'Эдуард Батищев',
+    name: 'Батищев Эдуард Владимирович',
+    birthdate: '14.12.1975',
     candidate: [
       {
         areaNumber: 5,
@@ -56,7 +60,8 @@ const rodina: Person[] = [
   },
   {
     alias: 'zaharov',
-    name: 'Александр Захаров',
+    name: 'Захаров Александр Александрович',
+    birthdate: '06.03.1971',
     candidate: [
       {
         areaNumber: 6,
@@ -69,7 +74,8 @@ const rodina: Person[] = [
   },
   {
     alias: 'grachev',
-    name: 'Константин Грачев',
+    name: 'Грачев Константин Александрович',
+    birthdate: '17.03.1978',
     candidate: [
       {
         areaNumber: 7,
@@ -83,7 +89,8 @@ const rodina: Person[] = [
   },
   {
     alias: 'krasiv',
-    name: 'Александр Красиков',
+    name: 'Красиков Александр Семенович',
+    birthdate: '20.05.1975',
     candidate: [
       {
         areaNumber: 8,
@@ -96,7 +103,8 @@ const rodina: Person[] = [
   },
   {
     alias: 'petukhov',
-    name: 'Максим Петухов',
+    name: 'Петухов Максим Викторович',
+    birthdate: '05.01.1986',
     candidate: [
       {
         areaNumber: 9,
@@ -109,7 +117,8 @@ const rodina: Person[] = [
   },
   {
     alias: 'ivanishev',
-    name: 'Виталий Иванищев',
+    name: 'Иванищев Виталий Игоревич',
+    birthdate: '06.05.1987',
     candidate: [
       {
         areaNumber: 10,
@@ -130,7 +139,8 @@ const rodina: Person[] = [
   },
   {
     alias: 'filatov',
-    name: 'Андрей Филатов',
+    name: 'Филатов Андрей Викторович',
+    birthdate: '22.08.1984',
     candidate: [
       {
         areaNumber: 11,
@@ -143,7 +153,8 @@ const rodina: Person[] = [
   },
   {
     alias: 'kucherin',
-    name: 'Павел Кучерин',
+    name: 'Кучерин Павел Николаевич',
+    birthdate: '29.05.1979',
     candidate: [
       {
         areaNumber: 12,
@@ -156,7 +167,8 @@ const rodina: Person[] = [
   },
   {
     alias: 'shvydkii',
-    name: 'Владимир Швыдкий',
+    name: 'Швыдкий Владимир Валерьевич',
+    birthdate: '26.10.1982',
     candidate: [
       {
         areaNumber: 13,
@@ -169,7 +181,8 @@ const rodina: Person[] = [
   },
   {
     alias: 'ofitzerova',
-    name: 'Ольга Офицерова',
+    name: 'Офицерова Ольга Александровна',
+    birthdate: '21.08.1968',
     candidate: [
       {
         areaNumber: 14,
@@ -182,7 +195,8 @@ const rodina: Person[] = [
   },
   {
     alias: 'ivanov',
-    name: 'Антон Иванов',
+    name: 'Иванов Антон Данилович',
+    birthdate: '26.07.1988',
     candidate: [
       {
         areaNumber: 15,
@@ -195,7 +209,8 @@ const rodina: Person[] = [
   },
   {
     alias: 'kudinova',
-    name: 'Татьяна Кудинова',
+    name: 'Кудинова Татьяна Михайловна',
+    birthdate: '12.08.1955',
     photo: photos.kudinova_tatiana,
     candidate: [
       {
@@ -208,7 +223,8 @@ const rodina: Person[] = [
   },
   {
     alias: 'andreev',
-    name: 'Николай Андреев',
+    name: 'Андреев Николай Юрьевич',
+    birthdate: '21.07.1990',
     photo: photos.andreev_nikolay,
     candidate: [
       {
@@ -227,7 +243,8 @@ const rodina: Person[] = [
   },
   {
     alias: 'chekmarev',
-    name: 'Артем Чекмарев',
+    name: 'Чекмарев Артем Витальевич',
+    birthdate: '27.05.1993',
     candidate: [
       {
         areaNumber: 18,
@@ -240,7 +257,8 @@ const rodina: Person[] = [
   },
   {
     alias: 'ostroushko',
-    name: 'Иван Остроушко',
+    name: 'Остроушко Иван Петрович',
+    birthdate: '14.01.1989',
     candidate: [
       {
         areaNumber: 19,
@@ -253,7 +271,8 @@ const rodina: Person[] = [
   },
   {
     alias: 'yakovez',
-    name: 'Елена Яковец',
+    name: 'Яковец Елена Владимировна',
+    birthdate: '06.12.1982',
     candidate: [
       {
         areaNumber: 21,
@@ -270,7 +289,8 @@ const rodina: Person[] = [
   },
   {
     alias: 'shalygin',
-    name: 'Николай Шалыгин',
+    name: 'Шалыгин Николай Николаевич',
+    birthdate: '09.05.1983',
     photo: photos.shalygin_nikolay,
     candidate: [
       {
@@ -283,7 +303,8 @@ const rodina: Person[] = [
   },
   {
     alias: 'safonov',
-    name: 'Сергей Сафонов',
+    name: 'Сафонов Сергей Иванович',
+    birthdate: '14.11.1976',
     photo: photos.safonov_sergey,
     candidate: [
       {
@@ -296,7 +317,8 @@ const rodina: Person[] = [
   },
   {
     alias: 'sokolov_v',
-    name: 'Вячеслав Соколов',
+    name: 'Соколов Вячеслав Олегович',
+    birthdate: '28.04.1980',
     photo: photos.sokolov_vyacheslav,
     candidate: [
       {

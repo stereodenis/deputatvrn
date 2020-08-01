@@ -5,6 +5,7 @@ const kprf: Person[] = [
   {
     name: 'Бирюков Михаил Евгеньевич',
     alias: 'birukov',
+    birthdate: '07.05.1961',
     photo: photos.noPhoto,
     candidate: [
       {
@@ -17,6 +18,7 @@ const kprf: Person[] = [
   {
     alias: 'proshunin',
     name: 'Прошунин Александр Вячеславович',
+    birthdate: '02.08.1984',
     photo: photos.noPhoto,
     candidate: [
       {
@@ -29,6 +31,7 @@ const kprf: Person[] = [
   {
     alias: 'verbovaya',
     name: 'Вербовая Елена Петровна',
+    birthdate: '31.12.1972',
     photo: photos.noPhoto,
     candidate: [
       {
@@ -42,6 +45,7 @@ const kprf: Person[] = [
   {
     alias: 'zarezkih',
     name: 'Зарецких Алексей Александрович',
+    birthdate: '06.10.1977',
     photo: photos.noPhoto,
     candidate: [
       {
@@ -55,6 +59,7 @@ const kprf: Person[] = [
   {
     alias: 'kovalevskii',
     name: 'Ковалевский Валентин Вячеславович',
+    birthdate: '14.02.1996',
     photo: photos.noPhoto,
     candidate: [
       {
@@ -68,6 +73,7 @@ const kprf: Person[] = [
   {
     alias: 'shelyakin',
     name: 'Шелякин Артур Дмитриевич',
+    birthdate: '05.05.1967',
     photo: photos.noPhoto,
     candidate: [
       {
@@ -81,6 +87,7 @@ const kprf: Person[] = [
   {
     alias: 'kalinin',
     name: 'Калинин Владимир Александрович',
+    birthdate: '08.06.1985',
     photo: 'http://gorduma-voronezh.ru/wp-content/uploads/2019/05/kalinin_va.jpg',
     candidate: [
       {
@@ -104,6 +111,7 @@ const kprf: Person[] = [
   {
     alias: 'zazepin',
     name: 'Зацепин Алексей Александрович',
+    birthdate: '27.05.1979',
     photo: photos.noPhoto,
     candidate: [
       {
@@ -117,6 +125,7 @@ const kprf: Person[] = [
   {
     alias: 'korchagin',
     name: 'Корчагин Павел Александрович',
+    birthdate: '16.06.1969',
     photo: photos.noPhoto,
     candidate: [
       {
@@ -129,7 +138,8 @@ const kprf: Person[] = [
   },
   {
     alias: 'kovalev',
-    name: 'Ковалев Василий Николаевич',
+    name: 'Ковалёв Василий Николаевич',
+    birthdate: '20.07.1980',
     photo: photos.kovalev_vasiliy,
     candidate: [
       {
@@ -143,6 +153,7 @@ const kprf: Person[] = [
   {
     alias: 'sivoplyasov',
     name: 'Сивоплясов Александр Александрович',
+    birthdate: '27.09.1990',
     photo: photos.noPhoto,
     candidate: [
       {
@@ -156,6 +167,7 @@ const kprf: Person[] = [
   {
     alias: 'krylov',
     name: 'Крылов Андрей Игоревич',
+    birthdate: '08.06.1966',
     photo: photos.noPhoto,
     candidate: [
       {
@@ -169,6 +181,7 @@ const kprf: Person[] = [
   {
     alias: 'spivakov',
     name: 'Спиваков Максим Васильевич',
+    birthdate: '12.01.1977',
     photo: photos.noPhoto,
     candidate: [
       {
@@ -182,6 +195,7 @@ const kprf: Person[] = [
   {
     alias: 'pomeranzev',
     name: 'Померанцев Андрей Сергеевич',
+    birthdate: '08.03.1976',
     photo: photos.noPhoto,
     candidate: [
       {
@@ -195,6 +209,7 @@ const kprf: Person[] = [
   {
     alias: 'kudrevatykh',
     name: 'Кудреватых Вячеслав Анатольевич',
+    birthdate: '06.10.1977',
     photo: photos.noPhoto,
     candidate: [
       {
@@ -207,6 +222,7 @@ const kprf: Person[] = [
   {
     alias: 'ryabov',
     name: 'Рябов Алексей Анатольевич',
+    birthdate: '26.12.1992',
     photo: photos.noPhoto,
     candidate: [
       {
@@ -220,6 +236,7 @@ const kprf: Person[] = [
   {
     alias: 'sitnikov',
     name: 'Ситников Максим Михайлович',
+    birthdate: '17.05.1989',
     photo: photos.noPhoto,
     candidate: [
       {
@@ -233,6 +250,7 @@ const kprf: Person[] = [
   {
     name: 'Глуховцев Даниил Сергеевич',
     alias: 'gluhovzev',
+    birthdate: '02.08.1998',
     photo: photos.noPhoto,
     candidate: [
       {
@@ -246,6 +264,7 @@ const kprf: Person[] = [
   {
     alias: 'shabunin',
     name: 'Шабунин Александр Николаевич',
+    birthdate: '19.07.1985',
     photo: photos.noPhoto,
     candidate: [
       {
@@ -258,6 +277,7 @@ const kprf: Person[] = [
   {
     alias: 'emelyanov',
     name: 'Емельянов Евгений Владимирович',
+    birthdate: '04.07.1968',
     photo: photos.noPhoto,
     candidate: [
       {
@@ -271,6 +291,7 @@ const kprf: Person[] = [
   {
     alias: 'kadanzev',
     name: 'Каданцев Михаил Михайлович',
+    birthdate: '15.01.1991',
     photo: photos.noPhoto,
     candidate: [
       {
@@ -284,6 +305,7 @@ const kprf: Person[] = [
   {
     alias: 'kobylkin',
     name: 'Кобылкин Владислав Васильевич',
+    birthdate: '27.06.1983',
     photo: photos.noPhoto,
     candidate: [
       {
@@ -297,6 +319,7 @@ const kprf: Person[] = [
   {
     alias: 'zverev',
     name: 'Зверев Николай Николаевич',
+    birthdate: '04.09.1997',
     photo: photos.noPhoto,
     candidate: [
       {
@@ -310,6 +333,7 @@ const kprf: Person[] = [
   {
     alias: 'roslik',
     name: 'Рослик Денис Викторович',
+    birthdate: '09.07.1986',
     photo: photos.noPhoto,
     candidate: [
       {

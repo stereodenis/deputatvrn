@@ -1,12 +1,13 @@
 import * as photos from '../../images/candidates'
-import { Person, LinkTitle, Parties, Project } from '../../types'
+import { LinkTitle, Parties, Person, Project } from '../../types'
 
 const yabloko: Person[] = [
   {
     alias: 'ashurkov',
     name: 'Ашурков Юрий Борисович',
     photo: photos.noPhoto,
-    bio: 'дата рождения 02 сентября 1965 г. Образование – Высшее профессиональное',
+    birthdate: '02.09.1965',
+    bio: 'Образование – Высшее профессиональное',
     // other: 'адрес места жительства Воронежская обл., г. Воронеж, ул. Серго, д. 26, '
     candidate: [
       {
@@ -20,6 +21,7 @@ const yabloko: Person[] = [
   {
     alias: 'mushtenko',
     name: 'Муштенко Сергей Владимирович',
+    birthdate: '22.03.1961',
     links: [
       {
         title: LinkTitle.website,
@@ -27,7 +29,7 @@ const yabloko: Person[] = [
       },
     ],
     photo: photos.mushtenko_sergey,
-    bio: 'дата рождения 22.03.1961 г., образование – Высшее профессиональное, Не является членом РОДП «ЯБЛОКО»',
+    bio: 'Образование – Высшее профессиональное, Не является членом РОДП «ЯБЛОКО»',
     // other: 'места жительства Воронежская обл., г. Воронеж, ул. 3 Интернационала, дом 3, кв. 23.',
     candidate: [
       {
@@ -39,8 +41,22 @@ const yabloko: Person[] = [
     ],
   },
   {
+    alias: 'shlyaev_alexey',
+    name: 'Шляев Алексей Рудольфович',
+    birthdate: '08.03.1967',
+    photo: photos.noPhoto,
+    candidate: [
+      {
+        callNumber: 5,
+        areaNumber: 19,
+        party: Parties.yabloko,
+      },
+    ],
+  },
+  {
     alias: 'strelnikov',
     name: 'Стрельников Александр Валерьевич',
+    birthdate: '04.06.2000',
     links: [
       { title: LinkTitle.telegram, url: 'http://t.me/aleks_strelnikov' },
       { title: LinkTitle.vk, url: 'https://vk.com/aleksandr_strelnikow' },
@@ -49,7 +65,7 @@ const yabloko: Person[] = [
     ],
     photo: photos.strelnikov,
     bio:
-      'дата рождения,04 июня 2000 г. Образование - среднее, Член РОДП «ЯБЛОКО». Член Регионального Совета РОДП «ЯБЛОКО», Член Федерального Совета РОДП  «ЯБЛОКО»',
+      'Образование - среднее, Член РОДП «ЯБЛОКО». Член Регионального Совета РОДП «ЯБЛОКО», Член Федерального Совета РОДП  «ЯБЛОКО»',
     // other: 'место жительства Воронежская область, город Воронеж, пр-кт Московский, д. 142У, кв.48 .',
     candidate: [
       {
@@ -73,8 +89,9 @@ const yabloko: Person[] = [
   {
     alias: 'evsukov',
     name: 'Евсюков Илья Анатольевич',
+    birthdate: '02.12.1976',
     photo: photos.evsukov_ilya,
-    bio: 'дата рождения 02 декабря 1976 г., образование – Высшее профессиональное, Не является членом РОДП «ЯБЛОКО»',
+    bio: 'Образование – Высшее профессиональное, Не является членом РОДП «ЯБЛОКО»',
     // other: 'адрес места жительства, Воронежская область г. Воронеж, ул. Фр. Энгельса, д. 16, кв. 9. '
     candidate: [
       {
@@ -89,8 +106,9 @@ const yabloko: Person[] = [
   {
     alias: 'beylin',
     name: 'Бейлин Илья Феликсович',
+    birthdate: '19.02.1972',
     photo: photos.beylin,
-    bio: 'дата рождения, 19 февраля 1972 г. Образование – высшее профессиональное. Не является членом РОДП «ЯБЛОКО»',
+    bio: 'Образование – высшее профессиональное. Не является членом РОДП «ЯБЛОКО»',
     // other: 'адрес места жительства Воронежская область г. Воронеж, Квартал Жилой массив Олимпийский, д. 4, кв. 273.'
     candidate: [
       {
@@ -105,13 +123,14 @@ const yabloko: Person[] = [
   {
     alias: 'pyrinov',
     name: 'Пыринов Андрей Игоревич',
+    birthdate: '06.06.1990',
     links: [
       { title: LinkTitle.telegram, url: 'http://t.me/andreypyrinov' },
       { title: LinkTitle.vk, url: 'https://vk.com/andreypyrinov' },
       { title: LinkTitle.gorprojects, url: 'https://go.city4people.ru/fundraising/personal/196' },
     ],
     photo: photos.pyrinov,
-    bio: 'дата рождения 06 июня 1990 г. Образование -  Высшее профессиональное. Член РОДП «ЯБЛОКО»',
+    bio: 'Образование -  Высшее профессиональное. Член РОДП «ЯБЛОКО»',
     // other: 'адрес места жительства: Воронежская область, г. Воронеж, Московский проспект, д.48а, кв.31.'
     candidate: [
       {
@@ -128,9 +147,10 @@ const yabloko: Person[] = [
   {
     alias: 'bobrov',
     name: 'Бобров Алексанр Валентинович',
+    birthdate: '04.12.1965',
     photo: photos.bobrov_aleksandr,
     links: [{ title: LinkTitle.website, url: 'https://partnerstvo.blagorussia.ru/2020/03/prezident-partnerstva.html' }],
-    bio: 'дата рождения 04 декабря 1965 г., образование – Высшее профессиональное. Не является членом Партии «ЯБЛОКО»',
+    bio: 'Образование – Высшее профессиональное. Не является членом Партии «ЯБЛОКО»',
     // other: 'место жительства Воронежская обл., г. Воронеж, ул. Карла Маркса, д.94, кв. 22.',
     candidate: [
       {
