@@ -11,21 +11,32 @@ export enum CandidateStatuses {
   declined = 'Отказ в регистрации',
 }
 
-export interface Candidate {
-  areaNumber: number
+export interface Person {
   name: string
   alias: string
-  role?: string
-  party?: Parties
-  project?: Project
+  birthdate?: string
   photo: string
   links?: { title: LinkTitle; url: string }[]
   bio?: string
-  program?: string
-  problems?: string[]
-  message?: string
-  birthdate?: string
-  status?: CandidateStatuses
+  candidate: {
+    areaNumber: number
+    callNumber: number
+    party?: Parties
+    project?: Project
+    role?: string
+    status?: CandidateStatuses
+    program?: string
+    problems?: string[]
+    message?: string
+  }[]
+  deputat?: {
+    areaNumber: number
+    callNumber: number
+    party: Parties
+    office: string
+    phones: string[]
+    website: string
+  }[]
 }
 
 export enum Parties {

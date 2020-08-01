@@ -4,14 +4,15 @@ import { Col, Container, Row } from 'react-bootstrap'
 import { Link } from 'react-router-dom'
 
 import { CandidateCard } from '../../components'
-import candidats from '../../data/candidats'
+import persons from '../../data/persons'
+import { getCurrentCandidate } from '../../helpers'
 
 export default memo(() => {
   return (
     <Container fluid>
       <h1>Кандидаты в депутаты</h1>
-      {Object.keys(groupBy(candidats, 'areaNumber')).map((areaNumber) => {
-        const areaCandidats = candidats.filter((c) => c.areaNumber === Number(areaNumber))
+      {Object.keys(groupBy(persons, (p) => getCurrentCandidate(p)?.areaNumber)).map((areaNumber) => {
+        const areaCandidats = persons.filter((p) => p.candidate.find((c) => c.areaNumber === Number(areaNumber)))
 
         return (
           <div key={areaNumber} className='border-bottom py-3'>
@@ -22,18 +23,18 @@ export default memo(() => {
             </div>
 
             <Row>
-              {shuffle(areaCandidats).map((candidate) => (
+              {shuffle(areaCandidats).map((person) => (
                 <Col
                   xs={12}
                   sm={6}
                   md={4}
                   lg={3}
                   xl={2}
-                  key={candidate.name}
+                  key={person.name}
                   className='border-xs-top border-sm-none py-3'
                 >
-                  <Link to={`/candidates/${candidate.alias}`} className={'d-block'}>
-                    <CandidateCard {...{ candidate }} withParty />
+                  <Link to={`/candidates/${person.alias}`} className={'d-block'}>
+                    <CandidateCard {...{ person }} withParty />
                   </Link>
                 </Col>
               ))}

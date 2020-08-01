@@ -1,15 +1,22 @@
 import React, { memo } from 'react'
 import { Image } from 'react-bootstrap'
 
-import { Deputat } from '../../types'
+import { CURRENT_CALL_NUMBER } from '../../constants'
+import { Person } from '../../types'
 
-export default memo(({ deputat, areaNumber }: Props) => {
+export default memo(({ candidate }: Props) => {
+  const deputat = candidate?.deputat?.find((d) => d.callNumber === CURRENT_CALL_NUMBER)
+
+  if (!candidate || !deputat) {
+    return null
+  }
+
   return (
     <div className=''>
-      <Image width={'100%'} className='mr-3' src={deputat.photo} alt={`фото депутата ${deputat.name}`} />
+      <Image width={'100%'} className='mr-3' src={candidate.photo} alt={`фото депутата ${candidate.name}`} />
       <div className='mt-2'>
-        <div className=''>{deputat.name}</div>
-        <div className='mt-1'>Округ № {areaNumber}</div>
+        <div className=''>{candidate.name}</div>
+        <div className='mt-1'>Округ № {deputat.areaNumber}</div>
         <div className='mt-1'>Адрес приёмной:</div>
         <div>{deputat.office}</div>
         <div className='mt-1'>Телефон приёмной:</div>
@@ -31,6 +38,5 @@ export default memo(({ deputat, areaNumber }: Props) => {
 })
 
 interface Props {
-  deputat: Deputat
-  areaNumber: string
+  candidate?: Person
 }

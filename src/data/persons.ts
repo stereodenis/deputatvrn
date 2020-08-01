@@ -1,4 +1,4 @@
-import { Candidate } from '../types'
+import { Person } from '../types'
 
 import er from './candidates/er'
 import ldpr from './candidates/ldpr'
@@ -10,15 +10,5 @@ import yabloko from './candidates/yabloko'
 import zaPravdu from './candidates/za_pravdu'
 import kprf from './candidates/kprf'
 
-const candidats: Candidate[] = [
-  ...noParty,
-  ...kprf,
-  ...rodina,
-  ...newPeople,
-  ...ldpr,
-  ...sr,
-  ...zaPravdu,
-  ...er,
-  ...yabloko,
-]
-export default candidats
+const persons: Person[] = [...noParty, ...kprf, ...rodina, ...newPeople, ...ldpr, ...sr, ...zaPravdu, ...er, ...yabloko]
+export default persons
