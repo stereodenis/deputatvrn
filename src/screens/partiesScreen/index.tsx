@@ -19,7 +19,8 @@ const mapPartyToLogo: { [s: string]: string } = {
 }
 
 export default memo(() => {
-  const noPartyCandidates = persons.filter((p) => !getCurrentCandidate(p)?.party)
+  const currentPersons = persons.filter(getCurrentCandidate)
+  const noPartyCandidates = currentPersons.filter((p) => !getCurrentCandidate(p)?.party)
 
   return (
     <Container fluid>
@@ -39,7 +40,7 @@ export default memo(() => {
         </Col>
 
         {shuffle(Object.keys(Parties) as Array<keyof typeof Parties>).map((partyAlias) => {
-          const partyCandidates = persons.filter((p) => getCurrentCandidate(p)?.party === Parties[partyAlias])
+          const partyCandidates = currentPersons.filter((p) => getCurrentCandidate(p)?.party === Parties[partyAlias])
 
           if (!partyCandidates.length) {
             return null

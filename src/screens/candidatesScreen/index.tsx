@@ -12,7 +12,7 @@ export default memo(() => {
 
   return (
     <Container fluid>
-      <h1>Кандидаты в депутаты</h1>
+      <h1>Кандидаты в депутаты ({currentPersons.length})</h1>
       {Object.keys(groupBy(currentPersons, (p) => getCurrentCandidate(p)?.areaNumber)).map((areaNumber) => {
         const areaCandidats = currentPersons.filter((p) => p.candidate.find((c) => c.areaNumber === Number(areaNumber)))
 
