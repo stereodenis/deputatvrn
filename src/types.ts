@@ -28,14 +28,11 @@ export interface Person {
     program?: string
     problems?: string[]
     message?: string
-  }[]
-  deputat?: {
-    areaNumber: number
-    callNumber: number
-    party: Parties
-    office: string
-    phones: string[]
-    website: string
+    deputat?: {
+      office: string
+      phones: string[]
+      website: string
+    }
   }[]
 }
 

@@ -3,8 +3,7 @@ import { Container, Row, Col, Image } from 'react-bootstrap'
 import { Link } from 'react-router-dom'
 import { shuffle } from 'lodash'
 
-import persons from '../../data/persons'
-import { getCurrentCandidate } from '../../helpers'
+import { currentPersons, getCurrentCandidate, getPartyCandidates } from '../../helpers'
 import { Parties } from '../../types'
 
 const mapPartyToLogo: { [s: string]: string } = {
@@ -19,7 +18,6 @@ const mapPartyToLogo: { [s: string]: string } = {
 }
 
 export default memo(() => {
-  const currentPersons = persons.filter(getCurrentCandidate)
   const noPartyCandidates = currentPersons.filter((p) => !getCurrentCandidate(p)?.party)
 
   return (
@@ -40,7 +38,7 @@ export default memo(() => {
         </Col>
 
         {shuffle(Object.keys(Parties) as Array<keyof typeof Parties>).map((partyAlias) => {
-          const partyCandidates = currentPersons.filter((p) => getCurrentCandidate(p)?.party === Parties[partyAlias])
+          const partyCandidates = getPartyCandidates(partyAlias)
 
           if (!partyCandidates.length) {
             return null

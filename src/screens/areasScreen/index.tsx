@@ -3,9 +3,8 @@ import { Container, Col, Row } from 'react-bootstrap'
 import { Link } from 'react-router-dom'
 import { times } from 'lodash'
 
-import { CURRENT_CALL_NUMBER } from '../../constants'
 import areas from '../../data/areas'
-import persons from '../../data/persons'
+import { getAreaCandidates, getPersonWithCurrentDeputat } from '../../helpers'
 
 export default memo(() => {
   return (
@@ -14,10 +13,9 @@ export default memo(() => {
         {times(24).map((rawAreaNumber) => {
           const areaNumber = rawAreaNumber + 1
           const area = areas[areaNumber]
-          const areaCandidates = persons.filter((p) => p.candidate.find((c) => c.areaNumber === areaNumber))
-          const deputatPerson = persons.find((p) =>
-            p.deputat?.find((d) => d.callNumber === CURRENT_CALL_NUMBER && d.areaNumber === areaNumber)
-          )
+          const areaCandidates = getAreaCandidates(areaNumber)
+          const deputatPerson = getPersonWithCurrentDeputat(areaNumber)
+
           return (
             <Col xs={6} sm={4} md={3} lg={2} xl={2} key={areaNumber} className='border py-3'>
               <Link to={`/areas/${areaNumber}`} className=''>

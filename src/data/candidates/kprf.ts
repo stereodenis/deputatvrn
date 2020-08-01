@@ -91,20 +91,20 @@ const kprf: Person[] = [
     photo: 'http://gorduma-voronezh.ru/wp-content/uploads/2019/05/kalinin_va.jpg',
     candidate: [
       {
+        callNumber: 4,
+        areaNumber: 7,
+        party: Parties.kprf,
+        deputat: {
+          office: 'Ленинский проспект, 15 оф 203',
+          phones: ['+74732585816', '+79290064478'],
+          website: 'http://gorduma-voronezh.ru/kalinin-vladimir-aleksandrovich/',
+        },
+      },
+      {
         callNumber: 5,
         areaNumber: 7,
         party: Parties.kprf,
         status: CandidateStatuses.registered,
-      },
-    ],
-    deputat: [
-      {
-        callNumber: 4,
-        areaNumber: 7,
-        party: Parties.kprf,
-        office: 'Ленинский проспект, 15 оф 203',
-        phones: ['+74732585816', '+79290064478'],
-        website: 'http://gorduma-voronezh.ru/kalinin-vladimir-aleksandrovich/',
       },
     ],
   },

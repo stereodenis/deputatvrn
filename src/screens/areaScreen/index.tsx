@@ -5,11 +5,10 @@ import { Link, useParams } from 'react-router-dom'
 import MetaTags from 'react-meta-tags'
 import { Image } from 'react-bootstrap'
 
-import { CURRENT_CALL_NUMBER } from '../../constants'
-import persons from '../../data/persons'
 import { DeputatCard, CandidateCard } from '../../components'
 import areas from '../../data/areas'
 import areasImages from '../../images/areas'
+import { getAreaCandidates, getPersonWithCurrentDeputat } from '../../helpers'
 
 function youtube_parser(url: string) {
   const regExp = /^.*((youtu.be\/)|(v\/)|(\/u\/\w\/)|(embed\/)|(watch\?))\??v?=?([^#&?]*).*/
@@ -20,16 +19,8 @@ function youtube_parser(url: string) {
 export default memo(() => {
   const { areaNumber } = useParams()
   const area = areas[areaNumber]
-  const deputatCandidate = persons.find((c) => {
-    return c.deputat && c.deputat.find((d) => d.areaNumber === Number(areaNumber))
-  })
-  const areaCandidats = useMemo(
-    () =>
-      persons.filter((p) =>
-        p.candidate.find((c) => c.areaNumber === Number(areaNumber) && c.callNumber === CURRENT_CALL_NUMBER + 1)
-      ),
-    [areaNumber]
-  )
+  const personWithCurrentDeputat = getPersonWithCurrentDeputat(Number(areaNumber))
+  const areaCandidats = useMemo(() => getAreaCandidates(Number(areaNumber)), [areaNumber])
 
   return (
     <Container fluid>
@@ -65,7 +56,7 @@ export default memo(() => {
         <h2 className='mt-3'>Текущий депутат</h2>
         <Row>
           <Col xs={12} sm={6} md={4} lg={3} xl={2}>
-            <DeputatCard {...{ candidate: deputatCandidate }} />
+            <DeputatCard {...{ person: personWithCurrentDeputat }} />
           </Col>
         </Row>
       </div>

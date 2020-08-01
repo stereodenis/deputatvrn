@@ -4,25 +4,19 @@ import { Container, Row, Col } from 'react-bootstrap'
 // @ts-ignore
 import MetaTags from 'react-meta-tags'
 
-import persons from '../../data/persons'
 import { Parties } from '../../types'
 import { CandidateCard } from '../../components'
-import { getCurrentCandidate } from '../../helpers'
+import { currentPersons, getCurrentCandidate, getPartyCandidates } from '../../helpers'
 
 export default memo(() => {
   const { partyAlias } = useParams<{ partyAlias: keyof typeof Parties }>()
   // @ts-ignore
   const isNoParty = partyAlias === 'noParty'
   const title = isNoParty ? 'Самовыдвиженцы' : `Партия «${Parties[partyAlias]}»`
-  const currentPersons = persons.filter(getCurrentCandidate)
 
   const partyCandidates = useMemo(
-    () =>
-      currentPersons.filter((p) => {
-        const party = getCurrentCandidate(p)?.party
-        return isNoParty ? !party : party === Parties[partyAlias]
-      }),
-    [currentPersons, isNoParty, partyAlias]
+    () => (isNoParty ? currentPersons.filter((p) => !getCurrentCandidate(p)?.party) : getPartyCandidates(partyAlias)),
+    [isNoParty, partyAlias]
   )
 
   return (

@@ -4,24 +4,24 @@ import { Image } from 'react-bootstrap'
 import { CURRENT_CALL_NUMBER } from '../../constants'
 import { Person } from '../../types'
 
-export default memo(({ candidate }: Props) => {
-  const deputat = candidate?.deputat?.find((d) => d.callNumber === CURRENT_CALL_NUMBER)
+export default memo(({ person }: Props) => {
+  const deputatCandidate = person?.candidate.find((c) => c.deputat && c.callNumber === CURRENT_CALL_NUMBER)
 
-  if (!candidate || !deputat) {
+  if (!person || !deputatCandidate) {
     return null
   }
 
   return (
     <div className=''>
-      <Image width={'100%'} className='mr-3' src={candidate.photo} alt={`фото депутата ${candidate.name}`} />
+      <Image width={'100%'} className='mr-3' src={person.photo} alt={`фото депутата ${person.name}`} />
       <div className='mt-2'>
-        <div className=''>{candidate.name}</div>
-        <div className='mt-1'>Округ № {deputat.areaNumber}</div>
+        <div className=''>{person.name}</div>
+        <div className='mt-1'>Округ № {deputatCandidate.areaNumber}</div>
         <div className='mt-1'>Адрес приёмной:</div>
-        <div>{deputat.office}</div>
+        <div>{deputatCandidate?.deputat?.office}</div>
         <div className='mt-1'>Телефон приёмной:</div>
         <div>
-          {deputat.phones.map((phone) => {
+          {deputatCandidate?.deputat?.phones.map((phone) => {
             return (
               <a key={phone} href={`tel:${phone}`}>
                 {phone}
@@ -29,7 +29,7 @@ export default memo(({ candidate }: Props) => {
             )
           })}
         </div>
-        <a className='d-block mt-1' href={deputat.website} target='_blank' rel='noopener noreferrer'>
+        <a className='d-block mt-1' href={deputatCandidate?.deputat?.website} target='_blank' rel='noopener noreferrer'>
           Перейти на сайт депутата
         </a>
       </div>
@@ -38,5 +38,5 @@ export default memo(({ candidate }: Props) => {
 })
 
 interface Props {
-  candidate?: Person
+  person?: Person
 }

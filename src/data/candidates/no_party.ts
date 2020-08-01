@@ -533,18 +533,18 @@ const noParty: Person[] = [
     candidate: [
       {
         areaNumber: 4,
-        status: CandidateStatuses.registered,
-        callNumber: 5,
-      },
-    ],
-    deputat: [
-      {
-        areaNumber: 4,
         callNumber: 4,
         party: Parties.er,
-        office: 'ул. Туполева, 39',
-        phones: ['+74732224305', '+79300112583'],
-        website: 'http://gorduma-voronezh.ru/obrazcov-nikolaj-nikolaevich/',
+        deputat: {
+          office: 'ул. Туполева, 39',
+          phones: ['+74732224305', '+79300112583'],
+          website: 'http://gorduma-voronezh.ru/obrazcov-nikolaj-nikolaevich/',
+        },
+      },
+      {
+        areaNumber: 4,
+        status: CandidateStatuses.registered,
+        callNumber: 5,
       },
     ],
   },
