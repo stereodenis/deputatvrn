@@ -4,16 +4,18 @@ import { Link, useParams } from 'react-router-dom'
 
 import CandidateCard from '../../components/candidateCard'
 import CandidateStatus from '../../components/CandidateStatus'
-import candidats from '../../data/candidats'
+import persons from '../../data/persons'
+import { getCurrentCandidate } from '../../helpers'
 import { Parties } from '../../types'
 
 export default memo(() => {
   const { candidateAlias } = useParams()
 
-  const candidate = useMemo(() => candidats.find((c) => c.alias === candidateAlias), [candidateAlias])
+  const person = useMemo(() => persons.find((c) => c.alias === candidateAlias), [candidateAlias])
+  const candidate = getCurrentCandidate(person)
   const partyAlias = useMemo(() => Object.entries(Parties).find((e) => e[1] === candidate?.party), [candidate])
 
-  if (!candidate) {
+  if (!person || !candidate) {
     return null
   }
 
@@ -22,16 +24,16 @@ export default memo(() => {
       <Row itemScope itemType='http://schema.org/ImageObject'>
         <Col xs={12} sm={6} md={4} lg={3} xl={2} className='py-3'>
           <div>
-            <Image width='100%' src={candidate.photo} rounded itemProp='contentUrl' />
+            <Image width='100%' src={person.photo} rounded itemProp='contentUrl' />
 
             {Boolean(candidate.program) && (
               <a href={candidate.program} className='d-block' rel='noopener noreferrer' target='_blank'>
                 Программа
               </a>
             )}
-            {candidate.links && candidate.links.length > 0 && (
+            {person.links && person.links.length > 0 && (
               <div>
-                {candidate.links.map((link) => (
+                {person.links.map((link) => (
                   <a key={link.url} href={link.url} className='d-block' rel='noopener noreferrer' target='_blank'>
                     {link.title}
                   </a>
@@ -42,7 +44,7 @@ export default memo(() => {
         </Col>
         <Col className='py-3'>
           <>
-            <h1 itemProp='name'>{candidate.name} </h1>
+            <h1 itemProp='name'>{person.name} </h1>
             <>
               <CandidateStatus status={candidate.status} />
             </>
@@ -63,10 +65,10 @@ export default memo(() => {
               <p>«{candidate.message}»</p>
             </div>
           )}
-          {Boolean(candidate.bio) && (
+          {Boolean(person.bio) && (
             <div>
               <h5>Биография</h5>
-              <p>{candidate.bio}</p>
+              <p>{person.bio}</p>
             </div>
           )}
           {candidate.problems?.length && (
@@ -86,8 +88,10 @@ export default memo(() => {
         Другие кандидаты <Link to={`/areas/${candidate.areaNumber}`}>{candidate.areaNumber} округа</Link>
       </h2>
       <Row>
-        {candidats
-          .filter((c) => c.areaNumber === Number(candidate.areaNumber) && c.alias !== candidateAlias)
+        {persons
+          .filter(
+            (p) => getCurrentCandidate(p)?.areaNumber === Number(candidate.areaNumber) && p.alias !== candidateAlias
+          )
           .map((areaCandidate) => (
             <Col
               xs={12}
@@ -99,7 +103,7 @@ export default memo(() => {
               className='border-xs-top border-sm-none py-3'
             >
               <Link to={`/candidates/${areaCandidate.alias}`}>
-                <CandidateCard {...{ candidate: areaCandidate }} withParty />
+                <CandidateCard {...{ person: areaCandidate }} withParty />
               </Link>
             </Col>
           ))}

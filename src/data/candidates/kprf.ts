@@ -1,192 +1,322 @@
 import * as photos from '../../images/candidates'
-import { Candidate, CandidateStatuses, Parties } from '../../types'
+import { Person, CandidateStatuses, Parties } from '../../types'
 
-const kprf: Candidate[] = [
+const kprf: Person[] = [
   {
-    areaNumber: 1,
-    alias: 'birukov',
     name: 'Бирюков Михаил Евгеньевич',
+    alias: 'birukov',
     photo: photos.noPhoto,
-    party: Parties.kprf,
+    candidate: [
+      {
+        areaNumber: 1,
+        callNumber: 5,
+        party: Parties.kprf,
+      },
+    ],
   },
   {
-    areaNumber: 2,
     alias: 'proshunin',
     name: 'Прошунин Александр Вячеславович',
     photo: photos.noPhoto,
-    party: Parties.kprf,
+    candidate: [
+      {
+        areaNumber: 2,
+        party: Parties.kprf,
+        callNumber: 5,
+      },
+    ],
   },
   {
-    areaNumber: 3,
     alias: 'verbovaya',
     name: 'Вербовая Елена Петровна',
     photo: photos.noPhoto,
-    party: Parties.kprf,
-    status: CandidateStatuses.registered,
+    candidate: [
+      {
+        areaNumber: 3,
+        party: Parties.kprf,
+        status: CandidateStatuses.registered,
+        callNumber: 5,
+      },
+    ],
   },
   {
-    areaNumber: 4,
     alias: 'zarezkih',
     name: 'Зарецких Алексей Александрович',
     photo: photos.noPhoto,
-    party: Parties.kprf,
-    status: CandidateStatuses.registered,
+    candidate: [
+      {
+        areaNumber: 4,
+        party: Parties.kprf,
+        status: CandidateStatuses.registered,
+        callNumber: 5,
+      },
+    ],
   },
   {
-    areaNumber: 5,
     alias: 'kovalevskii',
     name: 'Ковалевский Валентин Вячеславович',
     photo: photos.noPhoto,
-    party: Parties.kprf,
-    status: CandidateStatuses.registered,
+    candidate: [
+      {
+        areaNumber: 5,
+        party: Parties.kprf,
+        status: CandidateStatuses.registered,
+        callNumber: 5,
+      },
+    ],
   },
   {
-    areaNumber: 6,
     alias: 'shelyakin',
     name: 'Шелякин Артур Дмитриевич',
     photo: photos.noPhoto,
-    party: Parties.kprf,
-    status: CandidateStatuses.registered,
+    candidate: [
+      {
+        areaNumber: 6,
+        party: Parties.kprf,
+        status: CandidateStatuses.registered,
+        callNumber: 5,
+      },
+    ],
   },
   {
-    areaNumber: 7,
     alias: 'kalinin',
     name: 'Калинин Владимир Александрович',
-    photo: photos.noPhoto,
-    party: Parties.kprf,
-    status: CandidateStatuses.registered,
+    photo: 'http://gorduma-voronezh.ru/wp-content/uploads/2019/05/kalinin_va.jpg',
+    candidate: [
+      {
+        callNumber: 5,
+        areaNumber: 7,
+        party: Parties.kprf,
+        status: CandidateStatuses.registered,
+      },
+    ],
+    deputat: [
+      {
+        callNumber: 4,
+        areaNumber: 7,
+        party: Parties.kprf,
+        office: 'Ленинский проспект, 15 оф 203',
+        phones: ['+74732585816', '+79290064478'],
+        website: 'http://gorduma-voronezh.ru/kalinin-vladimir-aleksandrovich/',
+      },
+    ],
   },
   {
-    areaNumber: 8,
     alias: 'zazepin',
     name: 'Зацепин Алексей Александрович',
     photo: photos.noPhoto,
-    party: Parties.kprf,
-    status: CandidateStatuses.registered,
+    candidate: [
+      {
+        areaNumber: 8,
+        party: Parties.kprf,
+        status: CandidateStatuses.registered,
+        callNumber: 5,
+      },
+    ],
   },
   {
-    areaNumber: 9,
     alias: 'korchagin',
     name: 'Корчагин Павел Александрович',
     photo: photos.noPhoto,
-    party: Parties.kprf,
-    status: CandidateStatuses.registered,
+    candidate: [
+      {
+        areaNumber: 9,
+        party: Parties.kprf,
+        status: CandidateStatuses.registered,
+        callNumber: 5,
+      },
+    ],
   },
   {
-    areaNumber: 10,
     alias: 'kovalev',
     name: 'Ковалев Василий Николаевич',
     photo: photos.kovalev_vasiliy,
-    party: Parties.kprf,
-    status: CandidateStatuses.registered,
+    candidate: [
+      {
+        party: Parties.kprf,
+        areaNumber: 10,
+        status: CandidateStatuses.registered,
+        callNumber: 5,
+      },
+    ],
   },
   {
-    areaNumber: 11,
     alias: 'sivoplyasov',
     name: 'Сивоплясов Александр Александрович',
     photo: photos.noPhoto,
-    party: Parties.kprf,
-    status: CandidateStatuses.registered,
+    candidate: [
+      {
+        areaNumber: 11,
+        party: Parties.kprf,
+        status: CandidateStatuses.registered,
+        callNumber: 5,
+      },
+    ],
   },
   {
-    areaNumber: 12,
     alias: 'krylov',
     name: 'Крылов Андрей Игоревич',
     photo: photos.noPhoto,
-    party: Parties.kprf,
-    status: CandidateStatuses.registered,
+    candidate: [
+      {
+        areaNumber: 12,
+        party: Parties.kprf,
+        status: CandidateStatuses.registered,
+        callNumber: 5,
+      },
+    ],
   },
   {
-    areaNumber: 13,
     alias: 'spivakov',
     name: 'Спиваков Максим Васильевич',
     photo: photos.noPhoto,
-    party: Parties.kprf,
-    status: CandidateStatuses.registered,
+    candidate: [
+      {
+        areaNumber: 13,
+        party: Parties.kprf,
+        status: CandidateStatuses.registered,
+        callNumber: 5,
+      },
+    ],
   },
   {
-    areaNumber: 14,
     alias: 'pomeranzev',
     name: 'Померанцев Андрей Сергеевич',
     photo: photos.noPhoto,
-    party: Parties.kprf,
-    status: CandidateStatuses.registered,
+    candidate: [
+      {
+        areaNumber: 14,
+        party: Parties.kprf,
+        status: CandidateStatuses.registered,
+        callNumber: 5,
+      },
+    ],
   },
   {
-    areaNumber: 15,
     alias: 'kudrevatykh',
     name: 'Кудреватых Вячеслав Анатольевич',
     photo: photos.noPhoto,
-    party: Parties.kprf,
+    candidate: [
+      {
+        areaNumber: 15,
+        party: Parties.kprf,
+        callNumber: 5,
+      },
+    ],
   },
   {
-    areaNumber: 16,
     alias: 'ryabov',
     name: 'Рябов Алексей Анатольевич',
     photo: photos.noPhoto,
-    party: Parties.kprf,
-    status: CandidateStatuses.registered,
+    candidate: [
+      {
+        areaNumber: 16,
+        party: Parties.kprf,
+        status: CandidateStatuses.registered,
+        callNumber: 5,
+      },
+    ],
   },
   {
-    areaNumber: 17,
     alias: 'sitnikov',
     name: 'Ситников Максим Михайлович',
     photo: photos.noPhoto,
-    party: Parties.kprf,
-    status: CandidateStatuses.registered,
+    candidate: [
+      {
+        areaNumber: 17,
+        party: Parties.kprf,
+        status: CandidateStatuses.registered,
+        callNumber: 5,
+      },
+    ],
   },
   {
-    areaNumber: 18,
-    alias: 'gluhovzev',
     name: 'Глуховцев Даниил Сергеевич',
+    alias: 'gluhovzev',
     photo: photos.noPhoto,
-    party: Parties.kprf,
-    status: CandidateStatuses.registered,
+    candidate: [
+      {
+        areaNumber: 18,
+        party: Parties.kprf,
+        status: CandidateStatuses.registered,
+        callNumber: 5,
+      },
+    ],
   },
   {
-    areaNumber: 19,
     alias: 'shabunin',
     name: 'Шабунин Александр Николаевич',
     photo: photos.noPhoto,
-    party: Parties.kprf,
+    candidate: [
+      {
+        areaNumber: 19,
+        party: Parties.kprf,
+        callNumber: 5,
+      },
+    ],
   },
   {
-    areaNumber: 20,
     alias: 'emelyanov',
     name: 'Емельянов Евгений Владимирович',
     photo: photos.noPhoto,
-    party: Parties.kprf,
-    status: CandidateStatuses.registered,
+    candidate: [
+      {
+        areaNumber: 20,
+        party: Parties.kprf,
+        status: CandidateStatuses.registered,
+        callNumber: 5,
+      },
+    ],
   },
   {
-    areaNumber: 21,
     alias: 'kadanzev',
     name: 'Каданцев Михаил Михайлович',
     photo: photos.noPhoto,
-    party: Parties.kprf,
-    status: CandidateStatuses.registered,
+    candidate: [
+      {
+        callNumber: 5,
+        areaNumber: 21,
+        party: Parties.kprf,
+        status: CandidateStatuses.registered,
+      },
+    ],
   },
   {
-    areaNumber: 22,
     alias: 'kobylkin',
     name: 'Кобылкин Владислав Васильевич',
     photo: photos.noPhoto,
-    party: Parties.kprf,
-    status: CandidateStatuses.registered,
+    candidate: [
+      {
+        callNumber: 5,
+        areaNumber: 22,
+        party: Parties.kprf,
+        status: CandidateStatuses.registered,
+      },
+    ],
   },
   {
-    areaNumber: 23,
     alias: 'zverev',
     name: 'Зверев Николай Николаевич',
     photo: photos.noPhoto,
-    party: Parties.kprf,
+    candidate: [
+      {
+        callNumber: 5,
+        areaNumber: 23,
+        party: Parties.kprf,
+      },
+    ],
   },
   {
-    areaNumber: 24,
     alias: 'roslik',
     name: 'Рослик Денис Викторович',
     photo: photos.noPhoto,
-    party: Parties.kprf,
+    candidate: [
+      {
+        callNumber: 5,
+        areaNumber: 24,
+        party: Parties.kprf,
+      },
+    ],
   },
 ]
 

@@ -4,9 +4,10 @@ import { Container, Row, Col } from 'react-bootstrap'
 // @ts-ignore
 import MetaTags from 'react-meta-tags'
 
-import candidats from '../../data/candidats'
+import persons from '../../data/persons'
 import { Parties } from '../../types'
 import { CandidateCard } from '../../components'
+import { getCurrentCandidate } from '../../helpers'
 
 export default memo(() => {
   const { partyAlias } = useParams<{ partyAlias: keyof typeof Parties }>()
@@ -15,8 +16,12 @@ export default memo(() => {
   const title = isNoParty ? 'Самовыдвиженцы' : `Партия «${Parties[partyAlias]}»`
 
   const partyCandidates = useMemo(
-    () => candidats.filter((c) => (isNoParty ? !c.party : c.party === Parties[partyAlias])),
-    [partyAlias, isNoParty]
+    () =>
+      persons.filter((p) => {
+        const party = getCurrentCandidate(p)?.party
+        return isNoParty ? !party : party === Parties[partyAlias]
+      }),
+    [isNoParty, partyAlias]
   )
 
   return (
@@ -36,22 +41,22 @@ export default memo(() => {
         <h2>Список кандидатов в депутаты ({partyCandidates.length})</h2>
         <Row className='border-bottom'>
           {partyCandidates
-            .sort((a, b) => a.areaNumber - b.areaNumber)
-            .map((candidate) => (
+            .sort((a, b) => (getCurrentCandidate(a)?.areaNumber || 0) - (getCurrentCandidate(b)?.areaNumber || 0))
+            .map((person) => (
               <Col
                 xs={12}
                 sm={6}
                 md={4}
                 lg={3}
                 xl={2}
-                key={candidate.name}
+                key={person.name}
                 className='border-xs-bottom border-md-none py-3'
               >
-                <Link to={`/areas/${candidate.areaNumber}`}>
-                  <h4>{candidate.areaNumber} округ</h4>
+                <Link to={`/areas/${getCurrentCandidate(person)?.areaNumber}`}>
+                  <h4>{getCurrentCandidate(person)?.areaNumber} округ</h4>
                 </Link>
-                <Link to={`/candidates/${candidate.alias}`}>
-                  <CandidateCard {...{ candidate }} />
+                <Link to={`/candidates/${person.alias}`}>
+                  <CandidateCard {...{ person }} />
                 </Link>
               </Col>
             ))}

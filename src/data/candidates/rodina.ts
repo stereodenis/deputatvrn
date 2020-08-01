@@ -1,76 +1,123 @@
 import * as photos from '../../images/candidates'
-import { Candidate, LinkTitle, Parties, Project, CandidateStatuses } from '../../types'
+import { Person, LinkTitle, Parties, Project, CandidateStatuses } from '../../types'
 
-const rodina: Candidate[] = [
+const rodina: Person[] = [
   {
-    areaNumber: 1,
     alias: 'hatunzev',
     name: 'Станислав Хатунцев',
+    candidate: [
+      {
+        areaNumber: 1,
+        callNumber: 5,
+        party: Parties.rodina,
+        role: 'временно неработающий',
+      },
+    ],
     photo: photos.hatunzev_stanislav,
-    party: Parties.rodina,
-    role: 'временно неработающий',
   },
   {
-    areaNumber: 3,
     alias: 'ryabykh',
     name: 'Александр Рябых',
+    candidate: [
+      {
+        areaNumber: 3,
+        callNumber: 5,
+        party: Parties.rodina,
+        role: 'коммерческий директор «Мега Авто»',
+      },
+    ],
     photo: photos.ryabykh_aleksandr,
-    party: Parties.rodina,
-    role: 'коммерческий директор «Мега Авто»',
   },
   {
-    areaNumber: 4,
     alias: 'semin',
     name: 'Геннадий Семин',
-    role: 'временно не работает',
+    candidate: [
+      {
+        areaNumber: 4,
+        callNumber: 5,
+        role: 'временно не работает',
+        party: Parties.rodina,
+      },
+    ],
     photo: photos.semin_gennadiy,
-    party: Parties.rodina,
   },
   {
-    areaNumber: 5,
     alias: 'batishev',
     name: 'Эдуард Батищев',
-    role: 'гендиректор «Аксиос Инвест»',
+    candidate: [
+      {
+        areaNumber: 5,
+        callNumber: 5,
+        role: 'гендиректор «Аксиос Инвест»',
+        party: Parties.rodina,
+      },
+    ],
     photo: photos.batishev_eduard,
-    party: Parties.rodina,
   },
   {
-    areaNumber: 6,
     alias: 'zaharov',
     name: 'Александр Захаров',
-    role: 'предприниматель',
+    candidate: [
+      {
+        areaNumber: 6,
+        callNumber: 5,
+        role: 'предприниматель',
+        party: Parties.rodina,
+      },
+    ],
     photo: photos.zakharov_aleksandr,
-    party: Parties.rodina,
   },
   {
-    areaNumber: 7,
     alias: 'grachev',
     name: 'Константин Грачев',
-    role: 'временно не работает',
+    candidate: [
+      {
+        areaNumber: 7,
+        callNumber: 5,
+        role: 'временно не работает',
+        party: Parties.rodina,
+        status: CandidateStatuses.registered,
+      },
+    ],
     photo: photos.grachev_konstantin,
-    party: Parties.rodina,
-    status: CandidateStatuses.registered,
   },
   {
-    areaNumber: 8,
     alias: 'krasiv',
     name: 'Александр Красиков',
-    role: 'председатель Совета кооператива Социально-экономической взаимопомощи «Развитие»',
+    candidate: [
+      {
+        areaNumber: 8,
+        callNumber: 5,
+        role: 'председатель Совета кооператива Социально-экономической взаимопомощи «Развитие»',
+        party: Parties.rodina,
+      },
+    ],
     photo: photos.krasikov_aleksandr,
-    party: Parties.rodina,
   },
   {
-    areaNumber: 9,
     alias: 'petukhov',
     name: 'Максим Петухов',
-    role: 'гендиректор «Евростроя»',
+    candidate: [
+      {
+        areaNumber: 9,
+        callNumber: 5,
+        role: 'гендиректор «Евростроя»',
+        party: Parties.rodina,
+      },
+    ],
     photo: photos.petukhov_maksim,
-    party: Parties.rodina,
   },
   {
-    areaNumber: 10,
     alias: 'ivanishev',
     name: 'Виталий Иванищев',
+    candidate: [
+      {
+        areaNumber: 10,
+        callNumber: 5,
+        party: Parties.rodina,
+        project: Project.git,
+      },
+    ],
     links: [
       { title: LinkTitle.telegram, url: 'http://t.me/Vitaly_scout' },
       { title: LinkTitle.facebook, url: 'https://www.facebook.com/ivanishchev' },
@@ -79,65 +126,98 @@ const rodina: Candidate[] = [
       { title: LinkTitle.twitter, url: 'https://twitter.com/vitaly_scout/' },
       { title: LinkTitle.lj, url: 'https://vitaly1987.livejournal.com//' },
     ],
-    party: Parties.rodina,
-    project: Project.git,
     photo: photos.ivanishev_vitaliy,
   },
   {
-    areaNumber: 11,
     alias: 'filatov',
     name: 'Андрей Филатов',
-    role: 'менеджер',
+    candidate: [
+      {
+        areaNumber: 11,
+        callNumber: 5,
+        role: 'менеджер',
+        party: Parties.rodina,
+      },
+    ],
     photo: photos.filatov_andrey,
-    party: Parties.rodina,
   },
   {
-    areaNumber: 12,
     alias: 'kucherin',
     name: 'Павел Кучерин',
-    role: 'директор некоммерческой организации дополнительного профессионального образования «ДОН-100»',
+    candidate: [
+      {
+        areaNumber: 12,
+        callNumber: 5,
+        role: 'директор некоммерческой организации дополнительного профессионального образования «ДОН-100»',
+        party: Parties.rodina,
+      },
+    ],
     photo: photos.kucherin_pavel,
-    party: Parties.rodina,
   },
   {
-    areaNumber: 13,
     alias: 'shvydkii',
     name: 'Владимир Швыдкий',
-    role: 'гендиректор «СВС Авто Групп»',
+    candidate: [
+      {
+        areaNumber: 13,
+        callNumber: 5,
+        role: 'гендиректор «СВС Авто Групп»',
+        party: Parties.rodina,
+      },
+    ],
     photo: photos.shvidkiy_vladimir,
-    party: Parties.rodina,
   },
   {
-    areaNumber: 14,
     alias: 'ofitzerova',
     name: 'Ольга Офицерова',
-    role: 'предприниматель',
+    candidate: [
+      {
+        areaNumber: 14,
+        callNumber: 5,
+        party: Parties.rodina,
+        role: 'предприниматель',
+      },
+    ],
     photo: photos.ofizerova_olga,
-    party: Parties.rodina,
   },
   {
-    areaNumber: 15,
     alias: 'ivanov',
     name: 'Антон Иванов',
-    role: 'гендиректор «ЮЦ Солидарность»',
+    candidate: [
+      {
+        areaNumber: 15,
+        callNumber: 5,
+        role: 'гендиректор «ЮЦ Солидарность»',
+        party: Parties.rodina,
+      },
+    ],
     photo: photos.ivanov_anton,
-    party: Parties.rodina,
   },
   {
-    areaNumber: 16,
     alias: 'kudinova',
     name: 'Татьяна Кудинова',
-    role: 'пенсионер',
     photo: photos.kudinova_tatiana,
-    party: Parties.rodina,
+    candidate: [
+      {
+        areaNumber: 16,
+        callNumber: 5,
+        role: 'пенсионер',
+        party: Parties.rodina,
+      },
+    ],
   },
   {
-    areaNumber: 17,
     alias: 'andreev',
     name: 'Николай Андреев',
-    role: 'доцент ВГУ',
     photo: photos.andreev_nikolay,
-    party: Parties.rodina,
+    candidate: [
+      {
+        areaNumber: 17,
+        callNumber: 5,
+        party: Parties.rodina,
+        role: 'доцент ВГУ',
+      },
+    ],
     links: [
       {
         title: LinkTitle.vk,
@@ -146,56 +226,86 @@ const rodina: Candidate[] = [
     ],
   },
   {
-    areaNumber: 18,
     alias: 'chekmarev',
     name: 'Артем Чекмарев',
-    role: 'заместитель генерального директора по коммерческим вопросам «Завода железобетонных изделий №2»',
+    candidate: [
+      {
+        areaNumber: 18,
+        callNumber: 5,
+        role: 'заместитель генерального директора по коммерческим вопросам «Завода железобетонных изделий №2»',
+        party: Parties.rodina,
+      },
+    ],
     photo: photos.chekmarev_artem,
-    party: Parties.rodina,
   },
   {
-    areaNumber: 19,
     alias: 'ostroushko',
     name: 'Иван Остроушко',
-    role: 'травматолог-ортопед «Воронежской областной клинической больницы №1»',
+    candidate: [
+      {
+        areaNumber: 19,
+        callNumber: 5,
+        role: 'травматолог-ортопед «Воронежской областной клинической больницы №1»',
+        party: Parties.rodina,
+      },
+    ],
     photo: photos.ostroushko_ivan,
-    party: Parties.rodina,
   },
   {
-    areaNumber: 21,
     alias: 'yakovez',
     name: 'Елена Яковец',
-    role: 'домохозяйка',
+    candidate: [
+      {
+        areaNumber: 21,
+        callNumber: 5,
+        role: 'домохозяйка',
+        party: Parties.rodina,
+      },
+    ],
     photo: photos.yakovez_elena,
-    party: Parties.rodina,
     links: [
       { title: LinkTitle.facebook, url: 'https://www.facebook.com/elena.yakovec' },
       { title: LinkTitle.vk, url: 'https://vk.com/elena.yakovec' },
     ],
   },
   {
-    areaNumber: 22,
     alias: 'shalygin',
     name: 'Николай Шалыгин',
-    role: 'директор ООО «Парсек»',
     photo: photos.shalygin_nikolay,
-    party: Parties.rodina,
+    candidate: [
+      {
+        areaNumber: 22,
+        callNumber: 5,
+        role: 'директор ООО «Парсек»',
+        party: Parties.rodina,
+      },
+    ],
   },
   {
-    areaNumber: 23,
     alias: 'safonov',
     name: 'Сергей Сафонов',
-    role: 'начальник цеха АО «Завод железобетонных изделий №2',
     photo: photos.safonov_sergey,
-    party: Parties.rodina,
+    candidate: [
+      {
+        areaNumber: 23,
+        callNumber: 5,
+        role: 'начальник цеха АО «Завод железобетонных изделий №2',
+        party: Parties.rodina,
+      },
+    ],
   },
   {
-    areaNumber: 24,
     alias: 'sokolov_v',
     name: 'Вячеслав Соколов',
-    role: 'гендиректор «Ника Моторс»',
     photo: photos.sokolov_vyacheslav,
-    party: Parties.rodina,
+    candidate: [
+      {
+        areaNumber: 24,
+        callNumber: 5,
+        role: 'гендиректор «Ника Моторс»',
+        party: Parties.rodina,
+      },
+    ],
   },
 ]
 

@@ -5,8 +5,8 @@ import { Link, useParams } from 'react-router-dom'
 import MetaTags from 'react-meta-tags'
 import { Image } from 'react-bootstrap'
 
-import candidats from '../../data/candidats'
-import deputats from '../../data/deputats'
+import { CURRENT_CALL_NUMBER } from '../../constants'
+import persons from '../../data/persons'
 import { DeputatCard, CandidateCard } from '../../components'
 import areas from '../../data/areas'
 import areasImages from '../../images/areas'
@@ -20,8 +20,16 @@ function youtube_parser(url: string) {
 export default memo(() => {
   const { areaNumber } = useParams()
   const area = areas[areaNumber]
-  const deputat = deputats[areaNumber]
-  const areaCandidats = useMemo(() => candidats.filter((c) => c.areaNumber === Number(areaNumber)), [areaNumber])
+  const deputatCandidate = persons.find((c) => {
+    return c.deputat && c.deputat.find((d) => d.areaNumber === Number(areaNumber))
+  })
+  const areaCandidats = useMemo(
+    () =>
+      persons.filter((p) =>
+        p.candidate.find((c) => c.areaNumber === Number(areaNumber) && c.callNumber === CURRENT_CALL_NUMBER + 1)
+      ),
+    [areaNumber]
+  )
 
   return (
     <Container fluid>
@@ -43,18 +51,10 @@ export default memo(() => {
       <div className='py-3'>
         <h2>Список кандидатов в депутаты</h2>
         <Row className='border-bottom'>
-          {areaCandidats.map((candidate) => (
-            <Col
-              xs={12}
-              sm={6}
-              md={4}
-              lg={3}
-              xl={2}
-              key={candidate.name}
-              className='border-xs-bottom border-md-none py-3'
-            >
-              <Link to={`/candidates/${candidate.alias}`}>
-                <CandidateCard {...{ candidate }} withParty />
+          {areaCandidats.map((person) => (
+            <Col xs={12} sm={6} md={4} lg={3} xl={2} key={person.name} className='border-xs-bottom border-md-none py-3'>
+              <Link to={`/candidates/${person.alias}`}>
+                <CandidateCard {...{ person }} withParty />
               </Link>
             </Col>
           ))}
@@ -65,7 +65,7 @@ export default memo(() => {
         <h2 className='mt-3'>Текущий депутат</h2>
         <Row>
           <Col xs={12} sm={6} md={4} lg={3} xl={2}>
-            <DeputatCard {...{ deputat, areaNumber }} />
+            <DeputatCard {...{ candidate: deputatCandidate }} />
           </Col>
         </Row>
       </div>

@@ -1,207 +1,322 @@
 import * as photos from '../../images/candidates'
-import { Candidate, Parties, CandidateStatuses } from '../../types'
+import { Person, Parties, CandidateStatuses } from '../../types'
 
-const sr: Candidate[] = [
+const sr: Person[] = [
   {
     alias: 'akulov_evgenij',
     name: 'Акулов Евгений Алексеевич',
-    party: Parties.sr,
     photo: photos.noPhoto,
     birthdate: '20.01.1970',
-    areaNumber: 20,
+    candidate: [
+      {
+        party: Parties.sr,
+        areaNumber: 20,
+        callNumber: 5,
+      },
+    ],
   },
   {
     alias: 'gajchenya_svetlana',
     name: 'Гайченя Светлана Станиславовна',
-    party: Parties.sr,
     photo: photos.noPhoto,
     birthdate: '18.01.1972',
-    areaNumber: 1,
+    candidate: [
+      {
+        party: Parties.sr,
+        areaNumber: 1,
+        callNumber: 5,
+      },
+    ],
   },
   {
     alias: 'zheltuha_evgenij',
     name: 'Желтуха Евгений Васильевич',
-    party: Parties.sr,
     photo: photos.noPhoto,
     birthdate: '25.02.1980',
-    areaNumber: 19,
+    candidate: [
+      {
+        party: Parties.sr,
+        areaNumber: 19,
+        callNumber: 5,
+      },
+    ],
   },
   {
     alias: 'zemlyanskaya_nina',
     name: 'Землянская Нина Павловна',
-    party: Parties.sr,
     photo: photos.noPhoto,
     birthdate: '09.03.1941',
-    areaNumber: 3,
-    status: CandidateStatuses.registered,
+    candidate: [
+      {
+        party: Parties.sr,
+        areaNumber: 3,
+        status: CandidateStatuses.registered,
+        callNumber: 5,
+      },
+    ],
   },
   {
     alias: 'ivannikov_nikita',
     name: 'Иванников Никита Геннадьевич',
-    party: Parties.sr,
     photo: photos.noPhoto,
     birthdate: '07.04.1997',
-    areaNumber: 14,
-    status: CandidateStatuses.registered,
+    candidate: [
+      {
+        party: Parties.sr,
+        areaNumber: 14,
+        status: CandidateStatuses.registered,
+        callNumber: 5,
+      },
+    ],
   },
   {
     alias: 'kazaryan_paruir',
     name: 'Казарян Паруир Арутюнович',
-    party: Parties.sr,
     photo: photos.noPhoto,
     birthdate: '08.02.1986',
-    areaNumber: 21,
-    status: CandidateStatuses.registered,
+    candidate: [
+      {
+        party: Parties.sr,
+        areaNumber: 21,
+        status: CandidateStatuses.registered,
+        callNumber: 5,
+      },
+    ],
   },
   {
     alias: 'kolyagin_yurij',
     name: 'Колягин Юрий Иванович',
-    party: Parties.sr,
     photo: photos.noPhoto,
     birthdate: '27.12.1964',
-    areaNumber: 17,
-    status: CandidateStatuses.registered,
+    candidate: [
+      {
+        party: Parties.sr,
+        areaNumber: 17,
+        status: CandidateStatuses.registered,
+        callNumber: 5,
+      },
+    ],
   },
   {
     alias: 'lyskov_anton',
     name: 'Лысков Антон Юрьевич',
-    party: Parties.sr,
     photo: photos.noPhoto,
     birthdate: '05.01.1980',
-    areaNumber: 22,
-    status: CandidateStatuses.registered,
+    candidate: [
+      {
+        party: Parties.sr,
+        areaNumber: 22,
+        status: CandidateStatuses.registered,
+        callNumber: 5,
+      },
+    ],
   },
   {
     alias: 'maslennikova_margarita',
     name: 'Масленникова Маргарита Юрьевна',
-    party: Parties.sr,
     photo: photos.noPhoto,
     birthdate: '04.03.1974',
-    areaNumber: 5,
-    status: CandidateStatuses.registered,
+    candidate: [
+      {
+        party: Parties.sr,
+        areaNumber: 5,
+        status: CandidateStatuses.registered,
+        callNumber: 5,
+      },
+    ],
   },
   {
     alias: 'naumov_ilya',
     name: 'Наумов Илья Сергеевич',
-    party: Parties.sr,
     photo: photos.noPhoto,
     birthdate: '30.04.1984',
-    areaNumber: 18,
-    status: CandidateStatuses.registered,
+    candidate: [
+      {
+        party: Parties.sr,
+        areaNumber: 18,
+        status: CandidateStatuses.registered,
+        callNumber: 5,
+      },
+    ],
   },
   {
     alias: 'neznamova_natalya',
     name: 'Незнамова Наталья Анатольевна',
-    party: Parties.sr,
     photo: photos.noPhoto,
     birthdate: '14.05.1992',
-    areaNumber: 6,
-    status: CandidateStatuses.registered,
+    candidate: [
+      {
+        party: Parties.sr,
+        areaNumber: 6,
+        status: CandidateStatuses.registered,
+        callNumber: 5,
+      },
+    ],
   },
   {
     alias: 'petrov_denis',
     name: 'Петров Денис Сергеевич',
-    party: Parties.sr,
     photo: photos.noPhoto,
     birthdate: '23.10.1977',
-    areaNumber: 11,
-    status: CandidateStatuses.registered,
+    candidate: [
+      {
+        party: Parties.sr,
+        areaNumber: 11,
+        status: CandidateStatuses.registered,
+        callNumber: 5,
+      },
+    ],
   },
   {
     alias: 'peshkov_gennadij',
     name: 'Пешков Геннадий Геннадьевич',
-    party: Parties.sr,
     photo: photos.noPhoto,
     birthdate: '28.10.1989',
-    areaNumber: 16,
-    status: CandidateStatuses.registered,
+    candidate: [
+      {
+        party: Parties.sr,
+        areaNumber: 16,
+        status: CandidateStatuses.registered,
+        callNumber: 5,
+      },
+    ],
   },
   {
     alias: 'repp_vitalij',
     name: 'Репп Виталий Александрович',
-    party: Parties.sr,
     photo: photos.noPhoto,
     birthdate: '26.08.1998',
-    areaNumber: 7,
-    status: CandidateStatuses.registered,
+    candidate: [
+      {
+        party: Parties.sr,
+        areaNumber: 7,
+        status: CandidateStatuses.registered,
+        callNumber: 5,
+      },
+    ],
   },
   {
     alias: 'rubcov_evgenij',
     name: 'Рубцов Евгений Николаевич',
-    party: Parties.sr,
     photo: photos.noPhoto,
     birthdate: '10.12.1980',
-    areaNumber: 12,
-    status: CandidateStatuses.registered,
+    candidate: [
+      {
+        party: Parties.sr,
+        areaNumber: 12,
+        status: CandidateStatuses.registered,
+        callNumber: 5,
+      },
+    ],
   },
   {
     alias: 'rymar artem',
     name: 'Рымарь Артем Сергеевич',
-    party: Parties.sr,
     photo: photos.noPhoto,
     birthdate: '16.04.1976',
-    areaNumber: 23,
+    candidate: [
+      {
+        party: Parties.sr,
+        areaNumber: 23,
+        callNumber: 5,
+      },
+    ],
   },
   {
     alias: 'slepchenko_yurij',
     name: 'Слепченко Юрий Николаевич',
-    party: Parties.sr,
     photo: photos.noPhoto,
     birthdate: '24.01.1975',
-    areaNumber: 9,
-    status: CandidateStatuses.registered,
+    candidate: [
+      {
+        party: Parties.sr,
+        areaNumber: 9,
+        status: CandidateStatuses.registered,
+        callNumber: 5,
+      },
+    ],
   },
   {
     alias: 'suyazova_anastasiya',
     name: 'Суязова Анастасия Андреевна',
-    party: Parties.sr,
     photo: photos.noPhoto,
     birthdate: '10.02.1996',
-    areaNumber: 15,
+    candidate: [
+      {
+        party: Parties.sr,
+        areaNumber: 15,
+        callNumber: 5,
+      },
+    ],
   },
   {
     alias: 'titaev_sergej',
     name: 'Титаев Сергей Владимирович',
-    party: Parties.sr,
     photo: photos.titaev_sergey,
     birthdate: '25.04.1978',
-    areaNumber: 10,
-    status: CandidateStatuses.registered,
+    candidate: [
+      {
+        party: Parties.sr,
+        areaNumber: 10,
+        status: CandidateStatuses.registered,
+        callNumber: 5,
+      },
+    ],
   },
   {
     alias: 'tyuhin_aleksej',
     name: 'Тюхин Алексей Иванович',
-    party: Parties.sr,
     photo: photos.noPhoto,
     birthdate: '22.12.1981',
-    areaNumber: 24,
+    candidate: [
+      {
+        party: Parties.sr,
+        areaNumber: 24,
+        callNumber: 5,
+      },
+    ],
   },
   {
     alias: 'hoperskov_aleksandr',
     name: 'Хоперсков Александр Сергеевич',
-    party: Parties.sr,
     photo: photos.noPhoto,
     birthdate: '29.08.1994',
-    areaNumber: 4,
-    status: CandidateStatuses.registered,
+    candidate: [
+      {
+        party: Parties.sr,
+        areaNumber: 4,
+        status: CandidateStatuses.registered,
+        callNumber: 5,
+      },
+    ],
   },
   {
     alias: 'chernyavskij_oleg',
     name: 'Чернявский Олег Викторович',
-    party: Parties.sr,
     photo: photos.noPhoto,
     birthdate: '15.03.1987',
-    areaNumber: 13,
-    status: CandidateStatuses.registered,
+    candidate: [
+      {
+        party: Parties.sr,
+        areaNumber: 13,
+        status: CandidateStatuses.registered,
+        callNumber: 5,
+      },
+    ],
   },
   {
     alias: 'shershnev_yurij',
     name: 'Шершнев Юрий Андреевич',
-    party: Parties.sr,
     photo: photos.noPhoto,
     birthdate: '11.04.1950',
-    areaNumber: 8,
-    status: CandidateStatuses.registered,
+    candidate: [
+      {
+        party: Parties.sr,
+        areaNumber: 8,
+        status: CandidateStatuses.registered,
+        callNumber: 5,
+      },
+    ],
   },
 ]
 
