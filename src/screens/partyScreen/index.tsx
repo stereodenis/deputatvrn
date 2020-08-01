@@ -14,14 +14,15 @@ export default memo(() => {
   // @ts-ignore
   const isNoParty = partyAlias === 'noParty'
   const title = isNoParty ? 'Самовыдвиженцы' : `Партия «${Parties[partyAlias]}»`
+  const currentPersons = persons.filter(getCurrentCandidate)
 
   const partyCandidates = useMemo(
     () =>
-      persons.filter((p) => {
+      currentPersons.filter((p) => {
         const party = getCurrentCandidate(p)?.party
         return isNoParty ? !party : party === Parties[partyAlias]
       }),
-    [isNoParty, partyAlias]
+    [currentPersons, isNoParty, partyAlias]
   )
 
   return (

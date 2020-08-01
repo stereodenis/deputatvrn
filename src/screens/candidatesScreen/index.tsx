@@ -8,11 +8,13 @@ import persons from '../../data/persons'
 import { getCurrentCandidate } from '../../helpers'
 
 export default memo(() => {
+  const currentPersons = persons.filter(getCurrentCandidate)
+
   return (
     <Container fluid>
       <h1>Кандидаты в депутаты</h1>
-      {Object.keys(groupBy(persons, (p) => getCurrentCandidate(p)?.areaNumber)).map((areaNumber) => {
-        const areaCandidats = persons.filter((p) => p.candidate.find((c) => c.areaNumber === Number(areaNumber)))
+      {Object.keys(groupBy(currentPersons, (p) => getCurrentCandidate(p)?.areaNumber)).map((areaNumber) => {
+        const areaCandidats = currentPersons.filter((p) => p.candidate.find((c) => c.areaNumber === Number(areaNumber)))
 
         return (
           <div key={areaNumber} className='border-bottom py-3'>
