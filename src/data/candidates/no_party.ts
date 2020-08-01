@@ -475,6 +475,7 @@ const noParty: Person[] = [
       {
         areaNumber: 20,
         callNumber: 5,
+        status: CandidateStatuses.declined,
       },
     ],
   },

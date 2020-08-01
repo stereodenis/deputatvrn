@@ -34,6 +34,7 @@ const er: Person[] = [
         callNumber: 5,
         areaNumber: 2,
         party: Parties.er,
+        status: CandidateStatuses.registered,
       },
     ],
   },
@@ -471,6 +472,7 @@ const er: Person[] = [
         areaNumber: 23,
         party: Parties.er,
         callNumber: 5,
+        status: CandidateStatuses.registered,
       },
     ],
     deputat: [
@@ -493,6 +495,7 @@ const er: Person[] = [
         areaNumber: 24,
         party: Parties.er,
         callNumber: 5,
+        status: CandidateStatuses.registered,
       },
     ],
     deputat: [

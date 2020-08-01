@@ -1,5 +1,5 @@
 import * as photos from '../../images/candidates'
-import { Person, CandidateStatuses, Parties } from '../../types'
+import { CandidateStatuses, Parties, Person } from '../../types'
 
 const kprf: Person[] = [
   {
@@ -303,6 +303,7 @@ const kprf: Person[] = [
         callNumber: 5,
         areaNumber: 23,
         party: Parties.kprf,
+        status: CandidateStatuses.registered,
       },
     ],
   },
@@ -315,6 +316,7 @@ const kprf: Person[] = [
         callNumber: 5,
         areaNumber: 24,
         party: Parties.kprf,
+        status: CandidateStatuses.registered,
       },
     ],
   },
