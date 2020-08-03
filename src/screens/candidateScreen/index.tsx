@@ -26,6 +26,7 @@ export default memo(() => {
           <div>
             <Image width='100%' src={person.photo} rounded itemProp='contentUrl' />
 
+            <div>Возвраст: {}</div>
             {Boolean(candidate.program) && (
               <a href={candidate.program} className='d-block' rel='noopener noreferrer' target='_blank'>
                 Программа

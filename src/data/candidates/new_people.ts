@@ -1,5 +1,5 @@
 import * as photos from '../../images/candidates'
-import { Parties, Person } from '../../types'
+import { Parties, Person, CandidateStatuses } from '../../types'
 
 const newPeople: Person[] = [
   {
@@ -232,6 +232,7 @@ const newPeople: Person[] = [
         message:
           'Массовая застройка игнорирует задачи инфраструктуры. Городу необходима комфортная городская среда – как с точки зрения внешнего вида, так и экологической составляющей. Дома-муравейники должны уйти в прошлое. Я хочу, чтобы люди поняли, что они – реальная власть в стране, что их мнение важно. Не отдельные чиновники, а только сами люди должны решать, в каком городе будут жить они и их дети.',
         callNumber: 5,
+        status: CandidateStatuses.declined,
       },
     ],
   },
@@ -356,6 +357,7 @@ const newPeople: Person[] = [
         areaNumber: 23,
         callNumber: 5,
         party: Parties.newPeople,
+        status: CandidateStatuses.declined,
       },
     ],
   },

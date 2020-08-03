@@ -297,6 +297,7 @@ const er: Person[] = [
         areaNumber: 15,
         party: Parties.er,
         callNumber: 5,
+        status: CandidateStatuses.registered,
       },
       {
         callNumber: 4,

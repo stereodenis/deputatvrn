@@ -54,6 +54,7 @@ const noParty: Person[] = [
         areaNumber: 24,
         role: 'глава реготделения Либертарианской партии России',
         callNumber: 5,
+        status: CandidateStatuses.declined,
       },
     ],
   },
@@ -120,6 +121,7 @@ const noParty: Person[] = [
       {
         areaNumber: 7,
         callNumber: 5,
+        status: CandidateStatuses.declined,
       },
     ],
   },
@@ -157,6 +159,7 @@ const noParty: Person[] = [
       {
         areaNumber: 23,
         callNumber: 5,
+        status: CandidateStatuses.declined,
       },
     ],
   },
@@ -199,6 +202,7 @@ const noParty: Person[] = [
       {
         areaNumber: 7,
         callNumber: 5,
+        status: CandidateStatuses.declined,
       },
     ],
   },
@@ -211,6 +215,7 @@ const noParty: Person[] = [
       {
         areaNumber: 14,
         callNumber: 5,
+        status: CandidateStatuses.registered,
       },
     ],
   },
@@ -692,6 +697,7 @@ const noParty: Person[] = [
         project: Project.gorpr,
         role: 'Глава Горпроектов в Воронеже',
         callNumber: 5,
+        status: CandidateStatuses.declined,
       },
     ],
   },
@@ -717,6 +723,7 @@ const noParty: Person[] = [
       {
         areaNumber: 5,
         callNumber: 5,
+        status: CandidateStatuses.declined,
       },
     ],
   },

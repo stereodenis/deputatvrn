@@ -1,5 +1,5 @@
 import * as photos from '../../images/candidates'
-import { LinkTitle, Parties, Person, Project } from '../../types'
+import { LinkTitle, Parties, Person, Project, CandidateStatuses } from '../../types'
 
 const yabloko: Person[] = [
   {
@@ -83,6 +83,7 @@ const yabloko: Person[] = [
         message:
           'Я студент Юридического факультета ВГУ, сейчас учусь на втором курсе. Хочу стать депутатом, чтобы представлять интересы людей в парламенте, нести альтернативу проводящейся государственной политике. Хочу, чтобы Воронеж стал приятным городом, не только в центре и на Динамо, но и в спальных районах. Буду держать постоянный контакт с избирателями, делать политику открытой, без каких-то ширм и притворства.',
         callNumber: 5,
+        status: CandidateStatuses.registered,
       },
     ],
   },
@@ -158,6 +159,7 @@ const yabloko: Person[] = [
         role: 'Президент некоммерческого партнерства «Общественное благополучие Воронежа»',
         party: Parties.yabloko,
         callNumber: 5,
+        status: CandidateStatuses.declined,
       },
     ],
   },
