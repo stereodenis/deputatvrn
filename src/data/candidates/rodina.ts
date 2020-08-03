@@ -248,6 +248,7 @@ const rodina: Person[] = [
         locationType: LocationType.city,
         party: Parties.rodina,
         role: 'доцент ВГУ',
+        status: CandidateStatuses.declined,
       },
     ],
     links: [
@@ -611,7 +612,15 @@ const rodina: Person[] = [
     name: 'Семин Геннадий Владимирович',
     birthdate: '04.12.1967',
 
-    candidate: [{ party: Parties.rodina, locationType: LocationType.region, callNumber: 7, areaNumber: 2 }],
+    candidate: [
+      {
+        party: Parties.rodina,
+        locationType: LocationType.region,
+        callNumber: 7,
+        areaNumber: 2,
+        status: CandidateStatuses.declined,
+      },
+    ],
   },
   {
     alias: 'skrynnikov_boris',

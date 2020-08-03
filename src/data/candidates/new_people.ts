@@ -1,5 +1,5 @@
 import * as photos from '../../images/candidates'
-import { LocationType, Parties, Person, CandidateStatuses } from '../../types'
+import { CandidateStatuses, LocationType, Parties, Person } from '../../types'
 
 const newPeople: Person[] = [
   {
@@ -286,6 +286,7 @@ const newPeople: Person[] = [
           'Настало время снизить налоговую нагрузку для малого и среднего бизнеса и устранить «серые» схемы выплаты заработной платы. Дать льготы и преимущества бизнесу, создающему новые производства и рабочие места, выпускающему качественные и доступные товары, за пределами столиц и крупных городов.',
         callNumber: 5,
         locationType: LocationType.city,
+        status: CandidateStatuses.declined,
       },
     ],
   },
@@ -299,6 +300,7 @@ const newPeople: Person[] = [
         callNumber: 5,
         locationType: LocationType.city,
         party: Parties.newPeople,
+        status: CandidateStatuses.declined,
       },
     ],
   },
