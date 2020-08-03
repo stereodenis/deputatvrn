@@ -1,11 +1,12 @@
 import React, { memo } from 'react'
 import { Image } from 'react-bootstrap'
 
-import { CURRENT_CALL_NUMBER } from '../../constants'
+import { CURRENT_CITY_CALL_NUMBER } from '../../constants'
+import { noPhoto } from '../../images/candidates'
 import { Person } from '../../types'
 
 export default memo(({ person }: Props) => {
-  const deputatCandidate = person?.candidate.find((c) => c.deputat && c.callNumber === CURRENT_CALL_NUMBER)
+  const deputatCandidate = person?.candidate.find((c) => c.deputat && c.callNumber === CURRENT_CITY_CALL_NUMBER)
 
   if (!person || !deputatCandidate) {
     return null
@@ -13,7 +14,7 @@ export default memo(({ person }: Props) => {
 
   return (
     <div className=''>
-      <Image width={'100%'} className='mr-3' src={person.photo} alt={`фото депутата ${person.name}`} />
+      <Image width={'100%'} className='mr-3' src={person.photo || noPhoto} alt={`фото депутата ${person.name}`} />
       <div className='mt-2'>
         <div className=''>{person.name}</div>
         <div className='mt-1'>Округ № {deputatCandidate.areaNumber}</div>

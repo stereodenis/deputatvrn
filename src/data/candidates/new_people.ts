@@ -1,5 +1,5 @@
 import * as photos from '../../images/candidates'
-import { Parties, Person, CandidateStatuses } from '../../types'
+import { LocationType, Parties, Person, CandidateStatuses } from '../../types'
 
 const newPeople: Person[] = [
   {
@@ -17,12 +17,12 @@ const newPeople: Person[] = [
         message:
           'Я не понаслышке знаю о проблемах малого бизнеса. О проблемах организации спортивно- оздоровительных и образовательных мероприятий. Пора наладить связь между государством и предпринимательским сообществом. Сегодняшняя ситуация показывает, что нам есть что обсудить.',
         callNumber: 5,
+        locationType: LocationType.city,
       },
     ],
   },
   {
     alias: 'kulyasov',
-    photo: photos.noPhoto,
     name: 'Кулясов Алексей Николаевич',
     birthdate: '14.09.1981',
     bio:
@@ -35,6 +35,7 @@ const newPeople: Person[] = [
         message:
           'Все сферы деятельности, где возможна конкуренция и извлечение прибыли, должны освободиться от госмонополии. Государство из исполнителя станет заказчиком товаров и услуг – появятся новые рабочие места, и отечественный бизнес выйдет на международный уровень!',
         callNumber: 5,
+        locationType: LocationType.city,
       },
     ],
   },
@@ -53,7 +54,9 @@ const newPeople: Person[] = [
         message:
           'Люди должны быть уверены, что принятые законы действуют безоговорочно. Если ты их не нарушал, значит, никто и никогда не сможет лишить тебя свободы, имущества или здоровья. Каждый должен иметь возможность свободно выражать собственное мнение, не опасаясь преследований.',
         callNumber: 5,
+        locationType: LocationType.city,
       },
+      { party: Parties.newPeople, locationType: LocationType.region, callNumber: 7, areaNumber: 20 },
     ],
   },
   {
@@ -71,6 +74,7 @@ const newPeople: Person[] = [
         message:
           'Готов бороться за правду и справедливость. Благодаря ему привлечены к ответственности владельцы 10 торговых точек, продававших алкоголь несовершеннолетним. Организовывал донорские акции в своём университете и вовлёк в них более 250 студентов и преподавателей.Основал фестиваль молодёжных субкультур, набравший 1 000 зрителей и ставший традиционным.Настало время остановить творящийся в городе «коммунальный беспредел» и также упорядочить выделение «пятен» под жилую застройку, приведя её в соответствие с транспортным каркасом. Пора перекрыть «уплотняющую» застройку и строительство многоэтажных жилых комплексов в районах с плохой транспортной доступностью!',
         callNumber: 5,
+        locationType: LocationType.city,
       },
     ],
   },
@@ -89,6 +93,7 @@ const newPeople: Person[] = [
         message:
           'Я иду в политику, чтобы изменить облик Левого берега Воронежа, сделать его не только чистым и комфортным, но и по- настоящему молодёжным!',
         callNumber: 5,
+        locationType: LocationType.city,
       },
     ],
   },
@@ -107,11 +112,12 @@ const newPeople: Person[] = [
         message:
           'Мой личный опыт преподавания с помощью песочной анимации доказал свою эффективность – современные дети требуют современных подходов. В настоящее время я учусь в Международном институте компьютерных технологий – сейчас нашему региону нужны цифровые решения, которые смогли бы обеспечить доступ к качественному образованию для каждого!',
         callNumber: 5,
+        locationType: LocationType.city,
       },
     ],
   },
   {
-    alias: 'zuev',
+    alias: 'zuev_evgenij',
     name: 'Зуев Евгений Игоревич',
     photo: photos.zuev,
     birthdate: '26.12.1989',
@@ -124,7 +130,9 @@ const newPeople: Person[] = [
         role:
           'Руководитель Центра развития внешнеэкономической деятельности Торгово-промышленной палаты Воронежской области',
         callNumber: 5,
+        locationType: LocationType.city,
       },
+      { party: Parties.newPeople, locationType: LocationType.region, callNumber: 7, areaNumber: 5 },
     ],
   },
   {
@@ -142,6 +150,7 @@ const newPeople: Person[] = [
         message:
           'По статистике только 10% выпускников детских домов интегрируются в общество. Явление социального сиротства, когда в детских домах оказываются от 3 до 7 детей из одной семьи, существует из-за того, что родители оказываются в тяжёлой жизненной ситуации. Обычно такая семья нуждается не столько в финансовой, сколько в психологической помощи. Необходимо создание организации психологической поддержки на государственном уровне, которая осуществляла бы работу с приёмными и многодетными семьями. Многих льгот для многодетных семей, действующих в других регионах, нет в Воронеже. Настало время это изменить!',
         callNumber: 5,
+        locationType: LocationType.city,
       },
     ],
   },
@@ -160,6 +169,7 @@ const newPeople: Person[] = [
         message:
           'Я поняла, что могу помогать не только отдельным людям, а делать это системно вместе с партией «Новые люди». Для меня идеальное государство – то, в котором у благотворительных организаций попросту нет работы.',
         callNumber: 5,
+        locationType: LocationType.city,
       },
     ],
   },
@@ -178,6 +188,7 @@ const newPeople: Person[] = [
         message:
           'Время создать правильную анатомию здравоохранения в нашем регионе, с новыми стандартами и эффективной системой взаимодействия «доктор- пациент»! Для людей! Люди имеют право на здоровье!',
         callNumber: 5,
+        locationType: LocationType.city,
       },
     ],
   },
@@ -196,7 +207,9 @@ const newPeople: Person[] = [
         message:
           'Моя жизненная позиция и ценности очень близки многим воронежцам, потому что я человек- дело. Уже сейчас я самостоятельно делаю то, ради чего иду в политику. Я хочу вывести свои социальные и благотворительные проекты на областной уровень.',
         callNumber: 5,
+        locationType: LocationType.city,
       },
+      { party: Parties.newPeople, locationType: LocationType.region, callNumber: 7, areaNumber: 7 },
     ],
   },
   {
@@ -214,6 +227,7 @@ const newPeople: Person[] = [
         message:
           'Система образования не отвечает потребностям современных школьников. Сейчас выпускники школ оказываются совершенно не готовыми к вызовам взрослой жизни. Я уверена в том, что система образования должна быть разнообразной, отражать интересы и склонности каждого учащегося. Это станет возможно, если она станет пластичной и начнет включать в себя такие важные для жизни предметы, как основы бизнеса, финансовой грамотности, цифровой безопасности, уроки этики.',
         callNumber: 5,
+        locationType: LocationType.city,
       },
     ],
   },
@@ -231,6 +245,7 @@ const newPeople: Person[] = [
         role: 'Архитектор, руководитель собственного архитектурного бюро',
         message:
           'Массовая застройка игнорирует задачи инфраструктуры. Городу необходима комфортная городская среда – как с точки зрения внешнего вида, так и экологической составляющей. Дома-муравейники должны уйти в прошлое. Я хочу, чтобы люди поняли, что они – реальная власть в стране, что их мнение важно. Не отдельные чиновники, а только сами люди должны решать, в каком городе будут жить они и их дети.',
+        locationType: LocationType.city,
         callNumber: 5,
         status: CandidateStatuses.declined,
       },
@@ -251,6 +266,7 @@ const newPeople: Person[] = [
         message:
           'Хочу добиться эффективной трудовой занятости молодых специалистов с потенциалом развития. У них должна быть возможность работать и достойно зарабатывать, строить карьеру, реализовывать идеи, создавать задел на будущее. Поможем молодёжи – сохраним рабочие профессии!',
         callNumber: 5,
+        locationType: LocationType.city,
       },
     ],
   },
@@ -269,18 +285,19 @@ const newPeople: Person[] = [
         message:
           'Настало время снизить налоговую нагрузку для малого и среднего бизнеса и устранить «серые» схемы выплаты заработной платы. Дать льготы и преимущества бизнесу, создающему новые производства и рабочие места, выпускающему качественные и доступные товары, за пределами столиц и крупных городов.',
         callNumber: 5,
+        locationType: LocationType.city,
       },
     ],
   },
   {
     alias: 'lysikov_dmitriy',
     name: 'Лысиков Дмитрий Валериевич',
-    photo: photos.noPhoto,
     birthdate: '23.04.1972',
     candidate: [
       {
         areaNumber: 18,
         callNumber: 5,
+        locationType: LocationType.city,
         party: Parties.newPeople,
       },
     ],
@@ -300,6 +317,7 @@ const newPeople: Person[] = [
         message:
           'Тех, от кого зависит жизнь людей – от участкового до главы управы – должны выбирать люди. Доказывать свою полезность реальными делами и отчитываться перед населением – прямая обязанность чиновников!',
         callNumber: 5,
+        locationType: LocationType.city,
       },
     ],
   },
@@ -318,18 +336,19 @@ const newPeople: Person[] = [
         message:
           'Считаю своей обязанностью создание таких условий для наших семей, которые оградят жителей района от вредных и пагубных привычек. Я уверен, что в нашем районе необходимо создание спортивных объектов, которые подойдут как старшему, так и младшему поколению. Как отец двоих детей поставил себе цель реализовать эти проекты.',
         callNumber: 5,
+        locationType: LocationType.city,
       },
     ],
   },
   {
     alias: 'stepakov_maksim',
     name: 'Степаков Максим Игоревич',
-    photo: photos.noPhoto,
     birthdate: '14.02.1997',
     candidate: [
       {
         areaNumber: 21,
         callNumber: 5,
+        locationType: LocationType.city,
         party: Parties.newPeople,
       },
     ],
@@ -338,11 +357,11 @@ const newPeople: Person[] = [
     alias: 'mamardashvili_rolandi',
     name: 'Мамардашвили Роланди Зурабович',
     birthdate: '15.11.1993',
-    photo: photos.noPhoto,
     candidate: [
       {
         areaNumber: 22,
         callNumber: 5,
+        locationType: LocationType.city,
         party: Parties.newPeople,
       },
     ],
@@ -350,12 +369,12 @@ const newPeople: Person[] = [
   {
     alias: 'eremichev_sergey',
     name: 'Еремичев Сергей Владимирович',
-    photo: photos.noPhoto,
     birthdate: '14.04.1996',
     candidate: [
       {
         areaNumber: 23,
         callNumber: 5,
+        locationType: LocationType.city,
         party: Parties.newPeople,
         status: CandidateStatuses.declined,
       },
@@ -376,6 +395,147 @@ const newPeople: Person[] = [
         message:
           'Своё дело может открыть каждый, только в современных реалиях сделать это очень тяжело. Малый бизнес «убивает» непосильная налоговая нагрузка, а множество административных барьеров не дают начинающим предпринимателям «расти».',
         callNumber: 5,
+        locationType: LocationType.city,
+      },
+    ],
+  },
+  {
+    alias: 'anferov_vyacheslav',
+    name: 'Анферов Вячеслав Валерьевич',
+    birthdate: '28.04.1988',
+    candidate: [{ party: Parties.newPeople, locationType: LocationType.region, callNumber: 7, areaNumber: 1 }],
+  },
+  {
+    alias: 'borisov_sergej',
+    name: 'Борисов Сергей Анатольевич',
+    birthdate: '24.08.1982',
+    candidate: [{ party: Parties.newPeople, locationType: LocationType.region, callNumber: 7, areaNumber: 10 }],
+  },
+  {
+    alias: 'busygin_pavel',
+    name: 'Бусыгин Павел Игоревич',
+    birthdate: '27.04.1988',
+    candidate: [{ party: Parties.newPeople, locationType: LocationType.region, callNumber: 7, areaNumber: 12 }],
+  },
+  {
+    alias: 'zademidkov_sergej',
+    name: 'Задемидьков Сергей Павлович',
+    birthdate: '29.03.1987',
+    candidate: [{ party: Parties.newPeople, locationType: LocationType.region, callNumber: 7, areaNumber: 17 }],
+  },
+  {
+    alias: 'zmienko_maksim',
+    name: 'Змиенко Максим Александрович',
+    birthdate: '18.05.1983',
+    candidate: [
+      {
+        party: Parties.newPeople,
+        locationType: LocationType.region,
+        callNumber: 7,
+        areaNumber: 23,
+        status: CandidateStatuses.declined,
+      },
+    ],
+  },
+  {
+    alias: 'kazarcev_dmitrij',
+    name: 'Казарцев Дмитрий Анатольевич',
+    birthdate: '25.02.1979',
+    candidate: [{ party: Parties.newPeople, locationType: LocationType.region, callNumber: 7, areaNumber: 22 }],
+  },
+  {
+    alias: 'kachura_maksim',
+    name: 'Качура Максим Олегович',
+    birthdate: '17.06.1992',
+    candidate: [{ party: Parties.newPeople, locationType: LocationType.region, callNumber: 7, areaNumber: 21 }],
+  },
+  {
+    alias: 'knyazev_stanislav',
+    name: 'Князев Станислав Игоревич',
+    birthdate: '02.02.1988',
+    candidate: [{ party: Parties.newPeople, locationType: LocationType.region, callNumber: 7, areaNumber: 9 }],
+  },
+  {
+    alias: 'lubkov_aleksandr',
+    name: 'Лубков Александр Сергеевич',
+    birthdate: '15.06.1985',
+    candidate: [
+      {
+        party: Parties.newPeople,
+        locationType: LocationType.region,
+        callNumber: 7,
+        areaNumber: 4,
+        status: CandidateStatuses.declined,
+      },
+    ],
+  },
+  {
+    alias: 'netyosov_andrej',
+    name: 'Нетёсов Андрей Петрович',
+    birthdate: '01.08.1975',
+    candidate: [{ party: Parties.newPeople, locationType: LocationType.region, callNumber: 7, areaNumber: 19 }],
+  },
+  {
+    alias: 'sidelyova_liliya',
+    name: 'Сиделёва Лилия Владимировна',
+    birthdate: '22.10.1962',
+    candidate: [{ party: Parties.newPeople, locationType: LocationType.region, callNumber: 7, areaNumber: 6 }],
+  },
+  {
+    alias: 'skomorohova_yuliya',
+    name: 'Скоморохова Юлия Михайловна',
+    birthdate: '13.09.1985',
+    candidate: [{ party: Parties.newPeople, locationType: LocationType.region, callNumber: 7, areaNumber: 16 }],
+  },
+  {
+    alias: 'stepanenko_andrej',
+    name: 'Степаненко Андрей Вячеславович',
+    birthdate: '06.03.1996',
+    candidate: [{ party: Parties.newPeople, locationType: LocationType.region, callNumber: 7, areaNumber: 27 }],
+  },
+  {
+    alias: 'tkachev_anton',
+    name: 'Ткачев Антон Олегович',
+    birthdate: '31.03.1994',
+    candidate: [{ party: Parties.newPeople, locationType: LocationType.region, callNumber: 7, areaNumber: 3 }],
+  },
+  {
+    alias: 'filippov_yurij',
+    name: 'Филиппов Юрий Александрович',
+    birthdate: '08.07.1975',
+    candidate: [
+      {
+        party: Parties.newPeople,
+        locationType: LocationType.region,
+        callNumber: 7,
+        areaNumber: 8,
+        status: CandidateStatuses.declined,
+      },
+    ],
+  },
+  {
+    alias: 'hrupin_nikita',
+    name: 'Хрупин Никита Александрович',
+    birthdate: '14.08.1987',
+    candidate: [{ party: Parties.newPeople, locationType: LocationType.region, callNumber: 7, areaNumber: 2 }],
+  },
+  {
+    alias: 'chekurin_andrej',
+    name: 'Чекурин Андрей Александрович',
+    birthdate: '08.10.1982',
+    candidate: [{ party: Parties.newPeople, locationType: LocationType.region, callNumber: 7, areaNumber: 15 }],
+  },
+  {
+    alias: 'chikalov_ruslan',
+    name: 'Чикалов Руслан Анатольевич',
+    birthdate: '14.08.1984',
+    candidate: [
+      {
+        party: Parties.newPeople,
+        locationType: LocationType.region,
+        callNumber: 7,
+        areaNumber: 4,
+        status: CandidateStatuses.declined,
       },
     ],
   },

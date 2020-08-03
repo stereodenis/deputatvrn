@@ -1,1 +1,2 @@
-export const CURRENT_CALL_NUMBER = 4
+export const CURRENT_CITY_CALL_NUMBER = 4
+export const CURRENT_REGION_CALL_NUMBER = 6

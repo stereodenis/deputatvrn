@@ -1,17 +1,17 @@
 import * as photos from '../../images/candidates'
-import { CandidateStatuses, Parties, Person } from '../../types'
+import { CandidateStatuses, LocationType, Parties, Person } from '../../types'
 
 const kprf: Person[] = [
   {
     name: 'Бирюков Михаил Евгеньевич',
     alias: 'birukov',
     birthdate: '07.05.1961',
-    photo: photos.noPhoto,
     candidate: [
       {
         areaNumber: 1,
         callNumber: 5,
         party: Parties.kprf,
+        locationType: LocationType.city,
       },
     ],
   },
@@ -19,12 +19,12 @@ const kprf: Person[] = [
     alias: 'proshunin',
     name: 'Прошунин Александр Вячеславович',
     birthdate: '02.08.1984',
-    photo: photos.noPhoto,
     candidate: [
       {
         areaNumber: 2,
         party: Parties.kprf,
         callNumber: 5,
+        locationType: LocationType.city,
       },
     ],
   },
@@ -32,13 +32,13 @@ const kprf: Person[] = [
     alias: 'verbovaya',
     name: 'Вербовая Елена Петровна',
     birthdate: '31.12.1972',
-    photo: photos.noPhoto,
     candidate: [
       {
         areaNumber: 3,
         party: Parties.kprf,
         status: CandidateStatuses.registered,
         callNumber: 5,
+        locationType: LocationType.city,
       },
     ],
   },
@@ -46,13 +46,13 @@ const kprf: Person[] = [
     alias: 'zarezkih',
     name: 'Зарецких Алексей Александрович',
     birthdate: '06.10.1977',
-    photo: photos.noPhoto,
     candidate: [
       {
         areaNumber: 4,
         party: Parties.kprf,
         status: CandidateStatuses.registered,
         callNumber: 5,
+        locationType: LocationType.city,
       },
     ],
   },
@@ -60,13 +60,13 @@ const kprf: Person[] = [
     alias: 'kovalevskii',
     name: 'Ковалевский Валентин Вячеславович',
     birthdate: '14.02.1996',
-    photo: photos.noPhoto,
     candidate: [
       {
         areaNumber: 5,
         party: Parties.kprf,
         status: CandidateStatuses.registered,
         callNumber: 5,
+        locationType: LocationType.city,
       },
     ],
   },
@@ -74,13 +74,13 @@ const kprf: Person[] = [
     alias: 'shelyakin',
     name: 'Шелякин Артур Дмитриевич',
     birthdate: '05.05.1967',
-    photo: photos.noPhoto,
     candidate: [
       {
         areaNumber: 6,
         party: Parties.kprf,
         status: CandidateStatuses.registered,
         callNumber: 5,
+        locationType: LocationType.city,
       },
     ],
   },
@@ -94,6 +94,7 @@ const kprf: Person[] = [
         callNumber: 4,
         areaNumber: 7,
         party: Parties.kprf,
+        locationType: LocationType.city,
         deputat: {
           office: 'Ленинский проспект, 15 оф 203',
           phones: ['+74732585816', '+79290064478'],
@@ -105,6 +106,7 @@ const kprf: Person[] = [
         areaNumber: 7,
         party: Parties.kprf,
         status: CandidateStatuses.registered,
+        locationType: LocationType.city,
       },
     ],
   },
@@ -112,13 +114,13 @@ const kprf: Person[] = [
     alias: 'zazepin',
     name: 'Зацепин Алексей Александрович',
     birthdate: '27.05.1979',
-    photo: photos.noPhoto,
     candidate: [
       {
         areaNumber: 8,
         party: Parties.kprf,
         status: CandidateStatuses.registered,
         callNumber: 5,
+        locationType: LocationType.city,
       },
     ],
   },
@@ -126,13 +128,13 @@ const kprf: Person[] = [
     alias: 'korchagin',
     name: 'Корчагин Павел Александрович',
     birthdate: '16.06.1969',
-    photo: photos.noPhoto,
     candidate: [
       {
         areaNumber: 9,
         party: Parties.kprf,
         status: CandidateStatuses.registered,
         callNumber: 5,
+        locationType: LocationType.city,
       },
     ],
   },
@@ -147,6 +149,7 @@ const kprf: Person[] = [
         areaNumber: 10,
         status: CandidateStatuses.registered,
         callNumber: 5,
+        locationType: LocationType.city,
       },
     ],
   },
@@ -154,13 +157,13 @@ const kprf: Person[] = [
     alias: 'sivoplyasov',
     name: 'Сивоплясов Александр Александрович',
     birthdate: '27.09.1990',
-    photo: photos.noPhoto,
     candidate: [
       {
         areaNumber: 11,
         party: Parties.kprf,
         status: CandidateStatuses.registered,
         callNumber: 5,
+        locationType: LocationType.city,
       },
     ],
   },
@@ -168,13 +171,13 @@ const kprf: Person[] = [
     alias: 'krylov',
     name: 'Крылов Андрей Игоревич',
     birthdate: '08.06.1966',
-    photo: photos.noPhoto,
     candidate: [
       {
         areaNumber: 12,
         party: Parties.kprf,
         status: CandidateStatuses.registered,
         callNumber: 5,
+        locationType: LocationType.city,
       },
     ],
   },
@@ -182,13 +185,13 @@ const kprf: Person[] = [
     alias: 'spivakov',
     name: 'Спиваков Максим Васильевич',
     birthdate: '12.01.1977',
-    photo: photos.noPhoto,
     candidate: [
       {
         areaNumber: 13,
         party: Parties.kprf,
         status: CandidateStatuses.registered,
         callNumber: 5,
+        locationType: LocationType.city,
       },
     ],
   },
@@ -196,13 +199,13 @@ const kprf: Person[] = [
     alias: 'pomeranzev',
     name: 'Померанцев Андрей Сергеевич',
     birthdate: '08.03.1976',
-    photo: photos.noPhoto,
     candidate: [
       {
         areaNumber: 14,
         party: Parties.kprf,
         status: CandidateStatuses.registered,
         callNumber: 5,
+        locationType: LocationType.city,
       },
     ],
   },
@@ -210,11 +213,11 @@ const kprf: Person[] = [
     alias: 'kudrevatykh',
     name: 'Кудреватых Вячеслав Анатольевич',
     birthdate: '06.10.1977',
-    photo: photos.noPhoto,
     candidate: [
       {
         areaNumber: 15,
         party: Parties.kprf,
+        locationType: LocationType.city,
         callNumber: 5,
         status: CandidateStatuses.registered,
       },
@@ -224,13 +227,13 @@ const kprf: Person[] = [
     alias: 'ryabov',
     name: 'Рябов Алексей Анатольевич',
     birthdate: '26.12.1992',
-    photo: photos.noPhoto,
     candidate: [
       {
         areaNumber: 16,
         party: Parties.kprf,
         status: CandidateStatuses.registered,
         callNumber: 5,
+        locationType: LocationType.city,
       },
     ],
   },
@@ -238,13 +241,13 @@ const kprf: Person[] = [
     alias: 'sitnikov',
     name: 'Ситников Максим Михайлович',
     birthdate: '17.05.1989',
-    photo: photos.noPhoto,
     candidate: [
       {
         areaNumber: 17,
         party: Parties.kprf,
         status: CandidateStatuses.registered,
         callNumber: 5,
+        locationType: LocationType.city,
       },
     ],
   },
@@ -252,13 +255,13 @@ const kprf: Person[] = [
     name: 'Глуховцев Даниил Сергеевич',
     alias: 'gluhovzev',
     birthdate: '02.08.1998',
-    photo: photos.noPhoto,
     candidate: [
       {
         areaNumber: 18,
         party: Parties.kprf,
         status: CandidateStatuses.registered,
         callNumber: 5,
+        locationType: LocationType.city,
       },
     ],
   },
@@ -266,11 +269,11 @@ const kprf: Person[] = [
     alias: 'shabunin',
     name: 'Шабунин Александр Николаевич',
     birthdate: '19.07.1985',
-    photo: photos.noPhoto,
     candidate: [
       {
         areaNumber: 19,
         party: Parties.kprf,
+        locationType: LocationType.city,
         callNumber: 5,
         status: CandidateStatuses.registered,
       },
@@ -280,13 +283,13 @@ const kprf: Person[] = [
     alias: 'emelyanov',
     name: 'Емельянов Евгений Владимирович',
     birthdate: '04.07.1968',
-    photo: photos.noPhoto,
     candidate: [
       {
         areaNumber: 20,
         party: Parties.kprf,
         status: CandidateStatuses.registered,
         callNumber: 5,
+        locationType: LocationType.city,
       },
     ],
   },
@@ -294,13 +297,13 @@ const kprf: Person[] = [
     alias: 'kadanzev',
     name: 'Каданцев Михаил Михайлович',
     birthdate: '15.01.1991',
-    photo: photos.noPhoto,
     candidate: [
       {
         callNumber: 5,
         areaNumber: 21,
         party: Parties.kprf,
         status: CandidateStatuses.registered,
+        locationType: LocationType.city,
       },
     ],
   },
@@ -308,13 +311,13 @@ const kprf: Person[] = [
     alias: 'kobylkin',
     name: 'Кобылкин Владислав Васильевич',
     birthdate: '27.06.1983',
-    photo: photos.noPhoto,
     candidate: [
       {
         callNumber: 5,
         areaNumber: 22,
         party: Parties.kprf,
         status: CandidateStatuses.registered,
+        locationType: LocationType.city,
       },
     ],
   },
@@ -322,13 +325,13 @@ const kprf: Person[] = [
     alias: 'zverev',
     name: 'Зверев Николай Николаевич',
     birthdate: '04.09.1997',
-    photo: photos.noPhoto,
     candidate: [
       {
         callNumber: 5,
         areaNumber: 23,
         party: Parties.kprf,
         status: CandidateStatuses.registered,
+        locationType: LocationType.city,
       },
     ],
   },
@@ -336,12 +339,415 @@ const kprf: Person[] = [
     alias: 'roslik',
     name: 'Рослик Денис Викторович',
     birthdate: '09.07.1986',
-    photo: photos.noPhoto,
     candidate: [
       {
         callNumber: 5,
         areaNumber: 24,
         party: Parties.kprf,
+        status: CandidateStatuses.registered,
+        locationType: LocationType.city,
+      },
+    ],
+  },
+  {
+    alias: 'babenkov_konstantin',
+    name: 'Бабенков Константин Викторович',
+
+    birthdate: '18.05.1988',
+    candidate: [
+      {
+        callNumber: 7,
+        locationType: LocationType.region,
+        party: Parties.kprf,
+        areaNumber: 26,
+        status: CandidateStatuses.registered,
+      },
+    ],
+  },
+  {
+    alias: 'berezhnoj_sergej',
+    name: 'Бережной Сергей Александрович',
+
+    birthdate: '05.07.1978',
+    candidate: [
+      {
+        callNumber: 7,
+        locationType: LocationType.region,
+        party: Parties.kprf,
+        areaNumber: 11,
+        status: CandidateStatuses.registered,
+      },
+    ],
+  },
+  {
+    alias: 'verlin_aleksandr',
+    name: 'Верлин Александр Анатольевич',
+
+    birthdate: '08.07.1982',
+    candidate: [
+      {
+        callNumber: 7,
+        locationType: LocationType.region,
+        party: Parties.kprf,
+        areaNumber: 13,
+        status: CandidateStatuses.registered,
+      },
+    ],
+  },
+  {
+    alias: 'grudinin_grigorij',
+    name: 'Грудинин Григорий Михайлович',
+
+    birthdate: '12.05.1975',
+    candidate: [
+      {
+        callNumber: 7,
+        locationType: LocationType.region,
+        party: Parties.kprf,
+        areaNumber: 18,
+      },
+    ],
+  },
+  {
+    alias: 'dvornikov_sergej',
+    name: 'Дворников Сергей Васильевич',
+
+    birthdate: '17.05.1951',
+    candidate: [
+      {
+        callNumber: 7,
+        locationType: LocationType.region,
+        party: Parties.kprf,
+        areaNumber: 17,
+        status: CandidateStatuses.registered,
+      },
+    ],
+  },
+  {
+    alias: 'dedov_viktor',
+    name: 'Дедов Виктор Анатольевич',
+
+    birthdate: '27.09.1978',
+    candidate: [
+      {
+        callNumber: 7,
+        locationType: LocationType.region,
+        party: Parties.kprf,
+        areaNumber: 5,
+        status: CandidateStatuses.registered,
+      },
+    ],
+  },
+  {
+    alias: 'derkachev_nikolaj',
+    name: 'Деркачев Николай Петрович',
+
+    birthdate: '04.09.1958',
+    candidate: [
+      {
+        callNumber: 7,
+        locationType: LocationType.region,
+        party: Parties.kprf,
+        areaNumber: 21,
+        status: CandidateStatuses.registered,
+      },
+    ],
+  },
+  {
+    alias: 'zhabin_vasilij',
+    name: 'Жабин Василий Александрович',
+
+    birthdate: '27.04.1980',
+    candidate: [
+      {
+        callNumber: 7,
+        locationType: LocationType.region,
+        party: Parties.kprf,
+        areaNumber: 4,
+        status: CandidateStatuses.registered,
+      },
+    ],
+  },
+  {
+    alias: 'zlobina_lyubov',
+    name: 'Злобина Любовь Владимировна',
+
+    birthdate: '05.07.1973',
+    candidate: [
+      {
+        callNumber: 7,
+        locationType: LocationType.region,
+        party: Parties.kprf,
+        areaNumber: 24,
+        status: CandidateStatuses.registered,
+      },
+    ],
+  },
+  {
+    alias: 'kasatkin_yurij',
+    name: 'Касаткин Юрий Станиславович',
+
+    birthdate: '13.06.1959',
+    candidate: [
+      {
+        callNumber: 7,
+        locationType: LocationType.region,
+        party: Parties.kprf,
+        areaNumber: 16,
+        status: CandidateStatuses.registered,
+      },
+    ],
+  },
+  {
+    alias: 'kolomencev_denis',
+    name: 'Коломенцев Денис Витальевич',
+
+    birthdate: '02.07.1972',
+    candidate: [
+      {
+        callNumber: 7,
+        locationType: LocationType.region,
+        party: Parties.kprf,
+        areaNumber: 6,
+        status: CandidateStatuses.registered,
+      },
+    ],
+  },
+  {
+    alias: 'konopelko_elena',
+    name: 'Конопелько Елена Валерьевна',
+
+    birthdate: '12.07.1974',
+    candidate: [
+      {
+        callNumber: 7,
+        locationType: LocationType.region,
+        party: Parties.kprf,
+        areaNumber: 14,
+        status: CandidateStatuses.registered,
+      },
+    ],
+  },
+  {
+    alias: 'melkumov_konstantin',
+    name: 'Мелкумов Константин Растиславович',
+
+    birthdate: '15.04.1980',
+    candidate: [
+      {
+        callNumber: 7,
+        locationType: LocationType.region,
+        party: Parties.kprf,
+        areaNumber: 9,
+        status: CandidateStatuses.registered,
+      },
+    ],
+  },
+  {
+    alias: 'proshunin_aleksandr',
+    name: 'Прошунин Александр Вячеславович',
+
+    birthdate: '02.08.1984',
+    candidate: [
+      {
+        callNumber: 7,
+        locationType: LocationType.region,
+        party: Parties.kprf,
+        areaNumber: 1,
+      },
+    ],
+  },
+  {
+    alias: 'rogatnev_andrej',
+    name: 'Рогатнев Андрей Иванович',
+
+    birthdate: '23.06.1966',
+    candidate: [
+      {
+        callNumber: 7,
+        locationType: LocationType.region,
+        party: Parties.kprf,
+        areaNumber: 2,
+        status: CandidateStatuses.registered,
+      },
+    ],
+  },
+  {
+    alias: 'rudov_nikolaj',
+    name: 'Рудов Николай Ильич',
+
+    birthdate: '21.12.1981',
+    candidate: [
+      {
+        callNumber: 7,
+        locationType: LocationType.region,
+        party: Parties.kprf,
+        areaNumber: 20,
+        status: CandidateStatuses.registered,
+      },
+    ],
+  },
+  {
+    alias: 'sakuta_valerij',
+    name: 'Сакута Валерий Владимирович',
+
+    birthdate: '19.11.1959',
+    candidate: [
+      {
+        callNumber: 7,
+        locationType: LocationType.region,
+        party: Parties.kprf,
+        areaNumber: 3,
+        status: CandidateStatuses.registered,
+      },
+    ],
+  },
+  {
+    alias: 'sinicin_vitalij',
+    name: 'Синицин Виталий Александрович',
+
+    birthdate: '28.03.1970',
+    candidate: [
+      {
+        callNumber: 7,
+        locationType: LocationType.region,
+        party: Parties.kprf,
+        areaNumber: 15,
+        status: CandidateStatuses.registered,
+      },
+    ],
+  },
+  {
+    alias: 'skrynnikov_vladimir',
+    name: 'Скрынников Владимир Евгеньевич',
+
+    birthdate: '20.03.1959',
+    candidate: [
+      {
+        callNumber: 7,
+        locationType: LocationType.region,
+        party: Parties.kprf,
+        areaNumber: 25,
+        status: CandidateStatuses.registered,
+      },
+    ],
+  },
+  {
+    alias: 'spivak_oleg',
+    name: 'Спивак Олег Игоревич',
+
+    birthdate: '30.03.1974',
+    candidate: [
+      {
+        callNumber: 7,
+        locationType: LocationType.region,
+        party: Parties.kprf,
+        areaNumber: 8,
+        status: CandidateStatuses.registered,
+      },
+    ],
+  },
+  {
+    alias: 'sukochev_andrej',
+    name: 'Сукочев Андрей Иванович',
+
+    birthdate: '28.03.1963',
+    candidate: [
+      {
+        callNumber: 7,
+        locationType: LocationType.region,
+        party: Parties.kprf,
+        areaNumber: 12,
+        status: CandidateStatuses.registered,
+      },
+    ],
+  },
+  {
+    alias: 'suhinin_aleksandr',
+    name: 'Сухинин Александр Анатольевич',
+
+    birthdate: '20.03.1968',
+    candidate: [
+      {
+        callNumber: 7,
+        locationType: LocationType.region,
+        party: Parties.kprf,
+        areaNumber: 19,
+        status: CandidateStatuses.registered,
+      },
+    ],
+  },
+  {
+    alias: 'tominov_evgenij',
+    name: 'Томинов Евгений Иванович',
+
+    birthdate: '03.08.1961',
+    candidate: [
+      {
+        callNumber: 7,
+        locationType: LocationType.region,
+        party: Parties.kprf,
+        areaNumber: 28,
+        status: CandidateStatuses.registered,
+      },
+    ],
+  },
+  {
+    alias: 'turkov_viktor',
+    name: 'Турков Виктор Васильевич',
+
+    birthdate: '02.11.1961',
+    candidate: [
+      {
+        callNumber: 7,
+        locationType: LocationType.region,
+        party: Parties.kprf,
+        areaNumber: 7,
+        status: CandidateStatuses.registered,
+      },
+    ],
+  },
+  {
+    alias: 'carenko_aleksandr',
+    name: 'Царенко Александр Михайлович',
+
+    birthdate: '10.01.1970',
+    candidate: [
+      {
+        callNumber: 7,
+        locationType: LocationType.region,
+        party: Parties.kprf,
+        areaNumber: 22,
+        status: CandidateStatuses.registered,
+      },
+    ],
+  },
+  {
+    alias: 'chernolyahov_yurij',
+    name: 'Черноляхов Юрий Иванович',
+
+    birthdate: '23.02.1957',
+    candidate: [
+      {
+        callNumber: 7,
+        locationType: LocationType.region,
+        party: Parties.kprf,
+        areaNumber: 27,
+        status: CandidateStatuses.registered,
+      },
+    ],
+  },
+  {
+    alias: 'shevchenko_pavel',
+    name: 'Шевченко Павел Александрович',
+
+    birthdate: '22.05.1989',
+    candidate: [
+      {
+        callNumber: 7,
+        locationType: LocationType.region,
+        party: Parties.kprf,
+        areaNumber: 23,
         status: CandidateStatuses.registered,
       },
     ],

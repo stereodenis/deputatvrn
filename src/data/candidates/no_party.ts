@@ -1,16 +1,16 @@
 import * as photos from '../../images/candidates'
-import { Person, CandidateStatuses, LinkTitle, Project, Parties } from '../../types'
+import { CandidateStatuses, LocationType, LinkTitle, Parties, Person, Project } from '../../types'
 
 const noParty: Person[] = [
   {
     alias: 'akulov_evgenij',
-    photo: photos.noPhoto,
     name: 'Акулов Евгений Алексеевич',
     birthdate: '28.05.1998',
     candidate: [
       {
         areaNumber: 20,
         callNumber: 5,
+        locationType: LocationType.city,
       },
     ],
   },
@@ -23,18 +23,19 @@ const noParty: Person[] = [
       {
         areaNumber: 10,
         callNumber: 5,
+        locationType: LocationType.city,
       },
     ],
   },
   {
     alias: 'aslanyan_ruslan',
-    photo: photos.noPhoto,
     name: 'Асланян Руслан Сергеевич',
     birthdate: '07.07.1973',
     candidate: [
       {
         areaNumber: 3,
         callNumber: 5,
+        locationType: LocationType.city,
       },
     ],
   },
@@ -53,6 +54,7 @@ const noParty: Person[] = [
       {
         areaNumber: 24,
         role: 'глава реготделения Либертарианской партии России',
+        locationType: LocationType.city,
         callNumber: 5,
         status: CandidateStatuses.declined,
       },
@@ -60,13 +62,13 @@ const noParty: Person[] = [
   },
   {
     alias: 'bessmertnyj_oleg',
-    photo: photos.noPhoto,
     name: 'Бессмертный Олег Валентинович',
     birthdate: '14.07.1981',
     candidate: [
       {
         areaNumber: 9,
         callNumber: 5,
+        locationType: LocationType.city,
       },
     ],
   },
@@ -83,6 +85,7 @@ const noParty: Person[] = [
       {
         areaNumber: 13,
         callNumber: 5,
+        locationType: LocationType.city,
       },
     ],
     bio:
@@ -90,36 +93,36 @@ const noParty: Person[] = [
   },
   {
     alias: 'brezhnev_sergej',
-    photo: photos.noPhoto,
     name: 'Брежнев Сергей Юрьевич',
     birthdate: '22.01.1972',
     candidate: [
       {
         areaNumber: 18,
         callNumber: 5,
+        locationType: LocationType.city,
       },
     ],
   },
   {
     alias: 'vorobev_sergej',
-    photo: photos.noPhoto,
     name: 'Воробьев Сергей Николаевич',
     birthdate: '02.01.1960',
     candidate: [
       {
         areaNumber: 11,
         callNumber: 5,
+        locationType: LocationType.city,
       },
     ],
   },
   {
     alias: 'vorotyncev_sergej',
-    photo: photos.noPhoto,
     name: 'Воротынцев Сергей Валерьевич',
     birthdate: '01.01.1975',
     candidate: [
       {
         areaNumber: 7,
+        locationType: LocationType.city,
         callNumber: 5,
         status: CandidateStatuses.declined,
       },
@@ -128,36 +131,36 @@ const noParty: Person[] = [
   {
     alias: 'georgievskij_vladimir',
     name: 'Георгиевский Владимир Всеволодович',
-    photo: photos.noPhoto,
     birthdate: '13.06.1985',
     candidate: [
       {
         areaNumber: 7,
         status: CandidateStatuses.registered,
         callNumber: 5,
+        locationType: LocationType.city,
       },
     ],
   },
   {
     alias: 'gorbunov_aleksej',
-    photo: photos.noPhoto,
     name: 'Горбунов Алексей Сергеевич',
     birthdate: '28.11.1993',
     candidate: [
       {
         areaNumber: 4,
         callNumber: 5,
+        locationType: LocationType.city,
       },
     ],
   },
   {
     alias: 'gridyaev_mihail',
-    photo: photos.noPhoto,
     name: 'Гридяев Михаил Михайлович',
     birthdate: '21.11.2001',
     candidate: [
       {
         areaNumber: 23,
+        locationType: LocationType.city,
         callNumber: 5,
         status: CandidateStatuses.declined,
       },
@@ -178,29 +181,30 @@ const noParty: Person[] = [
         areaNumber: 4,
         status: CandidateStatuses.registered,
         callNumber: 5,
+        locationType: LocationType.city,
       },
     ],
   },
   {
     alias: 'zheleznyakov_maksim',
-    photo: photos.noPhoto,
     name: 'Железняков Максим Александрович',
     birthdate: '19.01.1975',
     candidate: [
       {
         areaNumber: 7,
         callNumber: 5,
+        locationType: LocationType.city,
       },
     ],
   },
   {
     alias: 'zhivotov_aleksandr',
-    photo: photos.noPhoto,
     name: 'Животов Александр Викторович',
     birthdate: '14.01.1989',
     candidate: [
       {
         areaNumber: 7,
+        locationType: LocationType.city,
         callNumber: 5,
         status: CandidateStatuses.declined,
       },
@@ -208,13 +212,13 @@ const noParty: Person[] = [
   },
   {
     alias: 'zajcev_denis',
-    photo: photos.noPhoto,
     name: 'Зайцев Денис Викторович',
     birthdate: '02.08.1992',
     candidate: [
       {
         areaNumber: 14,
         callNumber: 5,
+        locationType: LocationType.city,
         status: CandidateStatuses.registered,
       },
     ],
@@ -228,6 +232,7 @@ const noParty: Person[] = [
       {
         areaNumber: 10,
         callNumber: 5,
+        locationType: LocationType.city,
       },
     ],
   },
@@ -247,6 +252,7 @@ const noParty: Person[] = [
         role: '28 лет. Акционерное общество «Концерн «Созвездие», старший инженер',
         project: Project.gorpr,
         callNumber: 5,
+        locationType: LocationType.city,
         message:
           'Меня зовут Леонид и я не политик. Я инженер и программист, и вот уже много лет жду когда в городе появятся велодорожки, которые нам обещают, когда вместо газелей поедут низкопольные трамваи. Но ничего не происходит и пора это изменить. Моя задача — расшевелить инертную систему и заставить её строить удобный безопасный и современный город.',
       },
@@ -254,13 +260,13 @@ const noParty: Person[] = [
   },
   {
     alias: 'kazmin_aleksandr',
-    photo: photos.noPhoto,
     name: 'Казьмин Александр Сергеевич',
     birthdate: '21.05.1987',
     candidate: [
       {
         areaNumber: 3,
         callNumber: 5,
+        locationType: LocationType.city,
       },
     ],
   },
@@ -275,30 +281,31 @@ const noParty: Person[] = [
         areaNumber: 12,
         role: 'глава штаба Навального в Воронеже',
         callNumber: 5,
+        locationType: LocationType.city,
       },
     ],
   },
   {
     alias: 'kovalenko_anton',
-    photo: photos.noPhoto,
     name: 'Коваленко Антон Александрович',
     birthdate: '21.12.1989',
     candidate: [
       {
         areaNumber: 21,
         callNumber: 5,
+        locationType: LocationType.city,
       },
     ],
   },
   {
     alias: 'kovalyov_mihail',
-    photo: photos.noPhoto,
     name: 'Ковалёв Михаил Федорович',
     birthdate: '14.11.1986',
     candidate: [
       {
         areaNumber: 7,
         callNumber: 5,
+        locationType: LocationType.city,
       },
     ],
   },
@@ -325,30 +332,31 @@ const noParty: Person[] = [
         ],
         role: 'Юрист в сфере Госзакупок',
         callNumber: 5,
+        locationType: LocationType.city,
       },
     ],
   },
   {
     alias: 'kosareva_kristina',
-    photo: photos.noPhoto,
     name: 'Косарева Кристина Юрьевна',
     birthdate: '23.07.1980',
     candidate: [
       {
         areaNumber: 8,
         callNumber: 5,
+        locationType: LocationType.city,
       },
     ],
   },
   {
     alias: 'kosilova_ekaterina',
-    photo: photos.noPhoto,
     name: 'Косилова Екатерина Алексеевна',
     birthdate: '27.11.1985',
     candidate: [
       {
         areaNumber: 6,
         callNumber: 5,
+        locationType: LocationType.city,
       },
     ],
   },
@@ -365,12 +373,12 @@ const noParty: Person[] = [
       {
         areaNumber: 24,
         callNumber: 5,
+        locationType: LocationType.city,
       },
     ],
   },
   {
     alias: 'kudryavceva_galina',
-    photo: photos.noPhoto,
     name: 'Кудрявцева Галина Александровна',
     birthdate: '03.07.1945',
     candidate: [
@@ -378,18 +386,19 @@ const noParty: Person[] = [
         areaNumber: 2,
         status: CandidateStatuses.registered,
         callNumber: 5,
+        locationType: LocationType.city,
       },
     ],
   },
   {
     alias: 'kulikov_igor',
-    photo: photos.noPhoto,
     name: 'Куликов Игорь Валентинович',
     birthdate: '21.10.1961',
     candidate: [
       {
         areaNumber: 1,
         callNumber: 5,
+        locationType: LocationType.city,
       },
     ],
   },
@@ -412,6 +421,7 @@ const noParty: Person[] = [
         project: Project.gorpr,
         status: CandidateStatuses.registered,
         callNumber: 5,
+        locationType: LocationType.city,
         message:
           'Всем сердцем люблю город Воронеж. Здесь я родилась, ходила в школу, закончила университет, работаю. Не воспринимаю себя отдельно от Воронежа, он часть меня. Имею большой опыт правозащитной деятельности и реализации социальных проектов. Я выдвигаюсь в депутаты потому, что хочу сделать наш город безопасным и комфортным для всех групп населения, нам просто необходимо сократить смертность на наших дорогах.',
       },
@@ -438,6 +448,7 @@ const noParty: Person[] = [
         message:
           'Моя мечта — удобный город, с безбарьерной средой, без грязи и заброшенных территорий. Город, в котором видно внимание ко всем его деталям. До выдвижения в городскую Думу я писал обращения в администрацию на обустройство пандусами бордюров, асфальтирование разрушенных участков тротуаров, уборку мусора вокруг контейнеров, расширения тротуаров. Многое получалось, надеюсь получится еще больше!',
         callNumber: 5,
+        locationType: LocationType.city,
         problems: [
           'на пешеходные зоны Ленинского проспекта заезжают автомобили, используют их под парковку, тротуар вдоль проспекта постоянно прерывается.',
           'Отсутствуют островки безопасности на пешеходных переходах, при таком количестве полос они обязаны там быть, это повысит безопасность пешеходов и не позволит автомобилям разгонятся до высоких скоростей.',
@@ -449,62 +460,62 @@ const noParty: Person[] = [
   },
   {
     alias: 'lukin_anton',
-    photo: photos.noPhoto,
     name: 'Лукин Антон Николаевич',
     birthdate: '22.06.1981',
     candidate: [
       {
         areaNumber: 12,
         callNumber: 5,
+        locationType: LocationType.city,
       },
     ],
   },
   {
     alias: 'lutov_vladislav',
-    photo: photos.noPhoto,
     name: 'Лутов Владислав Андреевич',
     birthdate: '20.04.1987',
     candidate: [
       {
         areaNumber: 6,
         callNumber: 5,
+        locationType: LocationType.city,
       },
     ],
   },
   {
     alias: 'mavidi_andrej',
-    photo: photos.noPhoto,
     name: 'Мавиди Андрей Николаевич',
     birthdate: '13.09.1968',
     candidate: [
       {
         areaNumber: 20,
         callNumber: 5,
+        locationType: LocationType.city,
         status: CandidateStatuses.declined,
       },
     ],
   },
   {
     alias: 'neverov_aleksej',
-    photo: photos.noPhoto,
     name: 'Неверов Алексей Владимирович',
     birthdate: '26.05.1972',
     candidate: [
       {
         areaNumber: 8,
         callNumber: 5,
+        locationType: LocationType.city,
       },
     ],
   },
   {
     alias: 'nekrasov_aleksej',
-    photo: photos.noPhoto,
     name: 'Некрасов Алексей Владимирович',
     birthdate: '20.08.1982',
     candidate: [
       {
         areaNumber: 14,
         callNumber: 5,
+        locationType: LocationType.city,
       },
     ],
   },
@@ -518,6 +529,7 @@ const noParty: Person[] = [
         areaNumber: 21,
         project: Project.gorpr,
         callNumber: 5,
+        locationType: LocationType.city,
         message:
           'Родился и вырос в Воронеже, являюсь выпускником международного института компьютерных технологий, занимаюсь разработкой игр на мобильные устройства. Всегда интересовался общественной жизнью города, служил в армии, демобилизован в звании младшего сержанта. Для меня депутатство - это попытка сделать шаг в сторону политики, работающей в интересах избирателей.',
         role:
@@ -539,6 +551,7 @@ const noParty: Person[] = [
       {
         areaNumber: 4,
         callNumber: 4,
+        locationType: LocationType.city,
         party: Parties.er,
         deputat: {
           office: 'ул. Туполева, 39',
@@ -550,30 +563,31 @@ const noParty: Person[] = [
         areaNumber: 4,
         status: CandidateStatuses.registered,
         callNumber: 5,
+        locationType: LocationType.city,
       },
     ],
   },
   {
     alias: 'orlov_fedor',
-    photo: photos.noPhoto,
     name: 'Орлов Федор Иванович',
     birthdate: '14.11.1988',
     candidate: [
       {
         areaNumber: 18,
         callNumber: 5,
+        locationType: LocationType.city,
       },
     ],
   },
   {
     alias: 'palyutin_mihail',
-    photo: photos.noPhoto,
     name: 'Палютин Михаил Иванович',
     birthdate: '16.08.1953',
     candidate: [
       {
         areaNumber: 3,
         callNumber: 5,
+        locationType: LocationType.city,
       },
     ],
   },
@@ -591,12 +605,12 @@ const noParty: Person[] = [
         areaNumber: 1,
         role: 'временно не работающий',
         callNumber: 5,
+        locationType: LocationType.city,
       },
     ],
   },
   {
     alias: 'panfilov_aleksej',
-    photo: photos.noPhoto,
     name: 'Панфилов Алексей Иванович',
     birthdate: '02.10.1974',
     candidate: [
@@ -604,18 +618,19 @@ const noParty: Person[] = [
         areaNumber: 6,
         status: CandidateStatuses.registered,
         callNumber: 5,
+        locationType: LocationType.city,
       },
     ],
   },
   {
     alias: 'pechurina_alla',
-    photo: photos.noPhoto,
     name: 'Печурина Алла Витальевна',
     birthdate: '06.07.1971',
     candidate: [
       {
         areaNumber: 4,
         callNumber: 5,
+        locationType: LocationType.city,
       },
     ],
   },
@@ -637,6 +652,7 @@ const noParty: Person[] = [
           '22 года. руководитель направления практических исследований в Воронеже, Фонд содействия развитию городов «Городские Проекты Ильи Варламова и Максима Каца»',
         project: Project.gorpr,
         callNumber: 5,
+        locationType: LocationType.city,
         message:
           'Я активный велосипедист и пешеход. Мне не нравится, что наш город вместо хороших условий для людей предоставляет им только препятствия. Я хочу сделать Воронеж удобнее и безопаснее для пешеходов, доступнее для маломобильных граждан. Это далеко не все, что можно сделать лучше. Для этого я выдвигаюсь в Воронежскую городскую думу. Сейчас мне нужны средства на сбор подписей.',
       },
@@ -644,37 +660,37 @@ const noParty: Person[] = [
   },
   {
     alias: 'pyhteev_sergej',
-    photo: photos.noPhoto,
     name: 'Пыхтеев Сергей Валериевич',
     birthdate: '15.07.1975',
     candidate: [
       {
         areaNumber: 2,
         callNumber: 5,
+        locationType: LocationType.city,
       },
     ],
   },
   {
     alias: 'ratnenko_sergej',
-    photo: photos.noPhoto,
     name: 'Ратненко Сергей Александрович',
     birthdate: '04.02.1984',
     candidate: [
       {
         areaNumber: 2,
         callNumber: 5,
+        locationType: LocationType.city,
       },
     ],
   },
   {
     alias: 'ratushnyj_artem',
-    photo: photos.noPhoto,
     name: 'Ратушный Артем Александрович',
     birthdate: '27.10.1979',
     candidate: [
       {
         areaNumber: 24,
         callNumber: 5,
+        locationType: LocationType.city,
       },
     ],
   },
@@ -696,6 +712,7 @@ const noParty: Person[] = [
         areaNumber: 15,
         project: Project.gorpr,
         role: 'Глава Горпроектов в Воронеже',
+        locationType: LocationType.city,
         callNumber: 5,
         status: CandidateStatuses.declined,
       },
@@ -703,7 +720,6 @@ const noParty: Person[] = [
   },
   {
     alias: 'rubcov_aleksandr',
-    photo: photos.noPhoto,
     name: 'Рубцов Александр Васильевич',
     birthdate: '26.11.1983',
     candidate: [
@@ -711,43 +727,44 @@ const noParty: Person[] = [
         areaNumber: 5,
         status: CandidateStatuses.declined,
         callNumber: 5,
+        locationType: LocationType.city,
       },
     ],
   },
   {
     alias: 'svyatohin_evgenij',
-    photo: photos.noPhoto,
     name: 'Святохин Евгений Евгеньевич',
     birthdate: '04.08.1982',
     candidate: [
       {
         areaNumber: 5,
         callNumber: 5,
+        locationType: LocationType.city,
         status: CandidateStatuses.declined,
       },
     ],
   },
   {
     alias: 'selyutin_vladimir',
-    photo: photos.noPhoto,
     name: 'Селютин Владимир Иванович',
     birthdate: '23.11.1962',
     candidate: [
       {
         areaNumber: 21,
         callNumber: 5,
+        locationType: LocationType.city,
       },
     ],
   },
   {
     alias: 'simonov_sergej',
-    photo: photos.noPhoto,
     name: 'Симонов Сергей Иванович',
     birthdate: '10.07.1959',
     candidate: [
       {
         areaNumber: 13,
         callNumber: 5,
+        locationType: LocationType.city,
       },
     ],
   },
@@ -762,6 +779,7 @@ const noParty: Person[] = [
         role: '19 лет. Студент',
         project: Project.gorpr,
         callNumber: 5,
+        locationType: LocationType.city,
         message:
           'Я студент Воронежского государственного университета. Иду в городскую думу, чтобы решить проблему с общественным транспортом. Сейчас большая часть транспорта — это пазики и маршрутки. А из-за пробок одна остановка может занимать 40 минут. Нужно сделать выделенные линии для общественного транспорта. Моя главная мечта это вернуть в город трамвай, но, конечно же, не в старом виде. Нужны современные, комфортные и тихие трамваи.',
       },
@@ -776,43 +794,42 @@ const noParty: Person[] = [
   },
   {
     alias: 'sonin_vladimir',
-    photo: photos.noPhoto,
     name: 'Сонин Владимир Юрьевич',
     birthdate: '01.06.1989',
     candidate: [
       {
         areaNumber: 2,
         callNumber: 5,
+        locationType: LocationType.city,
       },
     ],
   },
   {
     alias: 'strebkov_ivan',
-    photo: photos.noPhoto,
     name: 'Стребков Иван Андреевич',
     birthdate: '20.01.2002',
     candidate: [
       {
         areaNumber: 12,
         callNumber: 5,
+        locationType: LocationType.city,
       },
     ],
   },
   {
     alias: 'surel igor',
-    photo: photos.noPhoto,
     name: 'Сурель Игорь Алексеевич',
     birthdate: '23.03.1964',
     candidate: [
       {
         areaNumber: 17,
         callNumber: 5,
+        locationType: LocationType.city,
       },
     ],
   },
   {
     alias: 'surkov_oleg',
-    photo: photos.noPhoto,
     name: 'Сурков Олег Владимирович',
     birthdate: '01.07.1985',
     candidate: [
@@ -820,30 +837,31 @@ const noParty: Person[] = [
         areaNumber: 4,
         status: CandidateStatuses.registered,
         callNumber: 5,
+        locationType: LocationType.city,
       },
     ],
   },
   {
     alias: 'sychyov_pavel',
-    photo: photos.noPhoto,
     name: 'Сычёв Павел Дмитриевич',
     birthdate: '20.05.1986',
     candidate: [
       {
         areaNumber: 19,
         callNumber: 5,
+        locationType: LocationType.city,
       },
     ],
   },
   {
     alias: 'teryaev_vyacheslav',
-    photo: photos.noPhoto,
     name: 'Теряев Вячеслав Анатольевич',
     birthdate: '28.07.1969',
     candidate: [
       {
         areaNumber: 6,
         callNumber: 5,
+        locationType: LocationType.city,
       },
     ],
   },
@@ -856,6 +874,7 @@ const noParty: Person[] = [
       {
         areaNumber: 10,
         callNumber: 5,
+        locationType: LocationType.city,
       },
     ],
   },
@@ -870,6 +889,7 @@ const noParty: Person[] = [
         role: '26 лет. Менеджер IT-проектов, Общество с ограниченной ответственностью "Эд Вест"',
         project: Project.gorpr,
         callNumber: 5,
+        locationType: LocationType.city,
         message:
           'Я Игорь и я хочу стать не просто депутатом, а голосом людей, которые живут со мной в одном районе. Моя цель — это удобное и красивое благоустройство дворов, качественные дороги и тротуары, а также современные и чистые места сбора мусора. Моя мечта — сделать так, чтобы люди чувствовали, что их дом не заканчивается за дверью квартиры или дома.',
       },
@@ -882,61 +902,61 @@ const noParty: Person[] = [
   },
   {
     alias: 'chekmarev_artem',
-    photo: photos.noPhoto,
     name: 'Чекмарев Артем Олегович',
     birthdate: '17.05.1986',
     candidate: [
       {
         areaNumber: 18,
         callNumber: 5,
+        locationType: LocationType.city,
       },
     ],
   },
   {
     alias: 'chernikova_irina',
-    photo: photos.noPhoto,
     name: 'Черникова Ирина Аркадьевна',
     birthdate: '23.05.1972',
     candidate: [
       {
         areaNumber: 15,
         callNumber: 5,
+        locationType: LocationType.city,
       },
     ],
   },
   {
     alias: 'sherstnyakov_konstantin',
-    photo: photos.noPhoto,
     name: 'Шерстняков Константин Александрович',
     birthdate: '19.06.1966',
     candidate: [
       {
         areaNumber: 12,
         callNumber: 5,
+        locationType: LocationType.city,
       },
     ],
   },
   {
     alias: 'shubin_andrej',
-    photo: photos.noPhoto,
     name: 'Шубин Андрей Александрович',
     birthdate: '10.01.1985',
     candidate: [
       {
         areaNumber: 7,
         callNumber: 5,
+        locationType: LocationType.city,
       },
     ],
   },
   {
     alias: 'yudin_aleksej',
-    photo: photos.noPhoto,
     name: 'Юдин Алексей Сергеевич',
     birthdate: '08.06.1976',
     candidate: [
       {
         areaNumber: 4,
         callNumber: 5,
+        locationType: LocationType.city,
       },
     ],
   },
@@ -955,7 +975,63 @@ const noParty: Person[] = [
         areaNumber: 3,
         project: Project.gorpr,
         callNumber: 5,
+        locationType: LocationType.city,
       },
+    ],
+  },
+  {
+    alias: 'kovalenko_anton',
+    name: 'Коваленко Антон Александрович',
+    birthdate: '21.12.1989',
+
+    candidate: [{ locationType: LocationType.region, callNumber: 7, areaNumber: 27 }],
+  },
+  {
+    alias: 'kosarev_aleksandr',
+    name: 'Косарев Александр Александрович',
+    birthdate: '16.02.1989',
+
+    candidate: [{ locationType: LocationType.region, callNumber: 7, areaNumber: 4 }],
+  },
+  {
+    alias: 'krivonosov_dmitrij',
+    name: 'Кривоносов Дмитрий Сергеевич',
+    birthdate: '27.03.1978',
+
+    candidate: [
+      { locationType: LocationType.region, callNumber: 7, areaNumber: 12, status: CandidateStatuses.declined },
+    ],
+  },
+  {
+    alias: 'malyukov_igor',
+    name: 'Малюков Игорь Алексеевич',
+    birthdate: '19.10.1968',
+
+    candidate: [{ locationType: LocationType.region, callNumber: 7, areaNumber: 4 }],
+  },
+  {
+    alias: 'meshkov_petr',
+    name: 'Мешков Петр Станиславович',
+    birthdate: '22.10.1965',
+
+    candidate: [{ locationType: LocationType.region, callNumber: 7, areaNumber: 10 }],
+  },
+  {
+    alias: 'shibalkin_dmitrij',
+    name: 'Шибалкин Дмитрий Александрович',
+    birthdate: '11.03.1981',
+
+    candidate: [
+      { locationType: LocationType.region, callNumber: 7, areaNumber: 19, status: CandidateStatuses.declined },
+    ],
+  },
+  {
+    alias: 'shcherbakov_vladimir',
+    name: 'Щербаков Владимир Митрофанович',
+    birthdate: '03.07.1958',
+
+    candidate: [
+      { locationType: LocationType.region, callNumber: 7, areaNumber: 5, status: CandidateStatuses.declined },
     ],
   },
 ]

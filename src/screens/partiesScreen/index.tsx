@@ -1,9 +1,10 @@
 import React, { memo } from 'react'
 import { Container, Row, Col, Image } from 'react-bootstrap'
-import { Link } from 'react-router-dom'
+import { Link, useParams } from 'react-router-dom'
 import { shuffle } from 'lodash'
 
-import { currentPersons, getCurrentCandidate, getPartyCandidates } from '../../helpers'
+import persons from '../../data/persons'
+import { getCurrentCandidate, getPartyCandidates } from '../../helpers'
 import { Parties } from '../../types'
 
 const mapPartyToLogo: { [s: string]: string } = {
@@ -18,14 +19,16 @@ const mapPartyToLogo: { [s: string]: string } = {
 }
 
 export default memo(() => {
-  const noPartyCandidates = currentPersons.filter((p) => !getCurrentCandidate(p)?.party)
+  const { locationType } = useParams()
+  const currentPersons = persons.filter((p) => getCurrentCandidate(p, locationType))
+  const noPartyCandidates = currentPersons.filter((p) => !getCurrentCandidate(p, locationType)?.party)
 
   return (
     <Container fluid>
       <h1>Партии</h1>
       <Row>
         <Col xs={6} sm={4} md={3} lg={2} className='border py-3'>
-          <Link to={'/parties/noParty'}>
+          <Link to={`/${locationType}/parties/noParty`}>
             <Image
               width={'100%'}
               className=''
@@ -38,7 +41,7 @@ export default memo(() => {
         </Col>
 
         {shuffle(Object.keys(Parties) as Array<keyof typeof Parties>).map((partyAlias) => {
-          const partyCandidates = getPartyCandidates(partyAlias)
+          const partyCandidates = getPartyCandidates(partyAlias, locationType)
 
           if (!partyCandidates.length) {
             return null
@@ -46,7 +49,7 @@ export default memo(() => {
 
           return (
             <Col xs={6} sm={4} md={3} lg={2} key={partyAlias} className='border py-3'>
-              <Link to={`/parties/${partyAlias}`} className='text-center d-block'>
+              <Link to={`/${locationType}/parties/${partyAlias}`} className='text-center d-block'>
                 <Image
                   style={{ maxWidth: '100%', maxHeight: '100px' }}
                   src={mapPartyToLogo[partyAlias]}
