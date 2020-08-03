@@ -8,6 +8,7 @@ import { getCurrentCandidate, getPartyCandidates } from '../../helpers'
 import { Parties } from '../../types'
 
 const mapPartyToLogo: { [s: string]: string } = {
+  dem: require('../../images/parties/dem.png'),
   er: require('../../images/parties/er.png'),
   kprf: require('../../images/parties/kprf.png'),
   newPeople: require('../../images/parties/nl.jpg'),
@@ -16,6 +17,8 @@ const mapPartyToLogo: { [s: string]: string } = {
   ldpr: require('../../images/parties/ldpr.png'),
   sr: require('../../images/parties/sr.jpg'),
   zaPravdu: require('../../images/parties/za_pravdu.png'),
+  zaSprav: require('../../images/parties/za_sprav.jpg'),
+  rosta: require('../../images/parties/rosta.png'),
 }
 
 export default memo(() => {
