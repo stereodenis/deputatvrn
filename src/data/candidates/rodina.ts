@@ -1,5 +1,5 @@
 import * as photos from '../../images/candidates'
-import { Person, LinkTitle, Parties, Project, CandidateStatuses } from '../../types'
+import { CandidateStatuses, CandidateType, LinkTitle, Parties, Person, Project } from '../../types'
 
 const rodina: Person[] = [
   {
@@ -10,6 +10,7 @@ const rodina: Person[] = [
       {
         areaNumber: 1,
         callNumber: 5,
+        type: CandidateType.city,
         party: Parties.rodina,
         role: 'временно неработающий',
       },
@@ -24,6 +25,7 @@ const rodina: Person[] = [
       {
         areaNumber: 3,
         callNumber: 5,
+        type: CandidateType.city,
         party: Parties.rodina,
         role: 'коммерческий директор «Мега Авто»',
       },
@@ -38,6 +40,7 @@ const rodina: Person[] = [
       {
         areaNumber: 4,
         callNumber: 5,
+        type: CandidateType.city,
         role: 'временно не работает',
         party: Parties.rodina,
       },
@@ -52,6 +55,7 @@ const rodina: Person[] = [
       {
         areaNumber: 5,
         callNumber: 5,
+        type: CandidateType.city,
         role: 'гендиректор «Аксиос Инвест»',
         party: Parties.rodina,
       },
@@ -66,6 +70,7 @@ const rodina: Person[] = [
       {
         areaNumber: 6,
         callNumber: 5,
+        type: CandidateType.city,
         role: 'предприниматель',
         party: Parties.rodina,
       },
@@ -80,6 +85,7 @@ const rodina: Person[] = [
       {
         areaNumber: 7,
         callNumber: 5,
+        type: CandidateType.city,
         role: 'временно не работает',
         party: Parties.rodina,
         status: CandidateStatuses.registered,
@@ -95,6 +101,7 @@ const rodina: Person[] = [
       {
         areaNumber: 8,
         callNumber: 5,
+        type: CandidateType.city,
         role: 'председатель Совета кооператива Социально-экономической взаимопомощи «Развитие»',
         party: Parties.rodina,
       },
@@ -109,6 +116,7 @@ const rodina: Person[] = [
       {
         areaNumber: 9,
         callNumber: 5,
+        type: CandidateType.city,
         role: 'гендиректор «Евростроя»',
         party: Parties.rodina,
       },
@@ -123,6 +131,7 @@ const rodina: Person[] = [
       {
         areaNumber: 10,
         callNumber: 5,
+        type: CandidateType.city,
         party: Parties.rodina,
         project: Project.git,
       },
@@ -145,6 +154,7 @@ const rodina: Person[] = [
       {
         areaNumber: 11,
         callNumber: 5,
+        type: CandidateType.city,
         role: 'менеджер',
         party: Parties.rodina,
       },
@@ -159,6 +169,7 @@ const rodina: Person[] = [
       {
         areaNumber: 12,
         callNumber: 5,
+        type: CandidateType.city,
         role: 'директор некоммерческой организации дополнительного профессионального образования «ДОН-100»',
         party: Parties.rodina,
       },
@@ -173,6 +184,7 @@ const rodina: Person[] = [
       {
         areaNumber: 13,
         callNumber: 5,
+        type: CandidateType.city,
         role: 'гендиректор «СВС Авто Групп»',
         party: Parties.rodina,
       },
@@ -187,6 +199,7 @@ const rodina: Person[] = [
       {
         areaNumber: 14,
         callNumber: 5,
+        type: CandidateType.city,
         party: Parties.rodina,
         role: 'предприниматель',
       },
@@ -201,6 +214,7 @@ const rodina: Person[] = [
       {
         areaNumber: 15,
         callNumber: 5,
+        type: CandidateType.city,
         role: 'гендиректор «ЮЦ Солидарность»',
         party: Parties.rodina,
       },
@@ -216,6 +230,7 @@ const rodina: Person[] = [
       {
         areaNumber: 16,
         callNumber: 5,
+        type: CandidateType.city,
         role: 'пенсионер',
         party: Parties.rodina,
       },
@@ -230,6 +245,7 @@ const rodina: Person[] = [
       {
         areaNumber: 17,
         callNumber: 5,
+        type: CandidateType.city,
         party: Parties.rodina,
         role: 'доцент ВГУ',
       },
@@ -249,6 +265,7 @@ const rodina: Person[] = [
       {
         areaNumber: 18,
         callNumber: 5,
+        type: CandidateType.city,
         role: 'заместитель генерального директора по коммерческим вопросам «Завода железобетонных изделий №2»',
         party: Parties.rodina,
       },
@@ -263,6 +280,7 @@ const rodina: Person[] = [
       {
         areaNumber: 19,
         callNumber: 5,
+        type: CandidateType.city,
         role: 'травматолог-ортопед «Воронежской областной клинической больницы №1»',
         party: Parties.rodina,
       },
@@ -277,6 +295,7 @@ const rodina: Person[] = [
       {
         areaNumber: 21,
         callNumber: 5,
+        type: CandidateType.city,
         role: 'домохозяйка',
         party: Parties.rodina,
       },
@@ -296,6 +315,7 @@ const rodina: Person[] = [
       {
         areaNumber: 22,
         callNumber: 5,
+        type: CandidateType.city,
         role: 'директор ООО «Парсек»',
         party: Parties.rodina,
       },
@@ -310,6 +330,7 @@ const rodina: Person[] = [
       {
         areaNumber: 23,
         callNumber: 5,
+        type: CandidateType.city,
         role: 'начальник цеха АО «Завод железобетонных изделий №2',
         party: Parties.rodina,
       },
@@ -324,8 +345,353 @@ const rodina: Person[] = [
       {
         areaNumber: 24,
         callNumber: 5,
+        type: CandidateType.city,
         role: 'гендиректор «Ника Моторс»',
         party: Parties.rodina,
+      },
+    ],
+  },
+  {
+    alias: 'borisov_igor',
+    name: 'Борисов Игорь Борисович',
+    birthdate: '05.11.1983',
+
+    candidate: [
+      {
+        party: Parties.rodina,
+        type: CandidateType.region,
+        callNumber: 7,
+        areaNumber: 20,
+        status: CandidateStatuses.registered,
+      },
+    ],
+  },
+  {
+    alias: 'vladimirov_vyacheslav',
+    name: 'Владимиров Вячеслав Вячеславович',
+    birthdate: '01.08.1979',
+
+    candidate: [
+      {
+        party: Parties.rodina,
+        type: CandidateType.region,
+        callNumber: 7,
+        areaNumber: 19,
+        status: CandidateStatuses.registered,
+      },
+    ],
+  },
+  {
+    alias: 'volkov_andrej',
+    name: 'Волков Андрей Валериевич',
+    birthdate: '18.02.1970',
+
+    candidate: [
+      {
+        party: Parties.rodina,
+        type: CandidateType.region,
+        callNumber: 7,
+        areaNumber: 4,
+        status: CandidateStatuses.registered,
+      },
+    ],
+  },
+  {
+    alias: 'gushchin_roman',
+    name: 'Гущин Роман Александрович',
+    birthdate: '15.12.1973',
+
+    candidate: [
+      {
+        party: Parties.rodina,
+        type: CandidateType.region,
+        callNumber: 7,
+        areaNumber: 6,
+        status: CandidateStatuses.registered,
+      },
+    ],
+  },
+  {
+    alias: 'dolbnya_gennadij',
+    name: 'Долбня Геннадий Викторович',
+    birthdate: '15.02.1962',
+
+    candidate: [
+      {
+        party: Parties.rodina,
+        type: CandidateType.region,
+        callNumber: 7,
+        areaNumber: 24,
+        status: CandidateStatuses.registered,
+      },
+    ],
+  },
+  {
+    alias: 'ivanov_anton',
+    name: 'Иванов Антон Данилович',
+    birthdate: '26.07.1988',
+
+    candidate: [
+      {
+        party: Parties.rodina,
+        type: CandidateType.region,
+        callNumber: 7,
+        areaNumber: 8,
+        status: CandidateStatuses.registered,
+      },
+    ],
+  },
+  {
+    alias: 'kopachev_gennadij',
+    name: 'Копачев Геннадий Анатольевич',
+    birthdate: '06.05.1967',
+
+    candidate: [
+      {
+        party: Parties.rodina,
+        type: CandidateType.region,
+        callNumber: 7,
+        areaNumber: 3,
+        status: CandidateStatuses.registered,
+      },
+    ],
+  },
+  {
+    alias: 'kryukov_aleksej',
+    name: 'Крюков Алексей Николаевич',
+    birthdate: '28.04.1974',
+
+    candidate: [
+      {
+        party: Parties.rodina,
+        type: CandidateType.region,
+        callNumber: 7,
+        areaNumber: 9,
+        status: CandidateStatuses.registered,
+      },
+    ],
+  },
+  {
+    alias: 'malcev_yurij',
+    name: 'Мальцев Юрий Николаевич',
+    birthdate: '27.12.1968',
+
+    candidate: [
+      {
+        party: Parties.rodina,
+        type: CandidateType.region,
+        callNumber: 7,
+        areaNumber: 5,
+        status: CandidateStatuses.registered,
+      },
+    ],
+  },
+  {
+    alias: 'masloboev_sergej',
+    name: 'Маслобоев Сергей Алексеевич',
+    birthdate: '28.05.1961',
+
+    candidate: [
+      {
+        party: Parties.rodina,
+        type: CandidateType.region,
+        callNumber: 7,
+        areaNumber: 22,
+        status: CandidateStatuses.registered,
+      },
+    ],
+  },
+  {
+    alias: 'osinin_kirill',
+    name: 'Осинин Кирилл Сергеевич',
+    birthdate: '28.08.1977',
+
+    candidate: [
+      {
+        party: Parties.rodina,
+        type: CandidateType.region,
+        callNumber: 7,
+        areaNumber: 25,
+        status: CandidateStatuses.registered,
+      },
+    ],
+  },
+  {
+    alias: 'ostroushko_ivan',
+    name: 'Остроушко Иван Петрович',
+    birthdate: '14.01.1989',
+
+    candidate: [
+      {
+        party: Parties.rodina,
+        type: CandidateType.region,
+        callNumber: 7,
+        areaNumber: 14,
+        status: CandidateStatuses.registered,
+      },
+    ],
+  },
+  {
+    alias: 'polunin_artem',
+    name: 'Полунин Артем Николаевич',
+    birthdate: '12.01.1990',
+
+    candidate: [
+      {
+        party: Parties.rodina,
+        type: CandidateType.region,
+        callNumber: 7,
+        areaNumber: 28,
+        status: CandidateStatuses.registered,
+      },
+    ],
+  },
+  {
+    alias: 'polnikov_igor',
+    name: 'Польников Игорь Валерьевич',
+    birthdate: '11.03.1968',
+
+    candidate: [
+      {
+        party: Parties.rodina,
+        type: CandidateType.region,
+        callNumber: 7,
+        areaNumber: 13,
+        status: CandidateStatuses.registered,
+      },
+    ],
+  },
+  {
+    alias: 'ponomarev_aleksandr',
+    name: 'Пономарев Александр Сергеевич',
+    birthdate: '04.06.1978',
+
+    candidate: [
+      {
+        party: Parties.rodina,
+        type: CandidateType.region,
+        callNumber: 7,
+        areaNumber: 16,
+        status: CandidateStatuses.registered,
+      },
+    ],
+  },
+  {
+    alias: 'rosnovskaya_svetlana',
+    name: 'Росновская Светлана Анатольевна',
+    birthdate: '08.02.1975',
+
+    candidate: [
+      {
+        party: Parties.rodina,
+        type: CandidateType.region,
+        callNumber: 7,
+        areaNumber: 17,
+        status: CandidateStatuses.registered,
+      },
+    ],
+  },
+  {
+    alias: 'safonov_sergej',
+    name: 'Сафонов Сергей Иванович',
+    birthdate: '14.11.1976',
+
+    candidate: [
+      {
+        party: Parties.rodina,
+        type: CandidateType.region,
+        callNumber: 7,
+        areaNumber: 10,
+        status: CandidateStatuses.registered,
+      },
+    ],
+  },
+  {
+    alias: 'semin_gennadij',
+    name: 'Семин Геннадий Владимирович',
+    birthdate: '04.12.1967',
+
+    candidate: [{ party: Parties.rodina, type: CandidateType.region, callNumber: 7, areaNumber: 2 }],
+  },
+  {
+    alias: 'skrynnikov_boris',
+    name: 'Скрынников Борис Михайлович',
+    birthdate: '17.06.1956',
+
+    candidate: [
+      {
+        party: Parties.rodina,
+        type: CandidateType.region,
+        callNumber: 7,
+        areaNumber: 12,
+        status: CandidateStatuses.registered,
+      },
+    ],
+  },
+  {
+    alias: 'sokolov_viktor',
+    name: 'Соколов Виктор Александрович',
+    birthdate: '31.08.1981',
+
+    candidate: [
+      {
+        party: Parties.rodina,
+        type: CandidateType.region,
+        callNumber: 7,
+        areaNumber: 18,
+        status: CandidateStatuses.registered,
+      },
+    ],
+  },
+  {
+    alias: 'suprunov_vladimir',
+    name: 'Супрунов Владимир Иванович',
+    birthdate: '15.07.1962',
+
+    candidate: [{ party: Parties.rodina, type: CandidateType.region, callNumber: 7, areaNumber: 27 }],
+  },
+  {
+    alias: 'chekmarev_artem',
+    name: 'Чекмарев Артем Витальевич',
+    birthdate: '27.05.1993',
+
+    candidate: [
+      {
+        party: Parties.rodina,
+        type: CandidateType.region,
+        callNumber: 7,
+        areaNumber: 15,
+        status: CandidateStatuses.registered,
+      },
+    ],
+  },
+  {
+    alias: 'cherednikov_vladimir',
+    name: 'Чередников Владимир Викторович',
+    birthdate: '16.10.1961',
+
+    candidate: [
+      {
+        party: Parties.rodina,
+        type: CandidateType.region,
+        callNumber: 7,
+        areaNumber: 21,
+        status: CandidateStatuses.registered,
+      },
+    ],
+  },
+  {
+    alias: 'shulekina_natalya',
+    name: 'Шулекина Наталья Валерьевна',
+    birthdate: '09.05.1982',
+
+    candidate: [
+      {
+        party: Parties.rodina,
+        type: CandidateType.region,
+        callNumber: 7,
+        areaNumber: 1,
+        status: CandidateStatuses.registered,
       },
     ],
   },

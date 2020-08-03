@@ -5,15 +5,20 @@ import { times } from 'lodash'
 
 import areas from '../../data/areas'
 import { getAreaCandidates, getPersonWithCurrentDeputat } from '../../helpers'
+import { CandidateType } from '../../types'
 
 export default memo(() => {
+  const type =
+    (localStorage.getItem('type') as keyof typeof CandidateType) ||
+    (Object.keys(CandidateType) as Array<keyof typeof CandidateType>)[0]
+
   return (
     <Container fluid>
       <Row>
         {times(24).map((rawAreaNumber) => {
           const areaNumber = rawAreaNumber + 1
           const area = areas[areaNumber]
-          const areaCandidates = getAreaCandidates(areaNumber)
+          const areaCandidates = getAreaCandidates(areaNumber, type)
           const deputatPerson = getPersonWithCurrentDeputat(areaNumber)
 
           return (

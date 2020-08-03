@@ -4,9 +4,10 @@ import { Container, Row, Col } from 'react-bootstrap'
 // @ts-ignore
 import MetaTags from 'react-meta-tags'
 
-import { Parties } from '../../types'
+import persons from '../../data/persons'
+import { CandidateType, Parties } from '../../types'
 import { CandidateCard } from '../../components'
-import { currentPersons, getCurrentCandidate, getPartyCandidates } from '../../helpers'
+import { getCurrentCandidate, getPartyCandidates } from '../../helpers'
 
 export default memo(() => {
   const { partyAlias } = useParams<{ partyAlias: keyof typeof Parties }>()
@@ -14,9 +15,16 @@ export default memo(() => {
   const isNoParty = partyAlias === 'noParty'
   const title = isNoParty ? 'Самовыдвиженцы' : `Партия «${Parties[partyAlias]}»`
 
+  const type =
+    (localStorage.getItem('type') as keyof typeof CandidateType) ||
+    (Object.keys(CandidateType) as Array<keyof typeof CandidateType>)[0]
+  const currentPersons = persons.filter((p) => getCurrentCandidate(p, type))
   const partyCandidates = useMemo(
-    () => (isNoParty ? currentPersons.filter((p) => !getCurrentCandidate(p)?.party) : getPartyCandidates(partyAlias)),
-    [isNoParty, partyAlias]
+    () =>
+      isNoParty
+        ? currentPersons.filter((p) => !getCurrentCandidate(p, type)?.party)
+        : getPartyCandidates(partyAlias, type),
+    [currentPersons, isNoParty, partyAlias, type]
   )
 
   return (
@@ -36,7 +44,10 @@ export default memo(() => {
         <h2>Список кандидатов в депутаты ({partyCandidates.length})</h2>
         <Row className='border-bottom'>
           {partyCandidates
-            .sort((a, b) => (getCurrentCandidate(a)?.areaNumber || 0) - (getCurrentCandidate(b)?.areaNumber || 0))
+            .sort(
+              (a, b) =>
+                (getCurrentCandidate(a, type)?.areaNumber || 0) - (getCurrentCandidate(b, type)?.areaNumber || 0)
+            )
             .map((person) => (
               <Col
                 xs={12}
@@ -47,11 +58,11 @@ export default memo(() => {
                 key={person.name}
                 className='border-xs-bottom border-md-none py-3'
               >
-                <Link to={`/areas/${getCurrentCandidate(person)?.areaNumber}`}>
-                  <h4>{getCurrentCandidate(person)?.areaNumber} округ</h4>
+                <Link to={`/areas/${getCurrentCandidate(person, type)?.areaNumber}`}>
+                  <h4>{getCurrentCandidate(person, type)?.areaNumber} округ</h4>
                 </Link>
                 <Link to={`/candidates/${person.alias}`}>
-                  <CandidateCard {...{ person }} />
+                  <CandidateCard {...{ person, type }} />
                 </Link>
               </Col>
             ))}

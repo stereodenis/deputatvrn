@@ -9,6 +9,7 @@ import { DeputatCard, CandidateCard } from '../../components'
 import areas from '../../data/areas'
 import areasImages from '../../images/areas'
 import { getAreaCandidates, getPersonWithCurrentDeputat } from '../../helpers'
+import { CandidateType } from '../../types'
 
 function youtube_parser(url: string) {
   const regExp = /^.*((youtu.be\/)|(v\/)|(\/u\/\w\/)|(embed\/)|(watch\?))\??v?=?([^#&?]*).*/
@@ -19,8 +20,12 @@ function youtube_parser(url: string) {
 export default memo(() => {
   const { areaNumber } = useParams()
   const area = areas[areaNumber]
+  const type =
+    (localStorage.getItem('type') as keyof typeof CandidateType) ||
+    (Object.keys(CandidateType) as Array<keyof typeof CandidateType>)[0]
+
   const personWithCurrentDeputat = getPersonWithCurrentDeputat(Number(areaNumber))
-  const areaCandidats = useMemo(() => getAreaCandidates(Number(areaNumber)), [areaNumber])
+  const areaCandidats = useMemo(() => getAreaCandidates(Number(areaNumber), type), [areaNumber, type])
 
   return (
     <Container fluid>
@@ -45,7 +50,7 @@ export default memo(() => {
           {areaCandidats.map((person) => (
             <Col xs={12} sm={6} md={4} lg={3} xl={2} key={person.name} className='border-xs-bottom border-md-none py-3'>
               <Link to={`/candidates/${person.alias}`}>
-                <CandidateCard {...{ person }} withParty />
+                <CandidateCard {...{ person, type }} withParty />
               </Link>
             </Col>
           ))}

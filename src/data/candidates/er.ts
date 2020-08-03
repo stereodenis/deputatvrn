@@ -1,5 +1,5 @@
 import * as photos from '../../images/candidates'
-import { CandidateStatuses, Parties, Person } from '../../types'
+import { CandidateStatuses, CandidateType, Parties, Person } from '../../types'
 
 const er: Person[] = [
   {
@@ -10,6 +10,7 @@ const er: Person[] = [
     candidate: [
       {
         callNumber: 5,
+        type: CandidateType.city,
         areaNumber: 1,
         party: Parties.er,
         status: CandidateStatuses.registered,
@@ -17,6 +18,7 @@ const er: Person[] = [
       {
         areaNumber: 1,
         callNumber: 4,
+        type: CandidateType.city,
         party: Parties.er,
         deputat: {
           office: 'ул. Дубовая д. 12',
@@ -34,6 +36,7 @@ const er: Person[] = [
     candidate: [
       {
         callNumber: 5,
+        type: CandidateType.city,
         areaNumber: 2,
         party: Parties.er,
         status: CandidateStatuses.registered,
@@ -48,6 +51,7 @@ const er: Person[] = [
     candidate: [
       {
         callNumber: 4,
+        type: CandidateType.city,
         areaNumber: 5,
         party: Parties.er,
         deputat: {
@@ -69,10 +73,12 @@ const er: Person[] = [
         status: CandidateStatuses.registered,
         areaNumber: 3,
         callNumber: 5,
+        type: CandidateType.city,
       },
       {
         areaNumber: 3,
         callNumber: 4,
+        type: CandidateType.city,
         party: Parties.er,
         deputat: {
           office: 'ул. Переверткина, 11',
@@ -91,6 +97,7 @@ const er: Person[] = [
       {
         areaNumber: 4,
         callNumber: 5,
+        type: CandidateType.city,
         party: Parties.er,
         status: CandidateStatuses.registered,
       },
@@ -105,12 +112,14 @@ const er: Person[] = [
       {
         areaNumber: 5,
         callNumber: 5,
+        type: CandidateType.city,
         party: Parties.er,
         status: CandidateStatuses.registered,
       },
       {
         areaNumber: 2,
         callNumber: 4,
+        type: CandidateType.city,
         party: Parties.er,
         deputat: {
           office: 'ул. Переверткина, 11',
@@ -128,6 +137,7 @@ const er: Person[] = [
     candidate: [
       {
         callNumber: 5,
+        type: CandidateType.city,
         areaNumber: 6,
         party: Parties.er,
         status: CandidateStatuses.registered,
@@ -143,6 +153,7 @@ const er: Person[] = [
     candidate: [
       {
         callNumber: 5,
+        type: CandidateType.city,
         areaNumber: 7,
         party: Parties.er,
         status: CandidateStatuses.registered,
@@ -161,6 +172,7 @@ const er: Person[] = [
         party: Parties.er,
         status: CandidateStatuses.registered,
         callNumber: 5,
+        type: CandidateType.city,
       },
     ],
   },
@@ -174,10 +186,12 @@ const er: Person[] = [
         areaNumber: 9,
         party: Parties.er,
         callNumber: 5,
+        type: CandidateType.city,
       },
       {
         areaNumber: 9,
         callNumber: 4,
+        type: CandidateType.city,
         party: Parties.er,
         deputat: {
           office: 'ул. 121 Стрелковой дивизии, 9',
@@ -195,6 +209,7 @@ const er: Person[] = [
     candidate: [
       {
         callNumber: 5,
+        type: CandidateType.city,
         areaNumber: 10,
         party: Parties.er,
         status: CandidateStatuses.registered,
@@ -202,6 +217,7 @@ const er: Person[] = [
       {
         areaNumber: 11,
         callNumber: 4,
+        type: CandidateType.city,
         party: Parties.er,
         deputat: {
           office: 'ул. Космонавтов, 8',
@@ -222,6 +238,7 @@ const er: Person[] = [
         party: Parties.er,
         status: CandidateStatuses.registered,
         callNumber: 5,
+        type: CandidateType.city,
       },
     ],
   },
@@ -233,12 +250,14 @@ const er: Person[] = [
     candidate: [
       {
         callNumber: 5,
+        type: CandidateType.city,
         areaNumber: 12,
         party: Parties.er,
         status: CandidateStatuses.registered,
       },
       {
         callNumber: 4,
+        type: CandidateType.city,
         areaNumber: 12,
         party: Parties.er,
         deputat: {
@@ -260,9 +279,11 @@ const er: Person[] = [
         status: CandidateStatuses.registered,
         areaNumber: 13,
         callNumber: 5,
+        type: CandidateType.city,
       },
       {
         callNumber: 4,
+        type: CandidateType.city,
         areaNumber: 13,
         party: Parties.er,
         deputat: {
@@ -281,6 +302,7 @@ const er: Person[] = [
     candidate: [
       {
         callNumber: 5,
+        type: CandidateType.city,
         areaNumber: 14,
         party: Parties.er,
         status: CandidateStatuses.registered,
@@ -296,11 +318,13 @@ const er: Person[] = [
       {
         areaNumber: 15,
         party: Parties.er,
+        type: CandidateType.city,
         callNumber: 5,
         status: CandidateStatuses.registered,
       },
       {
         callNumber: 4,
+        type: CandidateType.city,
         areaNumber: 15,
         party: Parties.er,
         deputat: {
@@ -322,10 +346,12 @@ const er: Person[] = [
         party: Parties.er,
         status: CandidateStatuses.registered,
         callNumber: 5,
+        type: CandidateType.city,
       },
       {
         areaNumber: 16,
         callNumber: 4,
+        type: CandidateType.city,
         party: Parties.er,
         deputat: {
           office: 'ул 9 Января, 108, ДК Машиностроителей, комн.119',
@@ -346,9 +372,11 @@ const er: Person[] = [
         party: Parties.er,
         status: CandidateStatuses.registered,
         callNumber: 5,
+        type: CandidateType.city,
       },
       {
         callNumber: 4,
+        type: CandidateType.city,
         areaNumber: 17,
         party: Parties.er,
         deputat: {
@@ -370,9 +398,11 @@ const er: Person[] = [
         party: Parties.er,
         status: CandidateStatuses.registered,
         callNumber: 5,
+        type: CandidateType.city,
       },
       {
         callNumber: 4,
+        type: CandidateType.city,
         areaNumber: 18,
         party: Parties.er,
         deputat: {
@@ -394,9 +424,11 @@ const er: Person[] = [
         party: Parties.er,
         status: CandidateStatuses.registered,
         callNumber: 5,
+        type: CandidateType.city,
       },
       {
         callNumber: 4,
+        type: CandidateType.city,
         areaNumber: 19,
         party: Parties.er,
         deputat: {
@@ -418,6 +450,7 @@ const er: Person[] = [
         party: Parties.er,
         status: CandidateStatuses.registered,
         callNumber: 5,
+        type: CandidateType.city,
         role:
           'Заместитель председателя постоянной комиссии по транспорту, промышленности, развитию малого и среднего бизнеса. Член постоянной комиссии по образованию, культуре и социальной поддержке населения.',
       },
@@ -445,11 +478,13 @@ const er: Person[] = [
         party: Parties.er,
         status: CandidateStatuses.registered,
         callNumber: 5,
+        type: CandidateType.city,
       },
       {
         areaNumber: 21,
         party: Parties.er,
         callNumber: 4,
+        type: CandidateType.city,
         deputat: {
           office: 'пер. Ботанический, 47, поликлиника №3, 1 этаж, каб. 117',
           phones: ['+74732210515', '+79518768067'],
@@ -469,11 +504,13 @@ const er: Person[] = [
         party: Parties.er,
         status: CandidateStatuses.registered,
         callNumber: 5,
+        type: CandidateType.city,
       },
       {
         areaNumber: 22,
         party: Parties.er,
         callNumber: 4,
+        type: CandidateType.city,
         deputat: {
           office: 'Московский проспект, 58',
           phones: ['+74732392787', '+79204050597'],
@@ -491,6 +528,7 @@ const er: Person[] = [
       {
         areaNumber: 23,
         callNumber: 4,
+        type: CandidateType.city,
         party: Parties.er,
         deputat: {
           office: 'ул. Никитинская, д. 8',
@@ -502,6 +540,7 @@ const er: Person[] = [
         areaNumber: 23,
         party: Parties.er,
         callNumber: 5,
+        type: CandidateType.city,
         status: CandidateStatuses.registered,
       },
     ],
@@ -515,6 +554,7 @@ const er: Person[] = [
       {
         areaNumber: 24,
         callNumber: 4,
+        type: CandidateType.city,
         party: Parties.er,
         deputat: {
           office: 'ул. Никитинская, д. 8 каб. 102а',
@@ -526,6 +566,7 @@ const er: Person[] = [
         areaNumber: 24,
         party: Parties.er,
         callNumber: 5,
+        type: CandidateType.city,
         status: CandidateStatuses.registered,
       },
     ],
@@ -540,6 +581,7 @@ const er: Person[] = [
       {
         areaNumber: 6,
         callNumber: 4,
+        type: CandidateType.city,
         party: Parties.er,
         deputat: {
           office: 'Ленинский пр-т, д. 86',
@@ -557,6 +599,7 @@ const er: Person[] = [
     candidate: [
       {
         callNumber: 4,
+        type: CandidateType.city,
         party: Parties.er,
         areaNumber: 8,
         deputat: {
@@ -575,6 +618,7 @@ const er: Person[] = [
     candidate: [
       {
         callNumber: 4,
+        type: CandidateType.city,
         party: Parties.er,
         areaNumber: 10,
         deputat: {
@@ -593,6 +637,7 @@ const er: Person[] = [
     candidate: [
       {
         callNumber: 4,
+        type: CandidateType.city,
         party: Parties.er,
         areaNumber: 14,
         deputat: {
@@ -611,6 +656,7 @@ const er: Person[] = [
     candidate: [
       {
         callNumber: 4,
+        type: CandidateType.city,
         party: Parties.er,
         areaNumber: 20,
         deputat: {
@@ -618,6 +664,426 @@ const er: Person[] = [
           phones: ['+74732289206', '+74732623484'],
           website: 'http://gorduma-voronezh.ru/grebenkin-nikolaj-timofeevich/',
         },
+      },
+    ],
+  },
+  {
+    alias: 'verzilin_vladimir',
+    name: 'Верзилин Владимир Александрович',
+
+    birthdate: '06.08.1955',
+    candidate: [
+      {
+        party: Parties.er,
+        callNumber: 7,
+        type: CandidateType.region,
+        areaNumber: 2,
+        status: CandidateStatuses.registered,
+      },
+    ],
+  },
+  {
+    alias: 'vorobev_ivan',
+    name: 'Воробьев Иван Николаевич',
+
+    birthdate: '06.03.1981',
+    candidate: [
+      {
+        party: Parties.er,
+        callNumber: 7,
+        type: CandidateType.region,
+        areaNumber: 16,
+        status: CandidateStatuses.registered,
+      },
+    ],
+  },
+  {
+    alias: 'gaponenko_evgenij',
+    name: 'Гапоненко Евгений Николаевич',
+
+    birthdate: '11.10.1985',
+    candidate: [
+      {
+        party: Parties.er,
+        callNumber: 7,
+        type: CandidateType.region,
+        areaNumber: 23,
+        status: CandidateStatuses.registered,
+      },
+    ],
+  },
+  {
+    alias: 'gubina_elena',
+    name: 'Губина Елена Геннадьевна',
+
+    birthdate: '11.03.1985',
+    candidate: [
+      {
+        party: Parties.er,
+        callNumber: 7,
+        type: CandidateType.region,
+        areaNumber: 8,
+        status: CandidateStatuses.registered,
+      },
+    ],
+  },
+  {
+    alias: 'gusev_mihail',
+    name: 'Гусев Михаил Николаевич',
+
+    birthdate: '01.11.1982',
+    candidate: [
+      {
+        party: Parties.er,
+        callNumber: 7,
+        type: CandidateType.region,
+        areaNumber: 1,
+        status: CandidateStatuses.registered,
+      },
+    ],
+  },
+  {
+    alias: 'domnich_nikolaj',
+    name: 'Домнич Николай Сергеевич',
+
+    birthdate: '29.02.1980',
+    candidate: [
+      {
+        party: Parties.er,
+        callNumber: 7,
+        type: CandidateType.region,
+        areaNumber: 27,
+        status: CandidateStatuses.registered,
+      },
+    ],
+  },
+  {
+    alias: 'evseev_aleksandr',
+    name: 'Евсеев Александр Васильевич',
+
+    birthdate: '01.10.1956',
+    candidate: [
+      {
+        party: Parties.er,
+        callNumber: 7,
+        type: CandidateType.region,
+        areaNumber: 17,
+        status: CandidateStatuses.registered,
+      },
+    ],
+  },
+  {
+    alias: 'esaulenko_igor',
+    name: 'Есауленко Игорь Эдуардович',
+
+    birthdate: '18.03.1956',
+    candidate: [
+      {
+        party: Parties.er,
+        callNumber: 7,
+        type: CandidateType.region,
+        areaNumber: 21,
+        status: CandidateStatuses.registered,
+      },
+    ],
+  },
+  {
+    alias: 'zubkov_artem',
+    name: 'Зубков Артем Николаевич',
+
+    birthdate: '10.01.1983',
+    candidate: [
+      {
+        party: Parties.er,
+        callNumber: 7,
+        type: CandidateType.region,
+        areaNumber: 25,
+        status: CandidateStatuses.registered,
+      },
+    ],
+  },
+  {
+    alias: 'kitaev_evgenij',
+    name: 'Китаев Евгений Петрович',
+
+    birthdate: '23.02.1969',
+    candidate: [
+      {
+        party: Parties.er,
+        callNumber: 7,
+        type: CandidateType.region,
+        areaNumber: 3,
+        status: CandidateStatuses.registered,
+      },
+    ],
+  },
+  {
+    alias: 'klimentov_andrej',
+    name: 'Климентов Андрей Владимирович',
+
+    birthdate: '04.07.1971',
+    candidate: [
+      {
+        party: Parties.er,
+        callNumber: 7,
+        type: CandidateType.region,
+        areaNumber: 7,
+        status: CandidateStatuses.registered,
+      },
+    ],
+  },
+  {
+    alias: 'klyuchnikov_vladimir',
+    name: 'Ключников Владимир Иванович',
+
+    birthdate: '16.04.1949',
+    candidate: [
+      {
+        party: Parties.er,
+        callNumber: 7,
+        type: CandidateType.region,
+        areaNumber: 14,
+        status: CandidateStatuses.registered,
+      },
+    ],
+  },
+  {
+    alias: 'koloskov_nikolaj',
+    name: 'Колосков Николай Васильевич',
+
+    birthdate: '29.07.1953',
+    candidate: [
+      {
+        party: Parties.er,
+        callNumber: 7,
+        type: CandidateType.region,
+        areaNumber: 18,
+        status: CandidateStatuses.registered,
+      },
+    ],
+  },
+  {
+    alias: 'litvinov_roman',
+    name: 'Литвинов Роман Александрович',
+
+    birthdate: '07.02.1978',
+    candidate: [
+      {
+        party: Parties.er,
+        callNumber: 7,
+        type: CandidateType.region,
+        areaNumber: 22,
+        status: CandidateStatuses.registered,
+      },
+    ],
+  },
+  {
+    alias: 'lukinov_dmitrij',
+    name: 'Лукинов Дмитрий Валериевич',
+
+    birthdate: '14.07.1978',
+    candidate: [
+      {
+        party: Parties.er,
+        callNumber: 7,
+        type: CandidateType.region,
+        areaNumber: 9,
+        status: CandidateStatuses.registered,
+      },
+    ],
+  },
+  {
+    alias: 'moshurov_ivan',
+    name: 'Мошуров Иван Петрович',
+
+    birthdate: '15.09.1966',
+    candidate: [
+      {
+        party: Parties.er,
+        callNumber: 7,
+        type: CandidateType.region,
+        areaNumber: 10,
+        status: CandidateStatuses.registered,
+      },
+    ],
+  },
+  {
+    alias: 'ortina_olga',
+    name: 'Ортина Ольга Алексеевна',
+
+    birthdate: '08.08.1987',
+    candidate: [
+      {
+        party: Parties.er,
+        callNumber: 7,
+        type: CandidateType.region,
+        areaNumber: 24,
+        status: CandidateStatuses.registered,
+      },
+    ],
+  },
+  {
+    alias: 'peshikov_aleksandr',
+    name: 'Пешиков Александр Александрович',
+
+    birthdate: '01.11.1978',
+    candidate: [
+      {
+        party: Parties.er,
+        callNumber: 7,
+        type: CandidateType.region,
+        areaNumber: 28,
+        status: CandidateStatuses.registered,
+      },
+    ],
+  },
+  {
+    alias: 'povarov_vladimir',
+    name: 'Поваров Владимир Петрович',
+
+    birthdate: '19.04.1957',
+    candidate: [
+      {
+        party: Parties.er,
+        callNumber: 7,
+        type: CandidateType.region,
+        areaNumber: 13,
+        status: CandidateStatuses.registered,
+      },
+    ],
+  },
+  {
+    alias: 'prytykin_andrej',
+    name: 'Прытыкин Андрей Александрович',
+
+    birthdate: '01.12.1966',
+    candidate: [
+      {
+        party: Parties.er,
+        callNumber: 7,
+        type: CandidateType.region,
+        areaNumber: 11,
+        status: CandidateStatuses.registered,
+      },
+    ],
+  },
+  {
+    alias: 'rozhkov_vladimir',
+    name: 'Рожков Владимир Иванович',
+
+    birthdate: '12.04.1967',
+    candidate: [
+      {
+        party: Parties.er,
+        callNumber: 7,
+        type: CandidateType.region,
+        areaNumber: 4,
+        status: CandidateStatuses.registered,
+      },
+    ],
+  },
+  {
+    alias: 'sazhin_sergej',
+    name: 'Сажин Сергей Михайлович',
+
+    birthdate: '24.08.1961',
+    candidate: [
+      {
+        party: Parties.er,
+        callNumber: 7,
+        type: CandidateType.region,
+        areaNumber: 20,
+        status: CandidateStatuses.registered,
+      },
+    ],
+  },
+  {
+    alias: 'taldykin_sergej',
+    name: 'Талдыкин Сергей Иванович',
+
+    birthdate: '30.09.1978',
+    candidate: [
+      {
+        party: Parties.er,
+        callNumber: 7,
+        type: CandidateType.region,
+        areaNumber: 6,
+        status: CandidateStatuses.registered,
+      },
+    ],
+  },
+  {
+    alias: 'tribunskij_sergej',
+    name: 'Трибунский Сергей Иванович',
+
+    birthdate: '08.04.1973',
+    candidate: [
+      {
+        party: Parties.er,
+        callNumber: 7,
+        type: CandidateType.region,
+        areaNumber: 26,
+        status: CandidateStatuses.registered,
+      },
+    ],
+  },
+  {
+    alias: 'habarov_andrej',
+    name: 'Хабаров Андрей Михайлович',
+
+    birthdate: '04.09.1981',
+    candidate: [
+      {
+        party: Parties.er,
+        callNumber: 7,
+        type: CandidateType.region,
+        areaNumber: 15,
+        status: CandidateStatuses.registered,
+      },
+    ],
+  },
+  {
+    alias: 'chernov_aleksej',
+    name: 'Чернов Алексей Викторович',
+
+    birthdate: '04.03.1978',
+    candidate: [
+      {
+        party: Parties.er,
+        callNumber: 7,
+        type: CandidateType.region,
+        areaNumber: 5,
+        status: CandidateStatuses.registered,
+      },
+    ],
+  },
+  {
+    alias: 'chuzhikov_aleksandr',
+    name: 'Чужиков Александр Владимирович',
+
+    birthdate: '25.02.1977',
+    candidate: [
+      {
+        party: Parties.er,
+        callNumber: 7,
+        type: CandidateType.region,
+        areaNumber: 12,
+        status: CandidateStatuses.registered,
+      },
+    ],
+  },
+  {
+    alias: 'shiryaev_dmitrij',
+    name: 'Ширяев Дмитрий Геннадьевич',
+
+    birthdate: '01.06.1989',
+    candidate: [
+      {
+        party: Parties.er,
+        callNumber: 7,
+        type: CandidateType.region,
+        areaNumber: 19,
+        status: CandidateStatuses.registered,
       },
     ],
   },

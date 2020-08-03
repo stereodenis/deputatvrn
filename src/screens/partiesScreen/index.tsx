@@ -3,8 +3,9 @@ import { Container, Row, Col, Image } from 'react-bootstrap'
 import { Link } from 'react-router-dom'
 import { shuffle } from 'lodash'
 
-import { currentPersons, getCurrentCandidate, getPartyCandidates } from '../../helpers'
-import { Parties } from '../../types'
+import persons from '../../data/persons'
+import { getCurrentCandidate, getPartyCandidates } from '../../helpers'
+import { CandidateType, Parties } from '../../types'
 
 const mapPartyToLogo: { [s: string]: string } = {
   er: require('../../images/parties/er.png'),
@@ -18,7 +19,11 @@ const mapPartyToLogo: { [s: string]: string } = {
 }
 
 export default memo(() => {
-  const noPartyCandidates = currentPersons.filter((p) => !getCurrentCandidate(p)?.party)
+  const type =
+    (localStorage.getItem('type') as keyof typeof CandidateType) ||
+    (Object.keys(CandidateType) as Array<keyof typeof CandidateType>)[0]
+  const currentPersons = persons.filter((p) => getCurrentCandidate(p, type))
+  const noPartyCandidates = currentPersons.filter((p) => !getCurrentCandidate(p, type)?.party)
 
   return (
     <Container fluid>
@@ -38,7 +43,7 @@ export default memo(() => {
         </Col>
 
         {shuffle(Object.keys(Parties) as Array<keyof typeof Parties>).map((partyAlias) => {
-          const partyCandidates = getPartyCandidates(partyAlias)
+          const partyCandidates = getPartyCandidates(partyAlias, type)
 
           if (!partyCandidates.length) {
             return null

@@ -6,13 +6,17 @@ import CandidateCard from '../../components/candidateCard'
 import CandidateStatus from '../../components/CandidateStatus'
 import persons from '../../data/persons'
 import { getCurrentCandidate } from '../../helpers'
-import { Parties } from '../../types'
+import { noPhoto } from '../../images/candidates'
+import { Parties, CandidateType } from '../../types'
 
 export default memo(() => {
   const { candidateAlias } = useParams()
+  const type =
+    (localStorage.getItem('type') as keyof typeof CandidateType) ||
+    (Object.keys(CandidateType) as Array<keyof typeof CandidateType>)[0]
 
-  const person = useMemo(() => persons.find((c) => c.alias === candidateAlias), [candidateAlias])
-  const candidate = getCurrentCandidate(person)
+  const person = useMemo(() => persons.find((c) => c.alias === candidateAlias), [candidateAlias]) || persons[0]
+  const candidate = getCurrentCandidate(person, type)
   const partyAlias = useMemo(() => Object.entries(Parties).find((e) => e[1] === candidate?.party), [candidate])
 
   if (!person || !candidate) {
@@ -24,7 +28,7 @@ export default memo(() => {
       <Row itemScope itemType='http://schema.org/ImageObject'>
         <Col xs={12} sm={6} md={4} lg={3} xl={2} className='py-3'>
           <div>
-            <Image width='100%' src={person.photo} rounded itemProp='contentUrl' />
+            <Image width='100%' src={person.photo || noPhoto} rounded itemProp='contentUrl' />
 
             <div>Возвраст: {}</div>
             {Boolean(candidate.program) && (
@@ -91,7 +95,8 @@ export default memo(() => {
       <Row>
         {persons
           .filter(
-            (p) => getCurrentCandidate(p)?.areaNumber === Number(candidate.areaNumber) && p.alias !== candidateAlias
+            (p) =>
+              getCurrentCandidate(p, type)?.areaNumber === Number(candidate.areaNumber) && p.alias !== candidateAlias
           )
           .map((areaCandidate) => (
             <Col
@@ -104,7 +109,7 @@ export default memo(() => {
               className='border-xs-top border-sm-none py-3'
             >
               <Link to={`/candidates/${areaCandidate.alias}`}>
-                <CandidateCard {...{ person: areaCandidate }} withParty />
+                <CandidateCard {...{ person: areaCandidate, type }} withParty />
               </Link>
             </Col>
           ))}
