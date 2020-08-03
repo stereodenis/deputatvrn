@@ -1,5 +1,5 @@
 import * as photos from '../../images/candidates'
-import { CandidateStatuses, CandidateType, Parties, Person } from '../../types'
+import { CandidateStatuses, LocationType, Parties, Person } from '../../types'
 
 const kprf: Person[] = [
   {
@@ -11,7 +11,7 @@ const kprf: Person[] = [
         areaNumber: 1,
         callNumber: 5,
         party: Parties.kprf,
-        type: CandidateType.city,
+        locationType: LocationType.city,
       },
     ],
   },
@@ -24,7 +24,7 @@ const kprf: Person[] = [
         areaNumber: 2,
         party: Parties.kprf,
         callNumber: 5,
-        type: CandidateType.city,
+        locationType: LocationType.city,
       },
     ],
   },
@@ -38,7 +38,7 @@ const kprf: Person[] = [
         party: Parties.kprf,
         status: CandidateStatuses.registered,
         callNumber: 5,
-        type: CandidateType.city,
+        locationType: LocationType.city,
       },
     ],
   },
@@ -52,7 +52,7 @@ const kprf: Person[] = [
         party: Parties.kprf,
         status: CandidateStatuses.registered,
         callNumber: 5,
-        type: CandidateType.city,
+        locationType: LocationType.city,
       },
     ],
   },
@@ -66,7 +66,7 @@ const kprf: Person[] = [
         party: Parties.kprf,
         status: CandidateStatuses.registered,
         callNumber: 5,
-        type: CandidateType.city,
+        locationType: LocationType.city,
       },
     ],
   },
@@ -80,7 +80,7 @@ const kprf: Person[] = [
         party: Parties.kprf,
         status: CandidateStatuses.registered,
         callNumber: 5,
-        type: CandidateType.city,
+        locationType: LocationType.city,
       },
     ],
   },
@@ -94,7 +94,7 @@ const kprf: Person[] = [
         callNumber: 4,
         areaNumber: 7,
         party: Parties.kprf,
-        type: CandidateType.city,
+        locationType: LocationType.city,
         deputat: {
           office: 'Ленинский проспект, 15 оф 203',
           phones: ['+74732585816', '+79290064478'],
@@ -106,7 +106,7 @@ const kprf: Person[] = [
         areaNumber: 7,
         party: Parties.kprf,
         status: CandidateStatuses.registered,
-        type: CandidateType.city,
+        locationType: LocationType.city,
       },
     ],
   },
@@ -120,7 +120,7 @@ const kprf: Person[] = [
         party: Parties.kprf,
         status: CandidateStatuses.registered,
         callNumber: 5,
-        type: CandidateType.city,
+        locationType: LocationType.city,
       },
     ],
   },
@@ -134,7 +134,7 @@ const kprf: Person[] = [
         party: Parties.kprf,
         status: CandidateStatuses.registered,
         callNumber: 5,
-        type: CandidateType.city,
+        locationType: LocationType.city,
       },
     ],
   },
@@ -149,7 +149,7 @@ const kprf: Person[] = [
         areaNumber: 10,
         status: CandidateStatuses.registered,
         callNumber: 5,
-        type: CandidateType.city,
+        locationType: LocationType.city,
       },
     ],
   },
@@ -163,7 +163,7 @@ const kprf: Person[] = [
         party: Parties.kprf,
         status: CandidateStatuses.registered,
         callNumber: 5,
-        type: CandidateType.city,
+        locationType: LocationType.city,
       },
     ],
   },
@@ -177,7 +177,7 @@ const kprf: Person[] = [
         party: Parties.kprf,
         status: CandidateStatuses.registered,
         callNumber: 5,
-        type: CandidateType.city,
+        locationType: LocationType.city,
       },
     ],
   },
@@ -191,7 +191,7 @@ const kprf: Person[] = [
         party: Parties.kprf,
         status: CandidateStatuses.registered,
         callNumber: 5,
-        type: CandidateType.city,
+        locationType: LocationType.city,
       },
     ],
   },
@@ -205,7 +205,7 @@ const kprf: Person[] = [
         party: Parties.kprf,
         status: CandidateStatuses.registered,
         callNumber: 5,
-        type: CandidateType.city,
+        locationType: LocationType.city,
       },
     ],
   },
@@ -217,7 +217,7 @@ const kprf: Person[] = [
       {
         areaNumber: 15,
         party: Parties.kprf,
-        type: CandidateType.city,
+        locationType: LocationType.city,
         callNumber: 5,
         status: CandidateStatuses.registered,
       },
@@ -233,7 +233,7 @@ const kprf: Person[] = [
         party: Parties.kprf,
         status: CandidateStatuses.registered,
         callNumber: 5,
-        type: CandidateType.city,
+        locationType: LocationType.city,
       },
     ],
   },
@@ -247,7 +247,7 @@ const kprf: Person[] = [
         party: Parties.kprf,
         status: CandidateStatuses.registered,
         callNumber: 5,
-        type: CandidateType.city,
+        locationType: LocationType.city,
       },
     ],
   },
@@ -261,7 +261,7 @@ const kprf: Person[] = [
         party: Parties.kprf,
         status: CandidateStatuses.registered,
         callNumber: 5,
-        type: CandidateType.city,
+        locationType: LocationType.city,
       },
     ],
   },
@@ -273,7 +273,7 @@ const kprf: Person[] = [
       {
         areaNumber: 19,
         party: Parties.kprf,
-        type: CandidateType.city,
+        locationType: LocationType.city,
         callNumber: 5,
         status: CandidateStatuses.registered,
       },
@@ -289,7 +289,7 @@ const kprf: Person[] = [
         party: Parties.kprf,
         status: CandidateStatuses.registered,
         callNumber: 5,
-        type: CandidateType.city,
+        locationType: LocationType.city,
       },
     ],
   },
@@ -303,7 +303,7 @@ const kprf: Person[] = [
         areaNumber: 21,
         party: Parties.kprf,
         status: CandidateStatuses.registered,
-        type: CandidateType.city,
+        locationType: LocationType.city,
       },
     ],
   },
@@ -317,7 +317,7 @@ const kprf: Person[] = [
         areaNumber: 22,
         party: Parties.kprf,
         status: CandidateStatuses.registered,
-        type: CandidateType.city,
+        locationType: LocationType.city,
       },
     ],
   },
@@ -331,7 +331,7 @@ const kprf: Person[] = [
         areaNumber: 23,
         party: Parties.kprf,
         status: CandidateStatuses.registered,
-        type: CandidateType.city,
+        locationType: LocationType.city,
       },
     ],
   },
@@ -345,7 +345,7 @@ const kprf: Person[] = [
         areaNumber: 24,
         party: Parties.kprf,
         status: CandidateStatuses.registered,
-        type: CandidateType.city,
+        locationType: LocationType.city,
       },
     ],
   },
@@ -357,7 +357,7 @@ const kprf: Person[] = [
     candidate: [
       {
         callNumber: 7,
-        type: CandidateType.region,
+        locationType: LocationType.region,
         party: Parties.kprf,
         areaNumber: 26,
         status: CandidateStatuses.registered,
@@ -372,7 +372,7 @@ const kprf: Person[] = [
     candidate: [
       {
         callNumber: 7,
-        type: CandidateType.region,
+        locationType: LocationType.region,
         party: Parties.kprf,
         areaNumber: 11,
         status: CandidateStatuses.registered,
@@ -387,7 +387,7 @@ const kprf: Person[] = [
     candidate: [
       {
         callNumber: 7,
-        type: CandidateType.region,
+        locationType: LocationType.region,
         party: Parties.kprf,
         areaNumber: 13,
         status: CandidateStatuses.registered,
@@ -402,7 +402,7 @@ const kprf: Person[] = [
     candidate: [
       {
         callNumber: 7,
-        type: CandidateType.region,
+        locationType: LocationType.region,
         party: Parties.kprf,
         areaNumber: 18,
       },
@@ -416,7 +416,7 @@ const kprf: Person[] = [
     candidate: [
       {
         callNumber: 7,
-        type: CandidateType.region,
+        locationType: LocationType.region,
         party: Parties.kprf,
         areaNumber: 17,
         status: CandidateStatuses.registered,
@@ -431,7 +431,7 @@ const kprf: Person[] = [
     candidate: [
       {
         callNumber: 7,
-        type: CandidateType.region,
+        locationType: LocationType.region,
         party: Parties.kprf,
         areaNumber: 5,
         status: CandidateStatuses.registered,
@@ -446,7 +446,7 @@ const kprf: Person[] = [
     candidate: [
       {
         callNumber: 7,
-        type: CandidateType.region,
+        locationType: LocationType.region,
         party: Parties.kprf,
         areaNumber: 21,
         status: CandidateStatuses.registered,
@@ -461,7 +461,7 @@ const kprf: Person[] = [
     candidate: [
       {
         callNumber: 7,
-        type: CandidateType.region,
+        locationType: LocationType.region,
         party: Parties.kprf,
         areaNumber: 4,
         status: CandidateStatuses.registered,
@@ -476,7 +476,7 @@ const kprf: Person[] = [
     candidate: [
       {
         callNumber: 7,
-        type: CandidateType.region,
+        locationType: LocationType.region,
         party: Parties.kprf,
         areaNumber: 24,
         status: CandidateStatuses.registered,
@@ -491,7 +491,7 @@ const kprf: Person[] = [
     candidate: [
       {
         callNumber: 7,
-        type: CandidateType.region,
+        locationType: LocationType.region,
         party: Parties.kprf,
         areaNumber: 16,
         status: CandidateStatuses.registered,
@@ -506,7 +506,7 @@ const kprf: Person[] = [
     candidate: [
       {
         callNumber: 7,
-        type: CandidateType.region,
+        locationType: LocationType.region,
         party: Parties.kprf,
         areaNumber: 6,
         status: CandidateStatuses.registered,
@@ -521,7 +521,7 @@ const kprf: Person[] = [
     candidate: [
       {
         callNumber: 7,
-        type: CandidateType.region,
+        locationType: LocationType.region,
         party: Parties.kprf,
         areaNumber: 14,
         status: CandidateStatuses.registered,
@@ -536,7 +536,7 @@ const kprf: Person[] = [
     candidate: [
       {
         callNumber: 7,
-        type: CandidateType.region,
+        locationType: LocationType.region,
         party: Parties.kprf,
         areaNumber: 9,
         status: CandidateStatuses.registered,
@@ -551,7 +551,7 @@ const kprf: Person[] = [
     candidate: [
       {
         callNumber: 7,
-        type: CandidateType.region,
+        locationType: LocationType.region,
         party: Parties.kprf,
         areaNumber: 1,
       },
@@ -565,7 +565,7 @@ const kprf: Person[] = [
     candidate: [
       {
         callNumber: 7,
-        type: CandidateType.region,
+        locationType: LocationType.region,
         party: Parties.kprf,
         areaNumber: 2,
         status: CandidateStatuses.registered,
@@ -580,7 +580,7 @@ const kprf: Person[] = [
     candidate: [
       {
         callNumber: 7,
-        type: CandidateType.region,
+        locationType: LocationType.region,
         party: Parties.kprf,
         areaNumber: 20,
         status: CandidateStatuses.registered,
@@ -595,7 +595,7 @@ const kprf: Person[] = [
     candidate: [
       {
         callNumber: 7,
-        type: CandidateType.region,
+        locationType: LocationType.region,
         party: Parties.kprf,
         areaNumber: 3,
         status: CandidateStatuses.registered,
@@ -610,7 +610,7 @@ const kprf: Person[] = [
     candidate: [
       {
         callNumber: 7,
-        type: CandidateType.region,
+        locationType: LocationType.region,
         party: Parties.kprf,
         areaNumber: 15,
         status: CandidateStatuses.registered,
@@ -625,7 +625,7 @@ const kprf: Person[] = [
     candidate: [
       {
         callNumber: 7,
-        type: CandidateType.region,
+        locationType: LocationType.region,
         party: Parties.kprf,
         areaNumber: 25,
         status: CandidateStatuses.registered,
@@ -640,7 +640,7 @@ const kprf: Person[] = [
     candidate: [
       {
         callNumber: 7,
-        type: CandidateType.region,
+        locationType: LocationType.region,
         party: Parties.kprf,
         areaNumber: 8,
         status: CandidateStatuses.registered,
@@ -655,7 +655,7 @@ const kprf: Person[] = [
     candidate: [
       {
         callNumber: 7,
-        type: CandidateType.region,
+        locationType: LocationType.region,
         party: Parties.kprf,
         areaNumber: 12,
         status: CandidateStatuses.registered,
@@ -670,7 +670,7 @@ const kprf: Person[] = [
     candidate: [
       {
         callNumber: 7,
-        type: CandidateType.region,
+        locationType: LocationType.region,
         party: Parties.kprf,
         areaNumber: 19,
         status: CandidateStatuses.registered,
@@ -685,7 +685,7 @@ const kprf: Person[] = [
     candidate: [
       {
         callNumber: 7,
-        type: CandidateType.region,
+        locationType: LocationType.region,
         party: Parties.kprf,
         areaNumber: 28,
         status: CandidateStatuses.registered,
@@ -700,7 +700,7 @@ const kprf: Person[] = [
     candidate: [
       {
         callNumber: 7,
-        type: CandidateType.region,
+        locationType: LocationType.region,
         party: Parties.kprf,
         areaNumber: 7,
         status: CandidateStatuses.registered,
@@ -715,7 +715,7 @@ const kprf: Person[] = [
     candidate: [
       {
         callNumber: 7,
-        type: CandidateType.region,
+        locationType: LocationType.region,
         party: Parties.kprf,
         areaNumber: 22,
         status: CandidateStatuses.registered,
@@ -730,7 +730,7 @@ const kprf: Person[] = [
     candidate: [
       {
         callNumber: 7,
-        type: CandidateType.region,
+        locationType: LocationType.region,
         party: Parties.kprf,
         areaNumber: 27,
         status: CandidateStatuses.registered,
@@ -745,7 +745,7 @@ const kprf: Person[] = [
     candidate: [
       {
         callNumber: 7,
-        type: CandidateType.region,
+        locationType: LocationType.region,
         party: Parties.kprf,
         areaNumber: 23,
         status: CandidateStatuses.registered,

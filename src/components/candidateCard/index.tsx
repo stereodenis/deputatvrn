@@ -3,7 +3,7 @@ import { Image } from 'react-bootstrap'
 
 import { getCurrentCandidate } from '../../helpers'
 import { noPhoto } from '../../images/candidates'
-import { Person, CandidateType } from '../../types'
+import { Person, LocationType } from '../../types'
 import CandidateStatus from '../CandidateStatus'
 
 export default memo(({ person, type, withParty }: Props) => {
@@ -26,6 +26,6 @@ export default memo(({ person, type, withParty }: Props) => {
 
 interface Props {
   person: Person
-  type: keyof typeof CandidateType
+  type: keyof typeof LocationType
   withParty?: boolean
 }

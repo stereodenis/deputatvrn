@@ -7,16 +7,14 @@ import CandidateStatus from '../../components/CandidateStatus'
 import persons from '../../data/persons'
 import { getCurrentCandidate } from '../../helpers'
 import { noPhoto } from '../../images/candidates'
-import { Parties, CandidateType } from '../../types'
+import { Parties } from '../../types'
 
 export default memo(() => {
   const { candidateAlias } = useParams()
-  const type =
-    (localStorage.getItem('type') as keyof typeof CandidateType) ||
-    (Object.keys(CandidateType) as Array<keyof typeof CandidateType>)[0]
+  const { locationType } = useParams()
 
   const person = useMemo(() => persons.find((c) => c.alias === candidateAlias), [candidateAlias]) || persons[0]
-  const candidate = getCurrentCandidate(person, type)
+  const candidate = getCurrentCandidate(person, locationType)
   const partyAlias = useMemo(() => Object.entries(Parties).find((e) => e[1] === candidate?.party), [candidate])
 
   if (!person || !candidate) {
@@ -55,11 +53,11 @@ export default memo(() => {
             </>
           </>
           {candidate.party && partyAlias ? (
-            <Link className='d-block' to={`/parties/${partyAlias[0]}`}>
+            <Link className='d-block' to={`/${locationType}/parties/${partyAlias[0]}`}>
               {candidate.party}
             </Link>
           ) : (
-            <Link className='d-block' to={'/parties/noParty'}>
+            <Link className='d-block' to={`/${locationType}/parties/noParty`}>
               Самовыдвиженец
             </Link>
           )}
@@ -79,7 +77,8 @@ export default memo(() => {
           {candidate.problems?.length && (
             <div className='mt-2'>
               <h5>
-                Проблемы <Link to={`/areas/${candidate.areaNumber}`}>{candidate.areaNumber} округа</Link>
+                Проблемы{' '}
+                <Link to={`/${locationType}/areas/${candidate.areaNumber}`}>{candidate.areaNumber} округа</Link>
               </h5>
               {candidate.problems.map((problem, index) => (
                 <p key={index}>{problem}</p>
@@ -90,13 +89,15 @@ export default memo(() => {
       </Row>
 
       <h2>
-        Другие кандидаты <Link to={`/areas/${candidate.areaNumber}`}>{candidate.areaNumber} округа</Link>
+        Другие кандидаты{' '}
+        <Link to={`/${locationType}/areas/${candidate.areaNumber}`}>{candidate.areaNumber} округа</Link>
       </h2>
       <Row>
         {persons
           .filter(
             (p) =>
-              getCurrentCandidate(p, type)?.areaNumber === Number(candidate.areaNumber) && p.alias !== candidateAlias
+              getCurrentCandidate(p, locationType)?.areaNumber === Number(candidate.areaNumber) &&
+              p.alias !== candidateAlias
           )
           .map((areaCandidate) => (
             <Col
@@ -108,8 +109,8 @@ export default memo(() => {
               key={areaCandidate.name}
               className='border-xs-top border-sm-none py-3'
             >
-              <Link to={`/candidates/${areaCandidate.alias}`}>
-                <CandidateCard {...{ person: areaCandidate, type }} withParty />
+              <Link to={`/${locationType}/candidates/${areaCandidate.alias}`}>
+                <CandidateCard {...{ person: areaCandidate, type: locationType }} withParty />
               </Link>
             </Col>
           ))}

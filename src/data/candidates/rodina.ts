@@ -1,5 +1,5 @@
 import * as photos from '../../images/candidates'
-import { CandidateStatuses, CandidateType, LinkTitle, Parties, Person, Project } from '../../types'
+import { CandidateStatuses, LocationType, LinkTitle, Parties, Person, Project } from '../../types'
 
 const rodina: Person[] = [
   {
@@ -10,7 +10,7 @@ const rodina: Person[] = [
       {
         areaNumber: 1,
         callNumber: 5,
-        type: CandidateType.city,
+        locationType: LocationType.city,
         party: Parties.rodina,
         role: 'временно неработающий',
       },
@@ -25,7 +25,7 @@ const rodina: Person[] = [
       {
         areaNumber: 3,
         callNumber: 5,
-        type: CandidateType.city,
+        locationType: LocationType.city,
         party: Parties.rodina,
         role: 'коммерческий директор «Мега Авто»',
       },
@@ -40,7 +40,7 @@ const rodina: Person[] = [
       {
         areaNumber: 4,
         callNumber: 5,
-        type: CandidateType.city,
+        locationType: LocationType.city,
         role: 'временно не работает',
         party: Parties.rodina,
       },
@@ -55,7 +55,7 @@ const rodina: Person[] = [
       {
         areaNumber: 5,
         callNumber: 5,
-        type: CandidateType.city,
+        locationType: LocationType.city,
         role: 'гендиректор «Аксиос Инвест»',
         party: Parties.rodina,
       },
@@ -70,7 +70,7 @@ const rodina: Person[] = [
       {
         areaNumber: 6,
         callNumber: 5,
-        type: CandidateType.city,
+        locationType: LocationType.city,
         role: 'предприниматель',
         party: Parties.rodina,
       },
@@ -85,7 +85,7 @@ const rodina: Person[] = [
       {
         areaNumber: 7,
         callNumber: 5,
-        type: CandidateType.city,
+        locationType: LocationType.city,
         role: 'временно не работает',
         party: Parties.rodina,
         status: CandidateStatuses.registered,
@@ -101,7 +101,7 @@ const rodina: Person[] = [
       {
         areaNumber: 8,
         callNumber: 5,
-        type: CandidateType.city,
+        locationType: LocationType.city,
         role: 'председатель Совета кооператива Социально-экономической взаимопомощи «Развитие»',
         party: Parties.rodina,
       },
@@ -116,7 +116,7 @@ const rodina: Person[] = [
       {
         areaNumber: 9,
         callNumber: 5,
-        type: CandidateType.city,
+        locationType: LocationType.city,
         role: 'гендиректор «Евростроя»',
         party: Parties.rodina,
       },
@@ -131,7 +131,7 @@ const rodina: Person[] = [
       {
         areaNumber: 10,
         callNumber: 5,
-        type: CandidateType.city,
+        locationType: LocationType.city,
         party: Parties.rodina,
         project: Project.git,
       },
@@ -154,7 +154,7 @@ const rodina: Person[] = [
       {
         areaNumber: 11,
         callNumber: 5,
-        type: CandidateType.city,
+        locationType: LocationType.city,
         role: 'менеджер',
         party: Parties.rodina,
       },
@@ -169,7 +169,7 @@ const rodina: Person[] = [
       {
         areaNumber: 12,
         callNumber: 5,
-        type: CandidateType.city,
+        locationType: LocationType.city,
         role: 'директор некоммерческой организации дополнительного профессионального образования «ДОН-100»',
         party: Parties.rodina,
       },
@@ -184,7 +184,7 @@ const rodina: Person[] = [
       {
         areaNumber: 13,
         callNumber: 5,
-        type: CandidateType.city,
+        locationType: LocationType.city,
         role: 'гендиректор «СВС Авто Групп»',
         party: Parties.rodina,
       },
@@ -199,7 +199,7 @@ const rodina: Person[] = [
       {
         areaNumber: 14,
         callNumber: 5,
-        type: CandidateType.city,
+        locationType: LocationType.city,
         party: Parties.rodina,
         role: 'предприниматель',
       },
@@ -214,7 +214,7 @@ const rodina: Person[] = [
       {
         areaNumber: 15,
         callNumber: 5,
-        type: CandidateType.city,
+        locationType: LocationType.city,
         role: 'гендиректор «ЮЦ Солидарность»',
         party: Parties.rodina,
       },
@@ -230,7 +230,7 @@ const rodina: Person[] = [
       {
         areaNumber: 16,
         callNumber: 5,
-        type: CandidateType.city,
+        locationType: LocationType.city,
         role: 'пенсионер',
         party: Parties.rodina,
       },
@@ -245,7 +245,7 @@ const rodina: Person[] = [
       {
         areaNumber: 17,
         callNumber: 5,
-        type: CandidateType.city,
+        locationType: LocationType.city,
         party: Parties.rodina,
         role: 'доцент ВГУ',
       },
@@ -265,7 +265,7 @@ const rodina: Person[] = [
       {
         areaNumber: 18,
         callNumber: 5,
-        type: CandidateType.city,
+        locationType: LocationType.city,
         role: 'заместитель генерального директора по коммерческим вопросам «Завода железобетонных изделий №2»',
         party: Parties.rodina,
       },
@@ -280,7 +280,7 @@ const rodina: Person[] = [
       {
         areaNumber: 19,
         callNumber: 5,
-        type: CandidateType.city,
+        locationType: LocationType.city,
         role: 'травматолог-ортопед «Воронежской областной клинической больницы №1»',
         party: Parties.rodina,
       },
@@ -295,7 +295,7 @@ const rodina: Person[] = [
       {
         areaNumber: 21,
         callNumber: 5,
-        type: CandidateType.city,
+        locationType: LocationType.city,
         role: 'домохозяйка',
         party: Parties.rodina,
       },
@@ -315,7 +315,7 @@ const rodina: Person[] = [
       {
         areaNumber: 22,
         callNumber: 5,
-        type: CandidateType.city,
+        locationType: LocationType.city,
         role: 'директор ООО «Парсек»',
         party: Parties.rodina,
       },
@@ -330,7 +330,7 @@ const rodina: Person[] = [
       {
         areaNumber: 23,
         callNumber: 5,
-        type: CandidateType.city,
+        locationType: LocationType.city,
         role: 'начальник цеха АО «Завод железобетонных изделий №2',
         party: Parties.rodina,
       },
@@ -345,7 +345,7 @@ const rodina: Person[] = [
       {
         areaNumber: 24,
         callNumber: 5,
-        type: CandidateType.city,
+        locationType: LocationType.city,
         role: 'гендиректор «Ника Моторс»',
         party: Parties.rodina,
       },
@@ -359,7 +359,7 @@ const rodina: Person[] = [
     candidate: [
       {
         party: Parties.rodina,
-        type: CandidateType.region,
+        locationType: LocationType.region,
         callNumber: 7,
         areaNumber: 20,
         status: CandidateStatuses.registered,
@@ -374,7 +374,7 @@ const rodina: Person[] = [
     candidate: [
       {
         party: Parties.rodina,
-        type: CandidateType.region,
+        locationType: LocationType.region,
         callNumber: 7,
         areaNumber: 19,
         status: CandidateStatuses.registered,
@@ -389,7 +389,7 @@ const rodina: Person[] = [
     candidate: [
       {
         party: Parties.rodina,
-        type: CandidateType.region,
+        locationType: LocationType.region,
         callNumber: 7,
         areaNumber: 4,
         status: CandidateStatuses.registered,
@@ -404,7 +404,7 @@ const rodina: Person[] = [
     candidate: [
       {
         party: Parties.rodina,
-        type: CandidateType.region,
+        locationType: LocationType.region,
         callNumber: 7,
         areaNumber: 6,
         status: CandidateStatuses.registered,
@@ -419,7 +419,7 @@ const rodina: Person[] = [
     candidate: [
       {
         party: Parties.rodina,
-        type: CandidateType.region,
+        locationType: LocationType.region,
         callNumber: 7,
         areaNumber: 24,
         status: CandidateStatuses.registered,
@@ -434,7 +434,7 @@ const rodina: Person[] = [
     candidate: [
       {
         party: Parties.rodina,
-        type: CandidateType.region,
+        locationType: LocationType.region,
         callNumber: 7,
         areaNumber: 8,
         status: CandidateStatuses.registered,
@@ -449,7 +449,7 @@ const rodina: Person[] = [
     candidate: [
       {
         party: Parties.rodina,
-        type: CandidateType.region,
+        locationType: LocationType.region,
         callNumber: 7,
         areaNumber: 3,
         status: CandidateStatuses.registered,
@@ -464,7 +464,7 @@ const rodina: Person[] = [
     candidate: [
       {
         party: Parties.rodina,
-        type: CandidateType.region,
+        locationType: LocationType.region,
         callNumber: 7,
         areaNumber: 9,
         status: CandidateStatuses.registered,
@@ -479,7 +479,7 @@ const rodina: Person[] = [
     candidate: [
       {
         party: Parties.rodina,
-        type: CandidateType.region,
+        locationType: LocationType.region,
         callNumber: 7,
         areaNumber: 5,
         status: CandidateStatuses.registered,
@@ -494,7 +494,7 @@ const rodina: Person[] = [
     candidate: [
       {
         party: Parties.rodina,
-        type: CandidateType.region,
+        locationType: LocationType.region,
         callNumber: 7,
         areaNumber: 22,
         status: CandidateStatuses.registered,
@@ -509,7 +509,7 @@ const rodina: Person[] = [
     candidate: [
       {
         party: Parties.rodina,
-        type: CandidateType.region,
+        locationType: LocationType.region,
         callNumber: 7,
         areaNumber: 25,
         status: CandidateStatuses.registered,
@@ -524,7 +524,7 @@ const rodina: Person[] = [
     candidate: [
       {
         party: Parties.rodina,
-        type: CandidateType.region,
+        locationType: LocationType.region,
         callNumber: 7,
         areaNumber: 14,
         status: CandidateStatuses.registered,
@@ -539,7 +539,7 @@ const rodina: Person[] = [
     candidate: [
       {
         party: Parties.rodina,
-        type: CandidateType.region,
+        locationType: LocationType.region,
         callNumber: 7,
         areaNumber: 28,
         status: CandidateStatuses.registered,
@@ -554,7 +554,7 @@ const rodina: Person[] = [
     candidate: [
       {
         party: Parties.rodina,
-        type: CandidateType.region,
+        locationType: LocationType.region,
         callNumber: 7,
         areaNumber: 13,
         status: CandidateStatuses.registered,
@@ -569,7 +569,7 @@ const rodina: Person[] = [
     candidate: [
       {
         party: Parties.rodina,
-        type: CandidateType.region,
+        locationType: LocationType.region,
         callNumber: 7,
         areaNumber: 16,
         status: CandidateStatuses.registered,
@@ -584,7 +584,7 @@ const rodina: Person[] = [
     candidate: [
       {
         party: Parties.rodina,
-        type: CandidateType.region,
+        locationType: LocationType.region,
         callNumber: 7,
         areaNumber: 17,
         status: CandidateStatuses.registered,
@@ -599,7 +599,7 @@ const rodina: Person[] = [
     candidate: [
       {
         party: Parties.rodina,
-        type: CandidateType.region,
+        locationType: LocationType.region,
         callNumber: 7,
         areaNumber: 10,
         status: CandidateStatuses.registered,
@@ -611,7 +611,7 @@ const rodina: Person[] = [
     name: 'Семин Геннадий Владимирович',
     birthdate: '04.12.1967',
 
-    candidate: [{ party: Parties.rodina, type: CandidateType.region, callNumber: 7, areaNumber: 2 }],
+    candidate: [{ party: Parties.rodina, locationType: LocationType.region, callNumber: 7, areaNumber: 2 }],
   },
   {
     alias: 'skrynnikov_boris',
@@ -621,7 +621,7 @@ const rodina: Person[] = [
     candidate: [
       {
         party: Parties.rodina,
-        type: CandidateType.region,
+        locationType: LocationType.region,
         callNumber: 7,
         areaNumber: 12,
         status: CandidateStatuses.registered,
@@ -636,7 +636,7 @@ const rodina: Person[] = [
     candidate: [
       {
         party: Parties.rodina,
-        type: CandidateType.region,
+        locationType: LocationType.region,
         callNumber: 7,
         areaNumber: 18,
         status: CandidateStatuses.registered,
@@ -648,7 +648,7 @@ const rodina: Person[] = [
     name: 'Супрунов Владимир Иванович',
     birthdate: '15.07.1962',
 
-    candidate: [{ party: Parties.rodina, type: CandidateType.region, callNumber: 7, areaNumber: 27 }],
+    candidate: [{ party: Parties.rodina, locationType: LocationType.region, callNumber: 7, areaNumber: 27 }],
   },
   {
     alias: 'chekmarev_artem',
@@ -658,7 +658,7 @@ const rodina: Person[] = [
     candidate: [
       {
         party: Parties.rodina,
-        type: CandidateType.region,
+        locationType: LocationType.region,
         callNumber: 7,
         areaNumber: 15,
         status: CandidateStatuses.registered,
@@ -673,7 +673,7 @@ const rodina: Person[] = [
     candidate: [
       {
         party: Parties.rodina,
-        type: CandidateType.region,
+        locationType: LocationType.region,
         callNumber: 7,
         areaNumber: 21,
         status: CandidateStatuses.registered,
@@ -688,7 +688,7 @@ const rodina: Person[] = [
     candidate: [
       {
         party: Parties.rodina,
-        type: CandidateType.region,
+        locationType: LocationType.region,
         callNumber: 7,
         areaNumber: 1,
         status: CandidateStatuses.registered,

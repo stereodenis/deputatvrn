@@ -1,4 +1,4 @@
-import { CandidateStatuses, CandidateType, Parties, Person } from '../../types'
+import { CandidateStatuses, LocationType, Parties, Person } from '../../types'
 
 const zaPravdu: Person[] = [
   {
@@ -10,7 +10,7 @@ const zaPravdu: Person[] = [
         party: Parties.zaPravdu,
         areaNumber: 12,
         callNumber: 5,
-        type: CandidateType.city,
+        locationType: LocationType.city,
       },
     ],
   },
@@ -24,7 +24,7 @@ const zaPravdu: Person[] = [
         areaNumber: 8,
         status: CandidateStatuses.declined,
         callNumber: 5,
-        type: CandidateType.city,
+        locationType: LocationType.city,
       },
     ],
   },
@@ -33,7 +33,7 @@ const zaPravdu: Person[] = [
     name: 'Софрина Ольга Юрьевна',
     birthdate: '16.01.1982',
 
-    candidate: [{ party: Parties.zaPravdu, callNumber: 7, areaNumber: 25, type: CandidateType.region }],
+    candidate: [{ party: Parties.zaPravdu, callNumber: 7, areaNumber: 25, locationType: LocationType.region }],
   },
 ]
 

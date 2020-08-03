@@ -1,5 +1,5 @@
 import * as photos from '../../images/candidates'
-import { CandidateStatuses, CandidateType, Parties, Person } from '../../types'
+import { CandidateStatuses, LocationType, Parties, Person } from '../../types'
 
 const er: Person[] = [
   {
@@ -10,7 +10,7 @@ const er: Person[] = [
     candidate: [
       {
         callNumber: 5,
-        type: CandidateType.city,
+        locationType: LocationType.city,
         areaNumber: 1,
         party: Parties.er,
         status: CandidateStatuses.registered,
@@ -18,7 +18,7 @@ const er: Person[] = [
       {
         areaNumber: 1,
         callNumber: 4,
-        type: CandidateType.city,
+        locationType: LocationType.city,
         party: Parties.er,
         deputat: {
           office: 'ул. Дубовая д. 12',
@@ -36,7 +36,7 @@ const er: Person[] = [
     candidate: [
       {
         callNumber: 5,
-        type: CandidateType.city,
+        locationType: LocationType.city,
         areaNumber: 2,
         party: Parties.er,
         status: CandidateStatuses.registered,
@@ -51,7 +51,7 @@ const er: Person[] = [
     candidate: [
       {
         callNumber: 4,
-        type: CandidateType.city,
+        locationType: LocationType.city,
         areaNumber: 5,
         party: Parties.er,
         deputat: {
@@ -73,12 +73,12 @@ const er: Person[] = [
         status: CandidateStatuses.registered,
         areaNumber: 3,
         callNumber: 5,
-        type: CandidateType.city,
+        locationType: LocationType.city,
       },
       {
         areaNumber: 3,
         callNumber: 4,
-        type: CandidateType.city,
+        locationType: LocationType.city,
         party: Parties.er,
         deputat: {
           office: 'ул. Переверткина, 11',
@@ -97,7 +97,7 @@ const er: Person[] = [
       {
         areaNumber: 4,
         callNumber: 5,
-        type: CandidateType.city,
+        locationType: LocationType.city,
         party: Parties.er,
         status: CandidateStatuses.registered,
       },
@@ -112,14 +112,14 @@ const er: Person[] = [
       {
         areaNumber: 5,
         callNumber: 5,
-        type: CandidateType.city,
+        locationType: LocationType.city,
         party: Parties.er,
         status: CandidateStatuses.registered,
       },
       {
         areaNumber: 2,
         callNumber: 4,
-        type: CandidateType.city,
+        locationType: LocationType.city,
         party: Parties.er,
         deputat: {
           office: 'ул. Переверткина, 11',
@@ -137,7 +137,7 @@ const er: Person[] = [
     candidate: [
       {
         callNumber: 5,
-        type: CandidateType.city,
+        locationType: LocationType.city,
         areaNumber: 6,
         party: Parties.er,
         status: CandidateStatuses.registered,
@@ -153,7 +153,7 @@ const er: Person[] = [
     candidate: [
       {
         callNumber: 5,
-        type: CandidateType.city,
+        locationType: LocationType.city,
         areaNumber: 7,
         party: Parties.er,
         status: CandidateStatuses.registered,
@@ -172,7 +172,7 @@ const er: Person[] = [
         party: Parties.er,
         status: CandidateStatuses.registered,
         callNumber: 5,
-        type: CandidateType.city,
+        locationType: LocationType.city,
       },
     ],
   },
@@ -186,12 +186,12 @@ const er: Person[] = [
         areaNumber: 9,
         party: Parties.er,
         callNumber: 5,
-        type: CandidateType.city,
+        locationType: LocationType.city,
       },
       {
         areaNumber: 9,
         callNumber: 4,
-        type: CandidateType.city,
+        locationType: LocationType.city,
         party: Parties.er,
         deputat: {
           office: 'ул. 121 Стрелковой дивизии, 9',
@@ -209,7 +209,7 @@ const er: Person[] = [
     candidate: [
       {
         callNumber: 5,
-        type: CandidateType.city,
+        locationType: LocationType.city,
         areaNumber: 10,
         party: Parties.er,
         status: CandidateStatuses.registered,
@@ -217,7 +217,7 @@ const er: Person[] = [
       {
         areaNumber: 11,
         callNumber: 4,
-        type: CandidateType.city,
+        locationType: LocationType.city,
         party: Parties.er,
         deputat: {
           office: 'ул. Космонавтов, 8',
@@ -238,7 +238,7 @@ const er: Person[] = [
         party: Parties.er,
         status: CandidateStatuses.registered,
         callNumber: 5,
-        type: CandidateType.city,
+        locationType: LocationType.city,
       },
     ],
   },
@@ -250,14 +250,14 @@ const er: Person[] = [
     candidate: [
       {
         callNumber: 5,
-        type: CandidateType.city,
+        locationType: LocationType.city,
         areaNumber: 12,
         party: Parties.er,
         status: CandidateStatuses.registered,
       },
       {
         callNumber: 4,
-        type: CandidateType.city,
+        locationType: LocationType.city,
         areaNumber: 12,
         party: Parties.er,
         deputat: {
@@ -279,11 +279,11 @@ const er: Person[] = [
         status: CandidateStatuses.registered,
         areaNumber: 13,
         callNumber: 5,
-        type: CandidateType.city,
+        locationType: LocationType.city,
       },
       {
         callNumber: 4,
-        type: CandidateType.city,
+        locationType: LocationType.city,
         areaNumber: 13,
         party: Parties.er,
         deputat: {
@@ -302,7 +302,7 @@ const er: Person[] = [
     candidate: [
       {
         callNumber: 5,
-        type: CandidateType.city,
+        locationType: LocationType.city,
         areaNumber: 14,
         party: Parties.er,
         status: CandidateStatuses.registered,
@@ -318,13 +318,13 @@ const er: Person[] = [
       {
         areaNumber: 15,
         party: Parties.er,
-        type: CandidateType.city,
+        locationType: LocationType.city,
         callNumber: 5,
         status: CandidateStatuses.registered,
       },
       {
         callNumber: 4,
-        type: CandidateType.city,
+        locationType: LocationType.city,
         areaNumber: 15,
         party: Parties.er,
         deputat: {
@@ -346,12 +346,12 @@ const er: Person[] = [
         party: Parties.er,
         status: CandidateStatuses.registered,
         callNumber: 5,
-        type: CandidateType.city,
+        locationType: LocationType.city,
       },
       {
         areaNumber: 16,
         callNumber: 4,
-        type: CandidateType.city,
+        locationType: LocationType.city,
         party: Parties.er,
         deputat: {
           office: 'ул 9 Января, 108, ДК Машиностроителей, комн.119',
@@ -372,11 +372,11 @@ const er: Person[] = [
         party: Parties.er,
         status: CandidateStatuses.registered,
         callNumber: 5,
-        type: CandidateType.city,
+        locationType: LocationType.city,
       },
       {
         callNumber: 4,
-        type: CandidateType.city,
+        locationType: LocationType.city,
         areaNumber: 17,
         party: Parties.er,
         deputat: {
@@ -398,11 +398,11 @@ const er: Person[] = [
         party: Parties.er,
         status: CandidateStatuses.registered,
         callNumber: 5,
-        type: CandidateType.city,
+        locationType: LocationType.city,
       },
       {
         callNumber: 4,
-        type: CandidateType.city,
+        locationType: LocationType.city,
         areaNumber: 18,
         party: Parties.er,
         deputat: {
@@ -424,11 +424,11 @@ const er: Person[] = [
         party: Parties.er,
         status: CandidateStatuses.registered,
         callNumber: 5,
-        type: CandidateType.city,
+        locationType: LocationType.city,
       },
       {
         callNumber: 4,
-        type: CandidateType.city,
+        locationType: LocationType.city,
         areaNumber: 19,
         party: Parties.er,
         deputat: {
@@ -450,7 +450,7 @@ const er: Person[] = [
         party: Parties.er,
         status: CandidateStatuses.registered,
         callNumber: 5,
-        type: CandidateType.city,
+        locationType: LocationType.city,
         role:
           'Заместитель председателя постоянной комиссии по транспорту, промышленности, развитию малого и среднего бизнеса. Член постоянной комиссии по образованию, культуре и социальной поддержке населения.',
       },
@@ -478,13 +478,13 @@ const er: Person[] = [
         party: Parties.er,
         status: CandidateStatuses.registered,
         callNumber: 5,
-        type: CandidateType.city,
+        locationType: LocationType.city,
       },
       {
         areaNumber: 21,
         party: Parties.er,
         callNumber: 4,
-        type: CandidateType.city,
+        locationType: LocationType.city,
         deputat: {
           office: 'пер. Ботанический, 47, поликлиника №3, 1 этаж, каб. 117',
           phones: ['+74732210515', '+79518768067'],
@@ -504,13 +504,13 @@ const er: Person[] = [
         party: Parties.er,
         status: CandidateStatuses.registered,
         callNumber: 5,
-        type: CandidateType.city,
+        locationType: LocationType.city,
       },
       {
         areaNumber: 22,
         party: Parties.er,
         callNumber: 4,
-        type: CandidateType.city,
+        locationType: LocationType.city,
         deputat: {
           office: 'Московский проспект, 58',
           phones: ['+74732392787', '+79204050597'],
@@ -528,7 +528,7 @@ const er: Person[] = [
       {
         areaNumber: 23,
         callNumber: 4,
-        type: CandidateType.city,
+        locationType: LocationType.city,
         party: Parties.er,
         deputat: {
           office: 'ул. Никитинская, д. 8',
@@ -540,7 +540,7 @@ const er: Person[] = [
         areaNumber: 23,
         party: Parties.er,
         callNumber: 5,
-        type: CandidateType.city,
+        locationType: LocationType.city,
         status: CandidateStatuses.registered,
       },
     ],
@@ -554,7 +554,7 @@ const er: Person[] = [
       {
         areaNumber: 24,
         callNumber: 4,
-        type: CandidateType.city,
+        locationType: LocationType.city,
         party: Parties.er,
         deputat: {
           office: 'ул. Никитинская, д. 8 каб. 102а',
@@ -566,7 +566,7 @@ const er: Person[] = [
         areaNumber: 24,
         party: Parties.er,
         callNumber: 5,
-        type: CandidateType.city,
+        locationType: LocationType.city,
         status: CandidateStatuses.registered,
       },
     ],
@@ -581,7 +581,7 @@ const er: Person[] = [
       {
         areaNumber: 6,
         callNumber: 4,
-        type: CandidateType.city,
+        locationType: LocationType.city,
         party: Parties.er,
         deputat: {
           office: 'Ленинский пр-т, д. 86',
@@ -599,7 +599,7 @@ const er: Person[] = [
     candidate: [
       {
         callNumber: 4,
-        type: CandidateType.city,
+        locationType: LocationType.city,
         party: Parties.er,
         areaNumber: 8,
         deputat: {
@@ -618,7 +618,7 @@ const er: Person[] = [
     candidate: [
       {
         callNumber: 4,
-        type: CandidateType.city,
+        locationType: LocationType.city,
         party: Parties.er,
         areaNumber: 10,
         deputat: {
@@ -637,7 +637,7 @@ const er: Person[] = [
     candidate: [
       {
         callNumber: 4,
-        type: CandidateType.city,
+        locationType: LocationType.city,
         party: Parties.er,
         areaNumber: 14,
         deputat: {
@@ -656,7 +656,7 @@ const er: Person[] = [
     candidate: [
       {
         callNumber: 4,
-        type: CandidateType.city,
+        locationType: LocationType.city,
         party: Parties.er,
         areaNumber: 20,
         deputat: {
@@ -676,7 +676,7 @@ const er: Person[] = [
       {
         party: Parties.er,
         callNumber: 7,
-        type: CandidateType.region,
+        locationType: LocationType.region,
         areaNumber: 2,
         status: CandidateStatuses.registered,
       },
@@ -691,7 +691,7 @@ const er: Person[] = [
       {
         party: Parties.er,
         callNumber: 7,
-        type: CandidateType.region,
+        locationType: LocationType.region,
         areaNumber: 16,
         status: CandidateStatuses.registered,
       },
@@ -706,7 +706,7 @@ const er: Person[] = [
       {
         party: Parties.er,
         callNumber: 7,
-        type: CandidateType.region,
+        locationType: LocationType.region,
         areaNumber: 23,
         status: CandidateStatuses.registered,
       },
@@ -721,7 +721,7 @@ const er: Person[] = [
       {
         party: Parties.er,
         callNumber: 7,
-        type: CandidateType.region,
+        locationType: LocationType.region,
         areaNumber: 8,
         status: CandidateStatuses.registered,
       },
@@ -736,7 +736,7 @@ const er: Person[] = [
       {
         party: Parties.er,
         callNumber: 7,
-        type: CandidateType.region,
+        locationType: LocationType.region,
         areaNumber: 1,
         status: CandidateStatuses.registered,
       },
@@ -751,7 +751,7 @@ const er: Person[] = [
       {
         party: Parties.er,
         callNumber: 7,
-        type: CandidateType.region,
+        locationType: LocationType.region,
         areaNumber: 27,
         status: CandidateStatuses.registered,
       },
@@ -766,7 +766,7 @@ const er: Person[] = [
       {
         party: Parties.er,
         callNumber: 7,
-        type: CandidateType.region,
+        locationType: LocationType.region,
         areaNumber: 17,
         status: CandidateStatuses.registered,
       },
@@ -781,7 +781,7 @@ const er: Person[] = [
       {
         party: Parties.er,
         callNumber: 7,
-        type: CandidateType.region,
+        locationType: LocationType.region,
         areaNumber: 21,
         status: CandidateStatuses.registered,
       },
@@ -796,7 +796,7 @@ const er: Person[] = [
       {
         party: Parties.er,
         callNumber: 7,
-        type: CandidateType.region,
+        locationType: LocationType.region,
         areaNumber: 25,
         status: CandidateStatuses.registered,
       },
@@ -811,7 +811,7 @@ const er: Person[] = [
       {
         party: Parties.er,
         callNumber: 7,
-        type: CandidateType.region,
+        locationType: LocationType.region,
         areaNumber: 3,
         status: CandidateStatuses.registered,
       },
@@ -826,7 +826,7 @@ const er: Person[] = [
       {
         party: Parties.er,
         callNumber: 7,
-        type: CandidateType.region,
+        locationType: LocationType.region,
         areaNumber: 7,
         status: CandidateStatuses.registered,
       },
@@ -841,7 +841,7 @@ const er: Person[] = [
       {
         party: Parties.er,
         callNumber: 7,
-        type: CandidateType.region,
+        locationType: LocationType.region,
         areaNumber: 14,
         status: CandidateStatuses.registered,
       },
@@ -856,7 +856,7 @@ const er: Person[] = [
       {
         party: Parties.er,
         callNumber: 7,
-        type: CandidateType.region,
+        locationType: LocationType.region,
         areaNumber: 18,
         status: CandidateStatuses.registered,
       },
@@ -871,7 +871,7 @@ const er: Person[] = [
       {
         party: Parties.er,
         callNumber: 7,
-        type: CandidateType.region,
+        locationType: LocationType.region,
         areaNumber: 22,
         status: CandidateStatuses.registered,
       },
@@ -886,7 +886,7 @@ const er: Person[] = [
       {
         party: Parties.er,
         callNumber: 7,
-        type: CandidateType.region,
+        locationType: LocationType.region,
         areaNumber: 9,
         status: CandidateStatuses.registered,
       },
@@ -901,7 +901,7 @@ const er: Person[] = [
       {
         party: Parties.er,
         callNumber: 7,
-        type: CandidateType.region,
+        locationType: LocationType.region,
         areaNumber: 10,
         status: CandidateStatuses.registered,
       },
@@ -916,7 +916,7 @@ const er: Person[] = [
       {
         party: Parties.er,
         callNumber: 7,
-        type: CandidateType.region,
+        locationType: LocationType.region,
         areaNumber: 24,
         status: CandidateStatuses.registered,
       },
@@ -931,7 +931,7 @@ const er: Person[] = [
       {
         party: Parties.er,
         callNumber: 7,
-        type: CandidateType.region,
+        locationType: LocationType.region,
         areaNumber: 28,
         status: CandidateStatuses.registered,
       },
@@ -946,7 +946,7 @@ const er: Person[] = [
       {
         party: Parties.er,
         callNumber: 7,
-        type: CandidateType.region,
+        locationType: LocationType.region,
         areaNumber: 13,
         status: CandidateStatuses.registered,
       },
@@ -961,7 +961,7 @@ const er: Person[] = [
       {
         party: Parties.er,
         callNumber: 7,
-        type: CandidateType.region,
+        locationType: LocationType.region,
         areaNumber: 11,
         status: CandidateStatuses.registered,
       },
@@ -976,7 +976,7 @@ const er: Person[] = [
       {
         party: Parties.er,
         callNumber: 7,
-        type: CandidateType.region,
+        locationType: LocationType.region,
         areaNumber: 4,
         status: CandidateStatuses.registered,
       },
@@ -991,7 +991,7 @@ const er: Person[] = [
       {
         party: Parties.er,
         callNumber: 7,
-        type: CandidateType.region,
+        locationType: LocationType.region,
         areaNumber: 20,
         status: CandidateStatuses.registered,
       },
@@ -1006,7 +1006,7 @@ const er: Person[] = [
       {
         party: Parties.er,
         callNumber: 7,
-        type: CandidateType.region,
+        locationType: LocationType.region,
         areaNumber: 6,
         status: CandidateStatuses.registered,
       },
@@ -1021,7 +1021,7 @@ const er: Person[] = [
       {
         party: Parties.er,
         callNumber: 7,
-        type: CandidateType.region,
+        locationType: LocationType.region,
         areaNumber: 26,
         status: CandidateStatuses.registered,
       },
@@ -1036,7 +1036,7 @@ const er: Person[] = [
       {
         party: Parties.er,
         callNumber: 7,
-        type: CandidateType.region,
+        locationType: LocationType.region,
         areaNumber: 15,
         status: CandidateStatuses.registered,
       },
@@ -1051,7 +1051,7 @@ const er: Person[] = [
       {
         party: Parties.er,
         callNumber: 7,
-        type: CandidateType.region,
+        locationType: LocationType.region,
         areaNumber: 5,
         status: CandidateStatuses.registered,
       },
@@ -1066,7 +1066,7 @@ const er: Person[] = [
       {
         party: Parties.er,
         callNumber: 7,
-        type: CandidateType.region,
+        locationType: LocationType.region,
         areaNumber: 12,
         status: CandidateStatuses.registered,
       },
@@ -1081,7 +1081,7 @@ const er: Person[] = [
       {
         party: Parties.er,
         callNumber: 7,
-        type: CandidateType.region,
+        locationType: LocationType.region,
         areaNumber: 19,
         status: CandidateStatuses.registered,
       },

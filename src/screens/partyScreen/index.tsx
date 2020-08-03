@@ -5,7 +5,7 @@ import { Container, Row, Col } from 'react-bootstrap'
 import MetaTags from 'react-meta-tags'
 
 import persons from '../../data/persons'
-import { CandidateType, Parties } from '../../types'
+import { Parties } from '../../types'
 import { CandidateCard } from '../../components'
 import { getCurrentCandidate, getPartyCandidates } from '../../helpers'
 
@@ -15,16 +15,14 @@ export default memo(() => {
   const isNoParty = partyAlias === 'noParty'
   const title = isNoParty ? 'Самовыдвиженцы' : `Партия «${Parties[partyAlias]}»`
 
-  const type =
-    (localStorage.getItem('type') as keyof typeof CandidateType) ||
-    (Object.keys(CandidateType) as Array<keyof typeof CandidateType>)[0]
-  const currentPersons = persons.filter((p) => getCurrentCandidate(p, type))
+  const { locationType } = useParams()
+  const currentPersons = persons.filter((p) => getCurrentCandidate(p, locationType))
   const partyCandidates = useMemo(
     () =>
       isNoParty
-        ? currentPersons.filter((p) => !getCurrentCandidate(p, type)?.party)
-        : getPartyCandidates(partyAlias, type),
-    [currentPersons, isNoParty, partyAlias, type]
+        ? currentPersons.filter((p) => !getCurrentCandidate(p, locationType)?.party)
+        : getPartyCandidates(partyAlias, locationType),
+    [currentPersons, isNoParty, partyAlias, locationType]
   )
 
   return (
@@ -46,7 +44,8 @@ export default memo(() => {
           {partyCandidates
             .sort(
               (a, b) =>
-                (getCurrentCandidate(a, type)?.areaNumber || 0) - (getCurrentCandidate(b, type)?.areaNumber || 0)
+                (getCurrentCandidate(a, locationType)?.areaNumber || 0) -
+                (getCurrentCandidate(b, locationType)?.areaNumber || 0)
             )
             .map((person) => (
               <Col
@@ -58,11 +57,11 @@ export default memo(() => {
                 key={person.name}
                 className='border-xs-bottom border-md-none py-3'
               >
-                <Link to={`/areas/${getCurrentCandidate(person, type)?.areaNumber}`}>
-                  <h4>{getCurrentCandidate(person, type)?.areaNumber} округ</h4>
+                <Link to={`/areas/${getCurrentCandidate(person, locationType)?.areaNumber}`}>
+                  <h4>{getCurrentCandidate(person, locationType)?.areaNumber} округ</h4>
                 </Link>
                 <Link to={`/candidates/${person.alias}`}>
-                  <CandidateCard {...{ person, type }} />
+                  <CandidateCard {...{ person, type: locationType }} />
                 </Link>
               </Col>
             ))}

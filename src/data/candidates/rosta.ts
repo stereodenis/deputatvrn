@@ -1,4 +1,4 @@
-import { CandidateStatuses, CandidateType, Parties, Person } from '../../types'
+import { CandidateStatuses, LocationType, Parties, Person } from '../../types'
 
 const rosta: Person[] = [
   {
@@ -9,7 +9,7 @@ const rosta: Person[] = [
     candidate: [
       {
         party: Parties.rosta,
-        type: CandidateType.region,
+        locationType: LocationType.region,
         callNumber: 7,
         areaNumber: 8,
         status: CandidateStatuses.declined,
@@ -24,7 +24,7 @@ const rosta: Person[] = [
     candidate: [
       {
         party: Parties.rosta,
-        type: CandidateType.region,
+        locationType: LocationType.region,
         callNumber: 7,
         areaNumber: 4,
         status: CandidateStatuses.declined,

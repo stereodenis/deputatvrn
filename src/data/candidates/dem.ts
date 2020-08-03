@@ -1,4 +1,4 @@
-import { CandidateType, Parties, Person } from '../../types'
+import { LocationType, Parties, Person } from '../../types'
 
 const dem: Person[] = [
   {
@@ -6,7 +6,7 @@ const dem: Person[] = [
     name: 'Петросян Алик Эдикович',
     birthdate: '09.12.1993',
 
-    candidate: [{ party: Parties.dem, type: CandidateType.region, callNumber: 7, areaNumber: 12 }],
+    candidate: [{ party: Parties.dem, locationType: LocationType.region, callNumber: 7, areaNumber: 12 }],
   },
 ]
 

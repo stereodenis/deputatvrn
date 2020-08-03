@@ -11,7 +11,7 @@ export enum CandidateStatuses {
   declined = 'Отказ в регистрации',
 }
 
-export enum CandidateType {
+export enum LocationType {
   city = 'Город',
   region = 'Область',
 }
@@ -19,7 +19,7 @@ export enum CandidateType {
 interface Candidate {
   areaNumber: number
   callNumber: number
-  type: CandidateType
+  locationType: LocationType
   party?: Parties
   project?: Project
   role?: string
@@ -79,7 +79,7 @@ export enum LinkTitle {
 
 export interface Area {
   people: number
-  news: { title: string; url: string }[]
-  videos: { title: string; url: string }[]
-  streets: string[]
+  news?: { title: string; url: string }[]
+  videos?: { title: string; url: string }[]
+  streets?: string[]
 }

@@ -1,4 +1,4 @@
-export { default as Map } from './mapScreen'
+export { default as Map } from './mainScreen'
 
 export { default as Areas } from './areasScreen'
 export { default as Area } from './areaScreen'

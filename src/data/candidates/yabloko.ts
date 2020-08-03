@@ -1,5 +1,5 @@
 import * as photos from '../../images/candidates'
-import { LinkTitle, Parties, Person, Project, CandidateType, CandidateStatuses } from '../../types'
+import { LinkTitle, Parties, Person, Project, LocationType, CandidateStatuses } from '../../types'
 
 const yabloko: Person[] = [
   {
@@ -14,7 +14,7 @@ const yabloko: Person[] = [
         role: 'временно неработающий',
         party: Parties.yabloko,
         callNumber: 5,
-        type: CandidateType.city,
+        locationType: LocationType.city,
       },
     ],
   },
@@ -37,7 +37,7 @@ const yabloko: Person[] = [
         role: 'генеральный директор ООО Центр “Карьера”',
         party: Parties.yabloko,
         callNumber: 5,
-        type: CandidateType.city,
+        locationType: LocationType.city,
       },
     ],
   },
@@ -48,7 +48,7 @@ const yabloko: Person[] = [
     candidate: [
       {
         callNumber: 5,
-        type: CandidateType.city,
+        locationType: LocationType.city,
         areaNumber: 19,
         party: Parties.yabloko,
       },
@@ -83,7 +83,7 @@ const yabloko: Person[] = [
         ],
         message:
           'Я студент Юридического факультета ВГУ, сейчас учусь на втором курсе. Хочу стать депутатом, чтобы представлять интересы людей в парламенте, нести альтернативу проводящейся государственной политике. Хочу, чтобы Воронеж стал приятным городом, не только в центре и на Динамо, но и в спальных районах. Буду держать постоянный контакт с избирателями, делать политику открытой, без каких-то ширм и притворства.',
-        type: CandidateType.city,
+        locationType: LocationType.city,
         callNumber: 5,
         status: CandidateStatuses.registered,
       },
@@ -103,7 +103,7 @@ const yabloko: Person[] = [
           'МБУК «Централизованная клубная система» городского округа город Воронеж, заведующий филиалом культурно-досуговый центр «Северный»',
         party: Parties.yabloko,
         callNumber: 5,
-        type: CandidateType.city,
+        locationType: LocationType.city,
       },
     ],
   },
@@ -121,7 +121,7 @@ const yabloko: Person[] = [
         party: Parties.yabloko,
         program: 'https://zurga.livejournal.com/342719.html',
         callNumber: 5,
-        type: CandidateType.city,
+        locationType: LocationType.city,
       },
     ],
   },
@@ -146,7 +146,7 @@ const yabloko: Person[] = [
         message:
           'В 2012 году закончил Строительный университет, по специальности инженер. Работал арт-директором самых значимых event и общепит-площадок Воронежа. Два года назад открыл протестный бар «Нигилист» и занимаюсь его развитием. Поддерживаю локальную музыкальную сцену и стремлюсь создать в городе комфортные условия для проживания людям, чьи вкусы и интересы выходят за рамки массовой культуры. Мне нужны средства на сбор подписей, поддержите меня.',
         callNumber: 5,
-        type: CandidateType.city,
+        locationType: LocationType.city,
       },
     ],
   },
@@ -163,7 +163,7 @@ const yabloko: Person[] = [
         areaNumber: 24,
         role: 'Президент некоммерческого партнерства «Общественное благополучие Воронежа»',
         party: Parties.yabloko,
-        type: CandidateType.city,
+        locationType: LocationType.city,
         callNumber: 5,
         status: CandidateStatuses.declined,
       },

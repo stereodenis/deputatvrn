@@ -1,5 +1,5 @@
 import * as photos from '../../images/candidates'
-import { CandidateStatuses, CandidateType, LinkTitle, Parties, Person, Project } from '../../types'
+import { CandidateStatuses, LocationType, LinkTitle, Parties, Person, Project } from '../../types'
 
 const noParty: Person[] = [
   {
@@ -10,7 +10,7 @@ const noParty: Person[] = [
       {
         areaNumber: 20,
         callNumber: 5,
-        type: CandidateType.city,
+        locationType: LocationType.city,
       },
     ],
   },
@@ -23,7 +23,7 @@ const noParty: Person[] = [
       {
         areaNumber: 10,
         callNumber: 5,
-        type: CandidateType.city,
+        locationType: LocationType.city,
       },
     ],
   },
@@ -35,7 +35,7 @@ const noParty: Person[] = [
       {
         areaNumber: 3,
         callNumber: 5,
-        type: CandidateType.city,
+        locationType: LocationType.city,
       },
     ],
   },
@@ -54,7 +54,7 @@ const noParty: Person[] = [
       {
         areaNumber: 24,
         role: 'глава реготделения Либертарианской партии России',
-        type: CandidateType.city,
+        locationType: LocationType.city,
         callNumber: 5,
         status: CandidateStatuses.declined,
       },
@@ -68,7 +68,7 @@ const noParty: Person[] = [
       {
         areaNumber: 9,
         callNumber: 5,
-        type: CandidateType.city,
+        locationType: LocationType.city,
       },
     ],
   },
@@ -85,7 +85,7 @@ const noParty: Person[] = [
       {
         areaNumber: 13,
         callNumber: 5,
-        type: CandidateType.city,
+        locationType: LocationType.city,
       },
     ],
     bio:
@@ -99,7 +99,7 @@ const noParty: Person[] = [
       {
         areaNumber: 18,
         callNumber: 5,
-        type: CandidateType.city,
+        locationType: LocationType.city,
       },
     ],
   },
@@ -111,7 +111,7 @@ const noParty: Person[] = [
       {
         areaNumber: 11,
         callNumber: 5,
-        type: CandidateType.city,
+        locationType: LocationType.city,
       },
     ],
   },
@@ -122,7 +122,7 @@ const noParty: Person[] = [
     candidate: [
       {
         areaNumber: 7,
-        type: CandidateType.city,
+        locationType: LocationType.city,
         callNumber: 5,
         status: CandidateStatuses.declined,
       },
@@ -137,7 +137,7 @@ const noParty: Person[] = [
         areaNumber: 7,
         status: CandidateStatuses.registered,
         callNumber: 5,
-        type: CandidateType.city,
+        locationType: LocationType.city,
       },
     ],
   },
@@ -149,7 +149,7 @@ const noParty: Person[] = [
       {
         areaNumber: 4,
         callNumber: 5,
-        type: CandidateType.city,
+        locationType: LocationType.city,
       },
     ],
   },
@@ -160,7 +160,7 @@ const noParty: Person[] = [
     candidate: [
       {
         areaNumber: 23,
-        type: CandidateType.city,
+        locationType: LocationType.city,
         callNumber: 5,
         status: CandidateStatuses.declined,
       },
@@ -181,7 +181,7 @@ const noParty: Person[] = [
         areaNumber: 4,
         status: CandidateStatuses.registered,
         callNumber: 5,
-        type: CandidateType.city,
+        locationType: LocationType.city,
       },
     ],
   },
@@ -193,7 +193,7 @@ const noParty: Person[] = [
       {
         areaNumber: 7,
         callNumber: 5,
-        type: CandidateType.city,
+        locationType: LocationType.city,
       },
     ],
   },
@@ -204,7 +204,7 @@ const noParty: Person[] = [
     candidate: [
       {
         areaNumber: 7,
-        type: CandidateType.city,
+        locationType: LocationType.city,
         callNumber: 5,
         status: CandidateStatuses.declined,
       },
@@ -218,7 +218,7 @@ const noParty: Person[] = [
       {
         areaNumber: 14,
         callNumber: 5,
-        type: CandidateType.city,
+        locationType: LocationType.city,
         status: CandidateStatuses.registered,
       },
     ],
@@ -232,7 +232,7 @@ const noParty: Person[] = [
       {
         areaNumber: 10,
         callNumber: 5,
-        type: CandidateType.city,
+        locationType: LocationType.city,
       },
     ],
   },
@@ -252,7 +252,7 @@ const noParty: Person[] = [
         role: '28 лет. Акционерное общество «Концерн «Созвездие», старший инженер',
         project: Project.gorpr,
         callNumber: 5,
-        type: CandidateType.city,
+        locationType: LocationType.city,
         message:
           'Меня зовут Леонид и я не политик. Я инженер и программист, и вот уже много лет жду когда в городе появятся велодорожки, которые нам обещают, когда вместо газелей поедут низкопольные трамваи. Но ничего не происходит и пора это изменить. Моя задача — расшевелить инертную систему и заставить её строить удобный безопасный и современный город.',
       },
@@ -266,7 +266,7 @@ const noParty: Person[] = [
       {
         areaNumber: 3,
         callNumber: 5,
-        type: CandidateType.city,
+        locationType: LocationType.city,
       },
     ],
   },
@@ -281,7 +281,7 @@ const noParty: Person[] = [
         areaNumber: 12,
         role: 'глава штаба Навального в Воронеже',
         callNumber: 5,
-        type: CandidateType.city,
+        locationType: LocationType.city,
       },
     ],
   },
@@ -293,7 +293,7 @@ const noParty: Person[] = [
       {
         areaNumber: 21,
         callNumber: 5,
-        type: CandidateType.city,
+        locationType: LocationType.city,
       },
     ],
   },
@@ -305,7 +305,7 @@ const noParty: Person[] = [
       {
         areaNumber: 7,
         callNumber: 5,
-        type: CandidateType.city,
+        locationType: LocationType.city,
       },
     ],
   },
@@ -332,7 +332,7 @@ const noParty: Person[] = [
         ],
         role: 'Юрист в сфере Госзакупок',
         callNumber: 5,
-        type: CandidateType.city,
+        locationType: LocationType.city,
       },
     ],
   },
@@ -344,7 +344,7 @@ const noParty: Person[] = [
       {
         areaNumber: 8,
         callNumber: 5,
-        type: CandidateType.city,
+        locationType: LocationType.city,
       },
     ],
   },
@@ -356,7 +356,7 @@ const noParty: Person[] = [
       {
         areaNumber: 6,
         callNumber: 5,
-        type: CandidateType.city,
+        locationType: LocationType.city,
       },
     ],
   },
@@ -373,7 +373,7 @@ const noParty: Person[] = [
       {
         areaNumber: 24,
         callNumber: 5,
-        type: CandidateType.city,
+        locationType: LocationType.city,
       },
     ],
   },
@@ -386,7 +386,7 @@ const noParty: Person[] = [
         areaNumber: 2,
         status: CandidateStatuses.registered,
         callNumber: 5,
-        type: CandidateType.city,
+        locationType: LocationType.city,
       },
     ],
   },
@@ -398,7 +398,7 @@ const noParty: Person[] = [
       {
         areaNumber: 1,
         callNumber: 5,
-        type: CandidateType.city,
+        locationType: LocationType.city,
       },
     ],
   },
@@ -421,7 +421,7 @@ const noParty: Person[] = [
         project: Project.gorpr,
         status: CandidateStatuses.registered,
         callNumber: 5,
-        type: CandidateType.city,
+        locationType: LocationType.city,
         message:
           'Всем сердцем люблю город Воронеж. Здесь я родилась, ходила в школу, закончила университет, работаю. Не воспринимаю себя отдельно от Воронежа, он часть меня. Имею большой опыт правозащитной деятельности и реализации социальных проектов. Я выдвигаюсь в депутаты потому, что хочу сделать наш город безопасным и комфортным для всех групп населения, нам просто необходимо сократить смертность на наших дорогах.',
       },
@@ -448,7 +448,7 @@ const noParty: Person[] = [
         message:
           'Моя мечта — удобный город, с безбарьерной средой, без грязи и заброшенных территорий. Город, в котором видно внимание ко всем его деталям. До выдвижения в городскую Думу я писал обращения в администрацию на обустройство пандусами бордюров, асфальтирование разрушенных участков тротуаров, уборку мусора вокруг контейнеров, расширения тротуаров. Многое получалось, надеюсь получится еще больше!',
         callNumber: 5,
-        type: CandidateType.city,
+        locationType: LocationType.city,
         problems: [
           'на пешеходные зоны Ленинского проспекта заезжают автомобили, используют их под парковку, тротуар вдоль проспекта постоянно прерывается.',
           'Отсутствуют островки безопасности на пешеходных переходах, при таком количестве полос они обязаны там быть, это повысит безопасность пешеходов и не позволит автомобилям разгонятся до высоких скоростей.',
@@ -466,7 +466,7 @@ const noParty: Person[] = [
       {
         areaNumber: 12,
         callNumber: 5,
-        type: CandidateType.city,
+        locationType: LocationType.city,
       },
     ],
   },
@@ -478,7 +478,7 @@ const noParty: Person[] = [
       {
         areaNumber: 6,
         callNumber: 5,
-        type: CandidateType.city,
+        locationType: LocationType.city,
       },
     ],
   },
@@ -490,7 +490,7 @@ const noParty: Person[] = [
       {
         areaNumber: 20,
         callNumber: 5,
-        type: CandidateType.city,
+        locationType: LocationType.city,
         status: CandidateStatuses.declined,
       },
     ],
@@ -503,7 +503,7 @@ const noParty: Person[] = [
       {
         areaNumber: 8,
         callNumber: 5,
-        type: CandidateType.city,
+        locationType: LocationType.city,
       },
     ],
   },
@@ -515,7 +515,7 @@ const noParty: Person[] = [
       {
         areaNumber: 14,
         callNumber: 5,
-        type: CandidateType.city,
+        locationType: LocationType.city,
       },
     ],
   },
@@ -529,7 +529,7 @@ const noParty: Person[] = [
         areaNumber: 21,
         project: Project.gorpr,
         callNumber: 5,
-        type: CandidateType.city,
+        locationType: LocationType.city,
         message:
           'Родился и вырос в Воронеже, являюсь выпускником международного института компьютерных технологий, занимаюсь разработкой игр на мобильные устройства. Всегда интересовался общественной жизнью города, служил в армии, демобилизован в звании младшего сержанта. Для меня депутатство - это попытка сделать шаг в сторону политики, работающей в интересах избирателей.',
         role:
@@ -551,7 +551,7 @@ const noParty: Person[] = [
       {
         areaNumber: 4,
         callNumber: 4,
-        type: CandidateType.city,
+        locationType: LocationType.city,
         party: Parties.er,
         deputat: {
           office: 'ул. Туполева, 39',
@@ -563,7 +563,7 @@ const noParty: Person[] = [
         areaNumber: 4,
         status: CandidateStatuses.registered,
         callNumber: 5,
-        type: CandidateType.city,
+        locationType: LocationType.city,
       },
     ],
   },
@@ -575,7 +575,7 @@ const noParty: Person[] = [
       {
         areaNumber: 18,
         callNumber: 5,
-        type: CandidateType.city,
+        locationType: LocationType.city,
       },
     ],
   },
@@ -587,7 +587,7 @@ const noParty: Person[] = [
       {
         areaNumber: 3,
         callNumber: 5,
-        type: CandidateType.city,
+        locationType: LocationType.city,
       },
     ],
   },
@@ -605,7 +605,7 @@ const noParty: Person[] = [
         areaNumber: 1,
         role: 'временно не работающий',
         callNumber: 5,
-        type: CandidateType.city,
+        locationType: LocationType.city,
       },
     ],
   },
@@ -618,7 +618,7 @@ const noParty: Person[] = [
         areaNumber: 6,
         status: CandidateStatuses.registered,
         callNumber: 5,
-        type: CandidateType.city,
+        locationType: LocationType.city,
       },
     ],
   },
@@ -630,7 +630,7 @@ const noParty: Person[] = [
       {
         areaNumber: 4,
         callNumber: 5,
-        type: CandidateType.city,
+        locationType: LocationType.city,
       },
     ],
   },
@@ -652,7 +652,7 @@ const noParty: Person[] = [
           '22 года. руководитель направления практических исследований в Воронеже, Фонд содействия развитию городов «Городские Проекты Ильи Варламова и Максима Каца»',
         project: Project.gorpr,
         callNumber: 5,
-        type: CandidateType.city,
+        locationType: LocationType.city,
         message:
           'Я активный велосипедист и пешеход. Мне не нравится, что наш город вместо хороших условий для людей предоставляет им только препятствия. Я хочу сделать Воронеж удобнее и безопаснее для пешеходов, доступнее для маломобильных граждан. Это далеко не все, что можно сделать лучше. Для этого я выдвигаюсь в Воронежскую городскую думу. Сейчас мне нужны средства на сбор подписей.',
       },
@@ -666,7 +666,7 @@ const noParty: Person[] = [
       {
         areaNumber: 2,
         callNumber: 5,
-        type: CandidateType.city,
+        locationType: LocationType.city,
       },
     ],
   },
@@ -678,7 +678,7 @@ const noParty: Person[] = [
       {
         areaNumber: 2,
         callNumber: 5,
-        type: CandidateType.city,
+        locationType: LocationType.city,
       },
     ],
   },
@@ -690,7 +690,7 @@ const noParty: Person[] = [
       {
         areaNumber: 24,
         callNumber: 5,
-        type: CandidateType.city,
+        locationType: LocationType.city,
       },
     ],
   },
@@ -712,7 +712,7 @@ const noParty: Person[] = [
         areaNumber: 15,
         project: Project.gorpr,
         role: 'Глава Горпроектов в Воронеже',
-        type: CandidateType.city,
+        locationType: LocationType.city,
         callNumber: 5,
         status: CandidateStatuses.declined,
       },
@@ -727,7 +727,7 @@ const noParty: Person[] = [
         areaNumber: 5,
         status: CandidateStatuses.declined,
         callNumber: 5,
-        type: CandidateType.city,
+        locationType: LocationType.city,
       },
     ],
   },
@@ -739,7 +739,7 @@ const noParty: Person[] = [
       {
         areaNumber: 5,
         callNumber: 5,
-        type: CandidateType.city,
+        locationType: LocationType.city,
         status: CandidateStatuses.declined,
       },
     ],
@@ -752,7 +752,7 @@ const noParty: Person[] = [
       {
         areaNumber: 21,
         callNumber: 5,
-        type: CandidateType.city,
+        locationType: LocationType.city,
       },
     ],
   },
@@ -764,7 +764,7 @@ const noParty: Person[] = [
       {
         areaNumber: 13,
         callNumber: 5,
-        type: CandidateType.city,
+        locationType: LocationType.city,
       },
     ],
   },
@@ -779,7 +779,7 @@ const noParty: Person[] = [
         role: '19 лет. Студент',
         project: Project.gorpr,
         callNumber: 5,
-        type: CandidateType.city,
+        locationType: LocationType.city,
         message:
           'Я студент Воронежского государственного университета. Иду в городскую думу, чтобы решить проблему с общественным транспортом. Сейчас большая часть транспорта — это пазики и маршрутки. А из-за пробок одна остановка может занимать 40 минут. Нужно сделать выделенные линии для общественного транспорта. Моя главная мечта это вернуть в город трамвай, но, конечно же, не в старом виде. Нужны современные, комфортные и тихие трамваи.',
       },
@@ -800,7 +800,7 @@ const noParty: Person[] = [
       {
         areaNumber: 2,
         callNumber: 5,
-        type: CandidateType.city,
+        locationType: LocationType.city,
       },
     ],
   },
@@ -812,7 +812,7 @@ const noParty: Person[] = [
       {
         areaNumber: 12,
         callNumber: 5,
-        type: CandidateType.city,
+        locationType: LocationType.city,
       },
     ],
   },
@@ -824,7 +824,7 @@ const noParty: Person[] = [
       {
         areaNumber: 17,
         callNumber: 5,
-        type: CandidateType.city,
+        locationType: LocationType.city,
       },
     ],
   },
@@ -837,7 +837,7 @@ const noParty: Person[] = [
         areaNumber: 4,
         status: CandidateStatuses.registered,
         callNumber: 5,
-        type: CandidateType.city,
+        locationType: LocationType.city,
       },
     ],
   },
@@ -849,7 +849,7 @@ const noParty: Person[] = [
       {
         areaNumber: 19,
         callNumber: 5,
-        type: CandidateType.city,
+        locationType: LocationType.city,
       },
     ],
   },
@@ -861,7 +861,7 @@ const noParty: Person[] = [
       {
         areaNumber: 6,
         callNumber: 5,
-        type: CandidateType.city,
+        locationType: LocationType.city,
       },
     ],
   },
@@ -874,7 +874,7 @@ const noParty: Person[] = [
       {
         areaNumber: 10,
         callNumber: 5,
-        type: CandidateType.city,
+        locationType: LocationType.city,
       },
     ],
   },
@@ -889,7 +889,7 @@ const noParty: Person[] = [
         role: '26 лет. Менеджер IT-проектов, Общество с ограниченной ответственностью "Эд Вест"',
         project: Project.gorpr,
         callNumber: 5,
-        type: CandidateType.city,
+        locationType: LocationType.city,
         message:
           'Я Игорь и я хочу стать не просто депутатом, а голосом людей, которые живут со мной в одном районе. Моя цель — это удобное и красивое благоустройство дворов, качественные дороги и тротуары, а также современные и чистые места сбора мусора. Моя мечта — сделать так, чтобы люди чувствовали, что их дом не заканчивается за дверью квартиры или дома.',
       },
@@ -908,7 +908,7 @@ const noParty: Person[] = [
       {
         areaNumber: 18,
         callNumber: 5,
-        type: CandidateType.city,
+        locationType: LocationType.city,
       },
     ],
   },
@@ -920,7 +920,7 @@ const noParty: Person[] = [
       {
         areaNumber: 15,
         callNumber: 5,
-        type: CandidateType.city,
+        locationType: LocationType.city,
       },
     ],
   },
@@ -932,7 +932,7 @@ const noParty: Person[] = [
       {
         areaNumber: 12,
         callNumber: 5,
-        type: CandidateType.city,
+        locationType: LocationType.city,
       },
     ],
   },
@@ -944,7 +944,7 @@ const noParty: Person[] = [
       {
         areaNumber: 7,
         callNumber: 5,
-        type: CandidateType.city,
+        locationType: LocationType.city,
       },
     ],
   },
@@ -956,7 +956,7 @@ const noParty: Person[] = [
       {
         areaNumber: 4,
         callNumber: 5,
-        type: CandidateType.city,
+        locationType: LocationType.city,
       },
     ],
   },
@@ -975,7 +975,7 @@ const noParty: Person[] = [
         areaNumber: 3,
         project: Project.gorpr,
         callNumber: 5,
-        type: CandidateType.city,
+        locationType: LocationType.city,
       },
     ],
   },
@@ -984,49 +984,55 @@ const noParty: Person[] = [
     name: 'Коваленко Антон Александрович',
     birthdate: '21.12.1989',
 
-    candidate: [{ type: CandidateType.region, callNumber: 7, areaNumber: 27 }],
+    candidate: [{ locationType: LocationType.region, callNumber: 7, areaNumber: 27 }],
   },
   {
     alias: 'kosarev_aleksandr',
     name: 'Косарев Александр Александрович',
     birthdate: '16.02.1989',
 
-    candidate: [{ type: CandidateType.region, callNumber: 7, areaNumber: 4 }],
+    candidate: [{ locationType: LocationType.region, callNumber: 7, areaNumber: 4 }],
   },
   {
     alias: 'krivonosov_dmitrij',
     name: 'Кривоносов Дмитрий Сергеевич',
     birthdate: '27.03.1978',
 
-    candidate: [{ type: CandidateType.region, callNumber: 7, areaNumber: 12, status: CandidateStatuses.declined }],
+    candidate: [
+      { locationType: LocationType.region, callNumber: 7, areaNumber: 12, status: CandidateStatuses.declined },
+    ],
   },
   {
     alias: 'malyukov_igor',
     name: 'Малюков Игорь Алексеевич',
     birthdate: '19.10.1968',
 
-    candidate: [{ type: CandidateType.region, callNumber: 7, areaNumber: 4 }],
+    candidate: [{ locationType: LocationType.region, callNumber: 7, areaNumber: 4 }],
   },
   {
     alias: 'meshkov_petr',
     name: 'Мешков Петр Станиславович',
     birthdate: '22.10.1965',
 
-    candidate: [{ type: CandidateType.region, callNumber: 7, areaNumber: 10 }],
+    candidate: [{ locationType: LocationType.region, callNumber: 7, areaNumber: 10 }],
   },
   {
     alias: 'shibalkin_dmitrij',
     name: 'Шибалкин Дмитрий Александрович',
     birthdate: '11.03.1981',
 
-    candidate: [{ type: CandidateType.region, callNumber: 7, areaNumber: 19, status: CandidateStatuses.declined }],
+    candidate: [
+      { locationType: LocationType.region, callNumber: 7, areaNumber: 19, status: CandidateStatuses.declined },
+    ],
   },
   {
     alias: 'shcherbakov_vladimir',
     name: 'Щербаков Владимир Митрофанович',
     birthdate: '03.07.1958',
 
-    candidate: [{ type: CandidateType.region, callNumber: 7, areaNumber: 5, status: CandidateStatuses.declined }],
+    candidate: [
+      { locationType: LocationType.region, callNumber: 7, areaNumber: 5, status: CandidateStatuses.declined },
+    ],
   },
 ]
 
