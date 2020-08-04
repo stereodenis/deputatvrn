@@ -388,6 +388,7 @@ const kprf: Person[] = [
         locationType: LocationType.region,
         party: Parties.kprf,
         areaNumber: 18,
+        status: CandidateStatuses.registered,
       },
     ],
   },

@@ -423,7 +423,15 @@ const newPeople: Person[] = [
     alias: 'zademidkov_sergej',
     name: 'Задемидьков Сергей Павлович',
     birthdate: '29.03.1987',
-    candidate: [{ party: Parties.newPeople, locationType: LocationType.region, callNumber: 7, areaNumber: 17 }],
+    candidate: [
+      {
+        party: Parties.newPeople,
+        locationType: LocationType.region,
+        callNumber: 7,
+        areaNumber: 17,
+        status: CandidateStatuses.declined,
+      },
+    ],
   },
   {
     alias: 'zmienko_maksim',
