@@ -1330,12 +1330,6 @@ const er: Person[] = [
         deputat: { website: 'http://www.vrnoblduma.ru/struktura/deputatskiy-korpus/goncharov-sergey-viktorovich/' },
       },
     ],
-  },
-  {
-    alias: 'goncharov_yurij',
-    name: 'Гончаров Юрий Федорович',
-    birthdate: '22.05.1981',
-    photo: 'http://www.vrnoblduma.ru/upload/iblock/ff9/ff977beac986a4941bbc65d9a4e4f54c.jpg',
     bio:
       'Образование:\n' +
       '2004 г. – Воронежский государственный технический университет (квалификация «инженер»)\n' +
@@ -1350,13 +1344,20 @@ const er: Person[] = [
       '2013 г. – по н. в. – генеральный директор строительной организации ООО «Строительная компания «Град» (по совместительству)\n' +
       '2014 г. – по н. в. – генеральный директор ООО «Ремонтно-строительное управление «Развитие» (по совместительству)\n' +
       'В марте 2015 г. возглавил Группу компаний «Развитие» (объединяет строительные и проектные компании, а также саморегулируемые организации в сфере строительства, проектирования и энергоаудита)',
+  },
+  {
+    alias: 'goncharov_yurij',
+    name: 'Гончаров Юрий Федорович',
+    birthdate: '30.05.1963',
+    photo: 'http://www.vrnoblduma.ru/upload/iblock/900/900a8290dea33d64981e98c0ceddaee3.jpg',
+
     candidate: [
       {
         locationType: LocationType.region,
         callNumber: 6,
         areaNumber: 2,
         party: Parties.er,
-        deputat: { website: 'http://www.vrnoblduma.ru/struktura/deputatskiy-korpus/goncharov-sergey-viktorovich/' },
+        deputat: { website: 'http://www.vrnoblduma.ru/struktura/deputatskiy-korpus/goncharov-yuriy-fedorovich/' },
       },
     ],
   },
