@@ -24,6 +24,9 @@ export default memo(() => {
               <LinkContainer to={`/${type}/candidates`}>
                 <NavDropdown.Item>Кандидаты</NavDropdown.Item>
               </LinkContainer>
+              <LinkContainer to={`/${type}/deputates`}>
+                <NavDropdown.Item>Депутаты</NavDropdown.Item>
+              </LinkContainer>
               <LinkContainer to={`/${type}/parties`}>
                 <NavDropdown.Item>Партии</NavDropdown.Item>
               </LinkContainer>

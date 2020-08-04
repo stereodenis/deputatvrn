@@ -8,3 +8,5 @@ export { default as Candidate } from './candidateScreen'
 
 export { default as Parties } from './partiesScreen'
 export { default as Party } from './partyScreen'
+
+export { default as Deputates } from './deputatesScreen'

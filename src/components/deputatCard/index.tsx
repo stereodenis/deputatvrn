@@ -1,5 +1,6 @@
 import React, { memo } from 'react'
 import { Image } from 'react-bootstrap'
+import { Link } from 'react-router-dom'
 
 import { CURRENT_CITY_CALL_NUMBER, CURRENT_REGION_CALL_NUMBER } from '../../constants'
 import { noPhoto } from '../../images/candidates'
@@ -15,9 +16,13 @@ export default memo(({ person, locationType }: Props) => {
 
   return (
     <div className=''>
-      <Image width={'100%'} className='mr-3' src={person.photo || noPhoto} alt={`фото депутата ${person.name}`} />
+      <Link to={`/${locationType}/candidates/${person.alias}`} className='d-block'>
+        <Image width={'100%'} className='mr-3' src={person.photo || noPhoto} alt={`фото депутата ${person.name}`} />
+      </Link>
       <div className='mt-2'>
-        <div className=''>{person.name}</div>
+        <Link to={`/${locationType}/candidates/${person.alias}`} className='d-block'>
+          {person.name}
+        </Link>
         <div className='mt-1'>Округ № {deputatCandidate.areaNumber}</div>
         <div className='mt-1'>Адрес приёмной:</div>
         <div>{deputatCandidate?.deputat?.office}</div>
