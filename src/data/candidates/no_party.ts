@@ -986,21 +986,18 @@ const noParty: Person[] = [
     alias: 'kovalenko_anton',
     name: 'Коваленко Антон Александрович',
     birthdate: '21.12.1989',
-
     candidate: [{ locationType: LocationType.region, callNumber: 7, areaNumber: 27 }],
   },
   {
     alias: 'kosarev_aleksandr',
     name: 'Косарев Александр Александрович',
     birthdate: '16.02.1989',
-
     candidate: [{ locationType: LocationType.region, callNumber: 7, areaNumber: 4 }],
   },
   {
     alias: 'krivonosov_dmitrij',
     name: 'Кривоносов Дмитрий Сергеевич',
     birthdate: '27.03.1978',
-
     candidate: [
       { locationType: LocationType.region, callNumber: 7, areaNumber: 12, status: CandidateStatuses.declined },
     ],
@@ -1009,21 +1006,18 @@ const noParty: Person[] = [
     alias: 'malyukov_igor',
     name: 'Малюков Игорь Алексеевич',
     birthdate: '19.10.1968',
-
     candidate: [{ locationType: LocationType.region, callNumber: 7, areaNumber: 4 }],
   },
   {
     alias: 'meshkov_petr',
     name: 'Мешков Петр Станиславович',
     birthdate: '22.10.1965',
-
     candidate: [{ locationType: LocationType.region, callNumber: 7, areaNumber: 10 }],
   },
   {
     alias: 'shibalkin_dmitrij',
     name: 'Шибалкин Дмитрий Александрович',
     birthdate: '11.03.1981',
-
     candidate: [
       { locationType: LocationType.region, callNumber: 7, areaNumber: 19, status: CandidateStatuses.declined },
     ],
@@ -1032,7 +1026,6 @@ const noParty: Person[] = [
     alias: 'shcherbakov_vladimir',
     name: 'Щербаков Владимир Митрофанович',
     birthdate: '03.07.1958',
-
     candidate: [
       { locationType: LocationType.region, callNumber: 7, areaNumber: 5, status: CandidateStatuses.declined },
     ],
