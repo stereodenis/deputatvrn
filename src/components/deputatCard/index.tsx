@@ -1,12 +1,13 @@
 import React, { memo } from 'react'
 import { Image } from 'react-bootstrap'
 
-import { CURRENT_CITY_CALL_NUMBER } from '../../constants'
+import { CURRENT_CITY_CALL_NUMBER, CURRENT_REGION_CALL_NUMBER } from '../../constants'
 import { noPhoto } from '../../images/candidates'
-import { Person } from '../../types'
+import { LocationType, Person } from '../../types'
 
-export default memo(({ person }: Props) => {
-  const deputatCandidate = person?.candidate.find((c) => c.deputat && c.callNumber === CURRENT_CITY_CALL_NUMBER)
+export default memo(({ person, locationType }: Props) => {
+  const currentCallNumber = locationType === 'city' ? CURRENT_CITY_CALL_NUMBER : CURRENT_REGION_CALL_NUMBER
+  const deputatCandidate = person?.candidate.find((c) => c.deputat && c.callNumber === currentCallNumber)
 
   if (!person || !deputatCandidate) {
     return null
@@ -22,7 +23,7 @@ export default memo(({ person }: Props) => {
         <div>{deputatCandidate?.deputat?.office}</div>
         <div className='mt-1'>Телефон приёмной:</div>
         <div>
-          {deputatCandidate?.deputat?.phones.map((phone) => {
+          {deputatCandidate?.deputat?.phones?.map((phone) => {
             return (
               <a key={phone} href={`tel:${phone}`}>
                 {phone}
@@ -40,4 +41,5 @@ export default memo(({ person }: Props) => {
 
 interface Props {
   person?: Person
+  locationType: keyof typeof LocationType
 }

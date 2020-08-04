@@ -28,8 +28,8 @@ interface Candidate {
   problems?: string[]
   message?: string
   deputat?: {
-    office: string
-    phones: string[]
+    office?: string
+    phones?: string[]
     website: string
   }
 }

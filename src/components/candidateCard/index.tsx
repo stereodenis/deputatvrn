@@ -6,7 +6,7 @@ import { noPhoto } from '../../images/candidates'
 import { Person, LocationType } from '../../types'
 import CandidateStatus from '../CandidateStatus'
 
-export default memo(({ person, type, withParty }: Props) => {
+export default memo(({ person, locationType, withParty }: Props) => {
   return (
     <div>
       {<Image width='100%' src={person.photo || noPhoto} rounded />}
@@ -14,11 +14,11 @@ export default memo(({ person, type, withParty }: Props) => {
       <div>{person.name}</div>
       {withParty && (
         <div>
-          <i>{getCurrentCandidate(person, type)?.party || 'Самовыдвиженец'}</i>
+          <i>{getCurrentCandidate(person, locationType)?.party || 'Самовыдвиженец'}</i>
         </div>
       )}
       <>
-        <CandidateStatus status={getCurrentCandidate(person, type)?.status} />
+        <CandidateStatus status={getCurrentCandidate(person, locationType)?.status} />
       </>
     </div>
   )
@@ -26,6 +26,6 @@ export default memo(({ person, type, withParty }: Props) => {
 
 interface Props {
   person: Person
-  type: keyof typeof LocationType
+  locationType: keyof typeof LocationType
   withParty?: boolean
 }

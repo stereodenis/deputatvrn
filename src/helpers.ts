@@ -16,17 +16,18 @@ export const getCurrentCandidate = (person: Person, locationType: keyof typeof L
  * Возвращает Person, которая является текущим депутатом в округе
  * @param areaNumber - номер избирательного округа
  */
-export const getPersonWithCurrentDeputat = (areaNumber: number, locationType: keyof typeof LocationType) =>
-  persons.find((person) =>
+export const getPersonWithCurrentDeputat = (areaNumber: number, locationType: keyof typeof LocationType) => {
+  const currentCallNumber = locationType === 'city' ? CURRENT_CITY_CALL_NUMBER : CURRENT_REGION_CALL_NUMBER
+  return persons.find((person) =>
     person.candidate.find(
       (candidate) =>
         candidate.deputat &&
-        candidate.callNumber === CURRENT_CITY_CALL_NUMBER &&
+        candidate.callNumber === currentCallNumber &&
         candidate.areaNumber === areaNumber &&
         candidate.locationType === LocationType[locationType]
     )
   )
-
+}
 /* Кандидаты в депутаты нового созыва */
 // export const currentPersons = persons.filter(getCurrentCandidate)
 

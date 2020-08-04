@@ -34,9 +34,25 @@ export default memo(() => {
         <meta property='og:title' content={`Избирательный округ ${areaNumber}`} />
         <meta property='og:image' content={areasImages[areaNumber]} />
       </MetaTags>
-      <div className='border-bottom pb-2 text-center'>
-        <h1>{areaNumber} округ</h1>
-        <h4>Количество избирателей: {area.people}</h4>
+      <div className='border-bottom pb-2 text-center d-flex flex-row justify-content-center'>
+        <Link
+          to={`/${locationType}/areas/${
+            Number(areaNumber) === 1 ? (locationType === 'city' ? 24 : 28) : areaNumber - 1
+          }`}
+        >
+          {'<<'}
+        </Link>
+        <div>
+          <h1>{areaNumber} округ</h1>
+          <h4>Количество избирателей: {area.people}</h4>
+        </div>
+        <Link
+          to={`/${locationType}/areas/${
+            Number(areaNumber) === (locationType === 'city' ? 24 : 28) ? 1 : areaNumber + 1
+          }`}
+        >
+          {'>>'}
+        </Link>
       </div>
       <div className='py-3'>
         <h2>Список кандидатов в депутаты</h2>
@@ -44,22 +60,24 @@ export default memo(() => {
           {areaCandidats.map((person) => (
             <Col xs={12} sm={6} md={4} lg={3} xl={2} key={person.name} className='border-xs-bottom border-md-none py-3'>
               <Link to={`/${locationType}/candidates/${person.alias}`}>
-                <CandidateCard {...{ person, type: locationType }} withParty />
+                <CandidateCard {...{ person, locationType }} withParty />
               </Link>
             </Col>
           ))}
         </Row>
       </div>
+
       {personWithCurrentDeputat && (
         <div className='border-bottom pb-3'>
           <h2 className='mt-3'>Текущий депутат</h2>
           <Row>
             <Col xs={12} sm={6} md={4} lg={3} xl={2}>
-              <DeputatCard {...{ person: personWithCurrentDeputat }} />
+              <DeputatCard {...{ person: personWithCurrentDeputat, locationType }} />
             </Col>
           </Row>
         </div>
       )}
+
       {area.videos?.length && (
         <div className='border-bottom py-3'>
           <h2>Видео</h2>
