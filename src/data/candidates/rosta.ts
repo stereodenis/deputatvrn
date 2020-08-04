@@ -5,7 +5,6 @@ const rosta: Person[] = [
     alias: 'eliseev_ivan',
     name: 'Елисеев Иван Александрович',
     birthdate: '29.06.1985',
-
     candidate: [
       {
         party: Parties.rosta,
@@ -20,7 +19,6 @@ const rosta: Person[] = [
     alias: 'lyutikova_marina',
     name: 'Лютикова Марина Владимировна',
     birthdate: '05.08.1962',
-
     candidate: [
       {
         party: Parties.rosta,

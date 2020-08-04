@@ -16,19 +16,6 @@ const kprf: Person[] = [
     ],
   },
   {
-    alias: 'proshunin',
-    name: 'Прошунин Александр Вячеславович',
-    birthdate: '02.08.1984',
-    candidate: [
-      {
-        areaNumber: 2,
-        party: Parties.kprf,
-        callNumber: 5,
-        locationType: LocationType.city,
-      },
-    ],
-  },
-  {
     alias: 'verbovaya',
     name: 'Вербовая Елена Петровна',
     birthdate: '31.12.1972',
@@ -352,7 +339,6 @@ const kprf: Person[] = [
   {
     alias: 'babenkov_konstantin',
     name: 'Бабенков Константин Викторович',
-
     birthdate: '18.05.1988',
     candidate: [
       {
@@ -367,7 +353,6 @@ const kprf: Person[] = [
   {
     alias: 'berezhnoj_sergej',
     name: 'Бережной Сергей Александрович',
-
     birthdate: '05.07.1978',
     candidate: [
       {
@@ -382,7 +367,6 @@ const kprf: Person[] = [
   {
     alias: 'verlin_aleksandr',
     name: 'Верлин Александр Анатольевич',
-
     birthdate: '08.07.1982',
     candidate: [
       {
@@ -397,7 +381,6 @@ const kprf: Person[] = [
   {
     alias: 'grudinin_grigorij',
     name: 'Грудинин Григорий Михайлович',
-
     birthdate: '12.05.1975',
     candidate: [
       {
@@ -411,7 +394,6 @@ const kprf: Person[] = [
   {
     alias: 'dvornikov_sergej',
     name: 'Дворников Сергей Васильевич',
-
     birthdate: '17.05.1951',
     candidate: [
       {
@@ -426,7 +408,6 @@ const kprf: Person[] = [
   {
     alias: 'dedov_viktor',
     name: 'Дедов Виктор Анатольевич',
-
     birthdate: '27.09.1978',
     candidate: [
       {
@@ -441,7 +422,6 @@ const kprf: Person[] = [
   {
     alias: 'derkachev_nikolaj',
     name: 'Деркачев Николай Петрович',
-
     birthdate: '04.09.1958',
     candidate: [
       {
@@ -456,7 +436,6 @@ const kprf: Person[] = [
   {
     alias: 'zhabin_vasilij',
     name: 'Жабин Василий Александрович',
-
     birthdate: '27.04.1980',
     candidate: [
       {
@@ -471,7 +450,6 @@ const kprf: Person[] = [
   {
     alias: 'zlobina_lyubov',
     name: 'Злобина Любовь Владимировна',
-
     birthdate: '05.07.1973',
     candidate: [
       {
@@ -486,7 +464,6 @@ const kprf: Person[] = [
   {
     alias: 'kasatkin_yurij',
     name: 'Касаткин Юрий Станиславович',
-
     birthdate: '13.06.1959',
     candidate: [
       {
@@ -501,7 +478,6 @@ const kprf: Person[] = [
   {
     alias: 'kolomencev_denis',
     name: 'Коломенцев Денис Витальевич',
-
     birthdate: '02.07.1972',
     candidate: [
       {
@@ -516,7 +492,6 @@ const kprf: Person[] = [
   {
     alias: 'konopelko_elena',
     name: 'Конопелько Елена Валерьевна',
-
     birthdate: '12.07.1974',
     candidate: [
       {
@@ -531,7 +506,6 @@ const kprf: Person[] = [
   {
     alias: 'melkumov_konstantin',
     name: 'Мелкумов Константин Растиславович',
-
     birthdate: '15.04.1980',
     candidate: [
       {
@@ -546,9 +520,14 @@ const kprf: Person[] = [
   {
     alias: 'proshunin_aleksandr',
     name: 'Прошунин Александр Вячеславович',
-
     birthdate: '02.08.1984',
     candidate: [
+      {
+        areaNumber: 2,
+        party: Parties.kprf,
+        callNumber: 5,
+        locationType: LocationType.city,
+      },
       {
         callNumber: 7,
         locationType: LocationType.region,
@@ -560,7 +539,6 @@ const kprf: Person[] = [
   {
     alias: 'rogatnev_andrej',
     name: 'Рогатнев Андрей Иванович',
-
     birthdate: '23.06.1966',
     candidate: [
       {
@@ -575,7 +553,6 @@ const kprf: Person[] = [
   {
     alias: 'rudov_nikolaj',
     name: 'Рудов Николай Ильич',
-
     birthdate: '21.12.1981',
     candidate: [
       {
@@ -590,7 +567,6 @@ const kprf: Person[] = [
   {
     alias: 'sakuta_valerij',
     name: 'Сакута Валерий Владимирович',
-
     birthdate: '19.11.1959',
     candidate: [
       {
@@ -605,7 +581,6 @@ const kprf: Person[] = [
   {
     alias: 'sinicin_vitalij',
     name: 'Синицин Виталий Александрович',
-
     birthdate: '28.03.1970',
     candidate: [
       {
@@ -620,7 +595,6 @@ const kprf: Person[] = [
   {
     alias: 'skrynnikov_vladimir',
     name: 'Скрынников Владимир Евгеньевич',
-
     birthdate: '20.03.1959',
     candidate: [
       {
@@ -635,7 +609,6 @@ const kprf: Person[] = [
   {
     alias: 'spivak_oleg',
     name: 'Спивак Олег Игоревич',
-
     birthdate: '30.03.1974',
     candidate: [
       {
@@ -650,7 +623,6 @@ const kprf: Person[] = [
   {
     alias: 'sukochev_andrej',
     name: 'Сукочев Андрей Иванович',
-
     birthdate: '28.03.1963',
     candidate: [
       {
@@ -665,7 +637,6 @@ const kprf: Person[] = [
   {
     alias: 'suhinin_aleksandr',
     name: 'Сухинин Александр Анатольевич',
-
     birthdate: '20.03.1968',
     candidate: [
       {
@@ -680,7 +651,6 @@ const kprf: Person[] = [
   {
     alias: 'tominov_evgenij',
     name: 'Томинов Евгений Иванович',
-
     birthdate: '03.08.1961',
     candidate: [
       {
@@ -695,7 +665,6 @@ const kprf: Person[] = [
   {
     alias: 'turkov_viktor',
     name: 'Турков Виктор Васильевич',
-
     birthdate: '02.11.1961',
     candidate: [
       {
@@ -710,7 +679,6 @@ const kprf: Person[] = [
   {
     alias: 'carenko_aleksandr',
     name: 'Царенко Александр Михайлович',
-
     birthdate: '10.01.1970',
     candidate: [
       {
@@ -725,7 +693,6 @@ const kprf: Person[] = [
   {
     alias: 'chernolyahov_yurij',
     name: 'Черноляхов Юрий Иванович',
-
     birthdate: '23.02.1957',
     candidate: [
       {
@@ -740,7 +707,6 @@ const kprf: Person[] = [
   {
     alias: 'shevchenko_pavel',
     name: 'Шевченко Павел Александрович',
-
     birthdate: '22.05.1989',
     candidate: [
       {

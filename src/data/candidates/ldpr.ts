@@ -16,20 +16,6 @@ const ldpr: Person[] = [
     ],
   },
   {
-    alias: 'belousov-sergej',
-    name: 'Белоусов Сергей Александрович',
-    birthdate: '15.04.1984',
-    candidate: [
-      {
-        party: Parties.ldpr,
-        areaNumber: 17,
-        status: CandidateStatuses.registered,
-        callNumber: 5,
-        locationType: LocationType.city,
-      },
-    ],
-  },
-  {
     alias: 'bekhov-maksim',
     name: 'Бехов Максим Николаевич',
     birthdate: '28.04.2000',
@@ -84,20 +70,6 @@ const ldpr: Person[] = [
     ],
   },
   {
-    alias: 'dzhogan-andrej',
-    name: 'Джоган Андрей Васильевич',
-    birthdate: '22.06.1977',
-    candidate: [
-      {
-        party: Parties.ldpr,
-        areaNumber: 24,
-        callNumber: 5,
-        locationType: LocationType.city,
-        status: CandidateStatuses.registered,
-      },
-    ],
-  },
-  {
     alias: 'dorohin-vladimir',
     name: 'Дорохин Владимир Николаевич',
     birthdate: '04.11.1993',
@@ -112,20 +84,6 @@ const ldpr: Person[] = [
     ],
   },
   {
-    alias: 'kanevskij-anton',
-    name: 'Каневский Антон Андреевич',
-    birthdate: '02.02.1997',
-    candidate: [
-      {
-        party: Parties.ldpr,
-        areaNumber: 7,
-        status: CandidateStatuses.registered,
-        callNumber: 5,
-        locationType: LocationType.city,
-      },
-    ],
-  },
-  {
     alias: 'kicenyuk-alla',
     name: 'Киценюк Алла Александровна',
     birthdate: '04.06.1984',
@@ -136,48 +94,6 @@ const ldpr: Person[] = [
         status: CandidateStatuses.registered,
         callNumber: 5,
         locationType: LocationType.city,
-      },
-    ],
-  },
-  {
-    alias: 'kudyakov-aleksej',
-    name: 'Кудяков Алексей Андреевич',
-    birthdate: '27.06.1995',
-    candidate: [
-      {
-        party: Parties.ldpr,
-        areaNumber: 3,
-        status: CandidateStatuses.registered,
-        callNumber: 5,
-        locationType: LocationType.city,
-      },
-    ],
-  },
-  {
-    alias: 'pavlenko-evgenij',
-    name: 'Павленко Евгений Михайлович',
-    birthdate: '16.03.1993',
-    candidate: [
-      {
-        party: Parties.ldpr,
-        areaNumber: 9,
-        status: CandidateStatuses.registered,
-        callNumber: 5,
-        locationType: LocationType.city,
-      },
-    ],
-  },
-  {
-    alias: 'parinov-andrej',
-    name: 'Паринов Андрей Николаевич',
-    birthdate: '05.05.1997',
-    candidate: [
-      {
-        party: Parties.ldpr,
-        areaNumber: 1,
-        locationType: LocationType.city,
-        callNumber: 5,
-        status: CandidateStatuses.registered,
       },
     ],
   },
@@ -219,34 +135,6 @@ const ldpr: Person[] = [
         callNumber: 5,
         locationType: LocationType.city,
         status: CandidateStatuses.registered,
-      },
-    ],
-  },
-  {
-    alias: 'rodionov-rodion',
-    name: 'Родионов Родион Витальевич',
-    birthdate: '10.11.1997',
-    candidate: [
-      {
-        party: Parties.ldpr,
-        areaNumber: 14,
-        status: CandidateStatuses.registered,
-        callNumber: 5,
-        locationType: LocationType.city,
-      },
-    ],
-  },
-  {
-    alias: 'seliverstov-vladimir',
-    name: 'Селиверстов Владимир Владимирович',
-    birthdate: '15.04.1990',
-    candidate: [
-      {
-        party: Parties.ldpr,
-        areaNumber: 11,
-        status: CandidateStatuses.registered,
-        callNumber: 5,
-        locationType: LocationType.city,
       },
     ],
   },
@@ -309,7 +197,6 @@ const ldpr: Person[] = [
   {
     alias: 'bahirev_artem',
     name: 'Бахирев Артем Геннадьевич',
-
     birthdate: '25.12.1974',
     candidate: [
       {
@@ -324,9 +211,15 @@ const ldpr: Person[] = [
   {
     alias: 'belousov_sergej',
     name: 'Белоусов Сергей Александрович',
-
     birthdate: '15.04.1984',
     candidate: [
+      {
+        party: Parties.ldpr,
+        areaNumber: 17,
+        status: CandidateStatuses.registered,
+        callNumber: 5,
+        locationType: LocationType.city,
+      },
       {
         callNumber: 7,
         party: Parties.ldpr,
@@ -339,7 +232,6 @@ const ldpr: Person[] = [
   {
     alias: 'boldin_roman',
     name: 'Болдин Роман Алексеевич',
-
     birthdate: '15.10.1978',
     candidate: [
       {
@@ -354,7 +246,6 @@ const ldpr: Person[] = [
   {
     alias: 'volkova_irina',
     name: 'Волкова Ирина Владимировна',
-
     birthdate: '04.04.1979',
     candidate: [
       {
@@ -369,7 +260,6 @@ const ldpr: Person[] = [
   {
     alias: 'volodarcev_anatolij',
     name: 'Володарцев Анатолий Викторович',
-
     birthdate: '24.03.1956',
     candidate: [
       {
@@ -384,7 +274,6 @@ const ldpr: Person[] = [
   {
     alias: 'gutorov_mihail',
     name: 'Гуторов Михаил Сергеевич',
-
     birthdate: '22.01.1980',
     candidate: [
       {
@@ -399,9 +288,15 @@ const ldpr: Person[] = [
   {
     alias: 'dzhogan_andrej',
     name: 'Джоган Андрей Васильевич',
-
     birthdate: '22.06.1977',
     candidate: [
+      {
+        party: Parties.ldpr,
+        areaNumber: 24,
+        callNumber: 5,
+        locationType: LocationType.city,
+        status: CandidateStatuses.registered,
+      },
       {
         callNumber: 7,
         party: Parties.ldpr,
@@ -414,14 +309,12 @@ const ldpr: Person[] = [
   {
     alias: 'dunaeva_elizaveta',
     name: 'Дунаева Елизавета Владимировна',
-
     birthdate: '06.03.1984',
     candidate: [{ callNumber: 7, party: Parties.ldpr, locationType: LocationType.region, areaNumber: 21 }],
   },
   {
     alias: 'zheleznyak_yulian',
     name: 'Железняк Юлиан Юрьевич',
-
     birthdate: '04.07.1990',
     candidate: [
       {
@@ -436,9 +329,15 @@ const ldpr: Person[] = [
   {
     alias: 'kanevskij_anton',
     name: 'Каневский Антон Андреевич',
-
     birthdate: '02.02.1997',
     candidate: [
+      {
+        party: Parties.ldpr,
+        areaNumber: 7,
+        status: CandidateStatuses.registered,
+        callNumber: 5,
+        locationType: LocationType.city,
+      },
       {
         callNumber: 7,
         party: Parties.ldpr,
@@ -451,7 +350,6 @@ const ldpr: Person[] = [
   {
     alias: 'kvitko_maksim',
     name: 'Квитко Максим Александрович',
-
     birthdate: '28.03.1991',
     candidate: [
       {
@@ -466,7 +364,6 @@ const ldpr: Person[] = [
   {
     alias: 'kiciyov_petr',
     name: 'Кициёв Петр Алексеевич',
-
     birthdate: '05.09.1988',
     candidate: [
       {
@@ -481,9 +378,15 @@ const ldpr: Person[] = [
   {
     alias: 'kudyakov_aleksej',
     name: 'Кудяков Алексей Андреевич',
-
     birthdate: '27.06.1995',
     candidate: [
+      {
+        party: Parties.ldpr,
+        areaNumber: 3,
+        status: CandidateStatuses.registered,
+        callNumber: 5,
+        locationType: LocationType.city,
+      },
       {
         callNumber: 7,
         party: Parties.ldpr,
@@ -496,7 +399,6 @@ const ldpr: Person[] = [
   {
     alias: 'lapturov_vyacheslav',
     name: 'Лаптуров Вячеслав Митрофанович',
-
     birthdate: '17.08.1964',
     candidate: [
       {
@@ -511,7 +413,6 @@ const ldpr: Person[] = [
   {
     alias: 'mamchun_andrej',
     name: 'Мамчун Андрей Фёдорович',
-
     birthdate: '27.02.1981',
     candidate: [
       {
@@ -526,7 +427,6 @@ const ldpr: Person[] = [
   {
     alias: 'mishchenko_evgenij',
     name: 'Мищенко Евгений Александрович',
-
     birthdate: '20.08.1996',
     candidate: [
       {
@@ -541,7 +441,6 @@ const ldpr: Person[] = [
   {
     alias: 'ovsyannikov_aleksandr',
     name: 'Овсянников Александр Александрович',
-
     birthdate: '25.02.1980',
     candidate: [
       {
@@ -556,9 +455,15 @@ const ldpr: Person[] = [
   {
     alias: 'pavlenko_evgenij',
     name: 'Павленко Евгений Михайлович',
-
     birthdate: '16.03.1993',
     candidate: [
+      {
+        party: Parties.ldpr,
+        areaNumber: 9,
+        status: CandidateStatuses.registered,
+        callNumber: 5,
+        locationType: LocationType.city,
+      },
       {
         callNumber: 7,
         party: Parties.ldpr,
@@ -571,9 +476,15 @@ const ldpr: Person[] = [
   {
     alias: 'parinov_andrej',
     name: 'Паринов Андрей Николаевич',
-
     birthdate: '05.05.1997',
     candidate: [
+      {
+        party: Parties.ldpr,
+        areaNumber: 1,
+        locationType: LocationType.city,
+        callNumber: 5,
+        status: CandidateStatuses.registered,
+      },
       {
         callNumber: 7,
         party: Parties.ldpr,
@@ -586,9 +497,15 @@ const ldpr: Person[] = [
   {
     alias: 'rodionov_rodion',
     name: 'Родионов Родион Витальевич',
-
     birthdate: '10.11.1997',
     candidate: [
+      {
+        party: Parties.ldpr,
+        areaNumber: 14,
+        status: CandidateStatuses.registered,
+        callNumber: 5,
+        locationType: LocationType.city,
+      },
       {
         callNumber: 7,
         party: Parties.ldpr,
@@ -601,7 +518,6 @@ const ldpr: Person[] = [
   {
     alias: 'roslyakov_andrej',
     name: 'Росляков Андрей Александрович',
-
     birthdate: '27.04.1970',
     candidate: [
       {
@@ -616,9 +532,15 @@ const ldpr: Person[] = [
   {
     alias: 'seliverstov_vladimir',
     name: 'Селиверстов Владимир Владимирович',
-
     birthdate: '15.04.1990',
     candidate: [
+      {
+        party: Parties.ldpr,
+        areaNumber: 11,
+        status: CandidateStatuses.registered,
+        callNumber: 5,
+        locationType: LocationType.city,
+      },
       {
         callNumber: 7,
         party: Parties.ldpr,
@@ -631,7 +553,6 @@ const ldpr: Person[] = [
   {
     alias: 'cevovalnikov_andrej',
     name: 'Цевовальников Андрей Алексеевич',
-
     birthdate: '02.10.1972',
     candidate: [
       {
@@ -646,7 +567,6 @@ const ldpr: Person[] = [
   {
     alias: 'shishkina_tatyana',
     name: 'Шишкина Татьяна Михайловна',
-
     birthdate: '07.07.1983',
     candidate: [
       {
@@ -661,7 +581,6 @@ const ldpr: Person[] = [
   {
     alias: 'yankauskene_tatyana',
     name: 'Янкаускене Татьяна Александровна',
-
     birthdate: '31.01.1984',
     candidate: [
       {

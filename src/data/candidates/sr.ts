@@ -328,7 +328,6 @@ const sr: Person[] = [
   {
     alias: 'belkov_vyacheslav',
     name: 'Бельков Вячеслав Евгеньевич',
-
     birthdate: '30.04.1993',
     candidate: [
       {
@@ -343,7 +342,6 @@ const sr: Person[] = [
   {
     alias: 'zemlyanskaya_nina',
     name: 'Землянская Нина Павловна',
-
     birthdate: '09.03.1941',
     candidate: [
       {
@@ -358,7 +356,6 @@ const sr: Person[] = [
   {
     alias: 'zemlyanuhin_evgenij',
     name: 'Землянухин Евгений Александрович',
-
     birthdate: '15.10.1992',
     candidate: [
       {
@@ -373,7 +370,6 @@ const sr: Person[] = [
   {
     alias: 'ivannikov_nikita',
     name: 'Иванников Никита Геннадьевич',
-
     birthdate: '07.04.1997',
     candidate: [
       {
@@ -388,7 +384,6 @@ const sr: Person[] = [
   {
     alias: 'kashirin_vitalij',
     name: 'Каширин Виталий Владимирович',
-
     birthdate: '24.05.1963',
     candidate: [
       {
@@ -403,7 +398,6 @@ const sr: Person[] = [
   {
     alias: 'kvasov_konstantin',
     name: 'Квасов Константин Алексеевич',
-
     birthdate: '22.06.1972',
     candidate: [
       {
@@ -418,7 +412,6 @@ const sr: Person[] = [
   {
     alias: 'klimov_vitalij',
     name: 'Климов Виталий Николаевич',
-
     birthdate: '01.10.1954',
     candidate: [
       {
@@ -433,7 +426,6 @@ const sr: Person[] = [
   {
     alias: 'kolobov_anton',
     name: 'Колобов Антон Андреевич',
-
     birthdate: '24.06.1985',
     candidate: [
       {
@@ -448,7 +440,6 @@ const sr: Person[] = [
   {
     alias: 'kolupaev_nikolaj',
     name: 'Колупаев Николай Андреевич',
-
     birthdate: '25.11.1998',
     candidate: [
       {
@@ -463,7 +454,6 @@ const sr: Person[] = [
   {
     alias: 'kolyagin_yurij',
     name: 'Колягин Юрий Иванович',
-
     birthdate: '27.12.1964',
     candidate: [
       {
@@ -478,7 +468,6 @@ const sr: Person[] = [
   {
     alias: 'korneva_lyudmila',
     name: 'Корнева Людмила Райнольдовна',
-
     birthdate: '03.09.1963',
     candidate: [
       {
@@ -493,7 +482,6 @@ const sr: Person[] = [
   {
     alias: 'korolev_sergej',
     name: 'Королев Сергей Юрьевич',
-
     birthdate: '21.09.1954',
     candidate: [
       {
@@ -508,7 +496,6 @@ const sr: Person[] = [
   {
     alias: 'korotkov_sergej',
     name: 'Коротков Сергей Александрович',
-
     birthdate: '13.05.1978',
     candidate: [
       {
@@ -523,7 +510,6 @@ const sr: Person[] = [
   {
     alias: 'kurenkov_boris',
     name: 'Куренков Борис Владимирович',
-
     birthdate: '28.01.1984',
     candidate: [
       {
@@ -538,7 +524,6 @@ const sr: Person[] = [
   {
     alias: 'larin_denis',
     name: 'Ларин Денис Олегович',
-
     birthdate: '18.04.1977',
     candidate: [
       {
@@ -553,7 +538,6 @@ const sr: Person[] = [
   {
     alias: 'markova_olga',
     name: 'Маркова Ольга Яковлевна',
-
     birthdate: '05.01.1980',
     candidate: [
       {
@@ -568,7 +552,6 @@ const sr: Person[] = [
   {
     alias: 'maslennikova_margarita',
     name: 'Масленникова Маргарита Юрьевна',
-
     birthdate: '04.03.1974',
     candidate: [
       {
@@ -583,7 +566,6 @@ const sr: Person[] = [
   {
     alias: 'mordvinov_vitalij',
     name: 'Мордвинов Виталий Николаевич',
-
     birthdate: '01.03.1985',
     candidate: [
       {
@@ -598,7 +580,6 @@ const sr: Person[] = [
   {
     alias: 'myagkov_aleksandr',
     name: 'Мягков Александр Юрьевич',
-
     birthdate: '11.07.1987',
     candidate: [
       {
@@ -613,7 +594,6 @@ const sr: Person[] = [
   {
     alias: 'naumov_ilya',
     name: 'Наумов Илья Сергеевич',
-
     birthdate: '30.04.1984',
     candidate: [
       {
@@ -628,7 +608,6 @@ const sr: Person[] = [
   {
     alias: 'peshkov_gennadij',
     name: 'Пешков Геннадий Геннадьевич',
-
     birthdate: '28.10.1989',
     candidate: [
       {
@@ -643,7 +622,6 @@ const sr: Person[] = [
   {
     alias: 'ponomarev_andrej',
     name: 'Пономарев Андрей Сергеевич',
-
     birthdate: '28.12.1995',
     candidate: [
       {
@@ -658,7 +636,6 @@ const sr: Person[] = [
   {
     alias: 'repp_vitalij',
     name: 'Репп Виталий Александрович',
-
     birthdate: '26.08.1998',
     candidate: [
       {
@@ -673,7 +650,6 @@ const sr: Person[] = [
   {
     alias: 'rymar artem',
     name: 'Рымарь Артем Сергеевич',
-
     birthdate: '16.04.1976',
     candidate: [
       {
@@ -688,7 +664,6 @@ const sr: Person[] = [
   {
     alias: 'sinelnikov_aleksej',
     name: 'Синельников Алексей Николаевич',
-
     birthdate: '01.01.1986',
     candidate: [
       {
@@ -703,7 +678,6 @@ const sr: Person[] = [
   {
     alias: 'stupnikova_olga',
     name: 'Ступникова Ольга Викторовна',
-
     birthdate: '04.05.1977',
     candidate: [
       {
@@ -718,7 +692,6 @@ const sr: Person[] = [
   {
     alias: 'harcyzov_roman',
     name: 'Харцызов Роман Александрович',
-
     birthdate: '21.08.1986',
     candidate: [
       {
@@ -733,7 +706,6 @@ const sr: Person[] = [
   {
     alias: 'shalimov_sergej',
     name: 'Шалимов Сергей Витальевич',
-
     birthdate: '10.03.1961',
     candidate: [
       {
