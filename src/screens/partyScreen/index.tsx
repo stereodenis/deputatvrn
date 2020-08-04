@@ -57,11 +57,11 @@ export default memo(() => {
                 key={person.name}
                 className='border-xs-bottom border-md-none py-3'
               >
-                <Link to={`/areas/${getCurrentCandidate(person, locationType)?.areaNumber}`}>
+                <Link to={`/${locationType}/areas/${getCurrentCandidate(person, locationType)?.areaNumber}`}>
                   <h4>{getCurrentCandidate(person, locationType)?.areaNumber} округ</h4>
                 </Link>
                 <Link to={`/candidates/${person.alias}`}>
-                  <CandidateCard {...{ person, type: locationType }} />
+                  <CandidateCard {...{ person, locationType }} />
                 </Link>
               </Col>
             ))}

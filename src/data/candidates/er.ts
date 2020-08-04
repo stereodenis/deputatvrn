@@ -668,7 +668,17 @@ const er: Person[] = [
     alias: 'verzilin_vladimir',
     name: 'Верзилин Владимир Александрович',
     birthdate: '06.08.1955',
+    photo: 'http://www.vrnoblduma.ru/upload/iblock/0b8/0b864fbc8f81dce788361cd4a56cbbb1.jpg',
     candidate: [
+      {
+        locationType: LocationType.region,
+        callNumber: 6,
+        areaNumber: 16,
+        party: Parties.er,
+        deputat: {
+          website: 'http://www.vrnoblduma.ru/struktura/deputatskiy-korpus/verzilin-vladimir-aleksandrovich/',
+        },
+      },
       {
         party: Parties.er,
         callNumber: 7,
@@ -696,7 +706,17 @@ const er: Person[] = [
     alias: 'gaponenko_evgenij',
     name: 'Гапоненко Евгений Николаевич',
     birthdate: '11.10.1985',
+    photo: 'http://www.vrnoblduma.ru/upload/iblock/fcd/fcdc01466ccec35adcb9e1af44895dd6.jpg',
     candidate: [
+      {
+        callNumber: 6,
+        locationType: LocationType.region,
+        areaNumber: 23,
+        party: Parties.er,
+        deputat: {
+          website: 'http://www.vrnoblduma.ru/struktura/deputatskiy-korpus/gaponenko-nikolay-ivanovich/',
+        },
+      },
       {
         party: Parties.er,
         callNumber: 7,
@@ -738,7 +758,17 @@ const er: Person[] = [
     alias: 'domnich_nikolaj',
     name: 'Домнич Николай Сергеевич',
     birthdate: '29.02.1980',
+    photo: 'http://www.vrnoblduma.ru/upload/iblock/5e5/5e57fa945b249f47504e610eea34eb40.jpg',
     candidate: [
+      {
+        callNumber: 6,
+        locationType: LocationType.region,
+        areaNumber: 27,
+        party: Parties.er,
+        deputat: {
+          website: 'http://www.vrnoblduma.ru/struktura/deputatskiy-korpus/domnich-nikolay-sergeevich/',
+        },
+      },
       {
         party: Parties.er,
         callNumber: 7,
@@ -752,7 +782,17 @@ const er: Person[] = [
     alias: 'evseev_aleksandr',
     name: 'Евсеев Александр Васильевич',
     birthdate: '01.10.1956',
+    photo: 'http://www.vrnoblduma.ru/upload/iblock/912/9127f3b763dc71d402f2729664368b32.jpg',
     candidate: [
+      {
+        locationType: LocationType.region,
+        callNumber: 6,
+        areaNumber: 17,
+        party: Parties.er,
+        deputat: {
+          website: 'http://www.vrnoblduma.ru/struktura/deputatskiy-korpus/evseev-aleksandr-vasilevich/',
+        },
+      },
       {
         party: Parties.er,
         callNumber: 7,
@@ -780,7 +820,17 @@ const er: Person[] = [
     alias: 'zubkov_artem',
     name: 'Зубков Артем Николаевич',
     birthdate: '10.01.1983',
+    photo: 'http://www.vrnoblduma.ru/upload/iblock/155/155f39f1e471bf68c160b56879fdc420.jpg',
     candidate: [
+      {
+        locationType: LocationType.region,
+        callNumber: 6,
+        areaNumber: 25,
+        party: Parties.er,
+        deputat: {
+          website: 'http://www.vrnoblduma.ru/struktura/deputatskiy-korpus/zubkov-artem-nikolaevich/',
+        },
+      },
       {
         party: Parties.er,
         callNumber: 7,
@@ -794,7 +844,17 @@ const er: Person[] = [
     alias: 'kitaev_evgenij',
     name: 'Китаев Евгений Петрович',
     birthdate: '23.02.1969',
+    photo: 'http://www.vrnoblduma.ru/upload/iblock/ce4/ce490c8036d533d607a456d6bf977072.jpg',
     candidate: [
+      {
+        locationType: LocationType.region,
+        callNumber: 6,
+        areaNumber: 3,
+        party: Parties.er,
+        deputat: {
+          website: 'http://www.vrnoblduma.ru/struktura/deputatskiy-korpus/kitaev-evgeniy-petrovich/',
+        },
+      },
       {
         party: Parties.er,
         callNumber: 7,
@@ -808,7 +868,17 @@ const er: Person[] = [
     alias: 'klimentov_andrej',
     name: 'Климентов Андрей Владимирович',
     birthdate: '04.07.1971',
+    photo: 'http://www.vrnoblduma.ru/upload/iblock/313/3138d1781b9fd1e4466d9a77e18ddc14.jpg',
     candidate: [
+      {
+        locationType: LocationType.region,
+        callNumber: 6,
+        areaNumber: 7,
+        party: Parties.er,
+        deputat: {
+          website: 'http://www.vrnoblduma.ru/struktura/deputatskiy-korpus/klimentov-andrey-vladimirovich/',
+        },
+      },
       {
         party: Parties.er,
         callNumber: 7,
@@ -822,7 +892,17 @@ const er: Person[] = [
     alias: 'klyuchnikov_vladimir',
     name: 'Ключников Владимир Иванович',
     birthdate: '16.04.1949',
+    photo: 'http://www.vrnoblduma.ru/upload/iblock/a97/a976a73ae29cbb1674a78bcec13dae69.jpg',
     candidate: [
+      {
+        locationType: LocationType.region,
+        callNumber: 6,
+        deputat: {
+          website: 'http://www.vrnoblduma.ru/struktura/deputatskiy-korpus/klyuchnikov-vladimir-ivanovich/',
+        },
+        areaNumber: 14,
+        party: Parties.er,
+      },
       {
         party: Parties.er,
         callNumber: 7,
@@ -836,7 +916,17 @@ const er: Person[] = [
     alias: 'koloskov_nikolaj',
     name: 'Колосков Николай Васильевич',
     birthdate: '29.07.1953',
+    photo: 'http://www.vrnoblduma.ru/upload/iblock/7b8/7b82d268f462c4500898d882040a039d.jpg',
     candidate: [
+      {
+        locationType: LocationType.region,
+        callNumber: 6,
+        deputat: {
+          website: 'http://www.vrnoblduma.ru/struktura/deputatskiy-korpus/koloskov-nikolay-vasilevich/',
+        },
+        areaNumber: 18,
+        party: Parties.er,
+      },
       {
         party: Parties.er,
         callNumber: 7,
@@ -864,7 +954,17 @@ const er: Person[] = [
     alias: 'lukinov_dmitrij',
     name: 'Лукинов Дмитрий Валериевич',
     birthdate: '14.07.1978',
+    photo: 'http://www.vrnoblduma.ru/upload/iblock/0d4/0d4e4781f6daf1f2776bc515d6915388.jpg',
     candidate: [
+      {
+        locationType: LocationType.region,
+        callNumber: 6,
+        deputat: {
+          website: 'http://www.vrnoblduma.ru/struktura/deputatskiy-korpus/lukinov-dmitriy-valerievich/',
+        },
+        areaNumber: 9,
+        party: Parties.er,
+      },
       {
         party: Parties.er,
         callNumber: 7,
@@ -878,7 +978,17 @@ const er: Person[] = [
     alias: 'moshurov_ivan',
     name: 'Мошуров Иван Петрович',
     birthdate: '15.09.1966',
+    photo: 'http://www.vrnoblduma.ru/upload/iblock/3f8/3f80667f394349ba6079acc21ab2c39c.jpg',
     candidate: [
+      {
+        locationType: LocationType.region,
+        callNumber: 6,
+        deputat: {
+          website: 'http://www.vrnoblduma.ru/struktura/deputatskiy-korpus/moshurov-ivan-petrovich/',
+        },
+        areaNumber: 10,
+        party: Parties.er,
+      },
       {
         party: Parties.er,
         callNumber: 7,
@@ -906,7 +1016,17 @@ const er: Person[] = [
     alias: 'peshikov_aleksandr',
     name: 'Пешиков Александр Александрович',
     birthdate: '01.11.1978',
+    photo: 'http://www.vrnoblduma.ru/upload/iblock/0db/0db9ea702e25f469fed0750f40d44f4e.jpg',
     candidate: [
+      {
+        locationType: LocationType.region,
+        callNumber: 6,
+        deputat: {
+          website: 'http://www.vrnoblduma.ru/struktura/deputatskiy-korpus/peshikov-aleksandr-aleksandrovich/',
+        },
+        areaNumber: 28,
+        party: Parties.er,
+      },
       {
         party: Parties.er,
         callNumber: 7,
@@ -920,7 +1040,17 @@ const er: Person[] = [
     alias: 'povarov_vladimir',
     name: 'Поваров Владимир Петрович',
     birthdate: '19.04.1957',
+    photo: 'http://www.vrnoblduma.ru/upload/iblock/512/5121e2c57b5903f2c75cc2517eb687d0.jpg',
     candidate: [
+      {
+        locationType: LocationType.region,
+        callNumber: 6,
+        deputat: {
+          website: 'http://www.vrnoblduma.ru/struktura/deputatskiy-korpus/povarov-vladimir-petrovich/',
+        },
+        areaNumber: 13,
+        party: Parties.er,
+      },
       {
         party: Parties.er,
         callNumber: 7,
@@ -934,7 +1064,17 @@ const er: Person[] = [
     alias: 'prytykin_andrej',
     name: 'Прытыкин Андрей Александрович',
     birthdate: '01.12.1966',
+    photo: 'http://www.vrnoblduma.ru/upload/iblock/3cc/3cc491b61c3319d165b02be6f5b57954.jpg',
     candidate: [
+      {
+        locationType: LocationType.region,
+        callNumber: 6,
+        deputat: {
+          website: 'http://www.vrnoblduma.ru/struktura/deputatskiy-korpus/prytykin-andrey-aleksandrovich/',
+        },
+        areaNumber: 11,
+        party: Parties.er,
+      },
       {
         party: Parties.er,
         callNumber: 7,
@@ -990,7 +1130,17 @@ const er: Person[] = [
     alias: 'tribunskij_sergej',
     name: 'Трибунский Сергей Иванович',
     birthdate: '08.04.1973',
+    photo: 'http://www.vrnoblduma.ru/upload/iblock/4a7/4a73dbea81dd9edce894794b57e6c171.jpg',
     candidate: [
+      {
+        locationType: LocationType.region,
+        callNumber: 6,
+        deputat: {
+          website: 'http://www.vrnoblduma.ru/struktura/deputatskiy-korpus/tribunskiy-sergey-ivanovich/',
+        },
+        areaNumber: 26,
+        party: Parties.er,
+      },
       {
         party: Parties.er,
         callNumber: 7,
@@ -1018,7 +1168,17 @@ const er: Person[] = [
     alias: 'chernov_aleksej',
     name: 'Чернов Алексей Викторович',
     birthdate: '04.03.1978',
+    photo: 'http://www.vrnoblduma.ru/upload/iblock/159/15951de3a788054978532d6aec5c5543.jpg',
     candidate: [
+      {
+        locationType: LocationType.region,
+        callNumber: 6,
+        deputat: {
+          website: 'http://www.vrnoblduma.ru/struktura/deputatskiy-korpus/chernov-aleksey-viktorovich/',
+        },
+        areaNumber: 5,
+        party: Parties.er,
+      },
       {
         party: Parties.er,
         callNumber: 7,
@@ -1032,7 +1192,17 @@ const er: Person[] = [
     alias: 'chuzhikov_aleksandr',
     name: 'Чужиков Александр Владимирович',
     birthdate: '25.02.1977',
+    photo: 'http://www.vrnoblduma.ru/upload/iblock/2f2/2f27aa3fc00b4e6d7e19ef1b49357855.jpg',
     candidate: [
+      {
+        locationType: LocationType.region,
+        callNumber: 6,
+        deputat: {
+          website: 'http://www.vrnoblduma.ru/struktura/deputatskiy-korpus/chuzhikov-aleksandr-vladimirovich/',
+        },
+        areaNumber: 12,
+        party: Parties.er,
+      },
       {
         party: Parties.er,
         callNumber: 7,
@@ -1053,6 +1223,527 @@ const er: Person[] = [
         locationType: LocationType.region,
         areaNumber: 19,
         status: CandidateStatuses.registered,
+      },
+    ],
+  },
+  {
+    alias: 'alimenko_igor',
+    name: 'Алименко Игорь Анатольевич',
+    birthdate: '09.05.1961',
+    photo: 'http://www.vrnoblduma.ru/upload/iblock/14d/14d693d75a22c630684d754d0643dfba.jpg',
+    candidate: [
+      {
+        locationType: LocationType.region,
+        callNumber: 6,
+        areaNumber: 20,
+        party: Parties.er,
+        deputat: { website: 'http://www.vrnoblduma.ru/struktura/deputatskiy-korpus/alimenko-igor-anatolevich/' },
+      },
+    ],
+  },
+  {
+    alias: 'barinov_artur',
+    name: 'Баринов Артур Валерьевич',
+    birthdate: '10.09.1980',
+    photo: 'http://www.vrnoblduma.ru/upload/iblock/542/5426336789650b6db12ea752525e5aa5.jpg',
+    candidate: [
+      {
+        locationType: LocationType.region,
+        callNumber: 6,
+        areaNumber: 19,
+        party: Parties.er,
+        deputat: { website: 'http://www.vrnoblduma.ru/struktura/deputatskiy-korpus/barinov-artur-valerevich/' },
+      },
+    ],
+  },
+  {
+    alias: 'blagov_andrej',
+    name: 'Благов Андрей Викторович',
+    birthdate: '12.12.1968',
+    photo: 'http://www.vrnoblduma.ru/upload/iblock/ad8/ad82c2559f39839260926dc8be2bb4fb.jpg',
+    candidate: [
+      {
+        locationType: LocationType.region,
+        callNumber: 6,
+        areaNumber: 21,
+        party: Parties.er,
+        deputat: { website: 'http://www.vrnoblduma.ru/struktura/deputatskiy-korpus/blagov-andrey-viktorovich/' },
+      },
+    ],
+  },
+  {
+    alias: 'buzdalin_viktor',
+    name: 'Буздалин Виктор Иванович',
+    birthdate: '28.01.1962',
+    photo: 'http://www.vrnoblduma.ru/upload/iblock/eca/ecaca46c7a9130e8aa2fb4e7f5778a20.jpg',
+    candidate: [
+      {
+        locationType: LocationType.region,
+        callNumber: 6,
+        areaNumber: 17,
+        party: Parties.er,
+        deputat: { website: 'http://www.vrnoblduma.ru/struktura/deputatskiy-korpus/buzdalin-viktor-ivanovich/' },
+      },
+    ],
+  },
+  {
+    alias: 'verikovskij_aleksandr',
+    name: 'Вериковский Александр Евгеньевич',
+    birthdate: '20.05.1949',
+    photo: 'http://www.vrnoblduma.ru/upload/iblock/46d/46d9df2f5e0485b590ab614222dc5daa.jpg',
+    candidate: [
+      {
+        locationType: LocationType.region,
+        callNumber: 6,
+        areaNumber: 21,
+        party: Parties.er,
+        deputat: { website: 'http://www.vrnoblduma.ru/struktura/deputatskiy-korpus/verikovskiy-aleksandr-evgenevich/' },
+      },
+    ],
+  },
+  {
+    alias: 'golovacheva_tatyana',
+    name: 'Головачева Татьяна Валентиновна',
+    birthdate: '28.10.1956',
+    photo: 'http://www.vrnoblduma.ru/upload/iblock/3d4/3d4fbfa4057f04b7b8ea760c33014af0.jpg',
+    candidate: [
+      {
+        locationType: LocationType.region,
+        callNumber: 6,
+        areaNumber: 2,
+        party: Parties.er,
+        deputat: { website: 'http://www.vrnoblduma.ru/struktura/deputatskiy-korpus/golovacheva-tatyana-valentinovna/' },
+      },
+    ],
+  },
+  {
+    alias: 'goncharov_sergej',
+    name: 'Гончаров Сергей Викторович',
+    birthdate: '',
+    photo: '',
+    candidate: [
+      { locationType: LocationType.region, callNumber: 6, areaNumber: 24, party: Parties.er, deputat: { website: '' } },
+    ],
+  },
+  {
+    alias: 'goncharov_yurij',
+    name: 'Гончаров Юрий Федорович',
+    birthdate: '22.05.1981',
+    photo: 'http://www.vrnoblduma.ru/upload/iblock/ff9/ff977beac986a4941bbc65d9a4e4f54c.jpg',
+    bio:
+      'Образование:\n' +
+      '2004 г. – Воронежский государственный технический университет (квалификация «инженер»)\n' +
+      '2012 г. – профессиональная переподготовка в Московском государственном строительном университете (квалификация «инженер»)\n' +
+      '\n' +
+      'Трудовая деятельность:\n' +
+      '2004 – 2009 гг. – генеральный директор ООО Веб-студия «ЮНОНА»\n' +
+      '2010 г. – по н. в. – генеральный директор саморегулируемой организации «Некоммерческое партнерство «Региональное объединение строителей «Развитие»\n' +
+      '2010 г. – по н. в. – генеральный директор Автономной некоммерческой образовательной организации «Региональный инженерный учебный центр «Эксперт» (по совместительству)\n' +
+      '2011 г. – по н. в. – генеральный директор Некоммерческого партнёрства «Объединение компаний энергетического обследования «Развитие» (по совместительству)\n' +
+      '2013 г. – по н. в. – генеральный директор ООО «Региональное управление экспертизы капитального строительства» (по совместительству)\n' +
+      '2013 г. – по н. в. – генеральный директор строительной организации ООО «Строительная компания «Град» (по совместительству)\n' +
+      '2014 г. – по н. в. – генеральный директор ООО «Ремонтно-строительное управление «Развитие» (по совместительству)\n' +
+      'В марте 2015 г. возглавил Группу компаний «Развитие» (объединяет строительные и проектные компании, а также саморегулируемые организации в сфере строительства, проектирования и энергоаудита)',
+    candidate: [
+      {
+        locationType: LocationType.region,
+        callNumber: 6,
+        areaNumber: 2,
+        party: Parties.er,
+        deputat: { website: 'http://www.vrnoblduma.ru/struktura/deputatskiy-korpus/goncharov-sergey-viktorovich/' },
+      },
+    ],
+  },
+  {
+    alias: 'endovickij_dmitrij',
+    name: 'Ендовицкий Дмитрий Александрович',
+    birthdate: '3.12.1970',
+    photo: 'http://www.vrnoblduma.ru/upload/iblock/8e2/8e24afb85d5c33324916d0d37b3a45e4.jpg',
+    candidate: [
+      {
+        locationType: LocationType.region,
+        callNumber: 6,
+        areaNumber: 1,
+        party: Parties.er,
+        deputat: {
+          website: 'http://www.vrnoblduma.ru/struktura/deputatskiy-korpus/endovitskiy-dmitriy-aleksandrovich/',
+        },
+      },
+    ],
+  },
+  {
+    alias: 'zhogov_roman',
+    name: 'Жогов Роман Владимирович',
+    birthdate: '1 февраля 1977',
+    photo: 'http://www.vrnoblduma.ru/upload/iblock/d65/d651c58859916a8e988bd7fa4041799c.jpg',
+    bio:
+      'Образование:\n' +
+      '1999г. – Воронежский государственный университет, квалификация «историк», специализация «социология и политология»;\n' +
+      '2002г. – Воронежская государственная технологическая академия. Аспирантура кафедры истории и политологии.\n' +
+      '\n' +
+      'Трудовая деятельность:\n' +
+      '1999-2011гг. - ассистент, старший преподаватель, доцент кафедры истории и политологии Воронежской государственной технологической академии;\n' +
+      '2009-2015гг. - первый заместитель руководителя Воронежского регионального исполнительного комитета ВПП «Единая Россия»;\n' +
+      '2010-2015гг. - советник губернатора Воронежской области А.В.Гордеева (на внештатной основе);\n' +
+      '2015-2018гг. - председатель комитета Воронежской областной Думы по местному самоуправлению, СМИ и массовым коммуникациям (на постоянной основе);\n' +
+      '2018-по н.вр. - председатель комитета Воронежской областной Думы по имущественным и земельным отношениям (на постоянной основе),\n' +
+      'член Комитета Воронежской областной Думы по бюджетной политике, налогам и финансам.\n' +
+      '\n' +
+      'Общественная деятельность:\n' +
+      'Руководитель фракции «Единая Россия» в Воронежской областной Думе;\n' +
+      'Заместитель Секретаря Воронежского регионального отделения Всероссийской политической партии «Единая Россия»;\n' +
+      'Член Президиума Регионального политического совета Воронежского регионального отделения Всероссийской политической партии «Единая Россия»;\n' +
+      'Председатель комиссии по реабилитации жертв политических репрессий при Воронежской областной Думе.\n' +
+      '\n' +
+      'Почетные звания и награды, ученая степень:\n' +
+      '2014-Почетный знак правительства ВО «Благодарность земли Воронежской»;\n' +
+      '2017-Почетная грамота правительства Воронежской области;\n' +
+      '2018-Благодарственное письмо Президента РФ;\n' +
+      '2019-Почетный знак правительства ВО «За добросовестный труд и профессионализм»;\n' +
+      '2019-Почетная грамота Воронежской областной Думы.\n' +
+      'Кандидат политических наук, доцент ВАК.\n' +
+      '\n' +
+      'Семейное положение:\n' +
+      'Женат, воспитывает дочь.',
+    candidate: [
+      {
+        locationType: LocationType.region,
+        callNumber: 6,
+        areaNumber: 22,
+        party: Parties.er,
+        deputat: { website: 'http://www.vrnoblduma.ru/struktura/deputatskiy-korpus/zhogov-roman-vladimirovich/' },
+      },
+    ],
+  },
+  {
+    alias: 'zubarev_konstantin',
+    name: 'Зубарев Константин Вячеславович',
+    birthdate: '25.07.1974',
+    photo: 'http://www.vrnoblduma.ru/upload/iblock/b7f/b7f036a30f2c88ded973a28424abe236.jpg',
+    candidate: [
+      {
+        locationType: LocationType.region,
+        callNumber: 6,
+        areaNumber: 24,
+        party: Parties.er,
+        deputat: {
+          website: 'http://www.vrnoblduma.ru/struktura/deputatskiy-korpus/zubarev-konstantin-vyacheslavovich/',
+        },
+      },
+    ],
+  },
+  {
+    alias: 'ilin_aleksandr',
+    name: 'Ильин Александр Анатольевич',
+    birthdate: '27.03.1975',
+    photo: 'http://www.vrnoblduma.ru/upload/iblock/731/7311fec528e01493c6dc62595a31d876.jpg',
+    candidate: [
+      {
+        locationType: LocationType.region,
+        callNumber: 6,
+        areaNumber: 20,
+        party: Parties.er,
+        deputat: { website: 'http://www.vrnoblduma.ru/struktura/deputatskiy-korpus/ilin-aleksandr-anatolevich/' },
+      },
+    ],
+  },
+  {
+    alias: 'knyazev_aleksandr',
+    name: 'Князев Александр Викторович',
+    birthdate: '26.03.1968',
+    photo: 'http://www.vrnoblduma.ru/upload/iblock/9e0/9e0e92c9f0f83aec779dd7aadfdbddb4.jpg',
+    candidate: [
+      {
+        locationType: LocationType.region,
+        callNumber: 6,
+        areaNumber: 13,
+        party: Parties.er,
+        deputat: { website: 'http://www.vrnoblduma.ru/struktura/deputatskiy-korpus/knyazev-aleksandr-viktorovich/' },
+      },
+    ],
+  },
+  {
+    alias: 'kolyhalin_vladimir',
+    name: 'Колыхалин Владимир Михайлович',
+    birthdate: '06.01.1972',
+    photo: 'http://www.vrnoblduma.ru/upload/iblock/eea/eea987396c3385b0c9f38e5af8d055cd.jpg',
+    candidate: [
+      {
+        locationType: LocationType.region,
+        callNumber: 6,
+        areaNumber: 28,
+        party: Parties.er,
+        deputat: { website: 'http://www.vrnoblduma.ru/struktura/deputatskiy-korpus/kolykhalin-vladimir-mikhaylovich/' },
+      },
+    ],
+  },
+  {
+    alias: 'korobov_vladimir',
+    name: 'Коробов Владимир Валентинович',
+    birthdate: '28.10.1964',
+    photo: 'http://www.vrnoblduma.ru/upload/iblock/646/646e0eca6cac88a91fba8d6bf86b5162.jpg',
+    candidate: [
+      {
+        locationType: LocationType.region,
+        callNumber: 6,
+        areaNumber: 19,
+        party: Parties.er,
+        deputat: { website: 'http://www.vrnoblduma.ru/struktura/deputatskiy-korpus/korobov-vladimir-valentinovich/' },
+      },
+    ],
+  },
+  {
+    alias: 'kulikov_ivan',
+    name: 'Куликов Иван Иванович',
+    birthdate: '4.03.1953',
+    photo: 'http://www.vrnoblduma.ru/upload/iblock/18c/18c2a107c0069dfd15ea93b70a928f09.jpg',
+    candidate: [
+      {
+        locationType: LocationType.region,
+        callNumber: 6,
+        areaNumber: 18,
+        party: Parties.er,
+        deputat: { website: 'http://www.vrnoblduma.ru/struktura/deputatskiy-korpus/kulikov-ivan-ivanovich/' },
+      },
+    ],
+  },
+  {
+    alias: 'mihin_petr',
+    name: 'Михин Петр Валентинович',
+    birthdate: '21.06.1956',
+    photo: 'http://www.vrnoblduma.ru/upload/iblock/7af/7afd2516be9d02f24972dd727b698917.jpg',
+    candidate: [
+      {
+        locationType: LocationType.region,
+        callNumber: 6,
+        areaNumber: 23,
+        party: Parties.er,
+        deputat: { website: 'http://www.vrnoblduma.ru/struktura/deputatskiy-korpus/mikhin-petr-valentinovich/' },
+      },
+    ],
+  },
+  {
+    alias: 'nazarov_nikolaj',
+    name: 'Назаров Николай Романович',
+    birthdate: '28.01.1947',
+    photo: 'http://www.vrnoblduma.ru/upload/iblock/69c/69cd7005a8cc1c45702ed9687039db02.jpg',
+    candidate: [
+      {
+        locationType: LocationType.region,
+        callNumber: 6,
+        areaNumber: 1,
+        party: Parties.er,
+        deputat: { website: 'http://www.vrnoblduma.ru/struktura/deputatskiy-korpus/nazarov-nikolay-romanovich/' },
+      },
+    ],
+  },
+  {
+    alias: 'ostroushko_vasilij',
+    name: 'Остроушко Василий Иванович',
+    birthdate: '25.09.1955',
+    photo: 'http://www.vrnoblduma.ru/upload/iblock/0c6/0c6eb1aef854c50e0973ae469430a8c8.jpg',
+    candidate: [
+      {
+        locationType: LocationType.region,
+        callNumber: 6,
+        areaNumber: 27,
+        party: Parties.er,
+        deputat: { website: 'http://www.vrnoblduma.ru/struktura/deputatskiy-korpus/ostroushko-vasiliy-ivanovich/' },
+      },
+    ],
+  },
+  {
+    alias: 'pinkevich_sergej',
+    name: 'Пинкевич Сергей Николаевич',
+    birthdate: '27.07.1956',
+    photo: 'http://www.vrnoblduma.ru/upload/iblock/995/995f919a7fe1e5d0ec4aa633710fa64e.jpg',
+    candidate: [
+      {
+        locationType: LocationType.region,
+        callNumber: 6,
+        areaNumber: 26,
+        party: Parties.er,
+        deputat: { website: 'http://www.vrnoblduma.ru/struktura/deputatskiy-korpus/pinkevich-sergey-nikolaevich/' },
+      },
+    ],
+  },
+  {
+    alias: 'pochivalov_sergej',
+    name: 'Почивалов Сергей Николаевич',
+    birthdate: '8.01.1965',
+    photo: 'http://www.vrnoblduma.ru/upload/iblock/728/7289fb79d33f7e41ed3ce36696eff91b.jpg',
+    candidate: [
+      {
+        locationType: LocationType.region,
+        callNumber: 6,
+        areaNumber: 4,
+        party: Parties.er,
+        deputat: { website: 'http://www.vrnoblduma.ru/struktura/deputatskiy-korpus/pochivalov-sergey-nikolaevich/' },
+      },
+    ],
+  },
+  {
+    alias: 'rybenko_aleksandr',
+    name: 'Рыбенко Александр Николаевич',
+    birthdate: '13.08.1965',
+    photo: 'http://www.vrnoblduma.ru/upload/iblock/564/564873d00ab6fce3192d56eed15590a4.jpg',
+    candidate: [
+      {
+        locationType: LocationType.region,
+        callNumber: 6,
+        areaNumber: 22,
+        party: Parties.er,
+        deputat: { website: 'http://www.vrnoblduma.ru/struktura/deputatskiy-korpus/rybenko-aleksandr-nikolaevich/' },
+      },
+    ],
+  },
+  {
+    alias: 'sviridov_vladimir',
+    name: 'Свиридов Владимир Валериевич',
+    birthdate: '17.04.1973',
+    photo: 'http://www.vrnoblduma.ru/upload/iblock/4de/4deef1725bfcd62c37472b910cb3266d.jpg',
+    candidate: [
+      {
+        locationType: LocationType.region,
+        callNumber: 6,
+        areaNumber: 6,
+        party: Parties.er,
+        deputat: { website: 'http://www.vrnoblduma.ru/struktura/deputatskiy-korpus/sviridov-vladimir-valerievich/' },
+      },
+    ],
+  },
+  {
+    alias: 'semenov_petr',
+    name: 'Семенов Петр Иванович',
+    birthdate: '2.05.1957',
+    photo: 'http://www.vrnoblduma.ru/upload/iblock/976/976d17c166e187e76870456ce5af6b46.jpg',
+    candidate: [
+      {
+        locationType: LocationType.region,
+        callNumber: 6,
+        areaNumber: 16,
+        party: Parties.er,
+        deputat: { website: 'http://www.vrnoblduma.ru/struktura/deputatskiy-korpus/semenov-petr-ivanovich/' },
+      },
+    ],
+  },
+  {
+    alias: 'taratin_ivan',
+    name: 'Таратин Иван Владимирович',
+    birthdate: '14.04.1979',
+    photo: 'http://www.vrnoblduma.ru/upload/iblock/0c8/0c8200e8c2750fcc9485247f8a48edc7.jpg',
+    candidate: [
+      {
+        locationType: LocationType.region,
+        callNumber: 6,
+        areaNumber: 6,
+        party: Parties.er,
+        deputat: { website: 'http://www.vrnoblduma.ru/struktura/deputatskiy-korpus/taratin-ivan-vladimirovich/' },
+      },
+    ],
+  },
+  {
+    alias: 'hamin_evgenij',
+    name: 'Хамин Евгений Николаевич',
+    birthdate: '12.10.1966',
+    photo: 'http://www.vrnoblduma.ru/upload/iblock/6cd/6cd2619dbb6b04233f047db063cd55a9.jpg',
+    candidate: [
+      {
+        locationType: LocationType.region,
+        callNumber: 6,
+        areaNumber: 5,
+        party: Parties.er,
+        deputat: { website: 'http://www.vrnoblduma.ru/struktura/deputatskiy-korpus/khamin-evgeniy-nikolaevich/' },
+      },
+    ],
+  },
+  {
+    alias: 'cyban_aleksandr',
+    name: 'Цыбань Александр Иванович',
+    birthdate: '3.10.1963',
+    photo: 'http://www.vrnoblduma.ru/upload/iblock/752/7525c7c3dce750e68034c152f9d04589.jpg',
+    candidate: [
+      {
+        locationType: LocationType.region,
+        callNumber: 6,
+        areaNumber: 14,
+        party: Parties.er,
+        deputat: { website: 'http://www.vrnoblduma.ru/struktura/deputatskiy-korpus/tsyban-aleksandr-ivanovich/' },
+      },
+    ],
+  },
+  {
+    alias: 'chertov_evgenij',
+    name: 'Чертов Евгений Дмитриевич',
+    birthdate: '4.08.1952',
+    photo: 'http://www.vrnoblduma.ru/upload/iblock/7f4/7f4a86152581edc426e4f35f43126d4b.jpg',
+    candidate: [
+      {
+        locationType: LocationType.region,
+        callNumber: 6,
+        areaNumber: 8,
+        party: Parties.er,
+        deputat: { website: 'http://www.vrnoblduma.ru/struktura/deputatskiy-korpus/chertov-evgeniy-dmitrievich/' },
+      },
+    ],
+  },
+  {
+    alias: 'chujko_grigorij',
+    name: 'Чуйко Григорий Владимирович',
+    birthdate: '14.03.1969',
+    photo: 'http://www.vrnoblduma.ru/upload/iblock/fc0/fc054afa003935fc3f63f4a49e865e98.jpg',
+    candidate: [
+      {
+        locationType: LocationType.region,
+        callNumber: 6,
+        areaNumber: 25,
+        party: Parties.er,
+        deputat: { website: 'http://www.vrnoblduma.ru/struktura/deputatskiy-korpus/chuyko-grigoriy-vladimirovich/' },
+      },
+    ],
+  },
+  {
+    alias: 'shipilov_vasilij',
+    name: 'Шипилов Василий Николаевич',
+    birthdate: '4.02.1954',
+    photo: 'http://www.vrnoblduma.ru/upload/iblock/ba4/ba4d3201120f35d04b7ac1c01bcffb7c.jpg',
+    candidate: [
+      {
+        locationType: LocationType.region,
+        callNumber: 6,
+        areaNumber: 15,
+        party: Parties.er,
+        deputat: { website: 'http://www.vrnoblduma.ru/struktura/deputatskiy-korpus/shipilov-vasiliy-nikolaevich/' },
+      },
+    ],
+  },
+  {
+    alias: 'yarkovaya_oksana',
+    name: 'Ярковая Оксана Николаевна',
+    birthdate: '14.11.1965',
+    photo: 'http://www.vrnoblduma.ru/upload/iblock/14d/14df903e6e5a278c5404f882714aedaf.jpg',
+    candidate: [
+      {
+        locationType: LocationType.region,
+        callNumber: 6,
+        areaNumber: 15,
+        party: Parties.er,
+        deputat: { website: 'http://www.vrnoblduma.ru/struktura/deputatskiy-korpus/shmygalyev-anatoliy-petrovich/' },
+      },
+    ],
+  },
+  {
+    alias: 'kolodyazhnyj_sergej',
+    name: 'Колодяжный Сергей Александрович',
+    birthdate: '13.04.1972',
+    photo: 'http://www.vrnoblduma.ru/upload/iblock/21d/21d280fe5250fa92de7fd1efa3ea01fd.jpg',
+    candidate: [
+      {
+        locationType: LocationType.region,
+        callNumber: 6,
+        areaNumber: 7,
+        party: Parties.er,
+        deputat: { website: 'http://www.vrnoblduma.ru/struktura/deputatskiy-korpus/yarkovaya-oksana-nikolaevna/' },
       },
     ],
   },

@@ -110,7 +110,7 @@ export default memo(() => {
               className='border-xs-top border-sm-none py-3'
             >
               <Link to={`/${locationType}/candidates/${areaCandidate.alias}`}>
-                <CandidateCard {...{ person: areaCandidate, type: locationType }} withParty />
+                <CandidateCard {...{ person: areaCandidate, locationType }} withParty />
               </Link>
             </Col>
           ))}
