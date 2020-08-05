@@ -34,6 +34,7 @@ const sr: Person[] = [
     alias: 'zheltuha_evgenij',
     name: 'Желтуха Евгений Васильевич',
     birthdate: '25.02.1980',
+    photo: photos.zheltukha,
     candidate: [
       {
         party: Parties.sr,
@@ -56,6 +57,13 @@ const sr: Person[] = [
         callNumber: 5,
         locationType: LocationType.city,
       },
+      {
+        party: Parties.sr,
+        callNumber: 7,
+        locationType: LocationType.region,
+        areaNumber: 2,
+        status: CandidateStatuses.registered,
+      },
     ],
   },
   {
@@ -69,6 +77,13 @@ const sr: Person[] = [
         status: CandidateStatuses.registered,
         callNumber: 5,
         locationType: LocationType.city,
+      },
+      {
+        party: Parties.sr,
+        callNumber: 7,
+        locationType: LocationType.region,
+        areaNumber: 7,
+        status: CandidateStatuses.registered,
       },
     ],
   },
@@ -90,6 +105,7 @@ const sr: Person[] = [
     alias: 'kolyagin_yurij',
     name: 'Колягин Юрий Иванович',
     birthdate: '27.12.1964',
+    photo: photos.kolyagin,
     candidate: [
       {
         party: Parties.sr,
@@ -97,6 +113,13 @@ const sr: Person[] = [
         status: CandidateStatuses.registered,
         callNumber: 5,
         locationType: LocationType.city,
+      },
+      {
+        party: Parties.sr,
+        callNumber: 7,
+        locationType: LocationType.region,
+        areaNumber: 24,
+        status: CandidateStatuses.registered,
       },
     ],
   },
@@ -118,6 +141,7 @@ const sr: Person[] = [
     alias: 'maslennikova_margarita',
     name: 'Масленникова Маргарита Юрьевна',
     birthdate: '04.03.1974',
+    photo: photos.maslennikova,
     candidate: [
       {
         party: Parties.sr,
@@ -125,6 +149,13 @@ const sr: Person[] = [
         status: CandidateStatuses.registered,
         callNumber: 5,
         locationType: LocationType.city,
+      },
+      {
+        party: Parties.sr,
+        callNumber: 7,
+        locationType: LocationType.region,
+        areaNumber: 3,
+        status: CandidateStatuses.registered,
       },
     ],
   },
@@ -139,6 +170,13 @@ const sr: Person[] = [
         status: CandidateStatuses.registered,
         callNumber: 5,
         locationType: LocationType.city,
+      },
+      {
+        party: Parties.sr,
+        callNumber: 7,
+        locationType: LocationType.region,
+        areaNumber: 9,
+        status: CandidateStatuses.registered,
       },
     ],
   },
@@ -160,6 +198,7 @@ const sr: Person[] = [
     alias: 'petrov_denis',
     name: 'Петров Денис Сергеевич',
     birthdate: '23.10.1977',
+    photo: photos.petrov,
     candidate: [
       {
         party: Parties.sr,
@@ -174,6 +213,7 @@ const sr: Person[] = [
     alias: 'peshkov_gennadij',
     name: 'Пешков Геннадий Геннадьевич',
     birthdate: '28.10.1989',
+    photo: photos.peshkov,
     candidate: [
       {
         party: Parties.sr,
@@ -181,6 +221,13 @@ const sr: Person[] = [
         status: CandidateStatuses.registered,
         callNumber: 5,
         locationType: LocationType.city,
+      },
+      {
+        party: Parties.sr,
+        callNumber: 7,
+        locationType: LocationType.region,
+        areaNumber: 8,
+        status: CandidateStatuses.registered,
       },
     ],
   },
@@ -195,6 +242,13 @@ const sr: Person[] = [
         status: CandidateStatuses.registered,
         callNumber: 5,
         locationType: LocationType.city,
+      },
+      {
+        party: Parties.sr,
+        callNumber: 7,
+        locationType: LocationType.region,
+        areaNumber: 17,
+        status: CandidateStatuses.registered,
       },
     ],
   },
@@ -216,6 +270,7 @@ const sr: Person[] = [
     alias: 'rymar artem',
     name: 'Рымарь Артем Сергеевич',
     birthdate: '16.04.1976',
+    photo: photos.rymar,
     candidate: [
       {
         party: Parties.sr,
@@ -224,12 +279,20 @@ const sr: Person[] = [
         locationType: LocationType.city,
         status: CandidateStatuses.registered,
       },
+      {
+        party: Parties.sr,
+        callNumber: 7,
+        locationType: LocationType.region,
+        areaNumber: 12,
+        status: CandidateStatuses.registered,
+      },
     ],
   },
   {
     alias: 'slepchenko_yurij',
     name: 'Слепченко Юрий Николаевич',
     birthdate: '24.01.1975',
+    photo: photos.slepchenko,
     candidate: [
       {
         party: Parties.sr,
@@ -340,20 +403,6 @@ const sr: Person[] = [
     ],
   },
   {
-    alias: 'zemlyanskaya_nina',
-    name: 'Землянская Нина Павловна',
-    birthdate: '09.03.1941',
-    candidate: [
-      {
-        party: Parties.sr,
-        callNumber: 7,
-        locationType: LocationType.region,
-        areaNumber: 2,
-        status: CandidateStatuses.registered,
-      },
-    ],
-  },
-  {
     alias: 'zemlyanuhin_evgenij',
     name: 'Землянухин Евгений Александрович',
     birthdate: '15.10.1992',
@@ -363,20 +412,6 @@ const sr: Person[] = [
         callNumber: 7,
         locationType: LocationType.region,
         areaNumber: 15,
-        status: CandidateStatuses.registered,
-      },
-    ],
-  },
-  {
-    alias: 'ivannikov_nikita',
-    name: 'Иванников Никита Геннадьевич',
-    birthdate: '07.04.1997',
-    candidate: [
-      {
-        party: Parties.sr,
-        callNumber: 7,
-        locationType: LocationType.region,
-        areaNumber: 7,
         status: CandidateStatuses.registered,
       },
     ],
@@ -447,20 +482,6 @@ const sr: Person[] = [
         callNumber: 7,
         locationType: LocationType.region,
         areaNumber: 21,
-        status: CandidateStatuses.registered,
-      },
-    ],
-  },
-  {
-    alias: 'kolyagin_yurij',
-    name: 'Колягин Юрий Иванович',
-    birthdate: '27.12.1964',
-    candidate: [
-      {
-        party: Parties.sr,
-        callNumber: 7,
-        locationType: LocationType.region,
-        areaNumber: 24,
         status: CandidateStatuses.registered,
       },
     ],
@@ -550,20 +571,6 @@ const sr: Person[] = [
     ],
   },
   {
-    alias: 'maslennikova_margarita',
-    name: 'Масленникова Маргарита Юрьевна',
-    birthdate: '04.03.1974',
-    candidate: [
-      {
-        party: Parties.sr,
-        callNumber: 7,
-        locationType: LocationType.region,
-        areaNumber: 3,
-        status: CandidateStatuses.registered,
-      },
-    ],
-  },
-  {
     alias: 'mordvinov_vitalij',
     name: 'Мордвинов Виталий Николаевич',
     birthdate: '01.03.1985',
@@ -592,34 +599,6 @@ const sr: Person[] = [
     ],
   },
   {
-    alias: 'naumov_ilya',
-    name: 'Наумов Илья Сергеевич',
-    birthdate: '30.04.1984',
-    candidate: [
-      {
-        party: Parties.sr,
-        callNumber: 7,
-        locationType: LocationType.region,
-        areaNumber: 9,
-        status: CandidateStatuses.registered,
-      },
-    ],
-  },
-  {
-    alias: 'peshkov_gennadij',
-    name: 'Пешков Геннадий Геннадьевич',
-    birthdate: '28.10.1989',
-    candidate: [
-      {
-        party: Parties.sr,
-        callNumber: 7,
-        locationType: LocationType.region,
-        areaNumber: 8,
-        status: CandidateStatuses.registered,
-      },
-    ],
-  },
-  {
     alias: 'ponomarev_andrej',
     name: 'Пономарев Андрей Сергеевич',
     birthdate: '28.12.1995',
@@ -629,34 +608,6 @@ const sr: Person[] = [
         callNumber: 7,
         locationType: LocationType.region,
         areaNumber: 11,
-        status: CandidateStatuses.registered,
-      },
-    ],
-  },
-  {
-    alias: 'repp_vitalij',
-    name: 'Репп Виталий Александрович',
-    birthdate: '26.08.1998',
-    candidate: [
-      {
-        party: Parties.sr,
-        callNumber: 7,
-        locationType: LocationType.region,
-        areaNumber: 17,
-        status: CandidateStatuses.registered,
-      },
-    ],
-  },
-  {
-    alias: 'rymar artem',
-    name: 'Рымарь Артем Сергеевич',
-    birthdate: '16.04.1976',
-    candidate: [
-      {
-        party: Parties.sr,
-        callNumber: 7,
-        locationType: LocationType.region,
-        areaNumber: 12,
         status: CandidateStatuses.registered,
       },
     ],

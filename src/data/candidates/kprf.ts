@@ -115,6 +115,7 @@ const kprf: Person[] = [
     alias: 'korchagin',
     name: 'Корчагин Павел Александрович',
     birthdate: '16.06.1969',
+    photo: photos.korchagin,
     candidate: [
       {
         areaNumber: 9,
@@ -144,6 +145,7 @@ const kprf: Person[] = [
     alias: 'sivoplyasov',
     name: 'Сивоплясов Александр Александрович',
     birthdate: '27.09.1990',
+    photo: photos.sivoplyasov,
     candidate: [
       {
         areaNumber: 11,
@@ -186,6 +188,7 @@ const kprf: Person[] = [
     alias: 'pomeranzev',
     name: 'Померанцев Андрей Сергеевич',
     birthdate: '08.03.1976',
+    photo: photos.pomeranzev,
     candidate: [
       {
         areaNumber: 14,
@@ -326,6 +329,7 @@ const kprf: Person[] = [
     alias: 'roslik',
     name: 'Рослик Денис Викторович',
     birthdate: '09.07.1986',
+    photo: photos.roslik,
     candidate: [
       {
         callNumber: 5,

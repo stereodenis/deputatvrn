@@ -6,6 +6,7 @@ const rodina: Person[] = [
     alias: 'hatunzev',
     name: 'Хатунцев Станислав Витальевич',
     birthdate: '16.10.1967',
+    photo: photos.hatunzev_stanislav,
     candidate: [
       {
         areaNumber: 1,
@@ -15,12 +16,12 @@ const rodina: Person[] = [
         role: 'временно неработающий',
       },
     ],
-    photo: photos.hatunzev_stanislav,
   },
   {
     alias: 'ryabykh',
     name: 'Рябых Александр Александрович',
     birthdate: '01.09.1969',
+    photo: photos.ryabykh_aleksandr,
     candidate: [
       {
         areaNumber: 3,
@@ -30,12 +31,12 @@ const rodina: Person[] = [
         role: 'коммерческий директор «Мега Авто»',
       },
     ],
-    photo: photos.ryabykh_aleksandr,
   },
   {
     alias: 'batishev',
     name: 'Батищев Эдуард Владимирович',
     birthdate: '14.12.1975',
+    photo: photos.batishev_eduard,
     candidate: [
       {
         areaNumber: 5,
@@ -45,12 +46,12 @@ const rodina: Person[] = [
         party: Parties.rodina,
       },
     ],
-    photo: photos.batishev_eduard,
   },
   {
     alias: 'zaharov',
     name: 'Захаров Александр Александрович',
     birthdate: '06.03.1971',
+    photo: photos.zakharov_aleksandr,
     candidate: [
       {
         areaNumber: 6,
@@ -60,12 +61,12 @@ const rodina: Person[] = [
         party: Parties.rodina,
       },
     ],
-    photo: photos.zakharov_aleksandr,
   },
   {
     alias: 'grachev',
     name: 'Грачев Константин Александрович',
     birthdate: '17.03.1978',
+    photo: photos.grachev_konstantin,
     candidate: [
       {
         areaNumber: 7,
@@ -76,12 +77,12 @@ const rodina: Person[] = [
         status: CandidateStatuses.registered,
       },
     ],
-    photo: photos.grachev_konstantin,
   },
   {
     alias: 'krasiv',
     name: 'Красиков Александр Семенович',
     birthdate: '20.05.1975',
+    photo: photos.krasikov_aleksandr,
     candidate: [
       {
         areaNumber: 8,
@@ -91,12 +92,12 @@ const rodina: Person[] = [
         party: Parties.rodina,
       },
     ],
-    photo: photos.krasikov_aleksandr,
   },
   {
     alias: 'petukhov',
     name: 'Петухов Максим Викторович',
     birthdate: '05.01.1986',
+    photo: photos.petukhov_maksim,
     candidate: [
       {
         areaNumber: 9,
@@ -106,12 +107,12 @@ const rodina: Person[] = [
         party: Parties.rodina,
       },
     ],
-    photo: photos.petukhov_maksim,
   },
   {
     alias: 'ivanishev',
     name: 'Иванищев Виталий Игоревич',
     birthdate: '06.05.1987',
+    photo: photos.ivanishev_vitaliy,
     candidate: [
       {
         areaNumber: 10,
@@ -129,12 +130,12 @@ const rodina: Person[] = [
       { title: LinkTitle.twitter, url: 'https://twitter.com/vitaly_scout/' },
       { title: LinkTitle.lj, url: 'https://vitaly1987.livejournal.com//' },
     ],
-    photo: photos.ivanishev_vitaliy,
   },
   {
     alias: 'filatov',
     name: 'Филатов Андрей Викторович',
     birthdate: '22.08.1984',
+    photo: photos.filatov_andrey,
     candidate: [
       {
         areaNumber: 11,
@@ -144,12 +145,12 @@ const rodina: Person[] = [
         party: Parties.rodina,
       },
     ],
-    photo: photos.filatov_andrey,
   },
   {
     alias: 'kucherin',
     name: 'Кучерин Павел Николаевич',
     birthdate: '29.05.1979',
+    photo: photos.kucherin_pavel,
     candidate: [
       {
         areaNumber: 12,
@@ -159,12 +160,12 @@ const rodina: Person[] = [
         party: Parties.rodina,
       },
     ],
-    photo: photos.kucherin_pavel,
   },
   {
     alias: 'shvydkii',
     name: 'Швыдкий Владимир Валерьевич',
     birthdate: '26.10.1982',
+    photo: photos.shvidkiy_vladimir,
     candidate: [
       {
         areaNumber: 13,
@@ -174,12 +175,12 @@ const rodina: Person[] = [
         party: Parties.rodina,
       },
     ],
-    photo: photos.shvidkiy_vladimir,
   },
   {
     alias: 'ofitzerova',
     name: 'Офицерова Ольга Александровна',
     birthdate: '21.08.1968',
+    photo: photos.ofizerova_olga,
     candidate: [
       {
         areaNumber: 14,
@@ -189,7 +190,6 @@ const rodina: Person[] = [
         role: 'предприниматель',
       },
     ],
-    photo: photos.ofizerova_olga,
   },
   {
     alias: 'kudinova',
@@ -232,6 +232,7 @@ const rodina: Person[] = [
     alias: 'yakovez',
     name: 'Яковец Елена Владимировна',
     birthdate: '06.12.1982',
+    photo: photos.yakovez_elena,
     candidate: [
       {
         areaNumber: 21,
@@ -241,7 +242,6 @@ const rodina: Person[] = [
         party: Parties.rodina,
       },
     ],
-    photo: photos.yakovez_elena,
     links: [
       { title: LinkTitle.facebook, url: 'https://www.facebook.com/elena.yakovec' },
       { title: LinkTitle.vk, url: 'https://vk.com/elena.yakovec' },
@@ -281,6 +281,7 @@ const rodina: Person[] = [
     alias: 'borisov_igor',
     name: 'Борисов Игорь Борисович',
     birthdate: '05.11.1983',
+    photo: photos.borisov_igor,
     candidate: [
       {
         party: Parties.rodina,
@@ -295,6 +296,7 @@ const rodina: Person[] = [
     alias: 'vladimirov_vyacheslav',
     name: 'Владимиров Вячеслав Вячеславович',
     birthdate: '01.08.1979',
+    photo: photos.vladimirov_vyacheslav,
     candidate: [
       {
         party: Parties.rodina,
@@ -309,6 +311,7 @@ const rodina: Person[] = [
     alias: 'volkov_andrej',
     name: 'Волков Андрей Валериевич',
     birthdate: '18.02.1970',
+    photo: photos.volkov_andrey,
     candidate: [
       {
         party: Parties.rodina,
@@ -323,6 +326,7 @@ const rodina: Person[] = [
     alias: 'gushchin_roman',
     name: 'Гущин Роман Александрович',
     birthdate: '15.12.1973',
+    photo: photos.gushin_roman,
     candidate: [
       {
         party: Parties.rodina,
@@ -337,6 +341,7 @@ const rodina: Person[] = [
     alias: 'dolbnya_gennadij',
     name: 'Долбня Геннадий Викторович',
     birthdate: '15.02.1962',
+    photo: photos.dolbnya_gennadiy,
     candidate: [
       {
         party: Parties.rodina,
@@ -373,6 +378,7 @@ const rodina: Person[] = [
     alias: 'kopachev_gennadij',
     name: 'Копачев Геннадий Анатольевич',
     birthdate: '06.05.1967',
+    photo: photos.kopachev_gennadiy,
     candidate: [
       {
         party: Parties.rodina,
@@ -387,6 +393,7 @@ const rodina: Person[] = [
     alias: 'kryukov_aleksej',
     name: 'Крюков Алексей Николаевич',
     birthdate: '28.04.1974',
+    photo: photos.krukov_alexey,
     candidate: [
       {
         party: Parties.rodina,
@@ -401,6 +408,7 @@ const rodina: Person[] = [
     alias: 'malcev_yurij',
     name: 'Мальцев Юрий Николаевич',
     birthdate: '27.12.1968',
+    photo: photos.malzev_yuriy,
     candidate: [
       {
         party: Parties.rodina,
@@ -415,6 +423,7 @@ const rodina: Person[] = [
     alias: 'masloboev_sergej',
     name: 'Маслобоев Сергей Алексеевич',
     birthdate: '28.05.1961',
+    photo: photos.masloboev_sergey,
     candidate: [
       {
         party: Parties.rodina,
@@ -429,7 +438,7 @@ const rodina: Person[] = [
     alias: 'osinin_kirill',
     name: 'Осинин Кирилл Сергеевич',
     birthdate: '28.08.1977',
-    photo: photos.ostroushko_ivan,
+    photo: photos.osinin_kirill,
     candidate: [
       {
         areaNumber: 19,
@@ -451,6 +460,7 @@ const rodina: Person[] = [
     alias: 'ostroushko_ivan',
     name: 'Остроушко Иван Петрович',
     birthdate: '14.01.1989',
+    photo: photos.ostroushko_ivan,
     candidate: [
       {
         party: Parties.rodina,
@@ -465,6 +475,7 @@ const rodina: Person[] = [
     alias: 'polunin_artem',
     name: 'Полунин Артем Николаевич',
     birthdate: '12.01.1990',
+    photo: photos.polunin_artem,
     candidate: [
       {
         party: Parties.rodina,
@@ -479,6 +490,7 @@ const rodina: Person[] = [
     alias: 'polnikov_igor',
     name: 'Польников Игорь Валерьевич',
     birthdate: '11.03.1968',
+    photo: photos.polnikov_igor,
     candidate: [
       {
         party: Parties.rodina,
@@ -493,6 +505,7 @@ const rodina: Person[] = [
     alias: 'ponomarev_aleksandr',
     name: 'Пономарев Александр Сергеевич',
     birthdate: '04.06.1978',
+    photo: photos.ponomarev_aleksandr,
     candidate: [
       {
         party: Parties.rodina,
@@ -507,6 +520,7 @@ const rodina: Person[] = [
     alias: 'rosnovskaya_svetlana',
     name: 'Росновская Светлана Анатольевна',
     birthdate: '08.02.1975',
+    photo: photos.rosnovskaya_svetlana,
     candidate: [
       {
         party: Parties.rodina,
@@ -565,6 +579,7 @@ const rodina: Person[] = [
     alias: 'skrynnikov_boris',
     name: 'Скрынников Борис Михайлович',
     birthdate: '17.06.1956',
+    photo: photos.skrinnikov_boris,
     candidate: [
       {
         party: Parties.rodina,
@@ -579,6 +594,7 @@ const rodina: Person[] = [
     alias: 'sokolov_viktor',
     name: 'Соколов Виктор Александрович',
     birthdate: '31.08.1981',
+    photo: photos.sokolov_viktor,
     candidate: [
       {
         party: Parties.rodina,
@@ -593,6 +609,7 @@ const rodina: Person[] = [
     alias: 'suprunov_vladimir',
     name: 'Супрунов Владимир Иванович',
     birthdate: '15.07.1962',
+    photo: photos.suprunov_vladimir,
     candidate: [{ party: Parties.rodina, locationType: LocationType.region, callNumber: 7, areaNumber: 27 }],
   },
   {
@@ -621,6 +638,7 @@ const rodina: Person[] = [
     alias: 'cherednikov_vladimir',
     name: 'Чередников Владимир Викторович',
     birthdate: '16.10.1961',
+    photo: photos.cherednikov_vladimir,
     candidate: [
       {
         party: Parties.rodina,
@@ -635,6 +653,7 @@ const rodina: Person[] = [
     alias: 'shulekina_natalya',
     name: 'Шулекина Наталья Валерьевна',
     birthdate: '09.05.1982',
+    photo: photos.shulekina_nataliya,
     candidate: [
       {
         party: Parties.rodina,

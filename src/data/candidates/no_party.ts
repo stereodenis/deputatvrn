@@ -107,6 +107,7 @@ const noParty: Person[] = [
     alias: 'vorobev_sergej',
     name: 'Воробьев Сергей Николаевич',
     birthdate: '02.01.1960',
+    photo: photos.vorobiev,
     candidate: [
       {
         areaNumber: 11,
@@ -132,6 +133,7 @@ const noParty: Person[] = [
     alias: 'georgievskij_vladimir',
     name: 'Георгиевский Владимир Всеволодович',
     birthdate: '13.06.1985',
+    photo: photos.georgievskiy,
     candidate: [
       {
         areaNumber: 7,
@@ -296,6 +298,11 @@ const noParty: Person[] = [
         callNumber: 5,
         locationType: LocationType.city,
       },
+      {
+        locationType: LocationType.region,
+        callNumber: 7,
+        areaNumber: 27,
+      },
     ],
   },
   {
@@ -376,12 +383,19 @@ const noParty: Person[] = [
         callNumber: 5,
         locationType: LocationType.city,
       },
+      {
+        locationType: LocationType.region,
+        callNumber: 7,
+        areaNumber: 12,
+        status: CandidateStatuses.declined,
+      },
     ],
   },
   {
     alias: 'kudryavceva_galina',
     name: 'Кудрявцева Галина Александровна',
     birthdate: '03.07.1945',
+    photo: photos.kudryavzeva,
     candidate: [
       {
         areaNumber: 2,
@@ -439,12 +453,11 @@ const noParty: Person[] = [
       { title: LinkTitle.gorprojects, url: 'https://go.city4people.ru/fundraising/personal/248' },
     ],
     photo: photos.losev,
-    bio:
-      'закончил юрфак ВГУ, 10 лет работал юристом. После появления ребёнка стараюсь менять городскую среду на более комфортную, пишу обращения в администрацию по конкретным местам, где отсутствуют пандусы, разрушены тротуары или долгое время не вывозится мусор. На них в основном позитивно реагируют и приводят всё в соответствие с нормами. Многое получилось, надеюсь получится ещё больше!',
+    bio: 'закончил юрфак ВГУ, 10 лет работал юристом.',
     candidate: [
       {
         areaNumber: 5,
-        role: '31 год',
+        // role: '31 год',
         project: Project.gorpr,
         message:
           'Моя мечта — удобный город, с безбарьерной средой, без грязи и заброшенных территорий. Город, в котором видно внимание ко всем его деталям. До выдвижения в городскую Думу я писал обращения в администрацию на обустройство пандусами бордюров, асфальтирование разрушенных участков тротуаров, уборку мусора вокруг контейнеров, расширения тротуаров. Многое получалось, надеюсь получится еще больше!',
@@ -585,6 +598,7 @@ const noParty: Person[] = [
     alias: 'palyutin_mihail',
     name: 'Палютин Михаил Иванович',
     birthdate: '16.08.1953',
+    photo: photos.palutin,
     candidate: [
       {
         areaNumber: 3,
@@ -688,6 +702,7 @@ const noParty: Person[] = [
     alias: 'ratushnyj_artem',
     name: 'Ратушный Артем Александрович',
     birthdate: '27.10.1979',
+    photo: photos.ratushniy,
     candidate: [
       {
         areaNumber: 24,
@@ -983,24 +998,10 @@ const noParty: Person[] = [
     ],
   },
   {
-    alias: 'kovalenko_anton',
-    name: 'Коваленко Антон Александрович',
-    birthdate: '21.12.1989',
-    candidate: [{ locationType: LocationType.region, callNumber: 7, areaNumber: 27 }],
-  },
-  {
     alias: 'kosarev_aleksandr',
     name: 'Косарев Александр Александрович',
     birthdate: '16.02.1989',
     candidate: [{ locationType: LocationType.region, callNumber: 7, areaNumber: 4 }],
-  },
-  {
-    alias: 'krivonosov_dmitrij',
-    name: 'Кривоносов Дмитрий Сергеевич',
-    birthdate: '27.03.1978',
-    candidate: [
-      { locationType: LocationType.region, callNumber: 7, areaNumber: 12, status: CandidateStatuses.declined },
-    ],
   },
   {
     alias: 'malyukov_igor',
