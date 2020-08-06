@@ -10,3 +10,5 @@ export { default as Parties } from './partiesScreen'
 export { default as Party } from './partyScreen'
 
 export { default as Deputates } from './deputatesScreen'
+
+export { default as Videos } from './videosScreen'
