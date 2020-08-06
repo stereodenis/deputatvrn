@@ -5,7 +5,7 @@ import { Link, useParams } from 'react-router-dom'
 import CandidateCard from '../../components/candidateCard'
 import CandidateStatus from '../../components/CandidateStatus'
 import persons from '../../data/persons'
-import { getCurrentCandidate } from '../../helpers'
+import { getCurrentCandidate, youtube_parser } from '../../helpers'
 import { noPhoto } from '../../images/candidates'
 import { Parties } from '../../types'
 
@@ -83,6 +83,25 @@ export default memo(() => {
               {candidate.problems.map((problem, index) => (
                 <p key={index}>{problem}</p>
               ))}
+            </div>
+          )}
+          {person.videos?.length && (
+            <div className='border-bottom py-3'>
+              <h2>Видео</h2>
+              <div>
+                {person.videos?.map((newsItem) => (
+                  <iframe
+                    key={newsItem.url}
+                    title={newsItem.title}
+                    width='560'
+                    height='315'
+                    src={`https://www.youtube.com/embed/${youtube_parser(newsItem.url)}`}
+                    frameBorder='0'
+                    allow='accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture'
+                    allowFullScreen
+                  />
+                ))}
+              </div>
             </div>
           )}
         </Col>

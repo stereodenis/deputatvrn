@@ -2,6 +2,12 @@ import { CURRENT_CITY_CALL_NUMBER, CURRENT_REGION_CALL_NUMBER } from './constant
 import persons from './data/persons'
 import { LocationType, Parties, Person } from './types'
 
+export function youtube_parser(url: string) {
+  const regExp = /^.*((youtu.be\/)|(v\/)|(\/u\/\w\/)|(embed\/)|(watch\?))\??v?=?([^#&?]*).*/
+  const match = url.match(regExp)
+  return match && match[7].length === 11 ? match[7] : false
+}
+
 /**
  * Возвращает текущего кандидата для Person
  * @param person – объект Person

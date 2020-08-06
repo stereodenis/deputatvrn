@@ -288,6 +288,12 @@ const noParty: Person[] = [
         status: CandidateStatuses.declined,
       },
     ],
+    videos: [
+      {
+        title: 'Речь Евгения Карпова на заседании избирательной комиссии',
+        url: 'https://www.youtube.com/watch?v=goTY29oo-_E',
+      },
+    ],
   },
   {
     alias: 'kovalenko_anton',
