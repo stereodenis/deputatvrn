@@ -1,6 +1,7 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
 import { BrowserRouter } from 'react-router-dom'
+import { YMInitializer } from 'react-yandex-metrika'
 
 import './index.css'
 import 'bootstrap/dist/css/bootstrap.min.css'
@@ -14,6 +15,7 @@ ReactDOM.render(
     <BrowserRouter>
       <HeaderNavigation />
       <Router />
+      <YMInitializer accounts={[51480913]} />
     </BrowserRouter>
   </React.StrictMode>,
   document.getElementById('root')
