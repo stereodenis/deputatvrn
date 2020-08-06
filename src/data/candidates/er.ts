@@ -1743,7 +1743,7 @@ const er: Person[] = [
     alias: 'kolodyazhnyj_sergej',
     name: 'Колодяжный Сергей Александрович',
     birthdate: '13.04.1972',
-    photo: 'http://www.vrnoblduma.ru/upload/iblock/21d/21d280fe5250fa92de7fd1efa3ea01fd.jpg',
+    photo: 'http://www.vrnoblduma.ru/upload/iblock/cfd/cfdae35a1d3b5b1af636aaa204c7f92b.jpg',
     candidate: [
       {
         locationType: LocationType.region,

@@ -19,6 +19,9 @@ export default function Map() {
             <Link to={`/${locationType}/candidates`} className='d-block'>
               Кандидаты
             </Link>
+            <Link to={`/${locationType}/deputates`} className='d-block'>
+              Депутаты
+            </Link>
             <Link to={`/${locationType}/parties`} className='d-block'>
               Партии
             </Link>
