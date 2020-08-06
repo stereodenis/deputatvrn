@@ -31,7 +31,7 @@ export default memo(() => {
       <div className='border-bottom pb-2 text-center d-flex flex-row justify-content-center'>
         <Link
           to={`/${locationType}/areas/${
-            Number(areaNumber) === 1 ? (locationType === 'city' ? 24 : 28) : areaNumber - 1
+            Number(areaNumber) === 1 ? (locationType === 'city' ? 24 : 28) : Number(areaNumber) - 1
           }`}
         >
           {'<<'}
@@ -42,7 +42,7 @@ export default memo(() => {
         </div>
         <Link
           to={`/${locationType}/areas/${
-            Number(areaNumber) === (locationType === 'city' ? 24 : 28) ? 1 : areaNumber + 1
+            Number(areaNumber) === (locationType === 'city' ? 24 : 28) ? 1 : Number(areaNumber) + 1
           }`}
         >
           {'>>'}
