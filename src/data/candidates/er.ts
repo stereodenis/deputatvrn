@@ -1728,7 +1728,7 @@ const er: Person[] = [
     alias: 'yarkovaya_oksana',
     name: 'Ярковая Оксана Николаевна',
     birthdate: '14.11.1965',
-    photo: 'http://www.vrnoblduma.ru/upload/iblock/14d/14df903e6e5a278c5404f882714aedaf.jpg',
+    photo: 'http://www.vrnoblduma.ru/upload/iblock/21d/21d280fe5250fa92de7fd1efa3ea01fd.jpg',
     candidate: [
       {
         locationType: LocationType.region,
