@@ -1,3 +1,4 @@
-/src/screens/areasScreen/data.ts
+/src/screens/areasScreen/city.ts
+/src/screens/areasScreen/region.ts
 /build/*
 /node_modules/*
