@@ -5,6 +5,7 @@ import { times } from 'lodash'
 
 import areas from '../../data/areas'
 import { getAreaCandidates, getPersonWithCurrentDeputat } from '../../helpers'
+import { StatusesChart } from '../../components'
 
 import data from './data'
 
@@ -79,6 +80,7 @@ export default memo(() => {
                 <div>Избирателей: {area.people}</div>
                 <div>Кандидатов: {areaCandidates.length}</div>
                 {deputatPerson && <div>Депутат: {deputatPerson.name}</div>}
+                <StatusesChart candidates={areaCandidates} locationType={locationType} />
               </Link>
             </Col>
           )

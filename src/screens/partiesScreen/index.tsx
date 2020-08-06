@@ -3,6 +3,7 @@ import { Container, Row, Col, Image } from 'react-bootstrap'
 import { Link, useParams } from 'react-router-dom'
 import { shuffle } from 'lodash'
 
+import { StatusesChart } from '../../components'
 import persons from '../../data/persons'
 import { getCurrentCandidate, getPartyCandidates } from '../../helpers'
 import { Parties } from '../../types'
@@ -40,6 +41,7 @@ export default memo(() => {
             />
             <div className='text-center'>Самовыдвиженцы</div>
             <div>Кандидатов: {noPartyCandidates.length}</div>
+            <StatusesChart candidates={noPartyCandidates} locationType={locationType} />
           </Link>
         </Col>
 
@@ -60,6 +62,7 @@ export default memo(() => {
                 />
                 <div className='text-center'>{Parties[partyAlias]}</div>
                 <div>Кандидатов: {partyCandidates.length}</div>
+                <StatusesChart candidates={partyCandidates} locationType={locationType} />
               </Link>
             </Col>
           )
