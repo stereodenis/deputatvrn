@@ -42,6 +42,7 @@ export interface Person {
   links?: { title: LinkTitle; url: string }[]
   bio?: string
   candidate: Candidate[]
+  videos?: { title: string; url: string }[]
 }
 
 export enum Parties {

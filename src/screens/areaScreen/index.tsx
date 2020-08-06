@@ -8,13 +8,7 @@ import { Image } from 'react-bootstrap'
 import { DeputatCard, CandidateCard } from '../../components'
 import areas from '../../data/areas'
 import areasImages from '../../images/areas'
-import { getAreaCandidates, getPersonWithCurrentDeputat } from '../../helpers'
-
-function youtube_parser(url: string) {
-  const regExp = /^.*((youtu.be\/)|(v\/)|(\/u\/\w\/)|(embed\/)|(watch\?))\??v?=?([^#&?]*).*/
-  const match = url.match(regExp)
-  return match && match[7].length === 11 ? match[7] : false
-}
+import { getAreaCandidates, getPersonWithCurrentDeputat, youtube_parser } from '../../helpers'
 
 export default memo(() => {
   const { locationType, areaNumber } = useParams()
