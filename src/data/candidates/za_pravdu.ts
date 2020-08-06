@@ -32,7 +32,15 @@ const zaPravdu: Person[] = [
     alias: 'sofrina_olga',
     name: 'Софрина Ольга Юрьевна',
     birthdate: '16.01.1982',
-    candidate: [{ party: Parties.zaPravdu, callNumber: 7, areaNumber: 25, locationType: LocationType.region }],
+    candidate: [
+      {
+        party: Parties.zaPravdu,
+        callNumber: 7,
+        areaNumber: 25,
+        locationType: LocationType.region,
+        status: CandidateStatuses.declined,
+      },
+    ],
   },
 ]
 

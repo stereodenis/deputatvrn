@@ -56,7 +56,13 @@ const newPeople: Person[] = [
         callNumber: 5,
         locationType: LocationType.city,
       },
-      { party: Parties.newPeople, locationType: LocationType.region, callNumber: 7, areaNumber: 20 },
+      {
+        party: Parties.newPeople,
+        locationType: LocationType.region,
+        callNumber: 7,
+        areaNumber: 20,
+        status: CandidateStatuses.declined,
+      },
     ],
   },
   {
@@ -75,6 +81,7 @@ const newPeople: Person[] = [
           'Готов бороться за правду и справедливость. Благодаря ему привлечены к ответственности владельцы 10 торговых точек, продававших алкоголь несовершеннолетним. Организовывал донорские акции в своём университете и вовлёк в них более 250 студентов и преподавателей.Основал фестиваль молодёжных субкультур, набравший 1 000 зрителей и ставший традиционным.Настало время остановить творящийся в городе «коммунальный беспредел» и также упорядочить выделение «пятен» под жилую застройку, приведя её в соответствие с транспортным каркасом. Пора перекрыть «уплотняющую» застройку и строительство многоэтажных жилых комплексов в районах с плохой транспортной доступностью!',
         callNumber: 5,
         locationType: LocationType.city,
+        status: CandidateStatuses.registered,
       },
     ],
   },
@@ -267,6 +274,7 @@ const newPeople: Person[] = [
           'Хочу добиться эффективной трудовой занятости молодых специалистов с потенциалом развития. У них должна быть возможность работать и достойно зарабатывать, строить карьеру, реализовывать идеи, создавать задел на будущее. Поможем молодёжи – сохраним рабочие профессии!',
         callNumber: 5,
         locationType: LocationType.city,
+        status: CandidateStatuses.declined,
       },
     ],
   },
@@ -457,7 +465,15 @@ const newPeople: Person[] = [
     alias: 'kachura_maksim',
     name: 'Качура Максим Олегович',
     birthdate: '17.06.1992',
-    candidate: [{ party: Parties.newPeople, locationType: LocationType.region, callNumber: 7, areaNumber: 21 }],
+    candidate: [
+      {
+        party: Parties.newPeople,
+        locationType: LocationType.region,
+        callNumber: 7,
+        areaNumber: 21,
+        status: CandidateStatuses.declined,
+      },
+    ],
   },
   {
     alias: 'knyazev_stanislav',
@@ -495,7 +511,15 @@ const newPeople: Person[] = [
     alias: 'skomorohova_yuliya',
     name: 'Скоморохова Юлия Михайловна',
     birthdate: '13.09.1985',
-    candidate: [{ party: Parties.newPeople, locationType: LocationType.region, callNumber: 7, areaNumber: 16 }],
+    candidate: [
+      {
+        party: Parties.newPeople,
+        locationType: LocationType.region,
+        callNumber: 7,
+        areaNumber: 16,
+        status: CandidateStatuses.declined,
+      },
+    ],
   },
   {
     alias: 'stepanenko_andrej',

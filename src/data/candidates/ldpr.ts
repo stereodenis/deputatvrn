@@ -66,6 +66,7 @@ const ldpr: Person[] = [
         areaNumber: 12,
         callNumber: 5,
         locationType: LocationType.city,
+        status: CandidateStatuses.registered,
       },
     ],
   },
@@ -310,7 +311,15 @@ const ldpr: Person[] = [
     alias: 'dunaeva_elizaveta',
     name: 'Дунаева Елизавета Владимировна',
     birthdate: '06.03.1984',
-    candidate: [{ callNumber: 7, party: Parties.ldpr, locationType: LocationType.region, areaNumber: 21 }],
+    candidate: [
+      {
+        callNumber: 7,
+        party: Parties.ldpr,
+        locationType: LocationType.region,
+        areaNumber: 21,
+        status: CandidateStatuses.registered,
+      },
+    ],
   },
   {
     alias: 'zheleznyak_yulian',
