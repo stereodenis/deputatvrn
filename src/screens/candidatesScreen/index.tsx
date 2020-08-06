@@ -3,7 +3,7 @@ import React, { memo } from 'react'
 import { Col, Container, Row } from 'react-bootstrap'
 import { Link, useParams } from 'react-router-dom'
 
-import { CandidateCard } from '../../components'
+import { CandidateCard, StatusesChart } from '../../components'
 import persons from '../../data/persons'
 import { getAreaCandidates, getCurrentCandidate } from '../../helpers'
 
@@ -14,6 +14,9 @@ export default memo(() => {
   return (
     <Container fluid>
       <h1>Кандидаты в депутаты ({currentPersons.length})</h1>
+
+      <StatusesChart candidates={currentPersons} locationType={locationType} />
+
       {Object.keys(groupBy(currentPersons, (p) => getCurrentCandidate(p, locationType)?.areaNumber)).map(
         (areaNumber) => {
           const areaCandidats = getAreaCandidates(Number(areaNumber), locationType)

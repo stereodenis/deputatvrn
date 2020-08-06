@@ -6,7 +6,7 @@ import MetaTags from 'react-meta-tags'
 
 import persons from '../../data/persons'
 import { Parties } from '../../types'
-import { CandidateCard } from '../../components'
+import { CandidateCard, StatusesChart } from '../../components'
 import { getCurrentCandidate, getPartyCandidates } from '../../helpers'
 
 export default memo(() => {
@@ -37,6 +37,8 @@ export default memo(() => {
       <div className='border-bottom pb-2 text-center'>
         <h1>{title}</h1>
       </div>
+
+      <StatusesChart candidates={partyCandidates} {...{ locationType }} />
 
       <div className='py-3'>
         <h2>Список кандидатов в депутаты ({partyCandidates.length})</h2>
