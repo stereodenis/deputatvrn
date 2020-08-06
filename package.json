@@ -17,6 +17,7 @@
     "react-router-dom": "^5.2.0",
     "react-scripts": "3.4.1",
     "react-yandex-maps": "^4.4.0",
+    "react-yandex-metrika": "^2.6.0",
     "typescript": "~3.9.7"
   },
   "scripts": {

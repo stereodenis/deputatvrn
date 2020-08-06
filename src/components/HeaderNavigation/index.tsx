@@ -1,12 +1,23 @@
-import React, { memo } from 'react'
+import React, { memo, useEffect } from 'react'
 import { Nav, Navbar, NavDropdown } from 'react-bootstrap'
 import { LinkContainer } from 'react-router-bootstrap'
-import { Link, useParams } from 'react-router-dom'
+import { Link, useParams, useHistory } from 'react-router-dom'
+import ym from 'react-yandex-metrika'
 
 import { LocationType } from '../../types'
 
 export default memo(() => {
   const { locationType } = useParams()
+  const history = useHistory()
+
+  useEffect(() => {
+    if (process.env.NODE_ENV === 'production') {
+      history.listen((location) => {
+        ym('hit', location.pathname)
+      })
+    }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [])
 
   return (
     <Navbar className='' expand='lg'>
