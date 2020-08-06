@@ -59,6 +59,17 @@ const noParty: Person[] = [
         status: CandidateStatuses.declined,
       },
     ],
+    videos: [
+      {
+        title: 'Сергей Баженов: выдвигаюсь в муниципальные депутаты',
+        url: 'https://www.youtube.com/watch?v=N2jSHirUY-w',
+      },
+      {
+        title: 'На связи #1: Сергей Баженов — о выборах, политике и Прекрасной России Будущего\n',
+        url: 'https://www.youtube.com/watch?v=iFq6n4aD230',
+      },
+      { title: 'Как нас лишают избирательных прав', url: 'https://www.youtube.com/watch?v=KnPRWYA3Swg' },
+    ],
   },
   {
     alias: 'bessmertnyj_oleg',
