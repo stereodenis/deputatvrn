@@ -11,11 +11,12 @@ import areasImages from '../../images/areas'
 import { getAreaCandidates, getPersonWithCurrentDeputat, youtube_parser } from '../../helpers'
 
 export default memo(() => {
-  const { locationType, areaNumber } = useParams()
+  const { locationType, areaNumber: rawAreaNumber } = useParams()
+  const areaNumber = Number(rawAreaNumber)
   const area = areas[locationType][areaNumber]
 
-  const personWithCurrentDeputat = getPersonWithCurrentDeputat(Number(areaNumber), locationType)
-  const areaCandidats = useMemo(() => getAreaCandidates(Number(areaNumber), locationType), [areaNumber, locationType])
+  const personWithCurrentDeputat = getPersonWithCurrentDeputat(areaNumber, locationType)
+  const areaCandidats = useMemo(() => getAreaCandidates(areaNumber, locationType), [areaNumber, locationType])
 
   return (
     <Container fluid>
@@ -29,22 +30,14 @@ export default memo(() => {
         <meta property='og:image' content={areasImages[areaNumber]} />
       </MetaTags>
       <div className='border-bottom pb-2 text-center d-flex flex-row justify-content-center'>
-        <Link
-          to={`/${locationType}/areas/${
-            Number(areaNumber) === 1 ? (locationType === 'city' ? 24 : 28) : areaNumber - 1
-          }`}
-        >
+        <Link to={`/${locationType}/areas/${areaNumber === 1 ? (locationType === 'city' ? 24 : 28) : areaNumber - 1}`}>
           {'<<'}
         </Link>
         <div>
           <h1>{areaNumber} округ</h1>
           <h4>Количество избирателей: {area.people}</h4>
         </div>
-        <Link
-          to={`/${locationType}/areas/${
-            Number(areaNumber) === (locationType === 'city' ? 24 : 28) ? 1 : areaNumber + 1
-          }`}
-        >
+        <Link to={`/${locationType}/areas/${areaNumber === (locationType === 'city' ? 24 : 28) ? 1 : areaNumber + 1}`}>
           {'>>'}
         </Link>
       </div>
