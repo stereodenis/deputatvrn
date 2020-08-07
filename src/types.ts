@@ -16,7 +16,7 @@ export enum LocationType {
   region = 'Область',
 }
 
-interface Candidate {
+export interface Candidate {
   areaNumber: number
   callNumber: number
   locationType: LocationType

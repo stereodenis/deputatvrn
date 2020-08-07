@@ -1,11 +1,22 @@
 import { CURRENT_CITY_CALL_NUMBER, CURRENT_REGION_CALL_NUMBER } from './constants'
 import persons from './data/persons'
-import { LocationType, Parties, Person } from './types'
+import { Candidate, LocationType, Parties, Person } from './types'
 
 export function youtube_parser(url: string) {
   const regExp = /^.*((youtu.be\/)|(v\/)|(\/u\/\w\/)|(embed\/)|(watch\?))\??v?=?([^#&?]*).*/
   const match = url.match(regExp)
   return match && match[7].length === 11 ? match[7] : false
+}
+
+export function isCurrentCallNumber(candidate: Candidate) {
+  return (
+    candidate.callNumber ===
+    (candidate.locationType === LocationType.city ? CURRENT_CITY_CALL_NUMBER + 1 : CURRENT_REGION_CALL_NUMBER + 1)
+  )
+}
+
+export function locationTypeFromName(locationName: LocationType) {
+  return locationName === LocationType.city ? 'city' : 'region'
 }
 
 /**

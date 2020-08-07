@@ -23,8 +23,6 @@ export default memo(() => {
           .map((person) => (
             <Col xs={12} sm={6} md={4} lg={3} xl={2} key={person.name} className='border-xs-top border-sm-none py-3'>
               <DeputatCard {...{ person, locationType }} />
-              {/*<Link to={`/${locationType}/candidates/${person.alias}`} className={'d-block'}>*/}
-              {/*</Link>*/}
             </Col>
           ))}
       </Row>

@@ -62,7 +62,7 @@ export default memo(() => {
                 <Link to={`/${locationType}/areas/${getCurrentCandidate(person, locationType)?.areaNumber}`}>
                   <h4>{getCurrentCandidate(person, locationType)?.areaNumber} округ</h4>
                 </Link>
-                <Link to={`/candidates/${person.alias}`}>
+                <Link to={`/persons/${person.alias}`}>
                   <CandidateCard {...{ person, locationType }} />
                 </Link>
               </Col>
