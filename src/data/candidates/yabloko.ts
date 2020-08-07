@@ -105,6 +105,7 @@ const yabloko: Person[] = [
         party: Parties.yabloko,
         callNumber: 5,
         locationType: LocationType.city,
+        status: CandidateStatuses.declined,
       },
     ],
   },

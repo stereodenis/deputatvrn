@@ -532,6 +532,7 @@ const kprf: Person[] = [
         party: Parties.kprf,
         callNumber: 5,
         locationType: LocationType.city,
+        status: CandidateStatuses.registered,
       },
       {
         callNumber: 7,

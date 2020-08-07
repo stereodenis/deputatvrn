@@ -42,6 +42,10 @@ jobs:
           name: Deploy Over SSH
           command: |
             scp -r ~/project/build "$SSH_USER@$SSH_HOST:$SSH_DEPLOY_PATH"
+      - run:
+          name: Send message to telegram chat
+          command: |
+            curl -X POST https://api.telegram.org/bot$TELEGRAM_BOT_TOKEN/sendMessage -d chat_id="-460788850" -d "text=Новые обновления загружены на сайт! https://deputatvrn.ru"
 
 workflows:
   build-and-test:

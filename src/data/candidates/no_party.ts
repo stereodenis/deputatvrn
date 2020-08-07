@@ -267,6 +267,7 @@ const noParty: Person[] = [
         project: Project.gorpr,
         callNumber: 5,
         locationType: LocationType.city,
+        status: CandidateStatuses.registered,
         message:
           'Меня зовут Леонид и я не политик. Я инженер и программист, и вот уже много лет жду когда в городе появятся велодорожки, которые нам обещают, когда вместо газелей поедут низкопольные трамваи. Но ничего не происходит и пора это изменить. Моя задача — расшевелить инертную систему и заставить её строить удобный безопасный и современный город.',
       },
@@ -315,6 +316,7 @@ const noParty: Person[] = [
         areaNumber: 21,
         callNumber: 5,
         locationType: LocationType.city,
+        status: CandidateStatuses.declined,
       },
       {
         locationType: LocationType.region,
@@ -512,6 +514,7 @@ const noParty: Person[] = [
         areaNumber: 6,
         callNumber: 5,
         locationType: LocationType.city,
+        status: CandidateStatuses.declined,
       },
     ],
   },
