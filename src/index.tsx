@@ -2,17 +2,16 @@ import React from 'react'
 import ReactDOM from 'react-dom'
 import { BrowserRouter } from 'react-router-dom'
 import { YMInitializer } from 'react-yandex-metrika'
+import moment from 'moment'
+import 'moment/locale/ru'
 
 import './index.css'
 import 'bootstrap/dist/css/bootstrap.min.css'
-
-import moment from 'moment'
 
 import Router from './router'
 import * as serviceWorker from './serviceWorker'
 import { HeaderNavigation } from './components'
 
-import 'moment/locale/ru'
 moment.locale('ru')
 
 ReactDOM.render(
