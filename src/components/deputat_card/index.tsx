@@ -16,11 +16,11 @@ export default memo(({ person, locationType }: Props) => {
 
   return (
     <div className=''>
-      <Link to={`/${locationType}/candidates/${person.alias}`} className='d-block'>
+      <Link to={`/persons/${person.alias}`} className='d-block'>
         <Image width={'100%'} className='mr-3' src={person.photo || noPhoto} alt={`фото депутата ${person.name}`} />
       </Link>
       <div className='mt-2'>
-        <Link to={`/${locationType}/candidates/${person.alias}`} className='d-block'>
+        <Link to={`/persons/${person.alias}`} className='d-block'>
           {person.name}
         </Link>
         <div className='mt-1'>Округ № {deputatCandidate.areaNumber}</div>

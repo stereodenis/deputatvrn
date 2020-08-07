@@ -40,7 +40,7 @@ export default memo(() => {
                     key={person.name}
                     className='border-xs-top border-sm-none py-3'
                   >
-                    <Link to={`/${locationType}/candidates/${person.alias}`} className={'d-block'}>
+                    <Link to={`/persons/${person.alias}`} className={'d-block'}>
                       <CandidateCard {...{ person, locationType }} withParty />
                     </Link>
                   </Col>

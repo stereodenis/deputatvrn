@@ -4,7 +4,7 @@ import { Image } from 'react-bootstrap'
 import { getCurrentCandidate } from '../../helpers'
 import { noPhoto } from '../../images/candidates'
 import { Person, LocationType } from '../../types'
-import CandidateStatus from '../CandidateStatus'
+import CandidateStatus from '../candidate_status'
 
 export default memo(({ person, locationType, withParty }: Props) => {
   return (

@@ -6,9 +6,14 @@ import { YMInitializer } from 'react-yandex-metrika'
 import './index.css'
 import 'bootstrap/dist/css/bootstrap.min.css'
 
+import moment from 'moment'
+
 import Router from './router'
 import * as serviceWorker from './serviceWorker'
 import { HeaderNavigation } from './components'
+
+import 'moment/locale/ru'
+moment.locale('ru')
 
 ReactDOM.render(
   <React.StrictMode>

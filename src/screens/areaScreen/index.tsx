@@ -46,7 +46,7 @@ export default memo(() => {
         <Row className='border-bottom'>
           {areaCandidats.map((person) => (
             <Col xs={12} sm={6} md={4} lg={3} xl={2} key={person.name} className='border-xs-bottom border-md-none py-3'>
-              <Link to={`/${locationType}/candidates/${person.alias}`}>
+              <Link to={`/persons/${person.alias}`}>
                 <CandidateCard {...{ person, locationType }} withParty />
               </Link>
             </Col>
