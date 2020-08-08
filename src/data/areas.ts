@@ -4,7 +4,6 @@ const areas: { [l: string]: { [s: string]: Area } } = {
   city: {
     1: {
       people: 34111,
-      videos: [{ title: 'Блокнот', url: 'https://www.youtube.com/watch?v=elpmZtXx7-o' }],
       news: [
         {
           title: 'Утопающие в мусоре избиратели Ходырева ничего не знают о своем депутате',
@@ -25,7 +24,6 @@ const areas: { [l: string]: { [s: string]: Area } } = {
     },
     2: {
       people: 35482,
-      videos: [{ title: 'Блокнот', url: 'https://www.youtube.com/watch?v=R8ivoafCwHA' }],
       news: [
         {
           title: 'Избиратели проклинают единоросса Пинигина за бездействие в убитом округе №2',
@@ -48,7 +46,6 @@ const areas: { [l: string]: { [s: string]: Area } } = {
     },
     3: {
       people: 33055,
-      videos: [{ title: 'Блокнот', url: 'https://www.youtube.com/watch?v=B-Kp3Lx6c5s' }],
       news: [
         {
           title: 'Матом и проклятиями отозвались о депутате Олеге Черкасове избиратели его округа',
@@ -65,7 +62,6 @@ const areas: { [l: string]: { [s: string]: Area } } = {
     },
     4: {
       people: 33771,
-      videos: [{ title: 'Блокнот', url: 'https://www.youtube.com/watch?v=xGMEdXdh46Q' }],
       news: [
         {
           title: 'В наплевательском отношении к решению проблем обвинили избиратели Николая Образцова',
@@ -84,7 +80,6 @@ const areas: { [l: string]: { [s: string]: Area } } = {
     },
     5: {
       people: 32509,
-      videos: [{ title: 'Блокнот', url: 'https://www.youtube.com/watch?v=tH1FszRg5Fc' }],
       news: [
         {
           title: 'Прославившийся коррупционным скандалом депутат Кочетов остался безымянным для воронежцев',
@@ -104,7 +99,6 @@ const areas: { [l: string]: { [s: string]: Area } } = {
     },
     6: {
       people: 31862,
-      videos: [{ title: 'Блокнот', url: 'https://www.youtube.com/watch?v=dBfQVo07Er8' }],
       news: [
         {
           title: 'В равнодушии к реальным делам воронежцы обвинили таинственного депутата Ковалева',
@@ -125,7 +119,6 @@ const areas: { [l: string]: { [s: string]: Area } } = {
     },
     7: {
       people: 35621,
-      videos: [{ title: 'Блокнот', url: 'https://www.youtube.com/watch?v=1TQPsPMlIvY' }],
       news: [
         {
           title: 'Быть ближе к народу призвали воронежцы анонимного депутата Владимира Калинина',
@@ -144,7 +137,6 @@ const areas: { [l: string]: { [s: string]: Area } } = {
     },
     8: {
       people: 32101,
-      videos: [{ title: 'Блокнот', url: 'https://www.youtube.com/watch?v=ZJUf3tU3Tis' }],
       news: [
         {
           title: 'Блокнот',
@@ -161,7 +153,6 @@ const areas: { [l: string]: { [s: string]: Area } } = {
     },
     9: {
       people: 36818,
-      videos: [{ title: 'Блокнот', url: 'https://www.youtube.com/watch?v=QRvNCMkZqr8' }],
       news: [
         {
           title: 'Воронежцы призвали вице-спикера Провоторова перестать кормить их обещаниями',
@@ -185,7 +176,6 @@ const areas: { [l: string]: { [s: string]: Area } } = {
     },
     10: {
       people: 36898,
-      videos: [{ title: 'Блокнот', url: 'https://www.youtube.com/watch?v=lN-Fw3pxhQk' }],
       news: [
         {
           title: 'Депутата Сергея Оганезова воронежцы обвинили в наплевательстве к жизни окраин',
@@ -207,7 +197,6 @@ const areas: { [l: string]: { [s: string]: Area } } = {
     },
     11: {
       people: 35998,
-      videos: [{ title: 'Блокнот', url: 'https://www.youtube.com/watch?v=BG9Nxf_htXI' }],
       news: [
         {
           title: 'Маргинальный рассадник поставили в вину депутату Алексею Золотареву воронежцы',
@@ -232,7 +221,6 @@ const areas: { [l: string]: { [s: string]: Area } } = {
     },
     12: {
       people: 36450,
-      videos: [{ title: 'Блокнот', url: 'https://www.youtube.com/watch?v=GBoncMKkKrM' }],
       news: [
         {
           title: 'В убитых дворах воронежцы обвинили депутата-единоросса Игоря Костырева',
@@ -255,7 +243,6 @@ const areas: { [l: string]: { [s: string]: Area } } = {
     },
     13: {
       people: 33365,
-      videos: [{ title: 'Блокнот', url: 'https://www.youtube.com/watch?v=2Po0mKee_as' }],
       news: [
         {
           title: 'Разбитыми дворами и грязью воронежцы пристыдили депутата Александра Головина',
@@ -285,7 +272,6 @@ const areas: { [l: string]: { [s: string]: Area } } = {
     },
     14: {
       people: 32177,
-      videos: [{ title: 'Блокнот', url: 'https://www.youtube.com/watch?v=QORbg42IvvI' }],
       news: [
         {
           title: 'За убитый центр Воронежа избиратели нецензурно отозвались о депутате Сергее Колиухе',
@@ -324,7 +310,6 @@ const areas: { [l: string]: { [s: string]: Area } } = {
     },
     15: {
       people: 31164,
-      videos: [{ title: 'Блокнот', url: 'https://www.youtube.com/watch?v=iyjDQ_pbh74' }],
       news: [
         {
           title: 'Депутата Александра Жукова воронежцы пристыдили депрессивными кварталами',
@@ -364,7 +349,6 @@ const areas: { [l: string]: { [s: string]: Area } } = {
     },
     16: {
       people: 33047,
-      videos: [{ title: 'Блокнот', url: 'https://www.youtube.com/watch?v=Wm7yYPO3PUk' }],
       news: [
         {
           title: 'На предвыборный популизм депутата Кандыбина пожаловались его избиратели в Воронеже',
@@ -395,7 +379,6 @@ const areas: { [l: string]: { [s: string]: Area } } = {
     },
     17: {
       people: 33973,
-      videos: [{ title: 'Блокнот', url: 'https://www.youtube.com/watch?v=i6s2roeYDuA' }],
       news: [
         {
           title: 'Воронежцы с Крестов оценили своего депутата Сергея Кудрявцева',
@@ -420,7 +403,6 @@ const areas: { [l: string]: { [s: string]: Area } } = {
     },
     18: {
       people: 33241,
-      videos: [{ title: 'Блокнот', url: 'https://www.youtube.com/watch?v=Lm4j1SgdDlg' }],
       news: [
         {
           title: 'Воронежцы заявили о полном равнодушии депутата Чистякова к их проблемам',
@@ -444,7 +426,6 @@ const areas: { [l: string]: { [s: string]: Area } } = {
     },
     19: {
       people: 34055,
-      videos: [{ title: 'Блокнот', url: 'https://www.youtube.com/watch?v=4WJ9b1Thmpg' }],
       news: [
         {
           title: 'В напряженности с парковками в убитых дворах воронежцы обвинили депутата Гребенкина',
@@ -463,7 +444,6 @@ const areas: { [l: string]: { [s: string]: Area } } = {
     },
     20: {
       people: 34998,
-      videos: [{ title: 'Блокнот', url: 'https://www.youtube.com/watch?v=5XQegxy3HkE' }],
       news: [
         {
           title: 'В напряженности с парковками в убитых дворах воронежцы обвинили депутата Гребенкина',
@@ -483,7 +463,6 @@ const areas: { [l: string]: { [s: string]: Area } } = {
     },
     21: {
       people: 35241,
-      videos: [{ title: 'Блокнот', url: 'https://www.youtube.com/watch?v=ZoJ6GM8a8tY' }],
       news: [
         {
           title: 'Воронежцы высказались о работе депутата-врача Юлии Поповой',
@@ -513,7 +492,6 @@ const areas: { [l: string]: { [s: string]: Area } } = {
     },
     22: {
       people: 35195,
-      videos: [{ title: 'Блокнот', url: 'https://www.youtube.com/watch?v=ydIJQLXXHBM' }],
       news: [
         {
           title: 'Рытвины на дорогах и запустение поставили в вину депутату Клецову в Воронеже',
@@ -537,7 +515,6 @@ const areas: { [l: string]: { [s: string]: Area } } = {
     },
     23: {
       people: 30765,
-      videos: [{ title: 'Блокнот', url: 'https://www.youtube.com/watch?v=gIvNuAb3iuk' }],
       news: [
         {
           title: 'Избиратели депутата Александра Трубецкого оценили его работу в округе №23 в Воронеже',
@@ -563,7 +540,6 @@ const areas: { [l: string]: { [s: string]: Area } } = {
     },
     24: {
       people: 32182,
-      videos: [{ title: 'Блокнот', url: 'https://www.youtube.com/watch?v=7797Gnt_SU8' }],
       news: [
         {
           title: 'О неприглядной стороне центра Воронежа рассказали избиратели депутата Сысоева',

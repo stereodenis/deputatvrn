@@ -34,6 +34,16 @@ export interface Candidate {
   }
 }
 
+export interface Video {
+  title: string
+  url: string
+  date: string
+  objects: {
+    type: 'person' | 'area'
+    id: string
+  }[]
+}
+
 export interface Person {
   name: string
   alias: string
@@ -42,7 +52,6 @@ export interface Person {
   links?: { title: LinkTitle; url: string }[]
   bio?: string
   candidate: Candidate[]
-  videos?: { title: string; url: string }[]
 }
 
 export enum Parties {
@@ -81,6 +90,5 @@ export enum LinkTitle {
 export interface Area {
   people: number
   news?: { title: string; url: string }[]
-  videos?: { title: string; url: string }[]
   streets?: string[]
 }

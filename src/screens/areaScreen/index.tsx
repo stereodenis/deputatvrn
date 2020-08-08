@@ -9,6 +9,7 @@ import { DeputatCard, CandidateCard } from '../../components'
 import areas from '../../data/areas'
 import areasImages from '../../images/areas'
 import { getAreaCandidates, getPersonWithCurrentDeputat, youtube_parser } from '../../helpers'
+import videos from '../../data/videos'
 
 export default memo(() => {
   const { locationType, areaNumber: rawAreaNumber } = useParams()
@@ -17,6 +18,13 @@ export default memo(() => {
 
   const personWithCurrentDeputat = getPersonWithCurrentDeputat(areaNumber, locationType)
   const areaCandidats = useMemo(() => getAreaCandidates(areaNumber, locationType), [areaNumber, locationType])
+  const areaVideos = videos.filter((v) =>
+    v.objects.some((obj) => {
+      const id = obj.id.split('_')
+
+      return obj.type === 'area' && id.length > 1 && id[0] === locationType && id[1] === rawAreaNumber
+    })
+  )
 
   return (
     <Container fluid>
@@ -65,17 +73,17 @@ export default memo(() => {
         </div>
       )}
 
-      {area.videos?.length && (
+      {areaVideos.length && (
         <div className='border-bottom py-3'>
           <h2>Видео</h2>
           <div>
-            {area.videos?.map((newsItem) => (
+            {areaVideos.map((video) => (
               <iframe
-                key={newsItem.url}
-                title={newsItem.title}
-                width='560'
+                key={video.url}
+                title={video.title}
+                width='100%'
                 height='315'
-                src={`https://www.youtube.com/embed/${youtube_parser(newsItem.url)}`}
+                src={`https://www.youtube.com/embed/${youtube_parser(video.url)}`}
                 frameBorder='0'
                 allow='accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture'
                 allowFullScreen

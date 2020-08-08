@@ -59,17 +59,6 @@ const noParty: Person[] = [
         status: CandidateStatuses.declined,
       },
     ],
-    videos: [
-      {
-        title: 'Сергей Баженов: выдвигаюсь в муниципальные депутаты',
-        url: 'https://www.youtube.com/watch?v=N2jSHirUY-w',
-      },
-      {
-        title: 'На связи #1: Сергей Баженов — о выборах, политике и Прекрасной России Будущего\n',
-        url: 'https://www.youtube.com/watch?v=iFq6n4aD230',
-      },
-      { title: 'Как нас лишают избирательных прав', url: 'https://www.youtube.com/watch?v=KnPRWYA3Swg' },
-    ],
   },
   {
     alias: 'bessmertnyj_oleg',
@@ -298,12 +287,6 @@ const noParty: Person[] = [
         callNumber: 5,
         locationType: LocationType.city,
         status: CandidateStatuses.declined,
-      },
-    ],
-    videos: [
-      {
-        title: 'Речь Евгения Карпова на заседании избирательной комиссии',
-        url: 'https://www.youtube.com/watch?v=goTY29oo-_E',
       },
     ],
   },

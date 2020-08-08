@@ -1,7 +1,7 @@
 import React, { memo } from 'react'
 import { Route, Switch, Redirect } from 'react-router-dom'
 
-import { Main, Areas, Area, Candidates, PersonScreen, Parties, Party, Deputates } from './screens'
+import { Main, Areas, Area, Candidates, PersonScreen, Parties, Party, Deputates, Videos } from './screens'
 
 // function RouteWrapper({ component: Component, layout: Layout, ...rest }: RouteProps & { layout: any; component: any }) {
 //   return (
@@ -32,5 +32,6 @@ export default memo(() => (
     <Route exact path='/:locationType/parties' component={Parties} />
     <Route path={'/:locationType/parties/:partyAlias'} component={Party} />
     <Route path={'/:locationType/deputates'} component={Deputates} />
+    <Route path={'/videos'} component={Videos} />
   </Switch>
 ))
