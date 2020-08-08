@@ -44,6 +44,9 @@ export default memo(() => {
               {/*<NavDropdown.Divider />*/}
             </NavDropdown>
           ))}
+          <LinkContainer to={'/videos'}>
+            <Nav.Link>Видео</Nav.Link>
+          </LinkContainer>
         </Nav>
       </Navbar.Collapse>
     </Navbar>

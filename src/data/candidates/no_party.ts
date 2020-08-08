@@ -59,23 +59,6 @@ const noParty: Person[] = [
         status: CandidateStatuses.declined,
       },
     ],
-    videos: [
-      {
-        title: 'Сергей Баженов: выдвигаюсь в муниципальные депутаты',
-        url: 'https://www.youtube.com/watch?v=N2jSHirUY-w',
-        date: '3.06.2020',
-      },
-      {
-        title: 'На связи #1: Сергей Баженов — о выборах, политике и Прекрасной России Будущего',
-        url: 'https://www.youtube.com/watch?v=iFq6n4aD230',
-        date: '13.06.2020',
-      },
-      {
-        title: 'Как нас лишают избирательных прав',
-        url: 'https://www.youtube.com/watch?v=KnPRWYA3Swg',
-        date: '2.08.2020',
-      },
-    ],
   },
   {
     alias: 'bessmertnyj_oleg',
@@ -98,13 +81,6 @@ const noParty: Person[] = [
       { title: LinkTitle.website, url: 'http://borodin2020.ru' },
     ],
     photo: photos.borodin,
-    videos: [
-      {
-        title: 'Георгий Бородин: «Я иду в гордуму»',
-        url: 'https://www.youtube.com/watch?v=9PKCJkw5s1s',
-        date: '18.05.2020',
-      },
-    ],
     candidate: [
       {
         areaNumber: 13,
@@ -311,23 +287,6 @@ const noParty: Person[] = [
         callNumber: 5,
         locationType: LocationType.city,
         status: CandidateStatuses.declined,
-      },
-    ],
-    videos: [
-      {
-        title: 'Речь Евгения Карпова на заседании избирательной комиссии',
-        url: 'https://www.youtube.com/watch?v=goTY29oo-_E',
-        date: '4.08.2020',
-      },
-      {
-        title: 'Евгений Карпов: «Я иду в городскую думу»',
-        url: 'https://www.youtube.com/watch?v=4_Dua7m2ANk',
-        date: '8.06.2020',
-      },
-      {
-        title: 'Как мы будем побеждать?',
-        url: 'https://www.youtube.com/watch?v=8Pig4eKmp2M',
-        date: '28.07.2020',
       },
     ],
   },

@@ -1240,13 +1240,6 @@ const er: Person[] = [
         deputat: { website: 'http://www.vrnoblduma.ru/struktura/deputatskiy-korpus/alimenko-igor-anatolevich/' },
       },
     ],
-    videos: [
-      {
-        title: 'Особенности депутатской рыбалки',
-        url: 'https://www.youtube.com/watch?v=WYct4xnsb0M',
-        date: '13.08.2019',
-      },
-    ],
   },
   {
     alias: 'barinov_artur',
@@ -1277,13 +1270,6 @@ const er: Person[] = [
         deputat: { website: 'http://www.vrnoblduma.ru/struktura/deputatskiy-korpus/blagov-andrey-viktorovich/' },
       },
     ],
-    videos: [
-      {
-        title: 'Главный бездельник Воронежской областной думы',
-        url: 'https://www.youtube.com/watch?v=xWl0rnoS_rM',
-        date: '14.11.2019',
-      },
-    ],
   },
   {
     alias: 'buzdalin_viktor',
@@ -1297,13 +1283,6 @@ const er: Person[] = [
         areaNumber: 17,
         party: Parties.er,
         deputat: { website: 'http://www.vrnoblduma.ru/struktura/deputatskiy-korpus/buzdalin-viktor-ivanovich/' },
-      },
-    ],
-    videos: [
-      {
-        title: 'Воронежские жулики. Буздалин',
-        url: 'https://www.youtube.com/watch?v=ylkCeFHyyPs',
-        date: '14.11.2019',
       },
     ],
   },
@@ -1718,9 +1697,6 @@ const er: Person[] = [
   {
     alias: 'chujko_grigorij',
     name: 'Чуйко Григорий Владимирович',
-    videos: [
-      { title: 'Воронежские жулики. Чуйко', url: 'https://www.youtube.com/watch?v=MFHZJ5diaqg', date: '7.04.2020' },
-    ],
     birthdate: '14.03.1969',
     photo: 'http://www.vrnoblduma.ru/upload/iblock/fc0/fc054afa003935fc3f63f4a49e865e98.jpg',
     candidate: [

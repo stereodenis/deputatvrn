@@ -8,6 +8,7 @@ import { isCurrentCallNumber, locationTypeFromName, youtube_parser, getCurrentCa
 import { noPhoto } from '../../images/candidates'
 import { Candidate, LocationType } from '../../types'
 import { CandidateStatus, PartyLink, AreaLink, CandidateCard } from '../../components'
+import videos from '../../data/videos'
 
 function sortCandidate(a: Candidate, b: Candidate) {
   if (a.locationType === LocationType.city) {
@@ -29,6 +30,7 @@ export default memo(() => {
   const { personAlias } = useParams()
 
   const person = useMemo(() => persons.find((c) => c.alias === personAlias), [personAlias]) || persons[0]
+  const personVideos = videos.filter((v) => v.objects.some((obj) => obj.type === 'person' && obj.id === person.alias))
 
   return (
     <Container fluid>
@@ -137,17 +139,17 @@ export default memo(() => {
             )}
           </Row>
           <Row>
-            {person.videos?.length && (
+            {personVideos.length && (
               <div className='border-bottom py-3'>
                 <h2>Видео</h2>
                 <div>
-                  {person.videos?.map((newsItem) => (
+                  {personVideos.map((video) => (
                     <iframe
-                      key={newsItem.url}
-                      title={newsItem.title}
+                      key={video.url}
+                      title={video.title}
                       width='560'
                       height='315'
-                      src={`https://www.youtube.com/embed/${youtube_parser(newsItem.url)}`}
+                      src={`https://www.youtube.com/embed/${youtube_parser(video.url)}`}
                       frameBorder='0'
                       allow='accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture'
                       allowFullScreen
