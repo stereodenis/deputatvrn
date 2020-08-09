@@ -10,13 +10,14 @@ import 'bootstrap/dist/css/bootstrap.min.css'
 
 import Router from './router'
 import * as serviceWorker from './serviceWorker'
-import { HeaderNavigation } from './components'
+import { HeaderNavigation, ScrollToTop } from './components'
 
 moment.locale('ru')
 
 ReactDOM.render(
   <React.StrictMode>
     <BrowserRouter>
+      <ScrollToTop />
       <HeaderNavigation />
       <Router />
       <YMInitializer accounts={[51480913]} />
