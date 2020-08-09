@@ -11,6 +11,7 @@ const zaPravdu: Person[] = [
         areaNumber: 12,
         callNumber: 5,
         locationType: LocationType.city,
+        status: CandidateStatuses.declined,
       },
     ],
   },

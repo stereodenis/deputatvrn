@@ -105,8 +105,7 @@ export default memo(() => {
                         )
                         .map((areaCandidate) => (
                           <Col
-                            xs={12}
-                            sm={6}
+                            xs={6}
                             md={4}
                             lg={3}
                             xl={2}

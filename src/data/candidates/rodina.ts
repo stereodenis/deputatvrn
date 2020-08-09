@@ -1,5 +1,5 @@
 import * as photos from '../../images/candidates'
-import { CandidateStatuses, LocationType, LinkTitle, Parties, Person, Project } from '../../types'
+import { CandidateStatuses, LinkTitle, LocationType, Parties, Person, Project } from '../../types'
 
 const rodina: Person[] = [
   {
@@ -14,6 +14,7 @@ const rodina: Person[] = [
         locationType: LocationType.city,
         party: Parties.rodina,
         role: 'временно неработающий',
+        status: CandidateStatuses.declined,
       },
     ],
   },
@@ -29,6 +30,7 @@ const rodina: Person[] = [
         locationType: LocationType.city,
         party: Parties.rodina,
         role: 'коммерческий директор «Мега Авто»',
+        status: CandidateStatuses.declined,
       },
     ],
   },
@@ -92,6 +94,7 @@ const rodina: Person[] = [
         locationType: LocationType.city,
         role: 'председатель Совета кооператива Социально-экономической взаимопомощи «Развитие»',
         party: Parties.rodina,
+        status: CandidateStatuses.registered,
       },
     ],
   },
@@ -107,6 +110,7 @@ const rodina: Person[] = [
         locationType: LocationType.city,
         role: 'гендиректор «Евростроя»',
         party: Parties.rodina,
+        status: CandidateStatuses.registered,
       },
     ],
   },
@@ -122,6 +126,7 @@ const rodina: Person[] = [
         locationType: LocationType.city,
         party: Parties.rodina,
         project: Project.git,
+        status: CandidateStatuses.registered,
       },
     ],
     links: [
@@ -145,6 +150,7 @@ const rodina: Person[] = [
         locationType: LocationType.city,
         role: 'менеджер',
         party: Parties.rodina,
+        status: CandidateStatuses.registered,
       },
     ],
   },
@@ -160,6 +166,7 @@ const rodina: Person[] = [
         locationType: LocationType.city,
         role: 'директор некоммерческой организации дополнительного профессионального образования «ДОН-100»',
         party: Parties.rodina,
+        status: CandidateStatuses.declined,
       },
     ],
   },
@@ -175,6 +182,7 @@ const rodina: Person[] = [
         locationType: LocationType.city,
         role: 'гендиректор «СВС Авто Групп»',
         party: Parties.rodina,
+        status: CandidateStatuses.declined,
       },
     ],
   },
@@ -190,6 +198,7 @@ const rodina: Person[] = [
         locationType: LocationType.city,
         party: Parties.rodina,
         role: 'предприниматель',
+        status: CandidateStatuses.declined,
       },
     ],
   },
@@ -243,6 +252,7 @@ const rodina: Person[] = [
         locationType: LocationType.city,
         role: 'домохозяйка',
         party: Parties.rodina,
+        status: CandidateStatuses.declined,
       },
     ],
     links: [
@@ -262,6 +272,7 @@ const rodina: Person[] = [
         locationType: LocationType.city,
         role: 'директор ООО «Парсек»',
         party: Parties.rodina,
+        status: CandidateStatuses.registered,
       },
     ],
   },
@@ -277,6 +288,7 @@ const rodina: Person[] = [
         locationType: LocationType.city,
         role: 'гендиректор «Ника Моторс»',
         party: Parties.rodina,
+        status: CandidateStatuses.declined,
       },
     ],
   },
@@ -367,6 +379,7 @@ const rodina: Person[] = [
         locationType: LocationType.city,
         role: 'гендиректор «ЮЦ Солидарность»',
         party: Parties.rodina,
+        status: CandidateStatuses.declined,
       },
       {
         party: Parties.rodina,
@@ -444,14 +457,8 @@ const rodina: Person[] = [
     photo: photos.osinin_kirill,
     candidate: [
       {
-        areaNumber: 19,
-        callNumber: 5,
-        locationType: LocationType.city,
+        party: Parties.rodina,
         role: 'травматолог-ортопед «Воронежской областной клинической больницы №1»',
-        party: Parties.rodina,
-      },
-      {
-        party: Parties.rodina,
         locationType: LocationType.region,
         callNumber: 7,
         areaNumber: 25,
@@ -465,6 +472,13 @@ const rodina: Person[] = [
     birthdate: '14.01.1989',
     photo: photos.ostroushko_ivan,
     candidate: [
+      {
+        party: Parties.rodina,
+        areaNumber: 19,
+        locationType: LocationType.city,
+        callNumber: 5,
+        status: CandidateStatuses.declined,
+      },
       {
         party: Parties.rodina,
         locationType: LocationType.region,
@@ -546,6 +560,7 @@ const rodina: Person[] = [
         locationType: LocationType.city,
         role: 'начальник цеха АО «Завод железобетонных изделий №2',
         party: Parties.rodina,
+        status: CandidateStatuses.registered,
       },
       {
         party: Parties.rodina,
@@ -614,11 +629,19 @@ const rodina: Person[] = [
     name: 'Супрунов Владимир Иванович',
     birthdate: '15.07.1962',
     photo: photos.suprunov_vladimir,
-    candidate: [{ party: Parties.rodina, locationType: LocationType.region, callNumber: 7, areaNumber: 27 }],
+    candidate: [
+      {
+        party: Parties.rodina,
+        locationType: LocationType.region,
+        callNumber: 7,
+        areaNumber: 27,
+        status: CandidateStatuses.declined,
+      },
+    ],
   },
   {
     alias: 'chekmarev_artem',
-    name: 'Чекмарев Артем Витальевич',
+    name: 'Чекмарев Артём Витальевич',
     birthdate: '27.05.1993',
     photo: photos.chekmarev_artem,
     candidate: [
@@ -628,6 +651,7 @@ const rodina: Person[] = [
         locationType: LocationType.city,
         role: 'заместитель генерального директора по коммерческим вопросам «Завода железобетонных изделий №2»',
         party: Parties.rodina,
+        status: CandidateStatuses.declined,
       },
       {
         party: Parties.rodina,

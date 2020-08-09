@@ -37,7 +37,7 @@ export default memo(() => {
             })}
             <iframe
               title={video.title}
-              width='560'
+              width='100%'
               height='315'
               src={`https://www.youtube.com/embed/${youtube_parser(video.url)}`}
               frameBorder='0'

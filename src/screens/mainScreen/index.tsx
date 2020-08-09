@@ -11,7 +11,7 @@ export default function Map() {
     <Container fluid>
       <Row>
         {(Object.keys(LocationType) as Array<keyof typeof LocationType>).map((locationType) => (
-          <Col key={locationType} className='text-center'>
+          <Col xs={12} sm={6} key={locationType} className='text-center mb-3'>
             <h2>{LocationType[locationType]}</h2>
             <Link to={`/${locationType}/areas`} className='d-block'>
               Округа
