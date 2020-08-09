@@ -248,7 +248,7 @@ const noParty: Person[] = [
       { title: LinkTitle.vk, url: 'https://vk.com/kabanovl' },
       { title: LinkTitle.gorprojects, url: 'https://go.city4people.ru/fundraising/personal/212' },
     ],
-    photo: photos.kabanov,
+    photo: photos.kabanov_leonid,
     candidate: [
       {
         areaNumber: 2,

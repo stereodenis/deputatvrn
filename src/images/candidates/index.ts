@@ -1,6 +1,6 @@
 export { default as noPhoto } from './no-photo.jpg'
 
-export { default as kabanov } from './no_party/kabanov.jpg'
+export { default as kabanov_leonid } from './no_party/kabanov_leonid.jpg'
 export { default as bazhenov } from './no_party/bazhenov.jpg'
 export { default as gulin } from './no_party/gulin.jpg'
 export { default as losev } from './no_party/losev.jpg'
