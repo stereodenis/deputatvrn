@@ -1,10 +1,11 @@
 import React, { memo, useEffect } from 'react'
-import { Nav, Navbar, NavDropdown } from 'react-bootstrap'
+import { Nav, Navbar, NavDropdown, Row } from 'react-bootstrap'
 import { LinkContainer } from 'react-router-bootstrap'
 import { Link, useParams, useHistory } from 'react-router-dom'
 import ym from 'react-yandex-metrika'
 
 import { LocationType } from '../../types'
+import { Search } from '../index'
 
 export default memo(() => {
   const { locationType } = useParams()
@@ -47,6 +48,7 @@ export default memo(() => {
           <LinkContainer to={'/videos'}>
             <Nav.Link>Видео</Nav.Link>
           </LinkContainer>
+          <Search />
         </Nav>
       </Navbar.Collapse>
     </Navbar>
