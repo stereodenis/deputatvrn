@@ -1,5 +1,5 @@
 import * as photos from '../../images/candidates'
-import { CandidateStatuses, LocationType, Parties, Person } from '../../types'
+import { CandidateStatuses, LinkTitle, LocationType, Parties, Person } from '../../types'
 
 const kprf: Person[] = [
   {
@@ -271,9 +271,15 @@ const kprf: Person[] = [
     ],
   },
   {
-    alias: 'emelyanov',
+    alias: 'emelyanov_evgeniy',
     name: 'Емельянов Евгений Владимирович',
     birthdate: '04.07.1968',
+    photo: photos.emelyanov_evgeniy,
+    links: [
+      { title: LinkTitle.vk, url: 'https://vk.com/vrn20' },
+      { title: LinkTitle.whatsapp, url: 'https://wa.me/79009259595' },
+      { title: LinkTitle.instagram, url: 'https://instagram.com/eemvrn' },
+    ],
     candidate: [
       {
         areaNumber: 20,
