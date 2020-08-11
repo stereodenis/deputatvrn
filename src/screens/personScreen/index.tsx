@@ -52,6 +52,15 @@ export default memo(() => {
 
         <Col>
           <Row>
+            {Boolean(person.bio) && (
+              <div>
+                <h5>Биография</h5>
+                <p>{person.bio}</p>
+              </div>
+            )}
+          </Row>
+
+          <Row>
             {person.candidate.sort(sortCandidate).map((candidate) => (
               <div key={`${candidate.locationType}_${candidate.areaNumber}`} className='border-left pl-3 mb-3'>
                 <div>
@@ -130,15 +139,7 @@ export default memo(() => {
             ))}
           </Row>
           <Row>
-            {Boolean(person.bio) && (
-              <div>
-                <h5>Биография</h5>
-                <p>{person.bio}</p>
-              </div>
-            )}
-          </Row>
-          <Row>
-            {personVideos.length && (
+            {personVideos.length > 0 && (
               <div className='border-bottom py-3'>
                 <h2>Видео</h2>
                 <div>

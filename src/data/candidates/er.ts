@@ -1,5 +1,5 @@
 import * as photos from '../../images/candidates'
-import { CandidateStatuses, LocationType, Parties, Person } from '../../types'
+import { CandidateStatuses, LinkTitle, LocationType, Parties, Person } from '../../types'
 
 const er: Person[] = [
   {
@@ -365,6 +365,7 @@ const er: Person[] = [
     name: 'Кандыбин Иван Владимирович',
     birthdate: '16.02.1976',
     photo: 'http://gorduma-voronezh.ru/wp-content/uploads/2019/05/kandybin_iv.jpg',
+    links: [{ title: LinkTitle.vk, url: 'https://vk.com/id595089399' }],
     candidate: [
       {
         areaNumber: 17,
