@@ -9,6 +9,7 @@ const mapStatusToColors = {
   'На проверке': '#f0ad4e',
   [`${CandidateStatuses.registered}`]: '#5cb85c',
   [`${CandidateStatuses.declined}`]: '#d9534f',
+  [`${CandidateStatuses.lost}`]: '#343A40',
 }
 
 export default memo(({ candidates, locationType }: Props) => {
@@ -17,6 +18,7 @@ export default memo(({ candidates, locationType }: Props) => {
     {
       [CandidateStatuses.registered]: groupped[CandidateStatuses.registered]?.length,
       [CandidateStatuses.declined]: groupped[CandidateStatuses.declined]?.length,
+      [CandidateStatuses.lost]: groupped[CandidateStatuses.lost]?.length,
       'На проверке': groupped['pending']?.length,
     },
   ]
@@ -29,6 +31,8 @@ export default memo(({ candidates, locationType }: Props) => {
         groupMode='stacked'
         layout='horizontal'
         colors={(d) => mapStatusToColors[d.id]}
+        // @ts-ignore
+        labelTextColor={(d) => (d.data.id === CandidateStatuses.lost ? 'white' : '#343A40')}
         isInteractive={false}
       />
     </div>

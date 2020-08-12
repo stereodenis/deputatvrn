@@ -9,6 +9,7 @@ export interface Deputat {
 export enum CandidateStatuses {
   registered = 'Зарегистрирован',
   declined = 'Отказ в регистрации',
+  lost = 'Утративший статус выдвинутого кандидата',
 }
 
 export enum LocationType {
