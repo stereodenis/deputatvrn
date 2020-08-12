@@ -349,6 +349,12 @@ const er: Person[] = [
       },
       {
         areaNumber: 16,
+        status: CandidateStatuses.lost,
+        callNumber: 5,
+        locationType: LocationType.city,
+      },
+      {
+        areaNumber: 16,
         callNumber: 4,
         locationType: LocationType.city,
         party: Parties.er,

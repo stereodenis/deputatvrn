@@ -1,5 +1,5 @@
 import * as photos from '../../images/candidates'
-import { CandidateStatuses, LocationType, LinkTitle, Parties, Person, Project } from '../../types'
+import { CandidateStatuses, LinkTitle, LocationType, Parties, Person, Project } from '../../types'
 
 const noParty: Person[] = [
   {
@@ -160,6 +160,12 @@ const noParty: Person[] = [
         callNumber: 5,
         locationType: LocationType.city,
         status: CandidateStatuses.declined,
+      },
+      {
+        locationType: LocationType.city,
+        callNumber: 5,
+        areaNumber: 7,
+        status: CandidateStatuses.lost,
       },
     ],
   },
@@ -634,24 +640,25 @@ const noParty: Person[] = [
       },
     ],
   },
-  // {
-  //   alias: 'panov_egor',
-  //   name: 'Панов Егор Львович',
-  //   photo: photos.panovEgor,
-  //   links: [
-  //     { title: LinkTitle.facebook, url: 'https://www.facebook.com/je.l.panov/' },
-  //     { title: LinkTitle.vk, url: 'https://vk.com/jegor.panov' },
-  //   ],
-  //   birthdate: '28.11.1986',
-  //   candidate: [
-  //     {
-  //       areaNumber: 1,
-  //       role: 'временно не работающий',
-  //       callNumber: 5,
-  //       locationType: LocationType.city,
-  //     },
-  //   ],
-  // },
+  {
+    alias: 'panov_egor',
+    name: 'Панов Егор Львович',
+    photo: photos.panovEgor,
+    links: [
+      { title: LinkTitle.facebook, url: 'https://www.facebook.com/je.l.panov/' },
+      { title: LinkTitle.vk, url: 'https://vk.com/jegor.panov' },
+    ],
+    birthdate: '28.11.1986',
+    candidate: [
+      {
+        areaNumber: 1,
+        role: 'временно не работающий',
+        callNumber: 5,
+        locationType: LocationType.city,
+        status: CandidateStatuses.lost,
+      },
+    ],
+  },
   {
     alias: 'panfilov_aleksej',
     name: 'Панфилов Алексей Иванович',
@@ -716,18 +723,19 @@ const noParty: Person[] = [
       },
     ],
   },
-  // {
-  //   alias: 'ratnenko_sergej',
-  //   name: 'Ратненко Сергей Александрович',
-  //   birthdate: '04.02.1984',
-  //   candidate: [
-  //     {
-  //       areaNumber: 2,
-  //       callNumber: 5,
-  //       locationType: LocationType.city,
-  //     },
-  //   ],
-  // },
+  {
+    alias: 'ratnenko_sergej',
+    name: 'Ратненко Сергей Александрович',
+    birthdate: '04.02.1984',
+    candidate: [
+      {
+        areaNumber: 2,
+        callNumber: 5,
+        locationType: LocationType.city,
+        status: CandidateStatuses.lost,
+      },
+    ],
+  },
   {
     alias: 'ratushnyj_artem',
     name: 'Ратушный Артём Александрович',
@@ -1096,6 +1104,58 @@ const noParty: Person[] = [
     birthdate: '03.07.1958',
     candidate: [
       { locationType: LocationType.region, callNumber: 7, areaNumber: 5, status: CandidateStatuses.declined },
+    ],
+  },
+  {
+    alias: 'galushko_vitaliy',
+    name: 'Галушко Виталий Владимирович',
+    birthdate: '05.10.1963',
+    candidate: [
+      {
+        locationType: LocationType.city,
+        callNumber: 5,
+        areaNumber: 8,
+        status: CandidateStatuses.lost,
+      },
+    ],
+  },
+  {
+    alias: 'razinkov_aleksandr',
+    name: 'Разинков Александр Николаевич',
+    birthdate: '02.06.1980',
+    candidate: [
+      {
+        locationType: LocationType.city,
+        callNumber: 5,
+        areaNumber: 6,
+        status: CandidateStatuses.lost,
+      },
+    ],
+  },
+  {
+    alias: 'timoshenko_evgeniy',
+    name: 'Тимошенко Евгений Владимирович',
+    birthdate: '28.06.1980',
+    candidate: [
+      {
+        locationType: LocationType.city,
+        callNumber: 5,
+        areaNumber: 8,
+        status: CandidateStatuses.lost,
+      },
+    ],
+  },
+  {
+    alias: 'horsheva_elena',
+    name: 'Хоршева Елена Алексеевна',
+    birthdate: '12.11.1963',
+    candidate: [
+      {
+        locationType: LocationType.city,
+        callNumber: 5,
+        areaNumber: 16,
+        status: CandidateStatuses.lost,
+      },
     ],
   },
 ]
