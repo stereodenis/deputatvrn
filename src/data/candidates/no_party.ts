@@ -549,6 +549,12 @@ const noParty: Person[] = [
         locationType: LocationType.city,
         status: CandidateStatuses.registered,
       },
+      {
+        locationType: LocationType.region,
+        callNumber: 7,
+        areaNumber: 4,
+        status: CandidateStatuses.lost,
+      },
     ],
   },
   {
@@ -1154,6 +1160,19 @@ const noParty: Person[] = [
         locationType: LocationType.city,
         callNumber: 5,
         areaNumber: 16,
+        status: CandidateStatuses.lost,
+      },
+    ],
+  },
+  {
+    alias: 'horsheva_elena',
+    name: 'Кирхляров Гаджиахмед Джанбулатович',
+    birthdate: '15.02.1962',
+    candidate: [
+      {
+        locationType: LocationType.region,
+        callNumber: 7,
+        areaNumber: 5,
         status: CandidateStatuses.lost,
       },
     ],
