@@ -35,7 +35,6 @@ export default memo(() => {
   return (
     <Typeahead
       labelKey={'name'}
-      id='pagination-example'
       options={persons}
       align={'left'}
       placeholder='Поиск...'
