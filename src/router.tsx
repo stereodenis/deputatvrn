@@ -22,6 +22,7 @@ export default memo(() => (
 
     <Redirect exact from={'/areas'} to={'/city/areas'} />
     <Redirect from={'/areas/:areaNumber'} to={'/city/areas/:areaNumber'} />
+    <Redirect from={'/area/:areaNumber'} to={'/city/areas/:areaNumber'} />
     <Redirect exact from={'/candidates'} to={'/city/candidates'} />
     <Redirect from={'/candidates/:candidateAlias'} to={'/persons/:personAlias'} />
     <Redirect exact from='/parties' to={'/city/parties'} />

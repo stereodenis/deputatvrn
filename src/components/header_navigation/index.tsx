@@ -5,7 +5,7 @@ import { Link, useParams, useHistory } from 'react-router-dom'
 import ym from 'react-yandex-metrika'
 
 import { LocationType } from '../../types'
-import { Search } from '../index'
+import Search from '../search'
 
 export default memo(() => {
   const { locationType } = useParams()
