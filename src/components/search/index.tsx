@@ -34,16 +34,17 @@ export default memo(() => {
 
   return (
     <Typeahead
-      labelKey={'name'}
+      id='persons-search'
+      labelKey='name'
       options={persons}
-      align={'left'}
+      align='left'
       placeholder='Поиск...'
       onChange={handleSearch}
       // @ts-ignore
       renderMenu={renderMenu}
       clearButton
-      emptyLabel={'Ничего не найдено'}
-      paginationText={'Показать больше...'}
+      emptyLabel='Ничего не найдено'
+      paginationText='Показать больше...'
     />
   )
 })

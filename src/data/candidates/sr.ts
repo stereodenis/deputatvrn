@@ -3,7 +3,7 @@ import { CandidateStatuses, LocationType, Parties, Person } from '../../types'
 
 const sr: Person[] = [
   {
-    alias: 'akulov_evgenij',
+    alias: 'akulov_evgenij_alekseevich',
     name: 'Акулов Евгений Алексеевич',
     birthdate: '20.01.1970',
     candidate: [

@@ -973,7 +973,7 @@ const noParty: Person[] = [
     ],
   },
   {
-    alias: 'chekmarev_artem',
+    alias: 'chekmarev_artem_olegovich',
     name: 'Чекмарев Артём Олегович',
     birthdate: '17.05.1986',
     candidate: [
@@ -1165,7 +1165,7 @@ const noParty: Person[] = [
     ],
   },
   {
-    alias: 'horsheva_elena',
+    alias: 'kirhlyarov_gadzhiahmed',
     name: 'Кирхляров Гаджиахмед Джанбулатович',
     birthdate: '15.02.1962',
     candidate: [

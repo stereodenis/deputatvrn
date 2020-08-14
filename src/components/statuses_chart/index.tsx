@@ -26,6 +26,7 @@ export default memo(({ candidates, locationType }: Props) => {
   return (
     <div style={{ height: '20px' }}>
       <ResponsiveBar
+        indexBy={(d) => String(d[`${CandidateStatuses.registered}`])}
         data={data}
         keys={Object.keys(mapStatusToColors)}
         groupMode='stacked'
