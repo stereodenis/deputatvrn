@@ -115,7 +115,8 @@ export { default as korchagin } from './kprf/korchagin.jpg'
 export { default as pomeranzev } from './kprf/pomeranzev.jpg'
 export { default as roslik } from './kprf/roslik.jpg'
 export { default as sivoplyasov } from './kprf/sivoplyasov.jpg'
-export { default as emelyanov_evgeniy } from './emelyanov_evgeniy.jpg'
+export { default as emelyanov_evgeniy } from './kprf/emelyanov_evgeniy.jpg'
+export { default as ryabov_aleksey } from './kprf/ryabov_aleksey.jpg'
 
 // область
 // export { default as ivanov_svyatoslav } from './rodina/ivanov_svyatoslav.jpg'

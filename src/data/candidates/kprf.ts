@@ -218,6 +218,8 @@ const kprf: Person[] = [
     alias: 'ryabov',
     name: 'Рябов Алексей Анатольевич',
     birthdate: '26.12.1992',
+    photo: photos.ryabov_aleksey,
+    links: [{ title: LinkTitle.vk, url: 'https://vk.com/id108611370' }],
     candidate: [
       {
         areaNumber: 16,

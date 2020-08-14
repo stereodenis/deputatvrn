@@ -644,6 +644,7 @@ const rodina: Person[] = [
     name: 'Чекмарев Артём Витальевич',
     birthdate: '27.05.1993',
     photo: photos.chekmarev_artem,
+    links: [{ title: LinkTitle.instagram, url: 'https://instagram.com/a.chekmarev36' }],
     candidate: [
       {
         areaNumber: 18,
