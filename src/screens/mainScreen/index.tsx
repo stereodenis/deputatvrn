@@ -3,12 +3,18 @@ import { Link } from 'react-router-dom'
 import { Container, Row, Col } from 'react-bootstrap'
 
 import { LocationType } from '../../types'
+import { Search } from '../../components'
 
 export declare let ymaps: any
 
 export default function Map() {
   return (
     <Container fluid>
+      <Row>
+        <Col xs={12} lg={{ span: 4, offset: 4 }} className='text-center'>
+          <Search />
+        </Col>
+      </Row>
       <Row>
         {(Object.keys(LocationType) as Array<keyof typeof LocationType>).map((locationType) => (
           <Col xs={12} sm={6} key={locationType} className='text-center mb-3'>
