@@ -4,7 +4,7 @@ import { Col, Container, Image, Row } from 'react-bootstrap'
 import { useParams, Link } from 'react-router-dom'
 
 import persons from '../../data/persons'
-import { isCurrentCallNumber, locationTypeFromName, youtube_parser, getCurrentCandidate } from '../../helpers'
+import { isCurrentCallNumber, locationTypeFromName, youtube_parser, getCurrentCandidates } from '../../helpers'
 import { noPhoto } from '../../images/candidates'
 import { Candidate, LocationType } from '../../types'
 import { CandidateStatus, PartyLink, AreaLink, CandidateCard } from '../../components'
@@ -107,10 +107,10 @@ export default memo(() => {
                     </h2>
                     <Row>
                       {persons
-                        .filter(
-                          (p) =>
-                            getCurrentCandidate(p, locationTypeFromName(candidate.locationType))?.areaNumber ===
-                              Number(candidate.areaNumber) && p.alias !== personAlias
+                        .filter((p) =>
+                          getCurrentCandidates(p, locationTypeFromName(candidate.locationType)).some(
+                            (c) => c.areaNumber === Number(candidate.areaNumber) && p.alias !== personAlias
+                          )
                         )
                         .map((areaCandidate) => (
                           <Col

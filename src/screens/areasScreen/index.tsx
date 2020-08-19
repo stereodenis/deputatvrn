@@ -80,7 +80,7 @@ export default memo(() => {
                 <div>Избирателей: {area.people}</div>
                 <div>Кандидатов: {areaCandidates.length}</div>
                 {deputatPerson && <div>Депутат: {deputatPerson.name}</div>}
-                <StatusesChart candidates={areaCandidates} locationType={locationType} />
+                <StatusesChart persons={areaCandidates} locationType={locationType} />
               </Link>
             </Col>
           )

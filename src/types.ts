@@ -20,6 +20,7 @@ export enum LocationType {
 export interface Candidate {
   areaNumber: number
   callNumber: number
+  listNumber?: number
   locationType: LocationType
   party?: Parties
   project?: Project

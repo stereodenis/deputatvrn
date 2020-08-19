@@ -3,11 +3,12 @@ import { useParams, Link } from 'react-router-dom'
 import { Container, Row, Col } from 'react-bootstrap'
 // @ts-ignore
 import MetaTags from 'react-meta-tags'
+import { flatten } from 'lodash'
 
 import persons from '../../data/persons'
 import { Parties } from '../../types'
 import { CandidateCard, StatusesChart } from '../../components'
-import { getCurrentCandidate, getPartyCandidates } from '../../helpers'
+import { getCurrentCandidates, getPartyCandidates } from '../../helpers'
 
 export default memo(() => {
   const { partyAlias } = useParams<{ partyAlias: keyof typeof Parties }>()
@@ -16,13 +17,21 @@ export default memo(() => {
   const title = isNoParty ? 'Самовыдвиженцы' : `Партия «${Parties[partyAlias]}»`
 
   const { locationType } = useParams()
-  const currentPersons = persons.filter((p) => getCurrentCandidate(p, locationType))
+  const currentPersons = persons.filter((p) => getCurrentCandidates(p, locationType).length > 0)
+  const currentCandidates = flatten(currentPersons.map((p) => getCurrentCandidates(p, locationType)))
   const partyCandidates = useMemo(
     () =>
       isNoParty
-        ? currentPersons.filter((p) => !getCurrentCandidate(p, locationType)?.party)
+        ? currentCandidates.filter((c) => !c.party)
+        : currentCandidates.filter((c) => c.party === Parties[partyAlias]),
+    [currentCandidates, isNoParty, partyAlias]
+  )
+  const partyPersons = useMemo(
+    () =>
+      isNoParty
+        ? currentPersons.filter((p) => p.candidate.some((c) => c && !c.party))
         : getPartyCandidates(partyAlias, locationType),
-    [currentPersons, isNoParty, partyAlias, locationType]
+    [isNoParty, currentPersons, partyAlias, locationType]
   )
 
   return (
@@ -38,25 +47,21 @@ export default memo(() => {
         <h1>{title}</h1>
       </div>
 
-      <StatusesChart candidates={partyCandidates} {...{ locationType }} />
+      <StatusesChart persons={partyPersons} {...{ locationType }} />
 
       <div className='py-3'>
-        <h2>Список кандидатов в депутаты ({partyCandidates.length})</h2>
+        <h2>Список кандидатов в депутаты ({partyPersons.length})</h2>
         <Row className='border-bottom'>
           {partyCandidates
-            .sort(
-              (a, b) =>
-                (getCurrentCandidate(a, locationType)?.areaNumber || 0) -
-                (getCurrentCandidate(b, locationType)?.areaNumber || 0)
-            )
-            .map((person) => (
-              <Col xs={6} md={4} lg={3} xl={2} key={person.name} className='border-xs-bottom border-md-none py-3'>
-                <Link to={`/${locationType}/areas/${getCurrentCandidate(person, locationType)?.areaNumber}`}>
-                  <h4>{getCurrentCandidate(person, locationType)?.areaNumber} округ</h4>
+            .sort((a, b) => (a.areaNumber || 0) - (b.areaNumber || 0))
+            .map((person, index) => (
+              <Col xs={6} md={4} lg={3} xl={2} key={index} className='border-xs-bottom border-md-none py-3'>
+                <Link to={`/${locationType}/areas/${person.areaNumber}`}>
+                  <h4>{person.areaNumber} округ</h4>
                 </Link>
-                <Link to={`/persons/${person.alias}`}>
-                  <CandidateCard {...{ person, locationType }} />
-                </Link>
+                {/*<Link to={`/persons/${person.alias}`}>*/}
+                {/*  <CandidateCard {...{ person, locationType }} />*/}
+                {/*</Link>*/}
               </Col>
             ))}
         </Row>

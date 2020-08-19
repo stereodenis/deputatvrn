@@ -1,11 +1,11 @@
 import React, { memo } from 'react'
 import { Container, Row, Col, Image } from 'react-bootstrap'
 import { Link, useParams } from 'react-router-dom'
-import { shuffle } from 'lodash'
+import { shuffle, flatten } from 'lodash'
 
 import { StatusesChart } from '../../components'
 import persons from '../../data/persons'
-import { getCurrentCandidate, getPartyCandidates } from '../../helpers'
+import { getCurrentCandidates, getPartyCandidates } from '../../helpers'
 import { Parties } from '../../types'
 
 const mapPartyToLogo: { [s: string]: string } = {
@@ -24,8 +24,8 @@ const mapPartyToLogo: { [s: string]: string } = {
 
 export default memo(() => {
   const { locationType } = useParams()
-  const currentPersons = persons.filter((p) => getCurrentCandidate(p, locationType))
-  const noPartyCandidates = currentPersons.filter((p) => !getCurrentCandidate(p, locationType)?.party)
+  const currentPersons = persons.filter((p) => getCurrentCandidates(p, locationType).length > 0)
+  const noPartyPersons = currentPersons.filter((p) => p.candidate.some((c) => !c.party))
 
   return (
     <Container fluid>
@@ -40,8 +40,8 @@ export default memo(() => {
               alt={'Самовыдвиженцы'}
             />
             <div className='text-center'>Самовыдвиженцы</div>
-            <div>Кандидатов: {noPartyCandidates.length}</div>
-            <StatusesChart candidates={noPartyCandidates} locationType={locationType} />
+            <div>Кандидатов: {noPartyPersons.length}</div>
+            <StatusesChart persons={noPartyPersons} locationType={locationType} />
           </Link>
         </Col>
 
@@ -62,7 +62,7 @@ export default memo(() => {
                 />
                 <div className='text-center'>{Parties[partyAlias]}</div>
                 <div>Кандидатов: {partyCandidates.length}</div>
-                <StatusesChart candidates={partyCandidates} locationType={locationType} />
+                <StatusesChart persons={partyCandidates} locationType={locationType} />
               </Link>
             </Col>
           )

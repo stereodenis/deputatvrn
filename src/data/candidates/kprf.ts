@@ -200,6 +200,14 @@ const kprf: Person[] = [
         callNumber: 5,
         locationType: LocationType.city,
       },
+      {
+        locationType: LocationType.city,
+        callNumber: 5,
+        areaNumber: 0,
+        listNumber: 2,
+        party: Parties.kprf,
+        status: CandidateStatuses.registered,
+      },
     ],
   },
   {
@@ -751,6 +759,38 @@ const kprf: Person[] = [
         party: Parties.kprf,
         areaNumber: 23,
         status: CandidateStatuses.registered,
+      },
+    ],
+  },
+  {
+    alias: 'ashifin_konstantin',
+    name: 'Ашифин Константин Григорьевич',
+    photo: photos.noPhoto,
+    birthdate: '26.08.1969',
+    candidate: [
+      {
+        locationType: LocationType.city,
+        callNumber: 5,
+        areaNumber: 0,
+        listNumber: 1,
+        status: CandidateStatuses.registered,
+        party: Parties.kprf,
+      },
+    ],
+  },
+  {
+    alias: 'gukov_oleg',
+    photo: photos.noPhoto,
+    name: 'Гуков Олег Александрович',
+    birthdate: '14.10.1972',
+    candidate: [
+      {
+        locationType: LocationType.city,
+        callNumber: 5,
+        areaNumber: 0,
+        listNumber: 3,
+        status: CandidateStatuses.registered,
+        party: Parties.kprf,
       },
     ],
   },
