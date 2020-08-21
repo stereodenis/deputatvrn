@@ -47,6 +47,7 @@ const kprf: Person[] = [
   {
     alias: 'kovalevskii',
     name: 'Ковалевский Валентин Вячеславович',
+    photo: photos.kovalevskiy_valentin,
     birthdate: '14.02.1996',
     candidate: [
       {
@@ -101,6 +102,7 @@ const kprf: Person[] = [
   {
     alias: 'zazepin',
     name: 'Зацепин Алексей Александрович',
+    photo: photos.zacepin_alexey,
     birthdate: '27.05.1979',
     candidate: [
       {
@@ -233,6 +235,7 @@ const kprf: Person[] = [
   {
     alias: 'sitnikov',
     name: 'Ситников Максим Михайлович',
+    photo: photos.sitnikov_maksim,
     birthdate: '17.05.1989',
     candidate: [
       {
@@ -247,6 +250,7 @@ const kprf: Person[] = [
   {
     name: 'Глуховцев Даниил Сергеевич',
     alias: 'gluhovzev',
+    photo: photos.gluhovzev_daniil,
     birthdate: '02.08.1998',
     candidate: [
       {
@@ -261,6 +265,7 @@ const kprf: Person[] = [
   {
     alias: 'shabunin',
     name: 'Шабунин Александр Николаевич',
+    photo: photos.shabunin_aleksandr,
     birthdate: '19.07.1985',
     candidate: [
       {
@@ -332,6 +337,7 @@ const kprf: Person[] = [
   {
     alias: 'zverev',
     name: 'Зверев Николай Николаевич',
+    photo: photos.zverev_nikolay,
     birthdate: '04.09.1997',
     candidate: [
       {
@@ -375,6 +381,7 @@ const kprf: Person[] = [
   {
     alias: 'berezhnoj_sergej',
     name: 'Бережной Сергей Александрович',
+    photo: photos.berezhnoy_sergey,
     birthdate: '05.07.1978',
     candidate: [
       {
@@ -501,6 +508,7 @@ const kprf: Person[] = [
   {
     alias: 'kolomencev_denis',
     name: 'Коломенцев Денис Витальевич',
+    photo: photos.kolomenzev_denis,
     birthdate: '02.07.1972',
     candidate: [
       {
@@ -529,6 +537,7 @@ const kprf: Person[] = [
   {
     alias: 'melkumov_konstantin',
     name: 'Мелкумов Константин Растиславович',
+    photo: photos.melkumov_konstantin,
     birthdate: '15.04.1980',
     candidate: [
       {
@@ -564,6 +573,7 @@ const kprf: Person[] = [
   {
     alias: 'rogatnev_andrej',
     name: 'Рогатнев Андрей Иванович',
+    photo: photos.rogatnev_andrey,
     birthdate: '23.06.1966',
     candidate: [
       {
@@ -648,6 +658,7 @@ const kprf: Person[] = [
   {
     alias: 'sukochev_andrej',
     name: 'Сукочев Андрей Иванович',
+    photo: photos.sukochev_andrey,
     birthdate: '28.03.1963',
     candidate: [
       {
