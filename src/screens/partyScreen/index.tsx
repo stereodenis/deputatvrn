@@ -50,15 +50,7 @@ export default memo(() => {
                 (getCurrentCandidate(b, locationType)?.areaNumber || 0)
             )
             .map((person) => (
-              <Col
-                xs={12}
-                sm={6}
-                md={4}
-                lg={3}
-                xl={2}
-                key={person.name}
-                className='border-xs-bottom border-md-none py-3'
-              >
+              <Col xs={6} md={4} lg={3} xl={2} key={person.name} className='border-xs-bottom border-md-none py-3'>
                 <Link to={`/${locationType}/areas/${getCurrentCandidate(person, locationType)?.areaNumber}`}>
                   <h4>{getCurrentCandidate(person, locationType)?.areaNumber} округ</h4>
                 </Link>
