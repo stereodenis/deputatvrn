@@ -1,6 +1,7 @@
 import { Person } from '../types'
 
 import er from './candidates/er'
+import kpkr from './candidates/kpkr'
 import kprf from './candidates/kprf'
 import ldpr from './candidates/ldpr'
 import newPeople from './candidates/new_people'
@@ -26,6 +27,7 @@ const persons: Person[] = [
   ...rosta,
   ...zaSprav,
   ...dem,
+  ...kpkr,
 ]
 
 export default persons

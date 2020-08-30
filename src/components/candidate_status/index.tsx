@@ -9,8 +9,11 @@ const mapStatusToVariant = {
   [CandidateStatuses.lost]: 'dark',
 }
 
-export default memo(({ status }: { status?: CandidateStatuses }) => (
-  <Badge pill variant={status ? mapStatusToVariant[status] : 'warning'} style={{ whiteSpace: 'normal' }}>
-    {status || 'Выдвинут'}
-  </Badge>
+export default memo(({ status, isList }: { status?: CandidateStatuses; isList?: boolean }) => (
+  <>
+    <Badge pill variant={status ? mapStatusToVariant[status] : 'warning'} style={{ whiteSpace: 'normal' }}>
+      {status || 'Выдвинут'}
+    </Badge>
+    {isList && <>{' по списку'}</>}
+  </>
 ))

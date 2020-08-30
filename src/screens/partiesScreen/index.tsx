@@ -20,6 +20,7 @@ const mapPartyToLogo: { [s: string]: string } = {
   zaPravdu: require('../../images/parties/za_pravdu.png'),
   zaSprav: require('../../images/parties/za_sprav.jpg'),
   rosta: require('../../images/parties/rosta.png'),
+  kpkr: require('../../images/parties/kpkr.png'),
 }
 
 export default memo(() => {
@@ -32,10 +33,9 @@ export default memo(() => {
       <h1>Партии</h1>
       <Row>
         <Col xs={12} sm={4} md={3} lg={2} className='border py-3'>
-          <Link to={`/${locationType}/parties/noParty`}>
+          <Link to={`/${locationType}/parties/noParty`} className='text-center d-block'>
             <Image
-              width={'100%'}
-              className=''
+              style={{ maxWidth: '100%', maxHeight: '100px' }}
               src={require('../../images/parties/noparty.jpg')}
               alt={'Самовыдвиженцы'}
             />

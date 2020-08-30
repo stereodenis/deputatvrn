@@ -18,20 +18,16 @@ export default memo(() => {
 
   const { locationType } = useParams()
   const currentPersons = persons.filter((p) => getCurrentCandidates(p, locationType).length > 0)
-  const currentCandidates = flatten(currentPersons.map((p) => getCurrentCandidates(p, locationType)))
-  const partyCandidates = useMemo(
-    () =>
-      isNoParty
-        ? currentCandidates.filter((c) => !c.party)
-        : currentCandidates.filter((c) => c.party === Parties[partyAlias]),
-    [currentCandidates, isNoParty, partyAlias]
-  )
   const partyPersons = useMemo(
     () =>
       isNoParty
         ? currentPersons.filter((p) => p.candidate.some((c) => c && !c.party))
         : getPartyCandidates(partyAlias, locationType),
     [isNoParty, currentPersons, partyAlias, locationType]
+  )
+
+  const partyCandidates = flatten(
+    partyPersons.map((p) => getCurrentCandidates(p, locationType).map((c) => ({ person: p, candidate: c })))
   )
 
   return (
@@ -53,15 +49,26 @@ export default memo(() => {
         <h2>Список кандидатов в депутаты ({partyPersons.length})</h2>
         <Row className='border-bottom'>
           {partyCandidates
-            .sort((a, b) => (a.areaNumber || 0) - (b.areaNumber || 0))
-            .map((person, index) => (
-              <Col xs={6} md={4} lg={3} xl={2} key={index} className='border-xs-bottom border-md-none py-3'>
-                <Link to={`/${locationType}/areas/${person.areaNumber}`}>
-                  <h4>{person.areaNumber} округ</h4>
+            .sort((a, b) => a.candidate.areaNumber - b.candidate.areaNumber)
+            .map((personAndCandidate, index) => (
+              <Col xs={12} sm={6} md={4} lg={3} xl={2} key={index} className='border-xs-bottom border-md-none py-3'>
+                <Link to={`/${locationType}/areas/${personAndCandidate.candidate.areaNumber}`}>
+                  <h4>
+                    {personAndCandidate.candidate.areaNumber === 0
+                      ? `По обзему списку, №${personAndCandidate.candidate.listNumber}`
+                      : `${personAndCandidate.candidate.areaNumber} округ`}
+                  </h4>
                 </Link>
-                {/*<Link to={`/persons/${person.alias}`}>*/}
-                {/*  <CandidateCard {...{ person, locationType }} />*/}
-                {/*</Link>*/}
+                <Link to={`/persons/${personAndCandidate.person.alias}`}>
+                  <CandidateCard
+                    {...{
+                      name: personAndCandidate.person.name,
+                      photo: personAndCandidate.person.photo,
+                      candidate: personAndCandidate.candidate,
+                      locationType,
+                    }}
+                  />
+                </Link>
               </Col>
             ))}
         </Row>

@@ -4,11 +4,13 @@ import { Link, useParams } from 'react-router-dom'
 // @ts-ignore
 import MetaTags from 'react-meta-tags'
 import { Image } from 'react-bootstrap'
+import { flatten } from 'lodash'
 
 import { DeputatCard, CandidateCard } from '../../components'
 import areas from '../../data/areas'
+import persons from '../../data/persons'
 import areasImages from '../../images/areas'
-import { getAreaCandidates, getPersonWithCurrentDeputat, youtube_parser } from '../../helpers'
+import { getCurrentCandidates, getPersonWithCurrentDeputat, youtube_parser } from '../../helpers'
 import videos from '../../data/videos'
 
 export default memo(() => {
@@ -17,7 +19,14 @@ export default memo(() => {
   const area = areas[locationType][areaNumber]
 
   const personWithCurrentDeputat = getPersonWithCurrentDeputat(areaNumber, locationType)
-  const areaCandidats = useMemo(() => getAreaCandidates(areaNumber, locationType), [areaNumber, locationType])
+  const currentPersons = persons.filter((p) => getCurrentCandidates(p, locationType).length > 0)
+  const areaPersonsAndCandidats = useMemo(
+    () =>
+      flatten(
+        currentPersons.map((p) => getCurrentCandidates(p, locationType).map((c) => ({ person: p, candidate: c })))
+      ).filter((pc) => pc.candidate.areaNumber === areaNumber),
+    [areaNumber, currentPersons, locationType]
+  )
   const areaVideos = videos.filter((v) =>
     v.objects.some((obj) => {
       const id = obj.id.split('_')
@@ -38,24 +47,34 @@ export default memo(() => {
         <meta property='og:image' content={areasImages[areaNumber]} />
       </MetaTags>
       <div className='border-bottom pb-2 text-center d-flex flex-row justify-content-center'>
-        <Link to={`/${locationType}/areas/${areaNumber === 1 ? (locationType === 'city' ? 24 : 28) : areaNumber - 1}`}>
+        <Link to={`/${locationType}/areas/${areaNumber === 0 ? (locationType === 'city' ? 24 : 28) : areaNumber - 1}`}>
           {'<<'}
         </Link>
         <div>
-          <h1>{areaNumber} округ</h1>
-          <h4>Количество избирателей: {area.people}</h4>
+          <h1>{areaNumber === 0 ? 'Общий список' : `${areaNumber} округ`}</h1>
+          {area?.people && <h4>Количество избирателей: {area.people}</h4>}
         </div>
-        <Link to={`/${locationType}/areas/${areaNumber === (locationType === 'city' ? 24 : 28) ? 1 : areaNumber + 1}`}>
+        <Link to={`/${locationType}/areas/${areaNumber === (locationType === 'city' ? 24 : 28) ? 0 : areaNumber + 1}`}>
           {'>>'}
         </Link>
       </div>
       <div className='py-3'>
         <h2>Список кандидатов в депутаты</h2>
         <Row className='border-bottom'>
-          {areaCandidats.map((person) => (
-            <Col xs={6} md={4} lg={3} xl={2} key={person.name} className='border-xs-bottom border-md-none py-3'>
-              <Link to={`/persons/${person.alias}`}>
-                <CandidateCard {...{ person, locationType }} withParty />
+          {areaPersonsAndCandidats.map((pc) => (
+            <Col
+              xs={6}
+              md={4}
+              lg={3}
+              xl={2}
+              key={pc.person.name}
+              className='border-xs-bottom border-md-none py-3'
+            >
+              <Link to={`/persons/${pc.person.alias}`}>
+                <CandidateCard
+                  {...{ name: pc.person.name, photo: pc.person.photo, candidate: pc.candidate, locationType }}
+                  withParty
+                />
               </Link>
             </Col>
           ))}
@@ -92,7 +111,7 @@ export default memo(() => {
           </div>
         </div>
       )}
-      {area.news?.length && (
+      {area?.news?.length && (
         <div className='border-bottom py-3'>
           <h2>Упоминания в СМИ</h2>
           <div>
@@ -112,7 +131,7 @@ export default memo(() => {
           </Col>
         </Row>
       )}
-      {area.streets && (
+      {area?.streets && (
         <div className='pt-3'>
           <h2>Список улиц</h2>
           <div>
