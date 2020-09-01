@@ -69,6 +69,7 @@ export enum Parties {
   zaSprav = 'За справедливость!',
   dem = 'Демократическая партия России',
   kpkr = 'КПКР',
+  ipr = 'Интернациональная партия России',
 }
 
 export enum Project {
