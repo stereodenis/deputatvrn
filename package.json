@@ -2,6 +2,13 @@
   "name": "deputatvrn",
   "version": "0.1.0",
   "private": true,
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "lint": "eslint '*/**/*.{js,ts,tsx}' --quiet --fix",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
   "dependencies": {
     "@nivo/bar": "^0.62.0",
     "@testing-library/jest-dom": "^5.11.4",
@@ -22,13 +29,6 @@
     "react-yandex-metrika": "^2.6.0",
     "typescript": "~3.9.7"
   },
-  "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "lint": "eslint '*/**/*.{js,ts,tsx}' --quiet --fix",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject"
-  },
   "browserslist": {
     "production": [
       ">0.2%",
@@ -42,10 +42,10 @@
     ]
   },
   "devDependencies": {
-    "@types/jest": "^26.0.10",
+    "@types/jest": "^26.0.12",
     "@types/lodash": "^4.14.161",
     "@types/moment": "^2.13.0",
-    "@types/node": "^14.6.0",
+    "@types/node": "^14.6.2",
     "@types/react": "^16.9.49",
     "@types/react-bootstrap-typeahead": "^3.4.6",
     "@types/react-dom": "^16.9.8",
@@ -60,6 +60,6 @@
     "eslint-plugin-prettier": "^3.1.4",
     "eslint-plugin-react": "^7.20.6",
     "eslint-plugin-react-hooks": "^4.1.0",
-    "prettier": "^2.0.5"
+    "prettier": "^2.1.1"
   }
 }
