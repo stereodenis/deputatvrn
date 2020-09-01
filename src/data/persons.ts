@@ -8,6 +8,7 @@ import ldpr from './candidates/ldpr'
 import newPeople from './candidates/new_people'
 import noParty from './candidates/no_party'
 import pensioners from './candidates/pensioners'
+import ppd from './candidates/ppd'
 import rodina from './candidates/rodina'
 import rosta from './candidates/rosta'
 import sr from './candidates/sr'
@@ -32,6 +33,7 @@ const persons: Person[] = [
   ...kpkr,
   ...ipr,
   ...pensioners,
+  ...ppd,
 ]
 
 export default persons
