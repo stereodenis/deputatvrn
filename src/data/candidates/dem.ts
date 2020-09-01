@@ -2,7 +2,7 @@ import { LocationType, Parties, Person, CandidateStatuses } from '../../types'
 
 const dem: Person[] = [
   {
-    alias: 'Petrosyan Alik',
+    alias: 'petrosyan_alik',
     name: 'Петросян Алик Эдикович',
     birthdate: '09.12.1993',
     candidate: [

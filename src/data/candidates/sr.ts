@@ -467,7 +467,7 @@ const sr: Person[] = [
     ],
   },
   {
-    alias: 'rymar artem',
+    alias: 'rymar_artem',
     name: 'Рымарь Артем Сергеевич',
     birthdate: '16.04.1976',
     photo: photos.rymar,

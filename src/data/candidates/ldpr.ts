@@ -158,7 +158,7 @@ const ldpr: Person[] = [
     ],
   },
   {
-    alias: 'kicenyuk_alla',
+    alias: 'kizenuk_alla',
     name: 'Киценюк Алла Александровна',
     birthdate: '04.06.1984',
     candidate: [
