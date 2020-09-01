@@ -1,9 +1,9 @@
 import React, { memo } from 'react'
 import { ResponsiveBar } from '@nivo/bar'
-import { groupBy } from 'lodash'
+import { groupBy, flatten } from 'lodash'
 
 import { CandidateStatuses, LocationType, Person } from '../../types'
-import { getCurrentCandidate } from '../../helpers'
+import { getCurrentCandidates } from '../../helpers'
 
 const mapStatusToColors = {
   'На проверке': '#f0ad4e',
@@ -12,8 +12,9 @@ const mapStatusToColors = {
   [`${CandidateStatuses.lost}`]: '#343A40',
 }
 
-export default memo(({ candidates, locationType }: Props) => {
-  const groupped = groupBy(candidates, (p) => getCurrentCandidate(p, locationType)?.status || 'pending')
+export default memo(({ persons, locationType }: Props) => {
+  const candidates = flatten(persons.map((p) => getCurrentCandidates(p, locationType)))
+  const groupped = groupBy(candidates, (c) => c.status || 'pending')
   const data = [
     {
       [CandidateStatuses.registered]: groupped[CandidateStatuses.registered]?.length,
@@ -41,6 +42,6 @@ export default memo(({ candidates, locationType }: Props) => {
 })
 
 interface Props {
-  candidates: Person[]
+  persons: Person[]
   locationType: keyof typeof LocationType
 }

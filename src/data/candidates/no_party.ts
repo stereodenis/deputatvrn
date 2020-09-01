@@ -884,7 +884,7 @@ const noParty: Person[] = [
     ],
   },
   {
-    alias: 'surel igor',
+    alias: 'surel_igor',
     name: 'Сурель Игорь Алексеевич',
     birthdate: '23.03.1964',
     candidate: [

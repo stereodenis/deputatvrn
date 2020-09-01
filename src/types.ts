@@ -20,6 +20,7 @@ export enum LocationType {
 export interface Candidate {
   areaNumber: number
   callNumber: number
+  listNumber?: number
   locationType: LocationType
   party?: Parties
   project?: Project
@@ -67,6 +68,10 @@ export enum Parties {
   rosta = 'Партия Роста',
   zaSprav = 'За справедливость!',
   dem = 'Демократическая партия России',
+  kpkr = 'КПКР',
+  ipr = 'Интернациональная партия России',
+  pensioners = 'Партия пенсионеров',
+  ppd = 'Партия прямой демократии',
 }
 
 export enum Project {

@@ -5,7 +5,7 @@ import { shuffle } from 'lodash'
 
 import { StatusesChart } from '../../components'
 import persons from '../../data/persons'
-import { getCurrentCandidate, getPartyCandidates } from '../../helpers'
+import { getCurrentCandidates, getPartyCandidates } from '../../helpers'
 import { Parties } from '../../types'
 
 const mapPartyToLogo: { [s: string]: string } = {
@@ -20,28 +20,28 @@ const mapPartyToLogo: { [s: string]: string } = {
   zaPravdu: require('../../images/parties/za_pravdu.png'),
   zaSprav: require('../../images/parties/za_sprav.jpg'),
   rosta: require('../../images/parties/rosta.png'),
+  kpkr: require('../../images/parties/kpkr.png'),
 }
 
 export default memo(() => {
   const { locationType } = useParams()
-  const currentPersons = persons.filter((p) => getCurrentCandidate(p, locationType))
-  const noPartyCandidates = currentPersons.filter((p) => !getCurrentCandidate(p, locationType)?.party)
+  const currentPersons = persons.filter((p) => getCurrentCandidates(p, locationType).length > 0)
+  const noPartyPersons = currentPersons.filter((p) => p.candidate.some((c) => !c.party))
 
   return (
     <Container fluid>
       <h1>Партии</h1>
       <Row>
         <Col xs={12} sm={4} md={3} lg={2} className='border py-3'>
-          <Link to={`/${locationType}/parties/noParty`}>
+          <Link to={`/${locationType}/parties/noParty`} className='text-center d-block'>
             <Image
-              width={'100%'}
-              className=''
+              style={{ maxWidth: '100%', maxHeight: '100px' }}
               src={require('../../images/parties/noparty.jpg')}
               alt={'Самовыдвиженцы'}
             />
             <div className='text-center'>Самовыдвиженцы</div>
-            <div>Кандидатов: {noPartyCandidates.length}</div>
-            <StatusesChart candidates={noPartyCandidates} locationType={locationType} />
+            <div>Кандидатов: {noPartyPersons.length}</div>
+            <StatusesChart persons={noPartyPersons} locationType={locationType} />
           </Link>
         </Col>
 
@@ -62,7 +62,7 @@ export default memo(() => {
                 />
                 <div className='text-center'>{Parties[partyAlias]}</div>
                 <div>Кандидатов: {partyCandidates.length}</div>
-                <StatusesChart candidates={partyCandidates} locationType={locationType} />
+                <StatusesChart persons={partyCandidates} locationType={locationType} />
               </Link>
             </Col>
           )

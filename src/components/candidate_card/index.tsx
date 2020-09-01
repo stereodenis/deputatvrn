@@ -1,31 +1,32 @@
 import React, { memo } from 'react'
 import { Image } from 'react-bootstrap'
 
-import { getCurrentCandidate } from '../../helpers'
 import { noPhoto } from '../../images/candidates'
-import { Person, LocationType } from '../../types'
+import { LocationType, Candidate } from '../../types'
 import CandidateStatus from '../candidate_status'
 
-export default memo(({ person, locationType, withParty }: Props) => {
+export default memo(({ name, photo, candidate, locationType, withParty }: Props) => {
   return (
     <div>
-      {<Image width='100%' src={person.photo || noPhoto} rounded />}
+      {<Image width='100%' src={photo || noPhoto} rounded />}
 
-      <div>{person.name}</div>
+      <div>{name}</div>
       {withParty && (
         <div>
-          <i>{getCurrentCandidate(person, locationType)?.party || 'Самовыдвиженец'}</i>
+          <i className='mr-1'>{candidate.party || 'Самовыдвиженец'}</i>
         </div>
       )}
-      <>
-        <CandidateStatus status={getCurrentCandidate(person, locationType)?.status} />
-      </>
+      <div>
+        <CandidateStatus status={candidate.status} isList={!!candidate.listNumber} />
+      </div>
     </div>
   )
 })
 
 interface Props {
-  person: Person
+  name: string
+  photo?: string
   locationType: keyof typeof LocationType
   withParty?: boolean
+  candidate: Candidate
 }
