@@ -70,6 +70,7 @@ export enum Parties {
   dem = 'Демократическая партия России',
   kpkr = 'КПКР',
   ipr = 'Интернациональная партия России',
+  pensioners = 'Партия пенсионеров',
 }
 
 export enum Project {
