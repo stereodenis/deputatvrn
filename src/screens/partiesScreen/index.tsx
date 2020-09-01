@@ -1,7 +1,7 @@
 import React, { memo } from 'react'
 import { Container, Row, Col, Image } from 'react-bootstrap'
 import { Link, useParams } from 'react-router-dom'
-import { shuffle, flatten } from 'lodash'
+import { shuffle } from 'lodash'
 
 import { StatusesChart } from '../../components'
 import persons from '../../data/persons'

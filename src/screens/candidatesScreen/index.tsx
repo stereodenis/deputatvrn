@@ -37,14 +37,7 @@ export default memo(() => {
 
             <Row>
               {shuffle(areaPersonsAndCandidates).map((pc) => (
-                <Col
-                  xs={6}
-                  md={4}
-                  lg={3}
-                  xl={2}
-                  key={pc.person.name}
-                  className='border-xs-top border-sm-none py-3'
-                >
+                <Col xs={6} md={4} lg={3} xl={2} key={pc.person.name} className='border-xs-top border-sm-none py-3'>
                   <Link to={`/persons/${pc.person.alias}`} className={'d-block'}>
                     <CandidateCard
                       {...{ candidate: pc.candidate, name: pc.person.name, photo: pc.person.photo, locationType }}

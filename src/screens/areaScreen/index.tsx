@@ -62,14 +62,7 @@ export default memo(() => {
         <h2>Список кандидатов в депутаты</h2>
         <Row className='border-bottom'>
           {areaPersonsAndCandidats.map((pc) => (
-            <Col
-              xs={6}
-              md={4}
-              lg={3}
-              xl={2}
-              key={pc.person.name}
-              className='border-xs-bottom border-md-none py-3'
-            >
+            <Col xs={6} md={4} lg={3} xl={2} key={pc.person.name} className='border-xs-bottom border-md-none py-3'>
               <Link to={`/persons/${pc.person.alias}`}>
                 <CandidateCard
                   {...{ name: pc.person.name, photo: pc.person.photo, candidate: pc.candidate, locationType }}
