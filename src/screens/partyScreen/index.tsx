@@ -55,7 +55,7 @@ export default memo(() => {
                 <Link to={`/${locationType}/areas/${personAndCandidate.candidate.areaNumber}`}>
                   <h4>
                     {personAndCandidate.candidate.areaNumber === 0
-                      ? `По обзему списку, №${personAndCandidate.candidate.listNumber}`
+                      ? `По общему списку, №${personAndCandidate.candidate.listNumber}`
                       : `${personAndCandidate.candidate.areaNumber} округ`}
                   </h4>
                 </Link>
