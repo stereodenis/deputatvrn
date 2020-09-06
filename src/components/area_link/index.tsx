@@ -6,7 +6,11 @@ import { LocationType } from '../../types'
 
 export default memo(({ areaNumber, locationName }: Props) => {
   const locationType = locationTypeFromName(locationName)
-  return <Link to={`/${locationType}/areas/${areaNumber}`}>{areaNumber} округ</Link>
+  return (
+    <Link to={`/${locationType}/areas/${areaNumber}`}>
+      {areaNumber === 0 ? 'По общему списку' : `${areaNumber} округ`}
+    </Link>
+  )
 })
 
 interface Props {
