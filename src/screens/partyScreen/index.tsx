@@ -1,23 +1,27 @@
-import React, { memo, useMemo } from 'react'
+import React, { memo, useMemo, useState } from 'react'
 import { useParams, Link } from 'react-router-dom'
-import { Container, Row, Col } from 'react-bootstrap'
+import { Container, Row, Col, Form, ButtonGroup, Button } from 'react-bootstrap'
 // @ts-ignore
 import MetaTags from 'react-meta-tags'
 import { flatten } from 'lodash'
 
 import persons from '../../data/persons'
-import { Parties } from '../../types'
+import { CandidateStatuses, Parties } from '../../types'
 import { CandidateCard, StatusesChart } from '../../components'
 import { getCurrentCandidates, getPartyCandidates } from '../../helpers'
 
 export default memo(() => {
   const { partyAlias } = useParams<{ partyAlias: keyof typeof Parties }>()
+  const [disabled, setDisabled] = useState(true)
+  const [isList, setIsList] = useState(false)
   // @ts-ignore
   const isNoParty = partyAlias === 'noParty'
   const title = isNoParty ? 'Самовыдвиженцы' : `Партия «${Parties[partyAlias]}»`
 
   const { locationType } = useParams()
-  const currentPersons = persons.filter((p) => getCurrentCandidates(p, locationType).length > 0)
+  const currentPersons = useMemo(() => persons.filter((p) => getCurrentCandidates(p, locationType).length > 0), [
+    locationType,
+  ])
   const partyPersons = useMemo(
     () =>
       isNoParty
@@ -26,8 +30,13 @@ export default memo(() => {
     [isNoParty, currentPersons, partyAlias, locationType]
   )
 
-  const partyCandidates = flatten(
-    partyPersons.map((p) => getCurrentCandidates(p, locationType).map((c) => ({ person: p, candidate: c })))
+  const partyCandidates = useMemo(
+    () =>
+      flatten(partyPersons.map((p) => getCurrentCandidates(p, locationType).map((c) => ({ person: p, candidate: c }))))
+        .filter((pc) => (isNoParty ? !pc.candidate.party : pc.candidate.party === Parties[partyAlias]))
+        .filter((pc) => (disabled ? pc.candidate.status === CandidateStatuses.registered : true))
+        .filter((pc) => (isList ? pc.candidate.listNumber : !pc.candidate.listNumber)),
+    [disabled, isList, isNoParty, locationType, partyAlias, partyPersons]
   )
 
   return (
@@ -39,14 +48,31 @@ export default memo(() => {
         {/*<meta property='og:image' content={areasImages[areaNumber]} />*/}
       </MetaTags>
 
-      <div className='border-bottom pb-2 text-center'>
+      <div className='pb-2 text-center'>
         <h1>{title}</h1>
       </div>
+
+      <Form.Group>
+        <ButtonGroup size='sm'>
+          <Button active={!isList} onClick={() => setIsList(false)}>
+            Одномандатники
+          </Button>
+          <Button active={isList} onClick={() => setIsList(true)}>
+            По списку
+          </Button>
+        </ButtonGroup>
+        <Form.Check
+          type='checkbox'
+          label='Показывать только зарегистрированных'
+          checked={disabled}
+          onClick={() => setDisabled((prev) => !prev)}
+        />
+      </Form.Group>
 
       <StatusesChart persons={partyPersons} {...{ locationType }} />
 
       <div className='py-3'>
-        <h2>Список кандидатов в депутаты ({partyPersons.length})</h2>
+        <h2>Список кандидатов в депутаты ({partyCandidates.length})</h2>
         <Row className='border-bottom'>
           {partyCandidates
             .sort((a, b) => a.candidate.areaNumber - b.candidate.areaNumber)
