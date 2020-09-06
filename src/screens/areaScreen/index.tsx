@@ -1,31 +1,38 @@
-import React, { memo, useMemo } from 'react'
-import { Container, Col, Row } from 'react-bootstrap'
+import React, { memo, useMemo, useState } from 'react'
+import { Container, Col, Row, Form, ButtonGroup, Button } from 'react-bootstrap'
 import { Link, useParams } from 'react-router-dom'
 // @ts-ignore
 import MetaTags from 'react-meta-tags'
 import { Image } from 'react-bootstrap'
 import { flatten } from 'lodash'
 
-import { DeputatCard, CandidateCard } from '../../components'
+import { DeputatCard, CandidateCard, StatusesChart } from '../../components'
 import areas from '../../data/areas'
 import persons from '../../data/persons'
 import areasImages from '../../images/areas'
 import { getCurrentCandidates, getPersonWithCurrentDeputat, youtube_parser } from '../../helpers'
 import videos from '../../data/videos'
+import { CandidateStatuses } from '../../types'
 
 export default memo(() => {
   const { locationType, areaNumber: rawAreaNumber } = useParams()
+  const [disabled, setDisabled] = useState(true)
+  const [isList, setIsList] = useState(false)
   const areaNumber = Number(rawAreaNumber)
   const area = areas[locationType][areaNumber]
 
   const personWithCurrentDeputat = getPersonWithCurrentDeputat(areaNumber, locationType)
   const currentPersons = persons.filter((p) => getCurrentCandidates(p, locationType).length > 0)
+  const areaPersons = currentPersons.filter((p) => p.candidate.some((c) => c.areaNumber === areaNumber))
   const areaPersonsAndCandidats = useMemo(
     () =>
       flatten(
         currentPersons.map((p) => getCurrentCandidates(p, locationType).map((c) => ({ person: p, candidate: c })))
-      ).filter((pc) => pc.candidate.areaNumber === areaNumber),
-    [areaNumber, currentPersons, locationType]
+      )
+        .filter((pc) => pc.candidate.areaNumber === areaNumber)
+        .filter((pc) => (disabled ? pc.candidate.status === CandidateStatuses.registered : true))
+        .filter((pc) => (isList ? pc.candidate.listNumber : !pc.candidate.listNumber)),
+    [areaNumber, currentPersons, disabled, isList, locationType]
   )
   const areaVideos = videos.filter((v) =>
     v.objects.some((obj) => {
@@ -46,7 +53,7 @@ export default memo(() => {
         <meta property='og:title' content={`Избирательный округ ${areaNumber}`} />
         <meta property='og:image' content={areasImages[areaNumber]} />
       </MetaTags>
-      <div className='border-bottom pb-2 text-center d-flex flex-row justify-content-center'>
+      <div className='pb-2 text-center d-flex flex-row justify-content-center'>
         <Link to={`/${locationType}/areas/${areaNumber === 0 ? (locationType === 'city' ? 24 : 28) : areaNumber - 1}`}>
           {'<<'}
         </Link>
@@ -58,6 +65,26 @@ export default memo(() => {
           {'>>'}
         </Link>
       </div>
+
+      <Form.Group>
+        <ButtonGroup size='sm'>
+          <Button active={!isList} onClick={() => setIsList(false)}>
+            Одномандатники
+          </Button>
+          <Button active={isList} onClick={() => setIsList(true)}>
+            По списку
+          </Button>
+        </ButtonGroup>
+        <Form.Check
+          type='checkbox'
+          label='Показывать только зарегистрированных'
+          checked={disabled}
+          onClick={() => setDisabled((prev) => !prev)}
+        />
+      </Form.Group>
+
+      <StatusesChart persons={areaPersons} {...{ locationType }} />
+
       <div className='py-3'>
         <h2>Список кандидатов в депутаты</h2>
         <Row className='border-bottom'>
