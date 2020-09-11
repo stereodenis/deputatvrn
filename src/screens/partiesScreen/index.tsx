@@ -32,7 +32,7 @@ export default memo(() => {
     <Container fluid>
       <h1>Партии</h1>
       <Row>
-        <Col xs={12} sm={4} md={3} lg={2} className='border py-3'>
+        <Col xs={6} sm={4} md={3} lg={2} className='border py-3'>
           <Link to={`/${locationType}/parties/noParty`} className='text-center d-block'>
             <Image
               style={{ maxWidth: '100%', maxHeight: '100px' }}
@@ -53,7 +53,7 @@ export default memo(() => {
           }
 
           return (
-            <Col xs={12} sm={4} md={3} lg={2} key={partyAlias} className='border py-3'>
+            <Col xs={6} sm={4} md={3} lg={2} key={partyAlias} className='border py-3'>
               <Link to={`/${locationType}/parties/${partyAlias}`} className='text-center d-block'>
                 <Image
                   style={{ maxWidth: '100%', maxHeight: '100px' }}

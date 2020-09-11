@@ -21,7 +21,7 @@ export default memo(() => {
               (getCurrentDeputate(b, locationType)?.areaNumber || 0)
           )
           .map((person) => (
-            <Col xs={12} sm={6} md={4} lg={3} xl={2} key={person.name} className='border-xs-top border-sm-none py-3'>
+            <Col xs={6} md={4} lg={3} xl={2} key={person.name} className='border-xs-top border-sm-none py-3'>
               <DeputatCard {...{ person, locationType }} />
             </Col>
           ))}
