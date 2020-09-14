@@ -2438,7 +2438,7 @@ const er: Person[] = [
         party: Parties.er,
         areaNumber: 17,
         listNumber: 1,
-        status: CandidateStatuses.registered,
+        status: CandidateStatuses.lost,
       },
     ],
   },

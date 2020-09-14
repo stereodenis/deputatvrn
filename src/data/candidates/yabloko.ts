@@ -287,7 +287,7 @@ const yabloko: Person[] = [
         party: Parties.yabloko,
         areaNumber: 7,
         listNumber: 1,
-        status: CandidateStatuses.registered,
+        status: CandidateStatuses.lost,
       },
     ],
   },

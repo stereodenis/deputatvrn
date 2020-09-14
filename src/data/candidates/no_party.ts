@@ -974,14 +974,14 @@ const noParty: Person[] = [
   },
   {
     alias: 'chekmarev_artem_olegovich',
-    name: 'Чекмарев Артём Олегович',
+    name: 'Чекмарев Артем Олегович',
     birthdate: '17.05.1986',
     candidate: [
       {
         areaNumber: 18,
         callNumber: 5,
         locationType: LocationType.city,
-        status: CandidateStatuses.registered,
+        status: CandidateStatuses.lost,
       },
     ],
   },

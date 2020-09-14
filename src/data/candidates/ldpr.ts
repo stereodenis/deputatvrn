@@ -745,7 +745,7 @@ const ldpr: Person[] = [
         party: Parties.ldpr,
         locationType: LocationType.region,
         areaNumber: 28,
-        status: CandidateStatuses.registered,
+        status: CandidateStatuses.lost,
       },
       {
         locationType: LocationType.region,
@@ -1076,7 +1076,7 @@ const ldpr: Person[] = [
   },
   {
     alias: 'nebrechin_sergej',
-    name: 'Небречин Сергей Алексеевич',
+    name: 'Небренчин Сергей Алексеевич',
     birthdate: '14.01.1990',
     candidate: [
       {
@@ -1282,7 +1282,7 @@ const ldpr: Person[] = [
   },
   {
     alias: 'shatskih_aleksandr',
-    name: 'Шатских Александр Иванович',
+    name: 'Шатский Александр Иванович',
     birthdate: '04.01.1995',
     candidate: [
       {
@@ -1452,7 +1452,7 @@ const ldpr: Person[] = [
         party: Parties.ldpr,
         areaNumber: 10,
         listNumber: 3,
-        status: CandidateStatuses.registered,
+        status: CandidateStatuses.lost,
       },
     ],
   },
