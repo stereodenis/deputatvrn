@@ -25,7 +25,9 @@ export default memo(({ person, locationType }: Props) => {
           {person.name}
         </Link>
         <PartyLink party={deputatCandidate.party} locationName={deputatCandidate.locationType} />
-        <div className='mt-1'>Округ № {deputatCandidate.areaNumber}</div>
+        <div className='mt-1'>
+          {deputatCandidate.areaNumber === 0 ? 'По списку партии' : `${deputatCandidate.areaNumber} округ`}
+        </div>
         {/*<div className='mt-1'>Адрес приёмной:</div>*/}
         {/*<div>{deputatCandidate?.deputat?.office}</div>*/}
         {/*<div className='mt-1'>Телефон приёмной:</div>*/}
@@ -38,9 +40,16 @@ export default memo(({ person, locationType }: Props) => {
         {/*    )*/}
         {/*  })}*/}
         {/*</div>*/}
-        <a className='d-block mt-1' href={deputatCandidate?.deputat?.website} target='_blank' rel='noopener noreferrer'>
-          Перейти на сайт депутата
-        </a>
+        {deputatCandidate?.deputat?.website && (
+          <a
+            className='d-block mt-1'
+            href={deputatCandidate?.deputat?.website}
+            target='_blank'
+            rel='noopener noreferrer'
+          >
+            Перейти на сайт депутата
+          </a>
+        )}
       </div>
     </div>
   )

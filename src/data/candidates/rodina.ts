@@ -1076,6 +1076,7 @@ const rodina: Person[] = [
         areaNumber: 0,
         listNumber: 1,
         status: CandidateStatuses.registered,
+        deputat: {},
       },
       {
         locationType: LocationType.region,

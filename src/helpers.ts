@@ -32,7 +32,7 @@ export function locationTypeFromName(locationName: LocationType) {
 export const getCurrentCandidates = (person: Person, locationType: keyof typeof LocationType) => {
   const currentCallNumber =
     locationType === Object.keys(LocationType)[0] ? CURRENT_CITY_CALL_NUMBER : CURRENT_REGION_CALL_NUMBER
-  return person?.candidate.filter((c) => c.callNumber === currentCallNumber + 1) || []
+  return person?.candidate.filter((c) => c.callNumber === currentCallNumber) || []
 }
 
 export const getCurrentDeputate = (person: Person, locationType: keyof typeof LocationType) => {

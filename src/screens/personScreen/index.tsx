@@ -156,6 +156,7 @@ export default memo(() => {
               )
             })}
           </Row>
+
           <Row>
             {personVideos.length > 0 && (
               <div className='border-bottom py-3'>

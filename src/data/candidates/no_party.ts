@@ -675,6 +675,9 @@ const noParty: Person[] = [
         status: CandidateStatuses.registered,
         callNumber: 5,
         locationType: LocationType.city,
+        deputat: {
+          // TODO
+        },
       },
     ],
   },

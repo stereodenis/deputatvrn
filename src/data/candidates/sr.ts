@@ -470,7 +470,7 @@ const sr: Person[] = [
     alias: 'rymar_artem',
     name: 'Рымарь Артем Сергеевич',
     birthdate: '16.04.1976',
-    photo: photos.rymar,
+    photo: 'http://gorduma-voronezh.ru/wp-content/uploads/2019/05/rymar_as.jpg',
     candidate: [
       {
         party: Parties.sr,
@@ -478,6 +478,12 @@ const sr: Person[] = [
         callNumber: 5,
         locationType: LocationType.city,
         status: CandidateStatuses.registered,
+        deputat: {
+          office: 'Ленинский проспект, 158/2',
+          phones: ['204-52-31', '8 -808-141-13-20'],
+          website: 'http://gorduma-voronezh.ru/rymar-artem-sergeevich/',
+          helpers: ['Краус Анжела Александровна'],
+        },
       },
       {
         party: Parties.sr,
@@ -485,6 +491,7 @@ const sr: Person[] = [
         locationType: LocationType.region,
         areaNumber: 12,
         status: CandidateStatuses.registered,
+        deputat: {},
       },
       {
         locationType: LocationType.city,
@@ -1168,6 +1175,7 @@ const sr: Person[] = [
         areaNumber: 0,
         listNumber: 2,
         status: CandidateStatuses.registered,
+        deputat: {},
       },
     ],
   },
@@ -1183,6 +1191,7 @@ const sr: Person[] = [
         areaNumber: 0,
         listNumber: 3,
         status: CandidateStatuses.registered,
+        deputat: {},
       },
     ],
   },
@@ -1725,6 +1734,7 @@ const sr: Person[] = [
         areaNumber: 0,
         listNumber: 1,
         status: CandidateStatuses.registered,
+        deputat: {},
       },
     ],
   },

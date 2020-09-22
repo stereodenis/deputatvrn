@@ -10,6 +10,7 @@ export enum CandidateStatuses {
   registered = 'Зарегистрирован',
   declined = 'Отказ в регистрации',
   lost = 'Утративший статус выдвинутого кандидата',
+  mandatRejected = 'Отказ от мандата',
 }
 
 export enum LocationType {
@@ -32,7 +33,10 @@ export interface Candidate {
   deputat?: {
     office?: string
     phones?: string[]
-    website: string
+    website?: string
+    time?: string // Время работы приемной
+    // TODO
+    helpers?: string[]
   }
 }
 

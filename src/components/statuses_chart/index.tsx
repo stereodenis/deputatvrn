@@ -10,6 +10,7 @@ const mapStatusToColors = {
   [`${CandidateStatuses.registered}`]: '#5cb85c',
   [`${CandidateStatuses.declined}`]: '#d9534f',
   [`${CandidateStatuses.lost}`]: '#343A40',
+  [`${CandidateStatuses.mandatRejected}`]: '#343A40',
 }
 
 export default memo(({ persons, locationType }: Props) => {

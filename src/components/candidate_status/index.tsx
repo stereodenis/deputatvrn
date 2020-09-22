@@ -7,6 +7,7 @@ const mapStatusToVariant = {
   [CandidateStatuses.registered]: 'success',
   [CandidateStatuses.declined]: 'danger',
   [CandidateStatuses.lost]: 'dark',
+  [CandidateStatuses.mandatRejected]: 'dark',
 }
 
 export default memo(({ status, isList }: { status?: CandidateStatuses; isList?: boolean }) => (

@@ -152,6 +152,10 @@ const kprf: Person[] = [
         party: Parties.kprf,
         status: CandidateStatuses.registered,
         locationType: LocationType.city,
+        deputat: {
+          // TODO
+          website: 'http://gorduma-voronezh.ru/kalinin-vladimir-aleksandrovich/',
+        },
       },
       {
         locationType: LocationType.city,
@@ -319,7 +323,7 @@ const kprf: Person[] = [
     alias: 'pomeranzev',
     name: 'Померанцев Андрей Сергеевич',
     birthdate: '08.03.1976',
-    photo: photos.pomeranzev,
+    photo: 'http://gorduma-voronezh.ru/wp-content/uploads/2019/05/pomerantsev_as.jpg',
     candidate: [
       {
         areaNumber: 14,
@@ -327,6 +331,12 @@ const kprf: Person[] = [
         status: CandidateStatuses.registered,
         callNumber: 5,
         locationType: LocationType.city,
+        deputat: {
+          // TODO
+          office: 'ул. 20 лет Октября, 105/1, 2 подъезд, 1 этаж',
+          website: 'http://gorduma-voronezh.ru/pomerancev-andrej-sergeevich/',
+          time: 'в 17.00 по вторникам',
+        },
       },
       {
         locationType: LocationType.city,
@@ -342,7 +352,7 @@ const kprf: Person[] = [
         party: Parties.kprf,
         areaNumber: 8,
         listNumber: 1,
-        status: CandidateStatuses.registered,
+        status: CandidateStatuses.mandatRejected,
       },
     ],
   },
@@ -601,6 +611,7 @@ const kprf: Person[] = [
         areaNumber: 0,
         listNumber: 3,
         status: CandidateStatuses.registered,
+        deputat: {},
       },
     ],
   },
@@ -942,6 +953,7 @@ const kprf: Person[] = [
         areaNumber: 0,
         listNumber: 2,
         status: CandidateStatuses.registered,
+        deputat: {},
       },
     ],
   },
@@ -1222,6 +1234,7 @@ const kprf: Person[] = [
         listNumber: 1,
         status: CandidateStatuses.registered,
         party: Parties.kprf,
+        deputat: {},
       },
       {
         locationType: LocationType.region,
@@ -1245,6 +1258,7 @@ const kprf: Person[] = [
         listNumber: 3,
         status: CandidateStatuses.registered,
         party: Parties.kprf,
+        deputat: {},
       },
       {
         locationType: LocationType.region,
@@ -1526,6 +1540,7 @@ const kprf: Person[] = [
         areaNumber: 14,
         listNumber: 1,
         status: CandidateStatuses.registered,
+        deputat: {},
       },
     ],
   },
@@ -1721,6 +1736,7 @@ const kprf: Person[] = [
         areaNumber: 0,
         listNumber: 1,
         status: CandidateStatuses.registered,
+        deputat: {},
       },
     ],
   },

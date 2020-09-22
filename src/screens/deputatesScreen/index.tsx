@@ -1,5 +1,5 @@
-import React, { memo } from 'react'
-import { Col, Container, Row } from 'react-bootstrap'
+import React, { memo, useState } from 'react'
+import { Button, ButtonGroup, Col, Container, Form, Row } from 'react-bootstrap'
 import { useParams } from 'react-router-dom'
 
 import { DeputatCard } from '../../components'
@@ -8,21 +8,43 @@ import { getCurrentDeputate } from '../../helpers'
 
 export default memo(() => {
   const { locationType } = useParams()
-  const currentPersons = persons.filter((p) => getCurrentDeputate(p, locationType))
+  const [isList, setIsList] = useState(false)
+  const currentPersons = persons
+    .filter((p) => getCurrentDeputate(p, locationType))
+    .map((p) => ({ person: p, candidate: getCurrentDeputate(p, locationType) }))
+    .filter((pc) => (isList ? pc?.candidate?.listNumber : !pc?.candidate?.listNumber))
 
   return (
     <Container fluid>
       <h1>Депутаты ({currentPersons.length})</h1>
+
+      <Form.Group>
+        <ButtonGroup size='sm'>
+          <Button active={!isList} onClick={() => setIsList(false)}>
+            Одномандатники
+          </Button>
+          <Button active={isList} onClick={() => setIsList(true)}>
+            По списку
+          </Button>
+        </ButtonGroup>
+        {/*<Form.Check*/}
+        {/*  type='checkbox'*/}
+        {/*  label='Показывать только зарегистрированных'*/}
+        {/*  checked={disabled}*/}
+        {/*  onClick={() => setDisabled((prev) => !prev)}*/}
+        {/*/>*/}
+      </Form.Group>
+
       <Row>
         {currentPersons
           .sort(
-            (a, b) =>
-              (getCurrentDeputate(a, locationType)?.areaNumber || 0) -
-              (getCurrentDeputate(b, locationType)?.areaNumber || 0)
+            (apc, bpc) =>
+              (getCurrentDeputate(apc.person, locationType)?.areaNumber || 0) -
+              (getCurrentDeputate(bpc.person, locationType)?.areaNumber || 0)
           )
-          .map((person) => (
-            <Col xs={6} md={4} lg={3} xl={2} key={person.name} className='border-xs-top border-sm-none py-3'>
-              <DeputatCard {...{ person, locationType }} />
+          .map((pc) => (
+            <Col xs={6} md={4} lg={3} xl={2} key={pc.person.name} className='border-xs-top border-sm-none py-3'>
+              <DeputatCard {...{ person: pc.person, locationType }} />
             </Col>
           ))}
       </Row>
