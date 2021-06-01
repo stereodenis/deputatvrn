@@ -5,9 +5,10 @@ import { useParams } from 'react-router-dom'
 import { DeputatCard } from '../../components'
 import persons from '../../data/persons'
 import { getCurrentDeputate } from '../../helpers'
+import { LocationType } from '../../types'
 
 export default memo(() => {
-  const { locationType } = useParams()
+  const { locationType } = useParams<{ locationType: keyof typeof LocationType }>()
   const [isList, setIsList] = useState(false)
   const currentPersons = persons
     .filter((p) => getCurrentDeputate(p, locationType))

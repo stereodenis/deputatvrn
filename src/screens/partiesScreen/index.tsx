@@ -6,7 +6,7 @@ import { shuffle } from 'lodash'
 import { StatusesChart } from '../../components'
 import persons from '../../data/persons'
 import { getCurrentCandidates, getPartyCandidates } from '../../helpers'
-import { Parties } from '../../types'
+import { LocationType, Parties } from '../../types'
 
 const mapPartyToLogo: { [s: string]: string } = {
   dem: require('../../images/parties/dem.png'),
@@ -24,7 +24,7 @@ const mapPartyToLogo: { [s: string]: string } = {
 }
 
 export default memo(() => {
-  const { locationType } = useParams()
+  const { locationType } = useParams<{ locationType: keyof typeof LocationType }>()
   const currentPersons = persons.filter((p) => getCurrentCandidates(p, locationType).length > 0)
   const noPartyPersons = currentPersons.filter((p) => p.candidate.some((c) => !c.party))
 

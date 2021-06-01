@@ -6,10 +6,10 @@ import { Link, useParams } from 'react-router-dom'
 import { CandidateCard, StatusesChart } from '../../components'
 import persons from '../../data/persons'
 import { getCurrentCandidates } from '../../helpers'
-import { CandidateStatuses } from '../../types'
+import { CandidateStatuses, LocationType } from '../../types'
 
 export default memo(() => {
-  const { locationType } = useParams()
+  const { locationType } = useParams<{ locationType: keyof typeof LocationType }>()
   const [disabled, setDisabled] = useState(true)
   const [isList, setIsList] = useState(false)
   const currentPersons = useMemo(() => persons.filter((p) => getCurrentCandidates(p, locationType)), [locationType])

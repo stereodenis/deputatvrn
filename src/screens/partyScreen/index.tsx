@@ -6,7 +6,7 @@ import MetaTags from 'react-meta-tags'
 import { flatten } from 'lodash'
 
 import persons from '../../data/persons'
-import { CandidateStatuses, Parties } from '../../types'
+import { CandidateStatuses, LocationType, Parties } from '../../types'
 import { CandidateCard, StatusesChart } from '../../components'
 import { getCurrentCandidates, getPartyCandidates } from '../../helpers'
 
@@ -18,7 +18,7 @@ export default memo(() => {
   const isNoParty = partyAlias === 'noParty'
   const title = isNoParty ? 'Самовыдвиженцы' : `Партия «${Parties[partyAlias]}»`
 
-  const { locationType } = useParams()
+  const { locationType } = useParams<{ locationType: keyof typeof LocationType }>()
   const currentPersons = useMemo(
     () => persons.filter((p) => getCurrentCandidates(p, locationType).length > 0),
     [locationType]

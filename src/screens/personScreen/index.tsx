@@ -28,7 +28,7 @@ function sortCandidate(a: Candidate, b: Candidate) {
 }
 
 export default memo(() => {
-  const { personAlias } = useParams()
+  const { personAlias } = useParams<{ personAlias: string }>()
 
   const person = useMemo(() => persons.find((c) => c.alias === personAlias), [personAlias]) || persons[0]
   const personVideos = videos.filter((v) => v.objects.some((obj) => obj.type === 'person' && obj.id === person.alias))

@@ -8,7 +8,7 @@ import { LocationType } from '../../types'
 import Search from '../search'
 
 export default memo(() => {
-  const { locationType } = useParams()
+  const { locationType } = useParams<{ locationType: keyof typeof LocationType }>()
   const history = useHistory()
 
   useEffect(() => {

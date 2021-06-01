@@ -6,6 +6,7 @@ import { times } from 'lodash'
 import areas from '../../data/areas'
 import { getAreaCandidates, getPersonWithCurrentDeputat } from '../../helpers'
 import { StatusesChart } from '../../components'
+import { LocationType } from '../../types'
 
 import data from './data'
 
@@ -13,7 +14,7 @@ export declare let ymaps: any
 
 export default memo(() => {
   const history = useHistory()
-  const { locationType } = useParams()
+  const { locationType } = useParams<{ locationType: keyof typeof LocationType }>()
 
   useEffect(() => {
     if (locationType === 'city') {

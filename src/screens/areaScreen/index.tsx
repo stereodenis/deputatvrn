@@ -12,10 +12,11 @@ import persons from '../../data/persons'
 import areasImages from '../../images/areas'
 import { getCurrentCandidates, getPersonWithCurrentDeputat, youtube_parser } from '../../helpers'
 import videos from '../../data/videos'
-import { CandidateStatuses } from '../../types'
+import { CandidateStatuses, LocationType } from '../../types'
 
 export default memo(() => {
-  const { locationType, areaNumber: rawAreaNumber } = useParams()
+  const { locationType, areaNumber: rawAreaNumber } =
+    useParams<{ locationType: keyof typeof LocationType; areaNumber: string }>()
   const [disabled, setDisabled] = useState(true)
   const [isList, setIsList] = useState(false)
   const areaNumber = Number(rawAreaNumber)
