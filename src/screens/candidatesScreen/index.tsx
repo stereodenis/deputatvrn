@@ -22,9 +22,10 @@ export default memo(() => {
         .filter((pc) => (isList ? pc.candidate.listNumber : !pc.candidate.listNumber)),
     [disabled, isList, locationType]
   )
-  const grouppedCandidates = useMemo(() => groupBy(personsAndCandidates, (pc) => pc.candidate.areaNumber), [
-    personsAndCandidates,
-  ])
+  const grouppedCandidates = useMemo(
+    () => groupBy(personsAndCandidates, (pc) => pc.candidate.areaNumber),
+    [personsAndCandidates]
+  )
 
   return (
     <Container fluid>

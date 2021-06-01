@@ -19,9 +19,10 @@ export default memo(() => {
   const title = isNoParty ? 'Самовыдвиженцы' : `Партия «${Parties[partyAlias]}»`
 
   const { locationType } = useParams()
-  const currentPersons = useMemo(() => persons.filter((p) => getCurrentCandidates(p, locationType).length > 0), [
-    locationType,
-  ])
+  const currentPersons = useMemo(
+    () => persons.filter((p) => getCurrentCandidates(p, locationType).length > 0),
+    [locationType]
+  )
   const partyPersons = useMemo(
     () =>
       isNoParty
