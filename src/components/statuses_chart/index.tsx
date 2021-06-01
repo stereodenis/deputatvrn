@@ -1,4 +1,4 @@
-import React, { memo } from 'react'
+import React, { memo, useMemo } from 'react'
 import { ResponsiveBar } from '@nivo/bar'
 import { groupBy, flatten } from 'lodash'
 
@@ -14,14 +14,17 @@ const mapStatusToColors = {
 }
 
 export default memo(({ persons, locationType }: Props) => {
-  const candidates = flatten(persons.map((p) => getCurrentCandidates(p, locationType)))
-  const groupped = groupBy(candidates, (c) => c.status || 'pending')
+  const candidates = useMemo(
+    () => flatten(persons.map((p) => getCurrentCandidates(p, locationType))),
+    [locationType, persons]
+  )
+  const groupped = useMemo(() => groupBy(candidates, (c) => c.status || 'pending'), [candidates])
   const data = [
     {
-      [CandidateStatuses.registered]: groupped[CandidateStatuses.registered]?.length,
-      [CandidateStatuses.declined]: groupped[CandidateStatuses.declined]?.length,
-      [CandidateStatuses.lost]: groupped[CandidateStatuses.lost]?.length,
-      'На проверке': groupped['pending']?.length,
+      [CandidateStatuses.registered]: groupped[CandidateStatuses.registered]?.length || 0,
+      [CandidateStatuses.declined]: groupped[CandidateStatuses.declined]?.length || 0,
+      [CandidateStatuses.lost]: groupped[CandidateStatuses.lost]?.length || 0,
+      'На проверке': groupped['pending']?.length || 0,
     },
   ]
 
