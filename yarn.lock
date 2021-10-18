@@ -2026,10 +2026,10 @@
   resolved "https://registry.yarnpkg.com/@types/q/-/q-1.5.4.tgz#15925414e0ad2cd765bfef58842f7e26a7accb24"
   integrity sha512-1HcDas8SEj4z1Wc696tH56G8OlRaH/sqZOynNNB+HF0WOeXPaxTtbYzJY2oEfiUxjSKjhCKr+MvR7dCHcEelug==
 
-"@types/react-bootstrap-typeahead@^5.1.4":
-  version "5.1.4"
-  resolved "https://registry.yarnpkg.com/@types/react-bootstrap-typeahead/-/react-bootstrap-typeahead-5.1.4.tgz#6e03ad584630d0a484cef7ac47d0048577c95c4e"
-  integrity sha512-Tgz4G+T06w0+DCglABG8qN//17itUadxq0LgYw9+3Di78ojROauk21e+ovF9Es7KWDZbwy9d2MEQjpx/W/96zw==
+"@types/react-bootstrap-typeahead@^5.1.8":
+  version "5.1.8"
+  resolved "https://registry.yarnpkg.com/@types/react-bootstrap-typeahead/-/react-bootstrap-typeahead-5.1.8.tgz#f83b9c20a057bce000b837bdd518b4a150b8442a"
+  integrity sha512-12GrYW1CHKuS2L5M7F+oS2vOizzRMSgk9O1VP4+T7Nfjlsy3P43J9vLAyv3lCBUMWv2QeUtngLKFCuLnhFJhhA==
   dependencies:
     "@types/react" "*"
 
